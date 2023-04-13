@@ -1,4 +1,6 @@
 ---
+import { astroI18n, t, l } from "astro-i18n"
+
 import Logo from '../components/Logo.astro';
 import Layout from '../components/Layout.astro';
 import Steps from '../components/Steps.astro';
@@ -6,6 +8,8 @@ import PetitionTextFr from '../components/PetitionTextFr.md';
 import PeaceSign from '../components/PeaceSign.astro';
 import SignCta from '../components/SignCta.astro';
 import VolunteerCta from '../components/VolunteerCta.astro';
+
+astroI18n.init(Astro)
 ---
 
 <Layout title="La Well Piétonne">
@@ -18,7 +22,7 @@ import VolunteerCta from '../components/VolunteerCta.astro';
       <div id="peace-sign">
         <PeaceSign />
       </div>
-      <h2>Une consultation publique pour<br/>piétonniser la rue Wellington en permanence</h2>
+      <h2>{t('headerDescription')}</h2>
     </header>
 
     <div id="steps">

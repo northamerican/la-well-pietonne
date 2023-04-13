@@ -6,13 +6,17 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "i18n:install": "astro-i18n install",
+    "i18n:sync": "astro-i18n sync",
+    "i18n:extract:keys": "astro-i18n extract:keys"
   },
   "devDependencies": {
     "astro": "^1.0.0",
     "prettier-plugin-astro": "^0.8.0"
   },
   "dependencies": {
+    "astro-i18n": "^1.6.9",
     "cypress": "^10.0.3"
   }
 }
