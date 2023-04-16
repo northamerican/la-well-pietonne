@@ -1,56 +1,71 @@
 ---
+import { astroI18n, t, l } from "astro-i18n"
+astroI18n.init(Astro)
+
+const completedSteps = [1]
 ---
 <div class="steps">
-  <div class="steps__step">
-    <div class="steps__step-circle" />
-    <div class="steps__step-text">
-      Draft petition
+  {[1,2,3,4].map(step => (
+    <div class="steps__step">
+      <div class:list={[
+        "steps__step-circle", 
+        {'steps__step-circle--complete': completedSteps.includes(step)}
+      ]} />
+      <div class="steps__step-text">
+        {t(`steps.${step}.title`)}
+      </div>
+      <small class="steps__step-subtext">
+        {t(`steps.${step}.subtitle`)}
+      </small>
     </div>
-    <small class="steps__step-subtext">
-      25 Signatures
-    </small>
-  </div>
-  <div class="steps__step">
-    <div class="steps__step-circle" />
-    <div class="steps__step-text">
-      Petition text approved
-    </div>
-    <small class="steps__step-subtext">
-      by the borough of Verdun
-    </small>
-  </div>
-  <div class="steps__step">
-    <div class="steps__step-circle" />
-    <div class="steps__step-text">
-      Collection of signatures
-    </div>
-    <small class="steps__step-subtext">
-      2500 signatures
-    </small>
-  </div>
-  <div class="steps__step">
-    <div class="steps__step-circle" />
-    <div class="steps__step-text">
-      Public consultation
-    </div>
-  </div>
+  ))}
+  
+  <hr class="steps__progress" />
 </div>
 
 <style>
+  :root {
+    --step-circle-width: 40px;
+    --step-circle-color: var(--la-well-green);
+    --progress-pct: 14%;
+  }
   .steps {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: space-between;
+    position: relative;
   }
+
+  .steps__progress {
+    width: calc(var(--progress-pct) - 40px);
+    position: absolute;
+    border-top: 5px solid var(--step-circle-color);
+    margin: 0 20px;
+    top: 17px;
+    z-index: -1;
+  }
+
   .steps__step {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: var(--step-circle-width);
   }
   .steps__step-circle {
-    border: 5px red solid;
-    width: 40px;
-    height: 40px;
+    border: 5px solid var(--step-circle-color);
+    width: var(--step-circle-width);
+    height: var(--step-circle-width);
     border-radius: 40px;
+    background: var(--color-bg);
+    margin-bottom: 5px;
+  }
+
+  .steps__step-circle--complete {
+    background: var(--step-circle-color);
+  }
+
+  .steps__step-text, 
+  .steps__step-subtext {
+    text-align: center;
+    width: 200px;
   }
 </style>

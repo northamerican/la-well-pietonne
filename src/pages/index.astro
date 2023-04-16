@@ -12,7 +12,7 @@ import VolunteerCta from '../components/VolunteerCta.astro';
 astroI18n.init(Astro)
 ---
 
-<Layout title="La Well Piétonne">
+<Layout title={t('siteName')}>
 	<main>
     <header>
       <!-- todo: language picker -->
@@ -22,10 +22,11 @@ astroI18n.init(Astro)
       <div id="peace-sign">
         <PeaceSign />
       </div>
-      <h2>{t('headerDescription')}</h2>
+      <h2 id="header-description">{t('headerDescription')}</h2>
     </header>
 
     <div id="steps">
+      <h2>{t('stepsTitle')}</h2>
       <Steps />
     </div>
     
@@ -55,13 +56,16 @@ astroI18n.init(Astro)
     <!-- ostrich legs -->
 
     <footer>
-      <small>This initiative is not affiliated with <a href="https://www.promenadewellington.com/en/">Societé de Développement Commercial Wellington</a>.</small> 
+      <small>{t('footerNoticeUnaffiliated')} <a href="https://www.promenadewellington.com/en/">SDC Wellington</a>.</small> 
     </footer>
 	</main>
 </Layout>
 
 <style>
   header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
@@ -75,8 +79,13 @@ astroI18n.init(Astro)
     margin: 0;
   }
 
+  #header-description {
+    max-width: 30rem;
+  }
+
   #steps {
-    margin: 3rem;
+    margin: 3rem auto;
+    max-width: 60vw;
   }
 
   #petition-text {
@@ -84,6 +93,8 @@ astroI18n.init(Astro)
   }
 
   .cta {
+    display: flex;
+    flex-direction: column;
     margin: 3rem;
     text-align: center;
   }

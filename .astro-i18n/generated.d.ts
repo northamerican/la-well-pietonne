@@ -1,10 +1,10 @@
 type DefaultLangCode = "fr"
-type SupportedLangCode = "fr" | "en"
+type SupportedLangCode = "en"
 type LangCode = DefaultLangCode | SupportedLangCode
 type RouteUri = string
 type RouteParams = {{ [uri: string]: undefined }
-type TranslationPath = "siteName" | "siteDescription" | "headerDescription"
-type TranslationOptions = { "siteName": {} | undefined; "siteDescription": {} | undefined; "headerDescription": {} | undefined; }
+type TranslationPath = "siteName" | "siteDescription" | "headerDescription" | "stepsTitle" | "steps.1.title" | "steps.1.subtitle" | "steps.2.title" | "steps.2.subtitle" | "steps.3.title" | "steps.3.subtitle" | "steps.4.title" | "steps.4.subtitle" | "footerNoticeUnaffiliated"
+type TranslationOptions = { "siteName": {} | undefined; "siteDescription": {} | undefined; "headerDescription": {} | undefined; "stepsTitle": {} | undefined; "steps.1.title": {} | undefined; "steps.1.subtitle": {} | undefined; "steps.2.title": {} | undefined; "steps.2.subtitle": {} | undefined; "steps.3.title": {} | undefined; "steps.3.subtitle": {} | undefined; "steps.4.title": {} | undefined; "steps.4.subtitle": {} | undefined; "footerNoticeUnaffiliated": {} | undefined; }
 
 declare module "astro-i18n" {
 	export * from "astro-i18n/"

@@ -16,7 +16,7 @@ const { title } = Astro.props as Props;
   <meta name="viewport" content="width=device-width">
 
   <meta charset="UTF-8">
-  <meta name="description" content="{siteDescription}">
+  <meta name="description" content={t('siteDescription')}>
   <meta name="author" content={t('siteName')}>
 
   <meta property="og:title" content={t('siteName')}>
@@ -27,7 +27,7 @@ const { title } = Astro.props as Props;
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="1200">
   <meta property="og:image:alt" content={t('siteName')}>
-  <meta property="og:description" content="{siteDescription}">
+  <meta property="og:description" content={t('siteDescription')}>
 
   <title>{title}</title>
 </head>
@@ -47,6 +47,8 @@ const { title } = Astro.props as Props;
     --font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
     --color-text: hsl(12, 5%, 4%);
     --color-bg: hsl(10, 21%, 95%);
+
+    --la-well-green: #097d6c;
   }
 
   *,
@@ -74,7 +76,11 @@ const { title } = Astro.props as Props;
 			Bitstream Vera Sans Mono, Courier New, monospace;
   }
   .button {
-    padding: 0.5rem;
-    background-color: pink;
+    display: block;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--la-well-green);
+    color: var(--color-bg);
+    text-decoration: none;
+    border-radius: 5px;
   }
 </style>
