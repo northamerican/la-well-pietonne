@@ -4,6 +4,7 @@ import { defineAstroI18nConfig } from 'astro-i18n'
 const siteUrl = 'https://lawellpietonne.netlify.app'
 
 const fr = {
+  siteUrlBase: siteUrl,
   siteUrl,
   siteName: 'La Well piétonne',
   siteDescription: 'Consultation publique et pétition pour la piétonnisation permanente de la rue Wellington',
@@ -56,6 +57,7 @@ const fr = {
 }
 
 const en = {
+  siteUrlBase: siteUrl,
   siteUrl: `${siteUrl}/en`,
   siteName: 'La Well Piétonne',
   siteDescription: 'A public consultation and petition to pedestrianize Wellington street permanently',
