@@ -1,6 +1,7 @@
 ---
 import { t } from 'astro-i18n';
 ---
+<!-- <input type="email" placeholder={`${t('email')} (${t('optional')})`}/> -->
 
 <a class="button" href={t('petitionUrl')} target="_blank">
   <span>{t('signCta')}</span><br />
@@ -10,8 +11,9 @@ import { t } from 'astro-i18n';
 <small>{t('signCtaRequirements')}</small>
 
 <style>
-  .button {
-    align-self: center;
-    margin-bottom: 0.5rem;
+  input {
+    font-size: 1rem;
+    width: 280px;
+    padding: 0.25rem;
   }
 </style>

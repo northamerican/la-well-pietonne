@@ -3,3 +3,7 @@
   command = "astro build"
   functions = "netlify/functions"
   publish = "dist"
+
+[functions]
+  external_node_modules = ["http-status-codes"]
+  included_files = ["astro.i18n.config.ts"]

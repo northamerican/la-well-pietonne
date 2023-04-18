@@ -1,52 +1,9 @@
 import { defineAstroI18nConfig } from 'astro-i18n'
 
-const en = {
-  siteName: 'La Well Piétonne',
-  siteDescription: 'A public consultation and petition to pedestrianize Wellington street permanently',
-
-  otherLangs: {
-    fr: 'Français'
-  },
-
-  headerDescription: 'A public consultation to make Wellington a pedestrian street permanently',
-
-  stepsTitle: 'Initiative progress',
-  steps: {
-    1: {
-      title: 'Petition draft',
-      subtitle: 'Signed by 25 residents'
-    },
-    2: {
-      title: 'Petition text approved',
-      subtitle: 'by the borough of Verdun'
-    },
-    3: {
-      title: 'Signature period',
-      subtitle: '90 days ~ 2500 signatures'
-    },
-    4: {
-      title: 'Public consultation',
-      subtitle: 'with residents of Verdun'
-    }
-  },
-
-  petitionTextHeading: 'Petition text',
-
-  signCta: 'Sign the petition',
-  signCtaSubtext: 'on montreal.ca',
-  signCtaRequirements: 'Must be a resident of Verdun age 15 or older',
-
-  volunteerCta: 'Volunteer',
-  volunteerCtaSubtext: 'for signature collection',
-
-  inspirationAndReading: 'Inspiration and reading',
-  
-  footerNoticeUnaffiliated: 'This public initiative is not affiliated with ',
-
-  petitionUrl: 'https://montreal.ca/en/petitions/details/6428dc4ac490e6ee4229c32a'
-}
+const siteUrl = 'https://lawellpietonne.com'
 
 const fr = {
+  siteUrl,
   siteName: 'La Well piétonne',
   siteDescription: 'Consultation publique et pétition pour la piétonnisation permanente de la rue Wellington',
 
@@ -55,6 +12,7 @@ const fr = {
   },
 
   headerDescription: 'Une consultation publique pour piétonniser la rue Wellington en permanence',
+  // headerDescription: 'Une initiative pour piétonniser la rue Wellington en permanence',
 
   stepsTitle: 'Progrès de l\'initiative',
   steps: {
@@ -82,6 +40,9 @@ const fr = {
   signCtaSubtext: 'sur montreal.ca',
   signCtaRequirements: 'Résidents de Verdun âgé de 15 ans ou plus',
 
+  email: 'Courriel',
+  optional: 'facultatif',
+
   volunteerCta: 'Bénévole',
   volunteerCtaSubtext: 'pour la collecte de signatures',
 
@@ -89,7 +50,60 @@ const fr = {
 
   footerNoticeUnaffiliated: 'Cette initiative publique n\'est pas affiliée à ',
 
-  petitionUrl: 'https://montreal.ca/petitions/detail/6428dc4ac490e6ee4229c32a'
+  petitionUrl: 'https://montreal.ca/petitions/detail/6428dc4ac490e6ee4229c32a',
+  petitionSignUrl: 'https://montreal.ca/petitions/signer/6428dc4ac490e6ee4229c32a',
+}
+
+const en = {
+  siteUrl: `${siteUrl}/en`,
+  siteName: 'La Well Piétonne',
+  siteDescription: 'A public consultation and petition to pedestrianize Wellington street permanently',
+
+  otherLangs: {
+    fr: 'Français'
+  },
+
+  headerDescription: 'A public consultation to make Wellington a pedestrian street permanently',
+  // headerDescription: 'An initiative to make Wellington a pedestrian street permanently',
+
+  stepsTitle: 'Initiative progress',
+  steps: {
+    1: {
+      title: 'Petition draft',
+      subtitle: 'Signed by 25 residents'
+    },
+    2: {
+      title: 'Petition text approved',
+      subtitle: 'by the borough of Verdun'
+    },
+    3: {
+      title: 'Signature period',
+      subtitle: '90 days ~ 2500 signatures'
+    },
+    4: {
+      title: 'Public consultation',
+      subtitle: 'with residents of Verdun'
+    }
+  },
+
+  petitionTextHeading: 'Petition text',
+
+  signCta: 'Sign the petition',
+  signCtaSubtext: 'on montreal.ca',
+  signCtaRequirements: 'Must be a resident of Verdun age 15 or older',
+
+  email: 'E-mail',
+  optional: 'optional',
+
+  volunteerCta: 'Volunteer',
+  volunteerCtaSubtext: 'for signature collection',
+
+  inspirationAndReading: 'Inspiration and reading',
+  
+  footerNoticeUnaffiliated: 'This public initiative is not affiliated with ',
+
+  petitionUrl: 'https://montreal.ca/en/petitions/details/6428dc4ac490e6ee4229c32a',
+  petitionSignUrl: 'https://montreal.ca/en/petitions/sign/6428dc4ac490e6ee4229c32a',
 }
 
 export const translations = { en, fr }

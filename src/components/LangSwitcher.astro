@@ -1,7 +1,7 @@
 ---
 import { t, l } from "astro-i18n"
 
-const {otherLangCodes} = Astro.props;
+const { otherLangCodes } = Astro.props;
 ---
 {otherLangCodes.map(langCode => 
   <a href={l('/', {}, langCode).replace('fr/', '')}>{
