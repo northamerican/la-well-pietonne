@@ -3,7 +3,7 @@ import { astroI18n, t, l } from "astro-i18n"
 
 import Logo from '../components/Logo.astro';
 import Layout from '../components/Layout.astro';
-import Steps from '../components/Steps.astro';
+import ProgressSteps from '../components/ProgressSteps.astro';
 import PetitionTextFr from '../components/PetitionTextFr.md';
 import PetitionTextEn from '../components/PetitionTextEn.md';
 import PeaceSign from '../components/PeaceSign.astro';
@@ -29,18 +29,14 @@ const otherLangCodes = langCodes.filter(otherLangCode => otherLangCode !== langC
       <div id="logo">
         <Logo />
       </div>
-      
-      <div id="peace-sign">
-        <PeaceSign />
-      </div>
-      
+
       <div>
         <h2 id="header-description">{t('headerDescription')}</h2>
       </div>
     </header>
     
     <div id="petition-text" class="narrow">
-      <!-- <h2>{t('petitionTextHeading')}</h2> -->
+      <h2>{t('petitionTextHeading')}</h2>
       {langCode === 'en' ? <PetitionTextEn /> : <PetitionTextFr />}
     </div>
 
@@ -48,15 +44,14 @@ const otherLangCodes = langCodes.filter(otherLangCode => otherLangCode !== langC
       <SignCta />
     </div>
 
-    <div id="steps">
+    <div id="progress-steps">
       <h2>{t('stepsTitle')}</h2>
-      <Steps />
+      <ProgressSteps />
     </div>
 
     {/* <div id="volunteer-cta" class="cta">
       <VolunteerCta />
-    </div>
-    */}
+    </div> */}
 
     <div id="inspiration" class="narrow">
       <h2>{t('inspirationAndReading')}</h2>
@@ -81,9 +76,13 @@ const otherLangCodes = langCodes.filter(otherLangCode => otherLangCode !== langC
     {/* ostrich legs */}
 
     <footer>
+      <div id="peace-sign">
+        <PeaceSign />
+      </div>
+      
       <small>
         {t('footerNoticeUnaffiliated')} <a href="https://www.promenadewellington.com/en/">SDC Wellington</a>.
-      </small> 
+      </small>
     </footer>
 	</main>
 </Layout>
@@ -124,7 +123,7 @@ const otherLangCodes = langCodes.filter(otherLangCode => otherLangCode !== langC
     max-width: 30rem;
   }
 
-  #steps {
+  #progress-steps {
     margin: 3rem auto;
     max-width: 60vw;
   }
@@ -136,6 +135,7 @@ const otherLangCodes = langCodes.filter(otherLangCode => otherLangCode !== langC
   #inspiration {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .cta {

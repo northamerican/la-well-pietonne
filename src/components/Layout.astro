@@ -14,8 +14,6 @@ const { title } = Astro.props as Props;
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-
-  <meta charset="UTF-8">
   <meta name="description" content={t('siteDescription')}>
   <meta name="author" content={t('siteName')}>
 
@@ -52,6 +50,7 @@ const { title } = Astro.props as Props;
 
     --success-color: #0da566;
     --la-well-green: #097d6c;
+    --la-well-green-lighter: #0cb097;
   }
 
   *,
@@ -79,6 +78,15 @@ const { title } = Astro.props as Props;
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
   }
+
+  a {
+    color: var(--la-well-green);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
   .button {
     display: block;
     padding: 0.5rem 2rem;
@@ -88,6 +96,6 @@ const { title } = Astro.props as Props;
     border-radius: 10rem;
   }
   .button:hover {
-    background-color: #0cb097;
+    background-color: var(--la-well-green-lighter);
   }
 </style>

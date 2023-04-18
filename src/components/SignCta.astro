@@ -1,9 +1,8 @@
 ---
 import { t } from 'astro-i18n';
-import { petitionFr } from '../etc/consts'
 ---
 
-<a class="button" href={petitionFr} target="_blank">
+<a class="button" href={t('petitionUrl')} target="_blank">
   <span>{t('signCta')}</span><br />
   <small>{t('signCtaSubtext')}</small>
 </a>
