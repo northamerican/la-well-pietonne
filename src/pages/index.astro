@@ -49,7 +49,7 @@ const otherLangCodes = langCodes.filter(otherLangCode => otherLangCode !== langC
       <VolunteerCta />
     </div> */}
 
-    <div id="progress-steps">
+    <div id="progress-steps" class="narrow">
       <h2>{t('stepsTitle')}</h2>
       <ProgressSteps />
     </div>
@@ -123,8 +123,7 @@ const otherLangCodes = langCodes.filter(otherLangCode => otherLangCode !== langC
   }
 
   #progress-steps {
-    margin: 3rem auto;
-    max-width: 60vw;
+    
   }
 
   #petition-text {
@@ -147,8 +146,14 @@ const otherLangCodes = langCodes.filter(otherLangCode => otherLangCode !== langC
   }
 
   .narrow {
-    max-width: 60vw;
-    margin: 1rem auto;
+    max-width: auto;
+    margin: 1rem;
+    @media (min-width: 980px) {
+      max-width: 60vw;
+      margin: 1rem auto;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   footer {
