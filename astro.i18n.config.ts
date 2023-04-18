@@ -1,6 +1,7 @@
 import { defineAstroI18nConfig } from 'astro-i18n'
 
-const siteUrl = 'https://lawellpietonne.com'
+// const siteUrl = 'https://lawellpietonne.com'
+const siteUrl = 'https://lawellpietonne.netlify.app'
 
 const fr = {
   siteUrl,
