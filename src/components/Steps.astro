@@ -1,6 +1,5 @@
 ---
-import { astroI18n, t, l } from "astro-i18n"
-astroI18n.init(Astro)
+import { astroI18n, t } from "astro-i18n"
 
 const completedSteps = [1]
 ---
@@ -11,61 +10,114 @@ const completedSteps = [1]
         "steps__step-circle", 
         {'steps__step-circle--complete': completedSteps.includes(step)}
       ]} />
-      <div class="steps__step-text">
-        {t(`steps.${step}.title`)}
+      <div class="steps__step-text-container">
+        <div class="steps__step-text">
+          {t(`steps.${step}.title`)}
+        </div>
+        <small class="steps__step-subtext">
+          {t(`steps.${step}.subtitle`)}
+        </small>
       </div>
-      <small class="steps__step-subtext">
-        {t(`steps.${step}.subtitle`)}
-      </small>
     </div>
   ))}
   
-  <hr class="steps__progress" />
+  <div class="steps__progress-container">
+    <div class="steps__progress" />
+  </div>
 </div>
 
 <style>
   :root {
-    --step-circle-width: 40px;
-    --step-circle-color: var(--la-well-green);
+    --step-circle-size: 40px;
+    --step-circle-color: var(--success-color);
+    --step-bg-color: #d0d0d0;
     --progress-pct: 14%;
   }
+
   .steps {
     display: flex;
-    justify-content: space-between;
     position: relative;
-  }
-
-  .steps__progress {
-    width: calc(var(--progress-pct) - 40px);
-    position: absolute;
-    border-top: 5px solid var(--step-circle-color);
-    margin: 0 20px;
-    top: 17px;
-    z-index: -1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    @media (min-width: 980px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   .steps__step {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    width: var(--step-circle-width);
+    gap: 0.5rem;
+    
+    @media (min-width: 980px) {
+      flex-direction: column;
+      width: var(--step-circle-size);
+      gap: 0.25rem;
+    }
   }
+
   .steps__step-circle {
-    border: 5px solid var(--step-circle-color);
-    width: var(--step-circle-width);
-    height: var(--step-circle-width);
+    width: var(--step-circle-size);
+    height: var(--step-circle-size);
+    border: 5px solid var(--step-bg-color);
     border-radius: 40px;
     background: var(--color-bg);
-    margin-bottom: 5px;
   }
 
   .steps__step-circle--complete {
+    border-color: var(--step-circle-color);
     background: var(--step-circle-color);
+  }
+
+  .steps__step-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    @media (min-width: 980px) {
+      flex-direction: flex-start;
+      justify-content: center;
+      width: 200px;
+    }
   }
 
   .steps__step-text, 
   .steps__step-subtext {
-    text-align: center;
-    width: 200px;
+    text-align: left;
+    @media (min-width: 980px) {
+      text-align: center;
+    }
+  }
+
+  .steps__progress-container {
+    --progress: calc(100% - calc(var(--step-circle-size) * 2));
+    
+    width: 5px;
+    height: var(--progress);
+    position: absolute;
+    top: var(--step-circle-size);
+    left: 17px;
+    background-color: var(--step-bg-color);
+    z-index: -1;
+    @media (min-width: 980px) {
+      width: var(--progress);
+      height: 5px;
+      top: 17px;
+      left: var(--step-circle-size);
+    }
+  }
+
+  .steps__progress {
+    width: 100%;
+    height: var(--progress-pct);
+    background-color: var(--step-circle-color);    
+    position: absolute;
+    @media (min-width: 980px) {
+      width: var(--progress-pct);
+      height: 100%;
+    }
   }
 </style>

@@ -5,58 +5,85 @@ import Logo from '../components/Logo.astro';
 import Layout from '../components/Layout.astro';
 import Steps from '../components/Steps.astro';
 import PetitionTextFr from '../components/PetitionTextFr.md';
+import PetitionTextEn from '../components/PetitionTextEn.md';
 import PeaceSign from '../components/PeaceSign.astro';
 import SignCta from '../components/SignCta.astro';
 import VolunteerCta from '../components/VolunteerCta.astro';
+import LangSwitcher from "../components/LangSwitcher.astro";
 
 astroI18n.init(Astro)
+
+const { defaultLangCode, supportedLangCodes, langCode} = astroI18n
+const langCodes = [defaultLangCode, ...supportedLangCodes]
+const otherLangCodes = langCodes.filter(otherLangCode => otherLangCode !== langCode)
+
 ---
 
 <Layout title={t('siteName')}>
 	<main>
     <header>
-      <!-- todo: language picker -->
+      <div id="lang-switcher">
+        <LangSwitcher otherLangCodes{otherLangCodes} />
+      </div>
+
       <div id="logo">
         <Logo />
       </div>
+      
       <div id="peace-sign">
         <PeaceSign />
       </div>
-      <h2 id="header-description">{t('headerDescription')}</h2>
+      
+      <div>
+        <h2 id="header-description">{t('headerDescription')}</h2>
+      </div>
     </header>
-
-    <div id="steps">
-      <h2>{t('stepsTitle')}</h2>
-      <Steps />
-    </div>
     
     <div id="petition-text" class="narrow">
-      <PetitionTextFr />
+      <!-- <h2>{t('petitionTextHeading')}</h2> -->
+      {langCode === 'en' ? <PetitionTextEn /> : <PetitionTextFr />}
     </div>
 
     <div id="sign-cta" class="cta">
       <SignCta />
     </div>
 
-    <div id="volunteer-cta" class="cta">
+    <div id="steps">
+      <h2>{t('stepsTitle')}</h2>
+      <Steps />
+    </div>
+
+    {/* <div id="volunteer-cta" class="cta">
       <VolunteerCta />
     </div>
+    */}
 
     <div id="inspiration" class="narrow">
-      <h2>Inspiration and reading</h2>
-      <a href="https://www.google.com/search?q=pourquoi+les+rues+pietonnes">Pourquoi des rue piétonnes? [fix link]</a>
+      <h2>{t('inspirationAndReading')}</h2>
+      <a href="https://vivreenville.org/nos-positions/chroniques/2020/ouvrir-les-rues.aspx" target="_blank">
+        Ouvrir les rues - Vivre en Ville
+      </a>
+      <a href="https://collectivitesviables.org/articles/rues-pietonnes.aspx" target="_blank">
+        Rues piétonnes - Vivre en Ville
+      </a>
+
+      <a href="https://www.mcgilltribune.com/opinion/more-pedestrianized-streets-please-270922/" target="_blank">
+        More pedestrianized streets, please - The Tribune, McGill University
+      </a>
     </div>
 
-    <!-- examples of ped streets in canada/america (above)
+    {/* examples of ped streets in canada/america (above)
 
     sponsors / supporters
     ama verdun, businesses, orgs
-    youtube channels? -->
+    youtube channels? */}
 
-    <!-- ostrich legs -->
+    {/* ostrich legs */}
 
     <footer>
-      <small>{t('footerNoticeUnaffiliated')} <a href="https://www.promenadewellington.com/en/">SDC Wellington</a>.</small> 
+      <small>
+        {t('footerNoticeUnaffiliated')} <a href="https://www.promenadewellington.com/en/">SDC Wellington</a>.
+      </small> 
     </footer>
 	</main>
 </Layout>
@@ -66,7 +93,21 @@ astroI18n.init(Astro)
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
     text-align: center;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+
+    background-image: url('/img/header-placeholder.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  #lang-switcher {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.25rem 0.5rem 2rem;
   }
 
   #logo {
@@ -92,10 +133,15 @@ astroI18n.init(Astro)
     line-height: 1.6;
   }
 
+  #inspiration {
+    display: flex;
+    flex-direction: column;
+  }
+
   .cta {
     display: flex;
     flex-direction: column;
-    margin: 3rem;
+    margin: 2rem;
     text-align: center;
   }
 
@@ -105,6 +151,7 @@ astroI18n.init(Astro)
   }
 
   footer {
+    margin-top: 3rem;
     text-align: center;
   }
 </style>

@@ -1,6 +1,3 @@
-
-## La texte du pétition
-
 La piétonnisation estivale de Wellington a été acclamée par les résidents,
 les conseillers et les médias. Malgré la logistique d'installation et de démontage de l'événement chaque année, le
 commerce, le transit et la fonction générale ont été maintenus.
@@ -15,4 +12,4 @@ Il est conforme à l'article 24(d) de *la Charte montréalaise des droits et res
 mobilité active en limitant l'utilisation des voitures en milieu urbain.
 
 Une consultation permettrait aux résidents d'affirmer leurs droits et leur appropriation de l'espace public sans
-l'influence démesurée des conducteurs de passage et des intérêts commerciaux.</p>
+l'influence démesurée des conducteurs de passage et des intérêts commerciaux.

@@ -1,13 +1,14 @@
 ---
+import { t } from 'astro-i18n';
 import { petitionFr } from '../etc/consts'
 ---
-<a class="button" target="_blank">Volunteer</a>
-
-<small>for signature collection</small>
+<a class="button" target="_blank">{t('volunteerCta')}</a>
+<small>{t('volunteerCtaSubtext')}</small>
 
 
 <style>
   .button {
     align-self: center;
+    margin-bottom: 0.5rem;
   }
 </style>

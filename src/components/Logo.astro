@@ -1,13 +1,19 @@
 ---
+import { t } from "astro-i18n"
 ---
-<div>
-  <!-- <h1>LA WELL</h1>
-  <h1>PIÉTONNE</h1> -->
-  <img src="/img/la-well-pietonne-logo.svg" alt="La Well Piétonne" class="logo" />
-</div>
+<h1>{t('siteName')}</h1>
+<img src="/img/la-well-pietonne-logo.svg" alt="La Well Piétonne" class="logo" />
 
 <style>
+  h1 {
+    /* hide text */
+    position: absolute;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
   .logo {
+    filter: invert(1);
     height: 160px;
   }
 </style>

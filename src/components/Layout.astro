@@ -10,7 +10,7 @@ const { title } = Astro.props as Props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={astroI18n.langCode}>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
@@ -48,6 +48,9 @@ const { title } = Astro.props as Props;
     --color-text: hsl(12, 5%, 4%);
     --color-bg: hsl(10, 21%, 95%);
 
+    --mobile: 980px;
+
+    --success-color: #0da566;
     --la-well-green: #097d6c;
   }
 
@@ -63,6 +66,7 @@ const { title } = Astro.props as Props;
     background-color: var(--color-bg);
   }
   body {
+    margin: 0;
     margin-bottom: 3rem;
   }
   h1 {
@@ -77,10 +81,13 @@ const { title } = Astro.props as Props;
   }
   .button {
     display: block;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 2rem;
     background-color: var(--la-well-green);
     color: var(--color-bg);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10rem;
+  }
+  .button:hover {
+    background-color: #0cb097;
   }
 </style>
