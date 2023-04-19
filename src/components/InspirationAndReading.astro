@@ -24,22 +24,25 @@ const isEnglish = astroI18n.langCode === 'en'
 </div>
 
 <style>
-  a {
-    display: block;
-    font-style: italic;
-    line-height: 1.6;
-  }
-
-  a small {
-    font-style: normal;
-  }
 
   #reading-links {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   #reading-links.reverse {
     flex-direction: column-reverse;
+  }
+
+  a {
+    display: block;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+
+  a small {
+    font-style: normal;
+    white-space: pre;
   }
 </style>
