@@ -50,7 +50,9 @@ const fr = {
 
   inspirationAndReading: 'Inspiration et lecture',
 
-  footerNoticeUnaffiliated: 'Cette initiative publique n\'est pas affiliée à ',
+  footerNoticeUnaffiliated: 'Ce site n\'est pas affiliée à ',
+
+  contactUs: 'Contactez-nous',
 
   petitionUrl: 'https://montreal.ca/petitions/detail/6428dc4ac490e6ee4229c32a',
   petitionSignUrl: 'https://montreal.ca/petitions/signer/6428dc4ac490e6ee4229c32a',
@@ -103,7 +105,9 @@ const en = {
 
   inspirationAndReading: 'Inspiration and reading',
   
-  footerNoticeUnaffiliated: 'This public initiative is not affiliated with ',
+  footerNoticeUnaffiliated: 'This site is not affiliated with ',
+  
+  contactUs: 'Contact us',
 
   petitionUrl: 'https://montreal.ca/en/petitions/details/6428dc4ac490e6ee4229c32a',
   petitionSignUrl: 'https://montreal.ca/en/petitions/sign/6428dc4ac490e6ee4229c32a',
