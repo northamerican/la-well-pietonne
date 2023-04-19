@@ -17,7 +17,6 @@ astroI18n.init(Astro)
 const { defaultLangCode, supportedLangCodes, langCode} = astroI18n
 const langCodes = [defaultLangCode, ...supportedLangCodes]
 const otherLangCodes = langCodes.filter(otherLangCode => otherLangCode !== langCode)
-
 ---
 
 <Layout title={t('siteName')}>
@@ -37,7 +36,7 @@ const otherLangCodes = langCodes.filter(otherLangCode => otherLangCode !== langC
     </header>
     
     <div id="petition-text" class="narrow">
-      <h2>{t('petitionTextHeading')}</h2>
+      <!-- <h2>{t('petitionTextHeading')}</h2> -->
       {langCode === 'en' ? <PetitionTextEn /> : <PetitionTextFr />}
     </div>
 
