@@ -13,8 +13,8 @@ const fr = {
     en: 'English'
   },
 
-  headerDescription: 'Une consultation publique pour piétonniser la rue Wellington en permanence',
-  // headerDescription: 'Une initiative pour piétonniser la rue Wellington en permanence',
+  // headerDescription: 'Une consultation publique pour piétonniser la rue Wellington en permanence',
+  headerDescription: 'Une initiative pour piétonniser la rue Wellington en permanence',
 
   stepsTitle: 'Progrès de l\'initiative',
   steps: {
@@ -68,8 +68,8 @@ const en = {
     fr: 'Français'
   },
 
-  headerDescription: 'A public consultation to make Wellington a pedestrian street permanently',
-  // headerDescription: 'An initiative to make Wellington a pedestrian street permanently',
+  // headerDescription: 'A public consultation to make Wellington a pedestrian street permanently',
+  headerDescription: 'An initiative to make Wellington a pedestrian street permanently',
 
   stepsTitle: 'Initiative progress',
   steps: {
