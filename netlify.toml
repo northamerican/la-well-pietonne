@@ -7,3 +7,6 @@
 [functions]
   external_node_modules = ["http-status-codes"]
   included_files = ["astro.i18n.config.ts"]
+
+[context.production]
+  environment = { NODE_VERSION = "19.3.0", AWS_LAMBDA_JS_RUNTIME = "19.3.0" }
