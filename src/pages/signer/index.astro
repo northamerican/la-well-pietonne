@@ -1,0 +1,10 @@
+---
+// Redirect to petition sign page
+import { t, extractRouteLangCode } from "astro-i18n";
+
+const currentLang = extractRouteLangCode(Astro.url.pathname);
+const petitionSignUrl = t("petitionSignUrl", null, currentLang);
+---
+<script define:vars={{ petitionSignUrl }}>
+  window.location.replace(petitionSignUrl)
+</script>

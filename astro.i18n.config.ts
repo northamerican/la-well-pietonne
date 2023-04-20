@@ -118,7 +118,12 @@ export const translations = { en, fr }
 export default defineAstroI18nConfig({
   defaultLangCode: 'fr',
   supportedLangCodes: ['en'],
-  showDefaultLangCode: true,
+  showDefaultLangCode: false,
   translations: { en, fr },
-  routeTranslations: {},
+  routeTranslations: {
+    en: {
+      signer: 'sign',
+      petition: 'petition'
+    }
+  },
 })
