@@ -28,7 +28,7 @@ const fr = {
     },
     3: {
       title: 'Période de signatures',
-      subtitle: '90 jours ~ 2500 signatures'
+      subtitle: '90 jours ~ 3000 signatures'
     },
     4: {
       title: 'Consultation publique',
@@ -83,7 +83,7 @@ const en = {
     },
     3: {
       title: 'Signature period',
-      subtitle: '90 days ~ 2500 signatures'
+      subtitle: '90 days ~ 3000 signatures'
     },
     4: {
       title: 'Public consultation',
