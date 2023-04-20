@@ -1,47 +1,50 @@
 ---
-import { astroI18n, t, l } from "astro-i18n"
+import { astroI18n, t, l } from "astro-i18n";
 export interface Props {
-	title: string;
+  title: string;
 }
 
-astroI18n.init(Astro)
+astroI18n.init(Astro);
 
 const { title } = Astro.props as Props;
 ---
 
 <!DOCTYPE html>
 <html lang={astroI18n.langCode}>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content={t('siteDescription')}>
-  <meta name="author" content={t('siteName')}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={t("siteDescription")} />
+    <meta name="author" content={t("siteName")} />
 
-  <meta property="og:title" content={t('siteName')}>
-  <meta property="og:type" content="website">
-  <meta property="og:url" content={t('siteUrl')}>
-  <meta property="og:image" content={`${t('siteUrlBase')}/img/la-well-pietonne-logo-og.png`}>
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="1200">
-  <meta property="og:image:alt" content={t('siteName')}>
-  <meta property="og:description" content={t('siteDescription')}>
+    <meta property="og:title" content={t("siteName")} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={t("siteUrl")} />
+    <meta
+      property="og:image"
+      content={`${t("siteUrlBase")}/img/la-well-pietonne-logo-og.png`}
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:image:alt" content={t("siteName")} />
+    <meta property="og:description" content={t("siteDescription")} />
 
-  <title>{title}</title>
-</head>
-<body>
-	<slot />
-</body>
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 
 <style is:global>
-  @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,700;1,400&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,700;1,400&display=swap");
 
   :root {
-    --main-family: 'Urbanist', sans-serif;
+    --main-family: "Urbanist", sans-serif;
 
     --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
-		--font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem); 
+    --font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
     --font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
     --color-text: hsl(12, 5%, 4%);
     --color-bg: hsl(10, 21%, 95%);
@@ -83,8 +86,8 @@ const { title } = Astro.props as Props;
     border-radius: 3px;
   }
   code {
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   }
 
   a {

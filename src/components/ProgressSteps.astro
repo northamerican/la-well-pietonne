@@ -1,28 +1,31 @@
 ---
-import { astroI18n, t } from "astro-i18n"
+import { astroI18n, t } from "astro-i18n";
 
-const completedSteps = [1]
+const completedSteps = [1];
 ---
+
 <div class="steps">
-  {[1,2,3,4].map(step => (
-    <div class="steps__step">
-      <div class:list={[
-        "steps__step-circle", 
-        {'steps__step-circle--complete': completedSteps.includes(step)}
-      ]} />
-      <div class="steps__step-text-container">
-        <div class="steps__step-text">
-          {t(`steps.${step}.title`)}
+  {
+    [1, 2, 3, 4].map((step) => (
+      <div class="steps__step">
+        <div
+          class:list={[
+            "steps__step-circle",
+            { "steps__step-circle--complete": completedSteps.includes(step) },
+          ]}
+        />
+        <div class="steps__step-text-container">
+          <div class="steps__step-text">{t(`steps.${step}.title`)}</div>
+          <small class="steps__step-subtext">
+            {t(`steps.${step}.subtitle`)}
+          </small>
         </div>
-        <small class="steps__step-subtext">
-          {t(`steps.${step}.subtitle`)}
-        </small>
       </div>
-    </div>
-  ))}
-  
+    ))
+  }
+
   <div class="steps__progress-container">
-    <div class="steps__progress" />
+    <div class="steps__progress"></div>
   </div>
 </div>
 
@@ -31,7 +34,7 @@ const completedSteps = [1]
     --step-circle-size: 40px;
     --step-circle-color: var(--success-color);
     --step-bg-color: #d0d0d0;
-    
+
     --progress-pct: calc(100% * (14 / 25 / 3));
   }
 
@@ -53,7 +56,7 @@ const completedSteps = [1]
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
-    
+
     @media (min-width: 980px) {
       flex-direction: column;
       width: var(--step-circle-size);
@@ -84,7 +87,7 @@ const completedSteps = [1]
     }
   }
 
-  .steps__step-text, 
+  .steps__step-text,
   .steps__step-subtext {
     text-align: left;
     @media (min-width: 980px) {
@@ -94,7 +97,7 @@ const completedSteps = [1]
 
   .steps__progress-container {
     --progress: calc(100% - calc(var(--step-circle-size) * 2));
-    
+
     width: 5px;
     height: var(--progress);
     position: absolute;
@@ -113,7 +116,7 @@ const completedSteps = [1]
   .steps__progress {
     width: 100%;
     height: var(--progress-pct);
-    background-color: var(--step-circle-color);    
+    background-color: var(--step-circle-color);
     position: absolute;
     @media (min-width: 980px) {
       width: var(--progress-pct);

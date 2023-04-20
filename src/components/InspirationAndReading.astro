@@ -1,30 +1,41 @@
 ---
-import { astroI18n, t, l } from "astro-i18n"
+import { astroI18n, t, l } from "astro-i18n";
 
-const isEnglish = astroI18n.langCode === 'en'
+const isEnglish = astroI18n.langCode === "en";
 ---
+
 <div id="reading-links" class:list={{ reverse: isEnglish }}>
   <!-- fr -->
   <div>
-    <a href="https://vivreenville.org/nos-positions/chroniques/2020/ouvrir-les-rues.aspx" target="_blank">
+    <a
+      href="https://vivreenville.org/nos-positions/chroniques/2020/ouvrir-les-rues.aspx"
+      target="_blank"
+    >
       Ouvrir les rues - <small>Vivre en Ville</small>
     </a>
 
-    <a href="https://collectivitesviables.org/articles/rues-pietonnes.aspx" target="_blank">
+    <a
+      href="https://collectivitesviables.org/articles/rues-pietonnes.aspx"
+      target="_blank"
+    >
       Rues piétonnes - <small>Vivre en Ville</small>
     </a>
   </div>
 
   <!-- en -->
   <div>
-    <a href="https://www.mcgilltribune.com/opinion/more-pedestrianized-streets-please-270922/" target="_blank">
-      More pedestrianized streets, please - <small>The Tribune, McGill University</small>
-    </a> 
+    <a
+      href="https://www.mcgilltribune.com/opinion/more-pedestrianized-streets-please-270922/"
+      target="_blank"
+    >
+      More pedestrianized streets, please - <small
+        >The Tribune, McGill University</small
+      >
+    </a>
   </div>
 </div>
 
 <style>
-
   #reading-links {
     display: flex;
     flex-direction: column;
