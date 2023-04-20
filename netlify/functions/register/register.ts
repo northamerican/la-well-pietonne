@@ -6,12 +6,6 @@ export const handler: Handler = async ({ body }) => {
   
   try {
     const { email, lang = 'fr' } = JSON.parse(body)
-
-    console.log(process.version)
-    console.log({ fetch })
-    console.log({ email, lang })
-    console.log({ translations })
-    console.log('t', translations[lang].petitionUrl)
     
     const montrealRegistration = 'https://api.montreal.ca/api/it-platforms/security/v1/tickets/registration'
     const data = {

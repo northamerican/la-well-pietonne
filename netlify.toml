@@ -6,5 +6,5 @@
 
 [functions]
   node_bundler = "esbuild"
-  external_node_modules = ["astro", "esbuild", "http-status-codes"]
+  external_node_modules = ["esbuild", "http-status-codes"]
   included_files = ["astro.i18n.config.ts"]
