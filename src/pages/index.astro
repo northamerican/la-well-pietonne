@@ -37,8 +37,13 @@ const otherLangCodes = langCodes.filter(
       </div>
     </header>
 
+    <div id="progress-steps" class="narrow">
+      <h2>{t("stepsTitle")}</h2>
+      <ProgressSteps />
+    </div>
+
     <div id="petition-text" class="narrow">
-      <!-- <h2>{t('petitionTextHeading')}</h2> -->
+      <h2>{t("petitionTextHeading")}</h2>
       {langCode === "en" ? <PetitionTextEn /> : <PetitionTextFr />}
     </div>
 
@@ -51,11 +56,6 @@ const otherLangCodes = langCodes.filter(
       <VolunteerCta />
     </div> */
     }
-
-    <div id="progress-steps" class="narrow">
-      <h2>{t("stepsTitle")}</h2>
-      <ProgressSteps />
-    </div>
 
     <div id="inspiration-and-reading" class="narrow">
       <h2>{t("inspirationAndReading")}</h2>
@@ -134,6 +134,7 @@ const otherLangCodes = langCodes.filter(
   }
 
   #progress-steps {
+    margin-bottom: 3rem;
   }
 
   #petition-text {

@@ -37,7 +37,8 @@ const fr = {
   },
 
   petitionTextHeading: 'La texte du pétition',
-
+  
+  seeCta: 'Voir la pétition',
   signCta: 'Signer la pétition',
   signCtaSubtext: 'sur montreal.ca',
   signCtaRequirements: 'Résidents de Verdun âgé de 15 ans ou plus',
@@ -93,6 +94,7 @@ const en = {
 
   petitionTextHeading: 'Petition text',
 
+  seeCta: 'See the petition',
   signCta: 'Sign the petition',
   signCtaSubtext: 'on montreal.ca',
   signCtaRequirements: 'Must be a resident of Verdun age 15 or older',
