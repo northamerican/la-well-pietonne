@@ -1,7 +1,9 @@
 {
-  "name": "@example/basics",
-  "version": "0.0.1",
+  "name": "la-well-pietonne",
+  "version": "1.0.0",
   "private": true,
+  "description": "Website for La Well Piétonne. A public consultation and petition to pedestrianize Wellington street permanently.",
+  "license": "gabagool",
   "scripts": {
     "dev": "yarn i18n:sync && astro dev",
     "start": "astro dev",

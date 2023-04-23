@@ -3,10 +3,9 @@ import { translations } from '../../../astro.i18n.config'
 import { StatusCodes } from 'http-status-codes'
 
 export const handler: Handler = async ({ body }) => {
-  
   try {
     const { email, lang = 'fr' } = JSON.parse(body)
-    
+
     const montrealRegistration = 'https://api.montreal.ca/api/it-platforms/security/v1/tickets/registration'
     const data = {
       email,
