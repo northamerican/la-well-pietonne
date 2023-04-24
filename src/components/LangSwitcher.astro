@@ -6,14 +6,18 @@ const { otherLangCodes } = Astro.props;
 
 {
   otherLangCodes.map((langCode) => (
-    <a href={l("/", {}, langCode).replace("fr/", "")}>
+    <a
+      class="lang-choice"
+      href={l("/", {}, langCode).replace("fr/", "")}
+      lang={langCode}
+    >
       {t(`otherLangs.${langCode}`)}
     </a>
   ))
 }
 
 <style>
-  a {
+  a.lang-choice {
     font-weight: bold;
     color: white;
   }
