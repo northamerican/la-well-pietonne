@@ -55,6 +55,9 @@ const fr = {
 
   contactUs: 'Contactez-nous',
 
+  notFound: '404 : Introuvable',
+  goHome: 'Page d\'accueil',
+
   petitionUrl: 'https://montreal.ca/petitions/detail/6428dc4ac490e6ee4229c32a',
   petitionSignUrl: 'https://montreal.ca/petitions/signer/6428dc4ac490e6ee4229c32a',
 }
@@ -110,6 +113,9 @@ const en = {
   footerNoticeUnaffiliated: 'This site is not affiliated with ',
   
   contactUs: 'Contact us',
+
+  notFound: '404: Not Found',
+  goHome: 'Go home',
 
   petitionUrl: 'https://montreal.ca/en/petitions/details/6428dc4ac490e6ee4229c32a',
   petitionSignUrl: 'https://montreal.ca/en/petitions/sign/6428dc4ac490e6ee4229c32a',

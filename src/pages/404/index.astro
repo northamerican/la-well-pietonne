@@ -1,11 +1,30 @@
 ---
+import { astroI18n, t, l } from "astro-i18n";
 import Layout from "../../components/Layout.astro";
+
+astroI18n.init(Astro);
 ---
 
 <Layout title="404">
   <main>
     <img src="/img/404.jpg" />
+    <h2>{t("notFound")}</h2>
+    <a href={l("/")}>{t("goHome")}</a>
   </main>
 </Layout>
 
-<style></style>
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  img {
+    width: 100%;
+    max-width: 600px;
+  }
+</style>
