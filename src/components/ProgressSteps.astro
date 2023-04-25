@@ -6,22 +6,31 @@ const completedSteps = [1, 2];
 
 <div class="steps">
   {
-    [1, 2, 3, 4].map((step) => (
-      <div class="steps__step">
+    [1, 2, 3, 4].map((step) => {
+      const completed = completedSteps.includes(step);
+
+      return (
         <div
-          class:list={[
-            "steps__step-circle",
-            { "steps__step-circle--complete": completedSteps.includes(step) },
-          ]}
-        />
-        <div class="steps__step-text-container">
-          <div class="steps__step-text">{t(`steps.${step}.title`)}</div>
-          <small class="steps__step-subtext">
-            {t(`steps.${step}.subtitle`)}
-          </small>
+          class="steps__step"
+          aria-label={`${t("step")} ${step}, ${
+            completed ? t("completed") : ""
+          }`}
+        >
+          <div
+            class:list={[
+              "steps__step-circle",
+              { "steps__step-circle--complete": completed },
+            ]}
+          />
+          <div class="steps__step-text-container">
+            <div class="steps__step-text">{t(`steps.${step}.title`)}</div>
+            <small class="steps__step-subtext">
+              {t(`steps.${step}.subtitle`)}
+            </small>
+          </div>
         </div>
-      </div>
-    ))
+      );
+    })
   }
 
   <div class="steps__progress-container">

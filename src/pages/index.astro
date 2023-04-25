@@ -1,40 +1,24 @@
 ---
 import { astroI18n, t, l } from "astro-i18n";
 
-import Logo from "../components/Logo.astro";
 import Layout from "../components/Layout.astro";
 import ProgressSteps from "../components/ProgressSteps.astro";
 import PetitionTextFr from "../components/PetitionTextFr.md";
 import PetitionTextEn from "../components/PetitionTextEn.md";
-import PeaceSign from "../components/PeaceSign.astro";
 import SignCta from "../components/SignCta.astro";
-import VolunteerCta from "../components/VolunteerCta.astro";
-import LangSwitcher from "../components/LangSwitcher.astro";
 import InspirationAndReading from "../components/InspirationAndReading.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 
 astroI18n.init(Astro);
 
-const { defaultLangCode, supportedLangCodes, langCode } = astroI18n;
-const langCodes = [defaultLangCode, ...supportedLangCodes];
-const otherLangCodes = langCodes.filter(
-  (otherLangCode) => otherLangCode !== langCode
-);
+const { langCode } = astroI18n;
 ---
 
 <Layout title={t("siteName")}>
   <main>
     <header>
-      <div id="lang-switcher">
-        <LangSwitcher {otherLangCodes} />
-      </div>
-
-      <div id="logo">
-        <Logo />
-      </div>
-
-      <div id="header-description">
-        <h2>{t("headerDescription")}</h2>
-      </div>
+      <Header />
     </header>
 
     <div id="progress-steps" class="narrow">
@@ -57,35 +41,18 @@ const otherLangCodes = langCodes.filter(
     </div> */
     }
 
+    {
+      /*sponsors / supporters
+    ama verdun, businesses, orgs, online groups */
+    }
+
     <div id="inspiration-and-reading" class="narrow">
       <h2>{t("inspirationAndReading")}</h2>
       <InspirationAndReading />
     </div>
 
-    {
-      /* examples of ped streets in canada/america (above)
-
-    sponsors / supporters
-    ama verdun, businesses, orgs
-    youtube channels? */
-    }
-
-    {/* ostrich legs */}
-
     <footer>
-      <div id="peace-sign">
-        <PeaceSign />
-      </div>
-
-      <small>
-        {t("footerNoticeUnaffiliated")} SDC Wellington.
-      </small>
-
-      <small>
-        <a href="mailto:lawellpietonne@gmail.com"
-          ><strong>@</strong> {t("contactUs")}</a
-        >
-      </small>
+      <Footer />
     </footer>
   </main>
 </Layout>
@@ -100,7 +67,6 @@ const otherLangCodes = langCodes.filter(
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* max-width: 1180px; */
     color: white;
     padding-bottom: var(--header-padding);
     margin-bottom: 2rem;
@@ -109,30 +75,6 @@ const otherLangCodes = langCodes.filter(
     background-size: cover;
     background-position: center;
   }
-
-  #lang-switcher {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding: 0.25rem 0.5rem var(--header-padding);
-  }
-
-  #logo {
-    margin-bottom: 2rem;
-    filter: var(--header-text-drop-shadow);
-  }
-
-  #peace-sign {
-    display: block;
-    font-size: 2rem;
-  }
-
-  #header-description {
-    max-width: 30rem;
-    margin: 0 1.5rem;
-    filter: var(--header-text-drop-shadow);
-  }
-
   #progress-steps {
     margin-bottom: 3rem;
   }

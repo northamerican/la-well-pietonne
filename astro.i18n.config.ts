@@ -1,7 +1,6 @@
 import { defineAstroI18nConfig } from 'astro-i18n'
 
-// const siteUrl = 'https://lawellpietonne.com'
-const siteUrl = 'https://lawellpietonne.netlify.app'
+const siteUrl = 'https://lawellpietonne.com'
 
 const fr = {
   siteUrlBase: siteUrl,
@@ -13,9 +12,10 @@ const fr = {
     en: 'English'
   },
 
-  // headerDescription: 'Une consultation publique pour piétonniser la rue Wellington en permanence',
   headerDescription: 'Une initiative pour piétonniser la rue Wellington en permanence',
 
+  step: 'étape',
+  completed: 'complétée',
   stepsTitle: 'Progrès de l\'initiative',
   steps: {
     1: {
@@ -72,9 +72,10 @@ const en = {
     fr: 'Français'
   },
 
-  // headerDescription: 'A public consultation to make Wellington a pedestrian street permanently',
   headerDescription: 'An initiative to make Wellington a pedestrian street permanently',
 
+  step: 'step',
+  completed: 'completed',
   stepsTitle: 'Initiative progress',
   steps: {
     1: {

@@ -1,59 +1,57 @@
 ---
 import { astroI18n, t, l } from "astro-i18n";
+import InspirationAndReadingItem from "./InspirationAndReadingItem.astro";
 
 const isEnglish = astroI18n.langCode === "en";
+
+const articles = [
+  {
+    href: "https://vivreenville.org/nos-positions/chroniques/2020/ouvrir-les-rues.aspx",
+    lang: "fr",
+    title: "Ouvrir les rues",
+    source: "Vivre en Ville",
+  },
+  {
+    href: "https://collectivitesviables.org/articles/rues-pietonnes.aspx",
+    lang: "fr",
+    title: "Rues piétonnes",
+    source: "Vivre en Ville",
+  },
+  {
+    href: "https://www.mcgilltribune.com/opinion/more-pedestrianized-streets-please-270922/",
+    lang: "en",
+    title: "More pedestrianized streets, please",
+    source: "The Tribune, McGill University",
+  },
+];
 ---
 
-<div id="reading-links" class:list={{ reverse: isEnglish }}>
-  <!-- fr -->
-  <div>
-    <a
-      href="https://vivreenville.org/nos-positions/chroniques/2020/ouvrir-les-rues.aspx"
-      target="_blank"
-    >
-      Ouvrir les rues - <small>Vivre en Ville</small>
-    </a>
-
-    <a
-      href="https://collectivitesviables.org/articles/rues-pietonnes.aspx"
-      target="_blank"
-    >
-      Rues piétonnes - <small>Vivre en Ville</small>
-    </a>
-  </div>
-
-  <!-- en -->
-  <div>
-    <a
-      href="https://www.mcgilltribune.com/opinion/more-pedestrianized-streets-please-270922/"
-      target="_blank"
-    >
-      More pedestrianized streets, please - <small
-        >The Tribune, McGill University</small
-      >
-    </a>
-  </div>
+<div id="reading-links">
+  {
+    articles
+      .sort(({ lang: langA }, { lang: langB }) => {
+        return isEnglish
+          ? langA.localeCompare(langB)
+          : langB.localeCompare(langA);
+      })
+      .map((article) => <InspirationAndReadingItem {...article} />)
+  }
 </div>
+
+{
+  /* <div id="inspiration">
+  examples of ped streets in canada/america in cards with summary/history
+</div> */
+}
 
 <style>
   #reading-links {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  #reading-links.reverse {
-    flex-direction: column-reverse;
-  }
-
-  a {
-    display: block;
-    font-style: italic;
-    margin-bottom: 0.5rem;
-  }
-
-  a small {
-    font-style: normal;
-    white-space: pre;
+    gap: 1rem;
+    @media (min-width: 980px) {
+      gap: 0.5rem;
+    }
   }
 </style>

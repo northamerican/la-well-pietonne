@@ -1,0 +1,26 @@
+---
+import { t } from "astro-i18n";
+import PeaceSign from "./PeaceSign.astro";
+---
+
+<div id="peace-sign">
+  <PeaceSign />
+</div>
+
+<small>
+  {t("footerNoticeUnaffiliated")} SDC Wellington.
+</small>
+
+<small>
+  <a href="mailto:lawellpietonne@gmail.com">
+    <strong aria-hidden="true">@</strong>
+    {t("contactUs")}
+  </a>
+</small>
+
+<style>
+  #peace-sign {
+    display: block;
+    font-size: 2rem;
+  }
+</style>

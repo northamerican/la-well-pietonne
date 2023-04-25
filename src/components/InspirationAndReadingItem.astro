@@ -1,0 +1,19 @@
+---
+const { href, lang, title, source } = Astro.props;
+---
+
+<a href={href} target="_blank" lang={lang}>
+  {title} - <small>{source}</small>
+</a>
+
+<style>
+  a {
+    display: block;
+    font-style: italic;
+  }
+
+  a small {
+    font-style: normal;
+    white-space: pre;
+  }
+</style>
