@@ -19,18 +19,22 @@ const fr = {
   stepsTitle: 'Progrès de l\'initiative',
   steps: {
     1: {
+      date: 'Avril',
       title: 'Projet de pétition',
       subtitle: 'Signée par 25 résidents'
     },
     2: {
+      date: '24 Avril',
       title: 'Texte approuvé',
       subtitle: 'par l\'arrondissement de Verdun'
     },
     3: {
+      date: '8 Mai à 6 Août',
       title: 'Période de signatures',
-      subtitle: '90 jours - 3031 signatures'
+      subtitle: '3031 signatures requises'
     },
     4: {
+      date: 'Fin 2023',
       title: 'Consultation publique',
       subtitle: 'avec les résidents de Verdun'
     }
@@ -83,18 +87,22 @@ const en = {
   stepsTitle: 'Initiative progress',
   steps: {
     1: {
+      date: 'April',
       title: 'Petition draft',
       subtitle: 'Signed by 25 residents'
     },
     2: {
+      date: 'April 24',
       title: 'Petition text approved',
       subtitle: 'by the borough of Verdun'
     },
     3: {
+      date: 'May 8 - August 6',
       title: 'Signature period',
-      subtitle: '90 days - 3031 signatures'
+      subtitle: '3031 signatures needed'
     },
     4: {
+      date: 'Late 2023',
       title: 'Public consultation',
       subtitle: 'with residents of Verdun'
     }

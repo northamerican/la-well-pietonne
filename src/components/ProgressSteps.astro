@@ -16,6 +16,9 @@ const completedSteps = [1, 2];
             completed ? t("completed") : ""
           }`}
         >
+          <div class="steps__step-date-container">
+            <div class="steps__step-date">{t(`steps.${step}.date`)}</div>
+          </div>
           <div
             class:list={[
               "steps__step-circle",
@@ -44,6 +47,9 @@ const completedSteps = [1, 2];
     --step-circle-color: var(--success-color);
     --step-bg-color: #d0d0d0;
 
+    --date-container-width: 200px;
+    --mobile-step-gap: 0.5rem;
+
     --progress-pct: calc(100% * 0.33);
   }
 
@@ -64,12 +70,30 @@ const completedSteps = [1, 2];
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--mobile-step-gap);
 
     @media (min-width: 980px) {
       flex-direction: column;
       width: var(--step-circle-size);
       gap: 0.25rem;
+    }
+  }
+
+  .steps__step-date-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: var(--date-container-width);
+    height: 1rem;
+    @media (min-width: 980px) {
+      justify-content: flex-end;
+    }
+  }
+
+  .steps__step-date {
+    text-align: right;
+    @media (min-width: 980px) {
+      text-align: center;
     }
   }
 
@@ -111,13 +135,13 @@ const completedSteps = [1, 2];
     height: var(--progress);
     position: absolute;
     top: var(--step-circle-size);
-    left: 17px;
+    left: calc(var(--date-container-width) + var(--mobile-step-gap) + 17px);
     background-color: var(--step-bg-color);
     z-index: -1;
     @media (min-width: 980px) {
       width: var(--progress);
       height: 5px;
-      top: 17px;
+      top: calc(1rem + 17px + 5px);
       left: var(--step-circle-size);
     }
   }
