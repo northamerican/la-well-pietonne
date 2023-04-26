@@ -1,5 +1,7 @@
 ---
-import { t } from "astro-i18n";
+import { astroI18n, t } from "astro-i18n";
+
+const lang = astroI18n.langCode;
 ---
 
 <form>
@@ -14,15 +16,11 @@ import { t } from "astro-i18n";
   <small class="error hidden">{t("formError")}</small>
 </form>
 
-<script>
+<script define:vars={{ lang }}>
   const $form = document.querySelector("form");
-  const $email = document.querySelector(
-    'input[name="email"]'
-  ) as HTMLInputElement;
-  const $getInvolved = document.querySelector(
-    'input[name="get_involved"]'
-  ) as HTMLInputElement;
-  const $subscribe = document.querySelector(".subscribe") as HTMLButtonElement;
+  const $email = document.querySelector('input[name="email"]');
+  const $getInvolved = document.querySelector('input[name="get_involved"]');
+  const $subscribe = document.querySelector(".subscribe");
   const $subscribed = document.querySelector(".subscribed");
   const $error = document.querySelector(".error");
 
@@ -43,7 +41,10 @@ import { t } from "astro-i18n";
         "/.netlify/functions/simple-subscribe",
         {
           method: "POST",
-          body: JSON.stringify({ email, fields: { get_involved } }),
+          body: JSON.stringify({
+            email,
+            fields: { get_involved, lang },
+          }),
         }
       );
 
