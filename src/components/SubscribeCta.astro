@@ -1,0 +1,83 @@
+---
+import { t } from "astro-i18n";
+---
+
+<form>
+  <input type="email" name="email" placeholder={t("email")} required />
+  <label
+    ><input type="checkbox" name="get_involved" /><small
+      >{t("getInvolved")}</small
+    ></label
+  >
+  <button class="button subscribe" type="submit">{t("subscribe")}</button>
+  <button class="button subscribed hidden" disabled>{t("subscribed")}</button>
+  <small class="error hidden">{t("formError")}</small>
+</form>
+
+<script>
+  const $form = document.querySelector("form");
+  const $email = document.querySelector(
+    'input[name="email"]'
+  ) as HTMLInputElement;
+  const $getInvolved = document.querySelector(
+    'input[name="get_involved"]'
+  ) as HTMLInputElement;
+  const $subscribe = document.querySelector(".subscribe") as HTMLButtonElement;
+  const $subscribed = document.querySelector(".subscribed");
+  const $error = document.querySelector(".error");
+
+  $form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    try {
+      const formData = new FormData($form);
+      const formProps = Object.fromEntries(formData);
+
+      const { email, get_involved } = formProps;
+
+      $email.disabled = true;
+      $getInvolved.disabled = true;
+      $subscribe.disabled = true;
+
+      const fetchResponse = await fetch(
+        "/.netlify/functions/simple-subscribe",
+        {
+          method: "POST",
+          body: JSON.stringify({ email, fields: { get_involved } }),
+        }
+      );
+
+      await fetchResponse.json();
+
+      $subscribe.classList.add("hidden");
+      $subscribed.classList.remove("hidden");
+    } catch {
+      $email.disabled = false;
+      $getInvolved.disabled = false;
+      $subscribe.disabled = false;
+      $error.classList.remove("hidden");
+    }
+  });
+</script>
+
+<style>
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hidden {
+    display: none !important;
+  }
+
+  label {
+    margin-top: 0.25rem;
+  }
+
+  input[name="email"] {
+    width: 260px;
+  }
+  button {
+    margin: 0.75rem 0;
+  }
+</style>

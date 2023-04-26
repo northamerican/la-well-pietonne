@@ -46,8 +46,12 @@ const fr = {
   email: 'Courriel',
   optional: 'facultatif',
 
-  volunteerCta: 'Bénévole',
-  volunteerCtaSubtext: 'pour la collecte de signatures',
+  stayConnected: 'Restez connecté·e',
+  getInvolved: 'Je suis également intéressé·e par le bénévolat ou la collecte de signatures',
+  subscribe: 'S\'abonner',
+  subscribeSubtext: '',
+  subscribed: 'Merci!',
+  formError: 'Vous n\'étiez pas abonné·e en raison d\'une erreur.',
 
   inspirationAndReading: 'Inspiration et lecture',
 
@@ -106,8 +110,12 @@ const en = {
   email: 'E-mail',
   optional: 'optional',
 
-  volunteerCta: 'Volunteer',
-  volunteerCtaSubtext: 'for signature collection',
+  stayConnected: 'Stay connected',
+  getInvolved: 'I\'m also interested in volunteering or gathering signatures',
+  subscribe: 'Subscribe',
+  subscribeSubtext: '',
+  subscribed: 'Thanks!',
+  formError: 'You could not be subscribed due to an error.',
 
   inspirationAndReading: 'Inspiration and reading',
   

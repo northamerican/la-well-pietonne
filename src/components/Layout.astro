@@ -51,9 +51,12 @@ const { title } = Astro.props as Props;
 
     --mobile: 980px;
 
+    --border-color: #767676;
     --success-color: #0da566;
     --la-well-green: #097d6c;
     --la-well-green-lighter: #0cb097;
+
+    accent-color: var(--la-well-green);
   }
 
   *,
@@ -81,10 +84,21 @@ const { title } = Astro.props as Props;
   input {
     font-family: var(--main-family);
     color: var(--color-text);
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    font-size: 1rem;
+    padding: 0.25rem;
     appearance: none;
-    border: 1px #d0d0d0 solid;
+    border: 1px var(--border-color) solid;
     border-radius: 3px;
   }
+
+  input[type="checkbox"] {
+    margin-left: 0;
+  }
+
   code {
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
       DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
@@ -98,15 +112,22 @@ const { title } = Astro.props as Props;
   a:hover {
     text-decoration: underline;
   }
+
   .button {
     display: block;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1.5rem;
     background-color: var(--la-well-green);
     color: var(--color-bg);
     text-decoration: none;
     border-radius: 10rem;
+    border: none;
   }
-  .button:hover {
+
+  .button[disabled] {
+    background-color: transparent;
+    color: var(--color-text);
+  }
+  .button:not([disabled]):hover {
     background-color: var(--la-well-green-lighter);
   }
 </style>

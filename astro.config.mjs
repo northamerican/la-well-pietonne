@@ -6,5 +6,7 @@ import netlify from '@astrojs/netlify/functions'
 export default defineConfig({
   integrations: [i18n()],
   output: 'server',
-  adapter: netlify()
+  adapter: netlify({
+    dist: new URL('./dist/', import.meta.url)
+  })
 })
