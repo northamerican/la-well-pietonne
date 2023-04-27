@@ -130,4 +130,15 @@ const { title } = Astro.props as Props;
   .button:not([disabled]):hover {
     background-color: var(--la-well-green-lighter);
   }
+
+  .narrow {
+    max-width: auto;
+    margin: 1rem;
+    @media (min-width: 980px) {
+      max-width: 864px;
+      margin: 1rem auto;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
 </style>

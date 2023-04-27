@@ -47,7 +47,7 @@ const completedSteps = [1, 2];
     --step-circle-color: var(--success-color);
     --step-bg-color: #d0d0d0;
 
-    --date-container-width: 200px;
+    --date-container-width: 135px;
     --mobile-step-gap: 0.5rem;
 
     --progress-pct: calc(100% * 0.33);
@@ -84,9 +84,13 @@ const completedSteps = [1, 2];
     flex-direction: column;
     justify-content: center;
     width: var(--date-container-width);
+    min-width: var(--date-container-width);
     height: 1rem;
     @media (min-width: 980px) {
       justify-content: flex-end;
+      width: auto;
+      min-width: auto;
+      white-space: pre;
     }
   }
 
@@ -100,6 +104,9 @@ const completedSteps = [1, 2];
   .steps__step-circle {
     width: var(--step-circle-size);
     height: var(--step-circle-size);
+    min-width: var(--step-circle-size);
+    min-height: var(--step-circle-size);
+
     border: 5px solid var(--step-bg-color);
     border-radius: 40px;
     background: var(--color-bg);
