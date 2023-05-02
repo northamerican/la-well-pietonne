@@ -5,7 +5,6 @@ import Layout from "../components/Layout.astro";
 import ProgressSteps from "../components/ProgressSteps.astro";
 import PetitionTextFr from "../components/PetitionTextFr.md";
 import PetitionTextEn from "../components/PetitionTextEn.md";
-import SignCta from "../components/SignCta.astro";
 import InspirationAndReading from "../components/InspirationAndReading.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
@@ -22,23 +21,40 @@ const { langCode } = astroI18n;
       <Header />
     </header>
 
-    <div id="progress-steps" class="narrow">
+    <div class="section">
+      <h2>{t("howtoSignHeading")}</h2>
+
+      <p>
+        {t("howtoSign")}
+      </p>
+      <p>
+        {t("followUsOn")}
+        <a href="https://www.instagram.com/lawellpietonne/" target="_blank"
+          >Instagram</a
+        >
+        {t("and")}
+        <a href="https://www.facebook.com/lawellpietonne" target="_blank"
+          >Facebook</a
+        >.
+      </p>
+      <!-- <p>You can sign the petition at one of these supporting businesses:</p> -->
+    </div>
+
+    <div id="progress-steps" class="section">
       <h2>{t("stepsTitle")}</h2>
       <ProgressSteps />
     </div>
 
-    <div id="petition-text" class="narrow">
+    <div id="petition-text" class="section">
       <h2>{t("petitionTextHeading")}</h2>
       {langCode === "en" ? <PetitionTextEn /> : <PetitionTextFr />}
+
+      <a href={t("petitionUrl")} target="_blank">
+        <span>{t("seeCta")} {t("signCtaSubtext")}</span><br />
+      </a>
     </div>
 
-    {
-      /* <div id="sign-cta" class="cta">
-      <SignCta />
-    </div> */
-    }
-
-    <div id="subscribe-cta" class="narrow">
+    <div id="subscribe-cta" class="section">
       <h2>{t("stayConnected")}</h2>
       <SubscribeCta />
     </div>
@@ -48,7 +64,7 @@ const { langCode } = astroI18n;
     ama verdun, businesses, orgs, online groups */
     }
 
-    <div id="inspiration-and-reading" class="narrow">
+    <div id="inspiration-and-reading" class="section">
       <h2>{t("inspirationAndReading")}</h2>
       <InspirationAndReading />
     </div>
@@ -77,12 +93,19 @@ const { langCode } = astroI18n;
     background-size: cover;
     background-position: center;
   }
+
+  .section > h2 {
+    margin-top: 0;
+  }
   #progress-steps {
-    margin-bottom: 3rem;
   }
 
   #petition-text {
     line-height: 1.6;
+  }
+
+  .petition-button-container {
+    display: flex;
   }
 
   #inspiration-and-reading {

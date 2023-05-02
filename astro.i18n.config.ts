@@ -14,6 +14,11 @@ const fr = {
 
   headerDescription: 'Une initiative pour piétonniser la rue Wellington en permanence',
 
+  howtoSignHeading: 'Comment signer', 
+  howtoSign: 'Residents de Verdun peuvent signer la pétition pour demander une consultation publique auprès de l\'arrondissement.',
+  followUsOn: 'Suivez-nous sur',
+  and: 'et',
+
   step: 'étape',
   completed: 'complétée',
   stepsTitle: 'Progrès de l\'initiative',
@@ -82,6 +87,11 @@ const en = {
 
   headerDescription: 'An initiative to make Wellington a pedestrian street permanently',
 
+  howtoSignHeading: 'How to sign the petition', 
+  howtoSign: 'Residents of Verdun can sign the petition to order a public consultation with the borough.',
+  followUsOn: 'Follow us on',
+  and: 'and',
+
   step: 'step',
   completed: 'completed',
   stepsTitle: 'Initiative progress',
@@ -110,7 +120,7 @@ const en = {
 
   petitionTextHeading: 'Petition text',
 
-  seeCta: 'See the petition',
+  seeCta: 'See full petition',
   signCta: 'Sign the petition',
   signCtaSubtext: 'on montreal.ca',
   signCtaRequirements: 'Must be a resident of Verdun age 15 or older',

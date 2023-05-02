@@ -114,8 +114,11 @@ const { title } = Astro.props as Props;
   }
 
   .button {
-    display: block;
+    font-family: var(--main-family);
+    display: inline-block;
     padding: 0.5rem 1.5rem;
+    line-height: 1.2;
+    text-align: center;
     background-color: var(--la-well-green);
     color: var(--color-bg);
     text-decoration: none;
@@ -131,12 +134,12 @@ const { title } = Astro.props as Props;
     background-color: var(--la-well-green-lighter);
   }
 
-  .narrow {
+  .section {
     max-width: auto;
     margin: 1rem;
     @media (min-width: 980px) {
       max-width: 864px;
-      margin: 1rem auto;
+      margin: 3rem auto 2rem;
       flex-direction: row;
       justify-content: space-between;
     }
