@@ -15,7 +15,7 @@ const fr = {
   headerDescription: 'Une initiative pour piétonniser la rue Wellington en permanence',
 
   howtoSignHeading: 'Comment signer', 
-  howtoSign: 'Residents de Verdun peuvent signer la pétition pour demander une consultation publique auprès de l\'arrondissement.',
+  howtoSign: 'Les résidents de Verdun peuvent signer la pétition pour demander une consultation publique auprès de l\'arrondissement.',
   followUsOn: 'Suivez-nous sur',
   and: 'et',
 
