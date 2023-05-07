@@ -16,7 +16,7 @@ const fr = {
 
   howtoSignHeading: 'Comment signer', 
   howtoSign: 'Les résidents de Verdun peuvent signer la pétition pour demander une consultation publique auprès de l\'arrondissement.',
-  followUsOn: 'Suivez-nous sur',
+  followUsOn: 'Restez à l\'écoute et suivez-nous sur',
   and: 'et',
 
   step: 'étape',
@@ -24,18 +24,18 @@ const fr = {
   stepsTitle: 'Progrès de l\'initiative',
   steps: {
     1: {
-      date: 'Avril',
-      title: 'Projet de pétition',
-      subtitle: 'Signée par 25 résidents'
-    },
-    2: {
-      date: '24 Avril',
-      title: 'Texte approuvé',
+      date: '24 avril',
+      title: 'Pétition approuvé',
       subtitle: 'par l\'arrondissement de Verdun'
     },
+    2: {
+      date: '10 mai',
+      title: 'Début de la période de signatures',
+      subtitle: ''
+    },
     3: {
-      date: '8 Mai à 6 Août',
-      title: 'Période de signatures',
+      date: '6 août',
+      title: 'Fin de la période de signatures',
       subtitle: '3031 signatures requises'
     },
     4: {
@@ -89,7 +89,7 @@ const en = {
 
   howtoSignHeading: 'How to sign the petition', 
   howtoSign: 'Residents of Verdun can sign the petition to order a public consultation with the borough.',
-  followUsOn: 'Follow us on',
+  followUsOn: 'Stay tuned and follow us on',
   and: 'and',
 
   step: 'step',
@@ -97,18 +97,18 @@ const en = {
   stepsTitle: 'Initiative progress',
   steps: {
     1: {
-      date: 'April',
-      title: 'Petition draft',
-      subtitle: 'Signed by 25 residents'
-    },
-    2: {
       date: 'April 24',
-      title: 'Petition text approved',
+      title: 'Petition approved',
       subtitle: 'by the borough of Verdun'
     },
+    2: {
+      date: 'May 10',
+      title: 'Signature period beings',
+      subtitle: ' '
+    },
     3: {
-      date: 'May 8 - August 6',
-      title: 'Signature period',
+      date: 'August 6',
+      title: 'Signature period ends',
       subtitle: '3031 signatures needed'
     },
     4: {

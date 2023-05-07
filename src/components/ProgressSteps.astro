@@ -1,7 +1,7 @@
 ---
 import { astroI18n, t } from "astro-i18n";
 
-const completedSteps = [1, 2];
+const completedSteps = [1];
 ---
 
 <div class="steps">
@@ -24,7 +24,21 @@ const completedSteps = [1, 2];
               "steps__step-circle",
               { "steps__step-circle--complete": completed },
             ]}
-          />
+          >
+            <svg
+              aria-hidden="true"
+              class="steps__step-circle_check"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              viewBox="0 0 17.837 17.837"
+              xml:space="preserve"
+            >
+              <g>
+                <path d="M16.145,2.571c-0.272-0.273-0.718-0.273-0.99,0L6.92,10.804l-4.241-4.27   c-0.272-0.274-0.715-0.274-0.989,0L0.204,8.019c-0.272,0.271-0.272,0.717,0,0.99l6.217,6.258c0.272,0.271,0.715,0.271,0.99,0   L17.63,5.047c0.276-0.273,0.276-0.72,0-0.994L16.145,2.571z" />
+              </g>
+            </svg>
+          </div>
           <div class="steps__step-text-container">
             <div class="steps__step-text">{t(`steps.${step}.title`)}</div>
             <small class="steps__step-subtext">
@@ -50,7 +64,7 @@ const completedSteps = [1, 2];
     --date-container-width: 135px;
     --mobile-step-gap: 0.5rem;
 
-    --progress-pct: calc(100% * 0.5);
+    --progress-pct: calc(100% * 0.33);
   }
 
   .steps {
@@ -60,7 +74,9 @@ const completedSteps = [1, 2];
     justify-content: center;
     align-items: flex-start;
     gap: 3rem;
-    @media (min-width: 980px) {
+  }
+  @media (min-width: 980px) {
+    .steps {
       flex-direction: row;
       justify-content: space-between;
     }
@@ -71,8 +87,9 @@ const completedSteps = [1, 2];
     flex-direction: row;
     align-items: center;
     gap: var(--mobile-step-gap);
-
-    @media (min-width: 980px) {
+  }
+  @media (min-width: 980px) {
+    .steps__step {
       flex-direction: column;
       width: var(--step-circle-size);
       gap: 0.25rem;
@@ -86,7 +103,9 @@ const completedSteps = [1, 2];
     width: var(--date-container-width);
     min-width: var(--date-container-width);
     height: 1rem;
-    @media (min-width: 980px) {
+  }
+  @media (min-width: 980px) {
+    .steps__step-date-container {
       justify-content: flex-end;
       width: auto;
       min-width: auto;
@@ -96,7 +115,9 @@ const completedSteps = [1, 2];
 
   .steps__step-date {
     text-align: right;
-    @media (min-width: 980px) {
+  }
+  @media (min-width: 980px) {
+    .steps__step-date {
       text-align: center;
     }
   }
@@ -107,9 +128,20 @@ const completedSteps = [1, 2];
     min-width: var(--step-circle-size);
     min-height: var(--step-circle-size);
 
+    display: flex;
+    justify-content: center;
     border: 5px solid var(--step-bg-color);
     border-radius: 40px;
     background: var(--color-bg);
+  }
+
+  .steps__step-circle_check {
+    margin-top: 1px;
+    width: 25px;
+  }
+
+  .steps__step-circle_check path {
+    fill: var(--color-bg);
   }
 
   .steps__step-circle--complete {
@@ -121,7 +153,9 @@ const completedSteps = [1, 2];
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    @media (min-width: 980px) {
+  }
+  @media (min-width: 980px) {
+    .steps__step-text-container {
       justify-content: center;
       width: 200px;
     }
@@ -130,7 +164,10 @@ const completedSteps = [1, 2];
   .steps__step-text,
   .steps__step-subtext {
     text-align: left;
-    @media (min-width: 980px) {
+  }
+  @media (min-width: 980px) {
+    .steps__step-text,
+    .steps__step-subtext {
       text-align: center;
     }
   }
@@ -145,7 +182,9 @@ const completedSteps = [1, 2];
     left: calc(var(--date-container-width) + var(--mobile-step-gap) + 17px);
     background-color: var(--step-bg-color);
     z-index: -1;
-    @media (min-width: 980px) {
+  }
+  @media (min-width: 980px) {
+    .steps__progress-container {
       width: var(--progress);
       height: 5px;
       top: calc(1rem + 17px + 5px);
@@ -158,7 +197,9 @@ const completedSteps = [1, 2];
     height: var(--progress-pct);
     background-color: var(--step-circle-color);
     position: absolute;
-    @media (min-width: 980px) {
+  }
+  @media (min-width: 980px) {
+    .steps__progress {
       width: var(--progress-pct);
       height: 100%;
     }
