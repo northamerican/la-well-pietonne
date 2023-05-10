@@ -38,7 +38,7 @@ const { title } = Astro.props as Props;
 </html>
 
 <style is:global>
-  @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,700;1,400&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,550;0,700;1,400&display=swap");
 
   :root {
     --main-family: "Urbanist", sans-serif;
@@ -81,6 +81,10 @@ const { title } = Astro.props as Props;
     font-size: var(--font-size-lg);
   }
 
+  h3 {
+    font-weight: 550;
+  }
+
   input {
     font-family: var(--main-family);
     color: var(--color-text);
@@ -111,6 +115,11 @@ const { title } = Astro.props as Props;
 
   a:hover {
     text-decoration: underline;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 0;
   }
 
   .button {

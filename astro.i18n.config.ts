@@ -14,10 +14,10 @@ const fr = {
 
   headerDescription: 'Une initiative pour piétonniser la rue Wellington en permanence',
 
-  howtoSignHeading: 'Comment signer', 
-  howtoSign: 'Les résidents de Verdun peuvent signer la pétition pour demander une consultation publique auprès de l\'arrondissement.',
-  followUsOn: 'Restez à l\'écoute et suivez-nous sur',
-  and: 'et',
+  howToSignHeading: 'Comment signer', 
+  howToSign: 'Les résidents de Verdun peuvent signer la pétition pour demander une consultation publique auprès de l\'arrondissement.',
+  atASupportingBusiness: 'Chez un commerce participant',
+  onTheStreet: 'Dans la rue',
 
   step: 'étape',
   completed: 'complétée',
@@ -31,10 +31,10 @@ const fr = {
     2: {
       date: '10 mai',
       title: 'Début de la période de signatures',
-      subtitle: ''
+      subtitle: '90 jours'
     },
     3: {
-      date: '6 août',
+      date: '8 août',
       title: 'Fin de la période de signatures',
       subtitle: '3031 signatures requises'
     },
@@ -56,11 +56,15 @@ const fr = {
   optional: 'facultatif',
 
   stayConnected: 'Restez connecté·e',
+  byEmail: 'Par courriel',
+  onSocialMedia: 'Sur les réseaux sociaux',
   getInvolved: 'Je suis également intéressé·e par le bénévolat ou la collecte de signatures',
   subscribe: 'S\'abonner',
   subscribeSubtext: '',
   subscribed: 'Merci!',
   formError: 'Vous n\'étiez pas abonné·e en raison d\'une erreur.',
+  followUsOn: 'Suivez-nous sur',
+  and: 'et',
 
   inspirationAndReading: 'Inspiration et lecture',
 
@@ -87,10 +91,10 @@ const en = {
 
   headerDescription: 'An initiative to make Wellington a pedestrian street permanently',
 
-  howtoSignHeading: 'How to sign the petition', 
-  howtoSign: 'Residents of Verdun can sign the petition to order a public consultation with the borough.',
-  followUsOn: 'Stay tuned and follow us on',
-  and: 'and',
+  howToSignHeading: 'How to sign the petition', 
+  howToSign: 'Residents of Verdun can sign the petition to order a public consultation with the borough.',
+  atASupportingBusiness: 'At a supporting businesses',
+  onTheStreet: 'On the street',
 
   step: 'step',
   completed: 'completed',
@@ -104,10 +108,10 @@ const en = {
     2: {
       date: 'May 10',
       title: 'Signature period beings',
-      subtitle: ' '
+      subtitle: '90 days'
     },
     3: {
-      date: 'August 6',
+      date: 'August 8',
       title: 'Signature period ends',
       subtitle: '3031 signatures needed'
     },
@@ -120,7 +124,7 @@ const en = {
 
   petitionTextHeading: 'Petition text',
 
-  seeCta: 'See full petition',
+  seeCta: 'See petition',
   signCta: 'Sign the petition',
   signCtaSubtext: 'on montreal.ca',
   signCtaRequirements: 'Must be a resident of Verdun age 15 or older',
@@ -129,11 +133,15 @@ const en = {
   optional: 'optional',
 
   stayConnected: 'Stay connected',
+  byEmail: 'By e-mail',
+  onSocialMedia: 'On social media',
   getInvolved: 'I\'m also interested in volunteering or gathering signatures',
   subscribe: 'Subscribe',
   subscribeSubtext: '',
   subscribed: 'Thanks!',
   formError: 'You could not be subscribed due to an error.',
+  followUsOn: 'Follow us on',
+  and: 'and',
 
   inspirationAndReading: 'Inspiration and reading',
   

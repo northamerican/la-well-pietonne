@@ -4,6 +4,7 @@ import { astroI18n, t } from "astro-i18n";
 const lang = astroI18n.langCode;
 ---
 
+<h3>{t("byEmail")}</h3>
 <form>
   <input type="email" name="email" placeholder={t("email")} required />
   <label
@@ -15,6 +16,17 @@ const lang = astroI18n.langCode;
   <button class="button subscribed hidden" disabled>{t("subscribed")}</button>
   <small class="error hidden">{t("formError")}</small>
 </form>
+
+<h3>{t("onSocialMedia")}</h3>
+<p>
+  {t("followUsOn")}
+  <a href="https://www.instagram.com/lawellpietonne/" target="_blank"
+    >Instagram</a
+  >
+  {t("and")}
+  <a href="https://www.facebook.com/lawellpietonne" target="_blank">Facebook</a
+  >.
+</p>
 
 <script define:vars={{ lang }}>
   const $form = document.querySelector("form");

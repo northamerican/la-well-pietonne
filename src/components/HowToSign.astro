@@ -1,0 +1,29 @@
+---
+import { t } from "astro-i18n";
+import HowToSignItem from "./HowToSignItem.astro";
+
+const locations = [
+  {
+    name: "Chez Robin marche local",
+    href: "https://goo.gl/maps/2kjX6xBsVRTXp5vL6",
+    address: "3819 Rue Wellington",
+  },
+];
+---
+
+<p>
+  {t("howToSign")}
+</p>
+<p>
+  <h3>{t("atASupportingBusiness")}</h3>
+  <ul>
+    {locations.map((location) => <HowToSignItem {...location} />)}
+  </ul>
+  <!-- <h3>{t("onTheStreet")}</h3> -->
+</p>
+
+<style>
+  li {
+    padding-left: 0;
+  }
+</style>

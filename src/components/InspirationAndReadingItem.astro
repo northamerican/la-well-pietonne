@@ -2,11 +2,16 @@
 const { href, lang, title, source } = Astro.props;
 ---
 
-<a href={href} target="_blank" lang={lang}>
-  {title} - <small>{source}</small>
-</a>
+<li>
+  <a href={href} target="_blank" lang={lang}>
+    {title} - <small>{source}</small>
+  </a>
+</li>
 
 <style>
+  li {
+    list-style: none;
+  }
   a {
     display: block;
     font-style: italic;

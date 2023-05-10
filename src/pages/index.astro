@@ -8,7 +8,8 @@ import PetitionTextEn from "../components/PetitionTextEn.md";
 import InspirationAndReading from "../components/InspirationAndReading.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
-import SubscribeCta from "../components/SubscribeCta.astro";
+import StayConnected from "../components/StayConnected.astro";
+import HowToSign from "../components/HowToSign.astro";
 
 astroI18n.init(Astro);
 
@@ -22,22 +23,8 @@ const { langCode } = astroI18n;
     </header>
 
     <div class="section">
-      <h2>{t("howtoSignHeading")}</h2>
-
-      <p>
-        {t("howtoSign")}
-      </p>
-      <p>
-        {t("followUsOn")}
-        <a href="https://www.instagram.com/lawellpietonne/" target="_blank"
-          >Instagram</a
-        >
-        {t("and")}
-        <a href="https://www.facebook.com/lawellpietonne" target="_blank"
-          >Facebook</a
-        >.
-      </p>
-      <!-- <p>You can sign the petition at one of these supporting businesses:</p> -->
+      <h2>{t("howToSignHeading")}</h2>
+      <HowToSign />
     </div>
 
     <div id="progress-steps" class="section">
@@ -54,15 +41,10 @@ const { langCode } = astroI18n;
       </a>
     </div>
 
-    <div id="subscribe-cta" class="section">
+    <div id="stay-connected" class="section">
       <h2>{t("stayConnected")}</h2>
-      <SubscribeCta />
+      <StayConnected />
     </div>
-
-    {
-      /*sponsors / supporters
-    ama verdun, businesses, orgs, online groups */
-    }
 
     <div id="inspiration-and-reading" class="section">
       <h2>{t("inspirationAndReading")}</h2>
