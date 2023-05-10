@@ -107,7 +107,7 @@ const en = {
     },
     2: {
       date: 'May 10',
-      title: 'Signature period beings',
+      title: 'Signature period begins',
       subtitle: '90 days'
     },
     3: {
