@@ -5,7 +5,8 @@ const { href, name, address } = Astro.props;
 ---
 
 <li>
-  <a href={href} target="_blank">{name} - <small>{address}</small></a>
+  <a href={href} target="_blank">{name}</a><br />
+  <address>{address}</address>
 </li>
 
 <style>

@@ -93,7 +93,7 @@ const en = {
 
   howToSignHeading: 'How to sign the petition', 
   howToSign: 'Residents of Verdun can sign the petition to order a public consultation with the borough.',
-  atASupportingBusiness: 'At a supporting businesses',
+  atASupportingBusiness: 'At a supporting business',
   onTheStreet: 'On the street',
 
   step: 'step',

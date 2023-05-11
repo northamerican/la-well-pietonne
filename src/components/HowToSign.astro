@@ -1,12 +1,29 @@
 ---
 import { t } from "astro-i18n";
-import HowToSignItem from "./HowToSignItem.astro";
+import HowToSignLocationItem from "./HowToSignLocationItem.astro";
+import HowToSignEventItem from "./HowToSignEventItem.astro";
 
 const locations = [
   {
-    name: "Chez Robin marche local",
+    name: "Chez Robin marché local",
     href: "https://goo.gl/maps/2kjX6xBsVRTXp5vL6",
     address: "3819 Rue Wellington",
+  },
+];
+
+const events = [
+  {
+    lang: {
+      fr: {
+        name: "Coin de l'Église et Wellington",
+      },
+      en: {
+        name: "Corner of de l'Église and Wellington",
+      },
+    },
+    href: "https://www.instagram.com/p/CsE1o9ivkON/",
+    dateStart: new Date("2023-05-13T13:00:00-04:00"),
+    dateEnd: new Date("2023-05-13T17:00:00-04:00"),
   },
 ];
 ---
@@ -14,13 +31,15 @@ const locations = [
 <p>
   {t("howToSign")}
 </p>
-<p>
-  <h3>{t("atASupportingBusiness")}</h3>
-  <ul>
-    {locations.map((location) => <HowToSignItem {...location} />)}
-  </ul>
-  <!-- <h3>{t("onTheStreet")}</h3> -->
-</p>
+<h3>{t("atASupportingBusiness")}</h3>
+
+<ul>
+  {locations.map((location) => <HowToSignLocationItem {...location} />)}
+</ul>
+<h3>{t("onTheStreet")}</h3>
+<ul>
+  {events.map((location) => <HowToSignEventItem {...location} />)}
+</ul>
 
 <style>
   li {
