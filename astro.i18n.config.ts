@@ -34,7 +34,7 @@ const fr = {
       subtitle: '90 jours'
     },
     3: {
-      date: '8 août',
+      date: '7 août',
       title: 'Fin de la période de signatures',
       subtitle: '3031 signatures requises'
     },
@@ -111,7 +111,7 @@ const en = {
       subtitle: '90 days'
     },
     3: {
-      date: 'August 8',
+      date: 'August 7',
       title: 'Signature period ends',
       subtitle: '3031 signatures needed'
     },
