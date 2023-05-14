@@ -8,15 +8,14 @@ const { href, lang, location, dateStart, dateEnd } = Astro.props;
 <li>
   <a href={href} target="_blank">{lang[langCode].name}</a><br />
   <span>{location}</span>
-  <span>1pm-5pm / 13h-17h</span>
   <span
     >{
       Intl.DateTimeFormat(`${astroI18n.langCode}-CA`, {
         year: "numeric",
         month: "long",
         day: "numeric",
-        // hour: "numeric",
-        // timeZome: "America/New_York",
+        hour: "numeric",
+        timeZone: "America/Montreal",
       }).formatRange(dateStart, dateEnd)
     }</span
   ><br />
