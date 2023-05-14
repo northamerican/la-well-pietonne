@@ -41,7 +41,7 @@ const events = [
 <ul>
   {locations.map((location) => <HowToSignLocationItem {...location} />)}
 </ul>
-<h3>{t("onTheStreet")}</h3>
+{events.length ? <h3>{t("onTheStreet")}</h3> : null}
 <ul>
   {events.map((location) => <HowToSignEventItem {...location} />)}
 </ul>
