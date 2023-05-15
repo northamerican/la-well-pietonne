@@ -45,7 +45,7 @@ const fr = {
     }
   },
 
-  petitionTextHeading: 'La texte du pétition',
+  petitionTextHeading: 'Texte de la pétition',
   
   seeCta: 'Voir la pétition',
   signCta: 'Signer la pétition',
