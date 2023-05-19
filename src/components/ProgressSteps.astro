@@ -64,7 +64,9 @@ const completedSteps = [1, 2];
     --date-container-width: 135px;
     --mobile-step-gap: 0.5rem;
 
-    --progress-pct: calc(100% * 0.33);
+    --petition-days-elapsed: 11;
+    --progress: calc(0.33 + (var(--petition-days-elapsed) / 90) * 0.33);
+    --progress-pct: calc(100% * var(--progress));
   }
 
   .steps {
@@ -194,7 +196,7 @@ const completedSteps = [1, 2];
 
   .steps__progress {
     width: 100%;
-    height: var(--progress-pct);
+    height: calc(var(--progress-pct) + 12px);
     background-color: var(--step-circle-color);
     position: absolute;
   }
