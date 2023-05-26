@@ -12,7 +12,7 @@ const fr = {
     en: 'English'
   },
 
-  headerDescription: 'Une initiative pour piétonniser la rue Wellington en permanence',
+  headerDescription: 'Une initiative citoyenne pour piétonniser la rue Wellington en permanence',
 
   howToSignHeading: 'Comment signer', 
   howToSign: 'Les résidents de Verdun peuvent signer la pétition pour demander une consultation publique auprès de l\'arrondissement.',
@@ -89,7 +89,7 @@ const en = {
     fr: 'Français'
   },
 
-  headerDescription: 'An initiative to make Wellington a pedestrian street permanently',
+  headerDescription: 'A citizen initiative to make Wellington a pedestrian street permanently',
 
   howToSignHeading: 'How to sign the petition', 
   howToSign: 'Residents of Verdun can sign the petition to order a public consultation with the borough.',
