@@ -34,23 +34,22 @@ const locations = [
     href: "https://goo.gl/maps/htLeafPuvnZaEhSC7",
     address: "4702 rue Wellington",
   },
-  
 ];
 
 const events = [
-  // {
-  //   lang: {
-  //     fr: {
-  //       name: "Coin de l'Église et Wellington",
-  //     },
-  //     en: {
-  //       name: "Corner of de l'Église and Wellington",
-  //     },
-  //   },
-  //   href: "https://www.instagram.com/p/CsE1o9ivkON/",
-  //   dateStart: new Date("2023-05-13T13:00:00-04:00"),
-  //   dateEnd: new Date("2023-05-13T17:00:00-04:00"),
-  // },
+  {
+    lang: {
+      fr: {
+        name: "rue Wellington entre le 1ere av et rue Willibrord",
+      },
+      en: {
+        name: "Wellington between 1ere av and Willibrord",
+      },
+    },
+    href: "https://www.instagram.com/p/Cs13ZDGgznQ/",
+    dateStart: new Date("2023-06-03T13:00:00-04:00"),
+    dateEnd: new Date("2023-06-03T17:00:00-04:00"),
+  },
 ];
 ---
 
@@ -59,7 +58,7 @@ const events = [
 </p>
 <h3>{t("atASupportingBusiness")}</h3>
 
-<ul>
+<ul class="locations">
   {locations.map((location) => <HowToSignLocationItem {...location} />)}
 </ul>
 {events.length ? <h3>{t("onTheStreet")}</h3> : null}
@@ -69,7 +68,7 @@ const events = [
 
 <style>
   @media (min-width: 980px) {
-    ul {
+    ul.locations {
       columns: 2;
       width: 80%;
     }
