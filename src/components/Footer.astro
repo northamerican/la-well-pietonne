@@ -3,22 +3,33 @@ import { t } from "astro-i18n";
 import PeaceSign from "./PeaceSign.astro";
 ---
 
-<div id="peace-sign">
-  <PeaceSign />
-</div>
+<footer>
+  <div id="peace-sign">
+    <PeaceSign />
+  </div>
 
-<small>
-  {t("footerNoticeUnaffiliated")} SDC Wellington.
-</small>
+  <small>
+    {t("footerNoticeUnaffiliated")} SDC Wellington.
+  </small>
 
-<small>
-  <a href="mailto:lawellpietonne@gmail.com">
-    <strong aria-hidden="true">@</strong>
-    {t("contactUs")}
-  </a>
-</small>
+  <small>
+    <a href="mailto:lawellpietonne@gmail.com">
+      <strong aria-hidden="true">@</strong>
+      {t("contactUs")}
+    </a>
+  </small>
+</footer>
 
 <style>
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+
   #peace-sign {
     display: block;
     font-size: 2rem;

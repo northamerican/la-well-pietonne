@@ -1,0 +1,300 @@
+---
+import { astroI18n, t, l } from "astro-i18n";
+import Layout from "../../components/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+
+astroI18n.init(Astro);
+
+const { langCode } = astroI18n;
+
+type Streets = {
+  name: string;
+  images: { src: string; alt: { [langCode: string]: string } }[];
+  lang: {
+    [langCode: string]: {
+      location: string;
+      body: string;
+    };
+  };
+}[];
+
+const streets: Streets = [
+  {
+    name: "Newark Avenue",
+    images: [
+      {
+        src: "newark-1.jpg",
+        alt: {
+          fr: "",
+          en: "",
+        },
+      },
+    ],
+    lang: {
+      fr: {
+        location: "Jersey City (New Jersey)",
+        body: ``,
+      },
+      en: {
+        location: "Jersey City, New Jersey",
+        body: `First trialed in 2014, Jersey City closed a block of Newark Avenue to cars on afternoons and weekends. Though it got mixed reviews from business owners and residents of the block, pedestrians and bicyclists were happy and the city brought it back in 2015.
+        
+        In 2018, the plaza was expanded to 400 metres in length. In 2022, a USD$7 million renovation was completed. Along with new benches, bike racks, a stage for community events, vegetation and trees, the city raised the street with granite pavers for universal wheelchair and stroller accessibility. 
+
+        “The creation of the Pedestrian Plaza was a risk our administration took when first elected as there was significant pushback, but I think over time it has become clear to everyone that the changes we made there have attracted more people, allowed more businesses to open, and created a destination spot for visitors and residents,” said Mayor Steven Fulop.
+        `,
+      },
+    },
+  },
+  {
+    name: "Rue Sainte-Catherine",
+    images: [
+      {
+        src: "ste-catherine-1.jpg",
+        alt: {
+          fr: "",
+          en: "",
+        },
+      },
+    ],
+    lang: {
+      fr: {
+        location: "Montréal (Québec)",
+        body: `Dans le Quartier des spectacles, entre la rue De Bleury et le boulevard Saint-Laurent et incluant les rues Balmoral et Clark
+        
+        En permanence jusqu'au 30 avril 2024`,
+      },
+      en: {
+        location: "Montreal, Quebec",
+        body: `Dans le Quartier des spectacles, entre la rue De Bleury et le boulevard Saint-Laurent et incluant les rues Balmoral et Clark
+        
+        En permanence jusqu'au 30 avril 2024`,
+      },
+    },
+  },
+  {
+    name: "Strøget",
+    images: [
+      {
+        src: "stroget-1.jpg",
+        alt: {
+          fr: "",
+          en: "",
+        },
+      },
+      {
+        src: "stroget-2.jpg",
+        alt: {
+          fr: "",
+          en: "",
+        },
+      },
+      {
+        src: "stroget-3.jpg",
+        alt: {
+          fr: "",
+          en: "",
+        },
+      },
+    ],
+    lang: {
+      fr: {
+        location: "Copenhague (Danemark)",
+        body: ``,
+      },
+      en: {
+        location: "Copenhagen, Denmark",
+        body: `At over 1km, Støget is among the longest pedestrian streets in Europe. Part of Copenhagen's several kilometers of pedestrian streets, its transformation in November 1962 marked the start of a cultural shift in the way of life for those in the city.
+        
+        There were protests back then. Cries of \"we're not Italians! We don't want to walk!\" were heard in the city. Shopkeepers feared for their businesses. Fortunately, the idea was implemented by the City of Copenhagen.
+        
+        This was a turning point in the modern life of Copenhagen. Cars were taking over, fewer people were cycling and the city was congested and polluted. Visionary political decision-making and urban planning was needed and it arrived. 
+        `,
+      },
+    },
+  },
+  {
+    name: "Church Street",
+    images: [
+      {
+        src: "church-1.jpg",
+        alt: {
+          fr: "",
+          en: "",
+        },
+      },
+      {
+        src: "church-2.jpg",
+        alt: {
+          fr: "",
+          en: "",
+        },
+      },
+    ],
+    lang: {
+      fr: {
+        location: "Burlington (Vermont)",
+        body: ``,
+      },
+      en: {
+        location: "Burlington, Vermont",
+        body: `With a population density one sixth of Verdun's, Burlington's Church street is a shining example of small city pedestrian streets in cold climates. 
+        
+        Inspired by the changes seen in Copenhagen, Church street started with a one-day street fair sponsored by the Merchants Association in 1970. The following year, the street was pedestrianized for a week, with transit added on surrounding streets. The experiment was an obvious success. 
+        
+        After years of dialogue and planning, the street was then made into a permanent pedestrian street. Today, millions of visitors come to socialize, celebrate, pass time, and shop at one of over a hundred shops and restaurants on the street.`,
+      },
+    },
+  },
+  {
+    name: "Pearl Street Mall",
+    images: [
+      {
+        src: "pearl-1.jpg",
+        alt: {
+          fr: "",
+          en: "",
+        },
+      },
+      {
+        src: "pearl-2.jpg",
+        alt: {
+          fr: "",
+          en: "",
+        },
+      },
+      {
+        src: "pearl-3.jpg",
+        alt: {
+          fr: "",
+          en: "",
+        },
+      },
+      {
+        src: "pearl-4.jpg",
+        alt: {
+          fr: "",
+          en: "",
+        },
+      },
+    ],
+    lang: {
+      fr: {
+        location: "Boulder (Colorado)",
+        body: ``,
+      },
+      en: {
+        location: "Boulder, Colorado",
+        body: `Transformed in 1977, the Pearl Street Mall in . Boulder has extreme weather even by Montreal's standard. Summers Boulder receives 12% more snow per year than Montreal. `,
+      },
+    },
+  },
+];
+---
+
+<Layout title={t("siteName")}>
+  <Header />
+  <main>
+    <section>
+      <h2>{t("Rues piétonnes à travers le monde")}</h2>
+      <!-- <h3>{t("year round pedestrian streets")}</h3> -->
+      <div class="street-cards">
+        {
+          streets.map((street) => {
+            const { name, images } = street;
+            const { location, body } = street.lang[langCode];
+
+            return (
+              <div class="street-card">
+                <div class="images">
+                  {images.map(({ src, alt }) => (
+                    <img
+                      src={`/img/around-the-world/${src}`}
+                      alt={alt[langCode]}
+                    />
+                  ))}
+                </div>
+                <h3 class="name">{name}</h3>
+                <p class="location">{location}</p>
+                <p class="body" set:html={body} />
+              </div>
+            );
+          })
+        }
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<script is:inline>
+  const $allImages = document.querySelectorAll(".images img");
+  $allImages.forEach(($img) => {
+    $img.addEventListener("click", () => {
+      const $nextImg =
+        $img.nextElementSibling || $img.parentElement.firstElementChild;
+      try {
+        $nextImg.scrollIntoViewIfNeeded();
+      } catch (e) {
+        $nextImg.scrollIntoView();
+      }
+    });
+  });
+</script>
+
+<style>
+  @media (min-width: 980px) {
+    section {
+      max-width: 1023px;
+    }
+  }
+
+  .street-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-auto-rows: 600px; */
+    grid-gap: 1rem;
+    width: 100%;
+  }
+  @media (min-width: 780px) {
+    .street-cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .street-card {
+    /* width: 45%; */
+  }
+
+  .street-card .images {
+    width: 100%;
+    aspect-ratio: 1;
+    overflow-y: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .street-card img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: bottom;
+    scroll-snap-align: center;
+  }
+
+  .street-card .name {
+    margin-bottom: 0;
+  }
+
+  .street-card .location {
+    margin-top: 0;
+  }
+
+  .street-card .body {
+    white-space: pre-line;
+  }
+</style>

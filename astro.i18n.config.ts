@@ -14,7 +14,7 @@ const fr = {
 
   headerDescription: 'Une initiative citoyenne pour piétonniser la rue Wellington en permanence',
 
-  howToSignHeading: 'Comment signer', 
+  howToSignHeading: 'Comment signer',
   howToSign: 'Les résidents de Verdun peuvent signer la pétition pour demander une consultation publique auprès de l\'arrondissement.',
   atASupportingBusiness: 'Chez un commerce participant',
   onTheStreet: 'Dans la rue',
@@ -46,7 +46,7 @@ const fr = {
   },
 
   petitionTextHeading: 'Texte de la pétition',
-  
+
   seeCta: 'Voir la pétition',
   signCta: 'Signer la pétition',
   signCtaSubtext: 'sur montreal.ca',
@@ -91,7 +91,7 @@ const en = {
 
   headerDescription: 'A citizen initiative to make Wellington a pedestrian street permanently',
 
-  howToSignHeading: 'How to sign the petition', 
+  howToSignHeading: 'How to sign the petition',
   howToSign: 'Residents of Verdun can sign the petition to order a public consultation with the borough.',
   atASupportingBusiness: 'At a supporting business',
   onTheStreet: 'On the street',
@@ -144,9 +144,9 @@ const en = {
   and: 'and',
 
   inspirationAndReading: 'Inspiration and reading',
-  
+
   footerNoticeUnaffiliated: 'This site is not affiliated with ',
-  
+
   contactUs: 'Contact us',
 
   notFound: '404: Not Found',
@@ -166,7 +166,8 @@ export default defineAstroI18nConfig({
   routeTranslations: {
     en: {
       signer: 'sign',
-      petition: 'petition'
+      petition: 'petition',
+      'a-travers-le-monde': 'around-the-world'
     }
   },
 })

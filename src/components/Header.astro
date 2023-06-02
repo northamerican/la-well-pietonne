@@ -10,19 +10,39 @@ const otherLangCodes = langCodes.filter(
 );
 ---
 
-<div id="lang-switcher">
-  <LangSwitcher {otherLangCodes} />
-</div>
+<header>
+  <div id="lang-switcher">
+    <LangSwitcher {otherLangCodes} />
+  </div>
 
-<div id="logo">
-  <Logo />
-</div>
+  <div id="logo">
+    <Logo />
+  </div>
 
-<div id="header-description">
-  <h2>{t("headerDescription")}</h2>
-</div>
+  <div id="header-description">
+    <h2>{t("headerDescription")}</h2>
+  </div>
+</header>
 
 <style>
+  :root {
+    --header-padding: 4rem;
+    --header-text-drop-shadow: drop-shadow(0px 5px 5px #00000050);
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-bottom: var(--header-padding);
+    margin-bottom: 2rem;
+
+    background-image: url("/img/header-static.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
   #lang-switcher {
     width: 100%;
     display: flex;

@@ -17,66 +17,42 @@ const { langCode } = astroI18n;
 ---
 
 <Layout title={t("siteName")}>
+  <Header />
   <main>
-    <header>
-      <Header />
-    </header>
-
-    <div class="section">
+    <section>
       <h2>{t("howToSignHeading")}</h2>
       <HowToSign />
-    </div>
+    </section>
 
-    <div id="progress-steps" class="section">
+    <section id="progress-steps">
       <h2>{t("stepsTitle")}</h2>
       <ProgressSteps />
-    </div>
+    </section>
 
-    <div id="petition-text" class="section">
+    <section id="petition-text">
       <h2>{t("petitionTextHeading")}</h2>
       {langCode === "en" ? <PetitionTextEn /> : <PetitionTextFr />}
 
       <!-- <a href={t("petitionUrl")} target="_blank">
         <span>{t("seeCta")} {t("signCtaSubtext")}</span><br />
       </a> -->
-    </div>
+    </section>
 
-    <div id="stay-connected" class="section">
+    <section id="stay-connected">
       <h2>{t("stayConnected")}</h2>
       <StayConnected />
-    </div>
+    </section>
 
-    <div id="inspiration-and-reading" class="section">
+    <section id="inspiration-and-reading">
       <h2>{t("inspirationAndReading")}</h2>
       <InspirationAndReading />
-    </div>
-
-    <footer>
-      <Footer />
-    </footer>
+    </section>
   </main>
+  <Footer />
 </Layout>
 
 <style>
-  :root {
-    --header-padding: 4rem;
-    --header-text-drop-shadow: drop-shadow(0px 5px 5px #00000050);
-  }
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: white;
-    padding-bottom: var(--header-padding);
-    margin-bottom: 2rem;
-
-    background-image: url("/img/header-static.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-
-  .section > h2 {
+  section > h2 {
     margin-top: 0;
   }
   #progress-steps {
@@ -93,13 +69,5 @@ const { langCode } = astroI18n;
   #inspiration-and-reading {
     display: flex;
     flex-direction: column;
-  }
-  footer {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding-top: 2rem;
-    margin-top: 3rem;
-    text-align: center;
   }
 </style>
