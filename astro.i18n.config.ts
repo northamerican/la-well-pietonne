@@ -14,7 +14,7 @@ const fr = {
 
   headerDescription: 'Une initiative citoyenne pour piétonniser la rue Wellington en permanence',
 
-  howToSignHeading: 'Comment signer', 
+  howToSignHeading: 'Comment signer',
   howToSign: 'Les résidents de Verdun peuvent signer la pétition pour demander une consultation publique auprès de l\'arrondissement.',
   atASupportingBusiness: 'Chez un commerce participant',
   onTheStreet: 'Dans la rue',
@@ -46,11 +46,6 @@ const fr = {
   },
 
   petitionTextHeading: 'Texte de la pétition',
-  
-  seeCta: 'Voir la pétition',
-  signCta: 'Signer la pétition',
-  signCtaSubtext: 'sur montreal.ca',
-  signCtaRequirements: 'Résidents de Verdun âgé de 15 ans ou plus',
 
   email: 'Courriel',
   optional: 'facultatif',
@@ -75,6 +70,11 @@ const fr = {
   notFound: '404 : Introuvable',
   goHome: 'Page d\'accueil',
 
+  online: 'En ligne',
+  petitionLinkText: 'Signer la pétition sur montreal.ca',
+  onlinePetitionNotice: `Résidents de Verdun âgé de 15 ans ou plus. 
+  La plupart des signatures sont recueillies sur papier et ne sont pas comptabilisées sur le site de la ville.`,
+
   petitionUrl: 'https://montreal.ca/petitions/detail/6428dc4ac490e6ee4229c32a',
   petitionSignUrl: 'https://montreal.ca/petitions/signer/6428dc4ac490e6ee4229c32a',
 }
@@ -91,7 +91,7 @@ const en = {
 
   headerDescription: 'A citizen initiative to make Wellington a pedestrian street permanently',
 
-  howToSignHeading: 'How to sign the petition', 
+  howToSignHeading: 'How to sign the petition',
   howToSign: 'Residents of Verdun can sign the petition to order a public consultation with the borough.',
   atASupportingBusiness: 'At a supporting business',
   onTheStreet: 'On the street',
@@ -124,11 +124,6 @@ const en = {
 
   petitionTextHeading: 'Petition text',
 
-  seeCta: 'See petition',
-  signCta: 'Sign the petition',
-  signCtaSubtext: 'on montreal.ca',
-  signCtaRequirements: 'Must be a resident of Verdun age 15 or older',
-
   email: 'E-mail',
   optional: 'optional',
 
@@ -144,13 +139,18 @@ const en = {
   and: 'and',
 
   inspirationAndReading: 'Inspiration and reading',
-  
+
   footerNoticeUnaffiliated: 'This site is not affiliated with ',
-  
+
   contactUs: 'Contact us',
 
   notFound: '404: Not Found',
   goHome: 'Go home',
+
+  online: 'Online',
+  petitionLinkText: 'Sign the petition on montreal.ca',
+  onlinePetitionNotice: `Must be a resident of Verdun age 15 or older.
+  Most signatures are gathered by paper and are not accounted for on the city's website.`,
 
   petitionUrl: 'https://montreal.ca/en/petitions/details/6428dc4ac490e6ee4229c32a',
   petitionSignUrl: 'https://montreal.ca/en/petitions/sign/6428dc4ac490e6ee4229c32a',

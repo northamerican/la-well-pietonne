@@ -61,14 +61,23 @@ const events = [
 <p>
   {t("howToSign")}
 </p>
-<h3>{t("atASupportingBusiness")}</h3>
 
+<h3>{t("atASupportingBusiness")}</h3>
 <ul class="locations">
   {locations.map((location) => <HowToSignLocationItem {...location} />)}
 </ul>
+
 {events.length ? <h3>{t("onTheStreet")}</h3> : null}
 <ul>
   {events.map((location) => <HowToSignEventItem {...location} />)}
+</ul>
+
+<h3>{t("online")}</h3>
+<ul>
+  <li>
+    <a href={t("petitionUrl")} target="_blank">{t("petitionLinkText")}</a><br />
+    <small class="online-petition-notice">{t("onlinePetitionNotice")}</small>
+  </li>
 </ul>
 
 <style>
@@ -79,6 +88,11 @@ const events = [
     }
   }
   li {
+    list-style: none;
     padding-left: 0;
+  }
+
+  .online-petition-notice {
+    white-space: pre-line;
   }
 </style>
