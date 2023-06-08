@@ -32,10 +32,6 @@ const { langCode } = astroI18n;
     <section id="petition-text">
       <h2>{t("petitionTextHeading")}</h2>
       {langCode === "en" ? <PetitionTextEn /> : <PetitionTextFr />}
-
-      <!-- <a href={t("petitionUrl")} target="_blank">
-        <span>{t("seeCta")} {t("signCtaSubtext")}</span><br />
-      </a> -->
     </section>
 
     <section id="stay-connected">
