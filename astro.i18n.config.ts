@@ -72,6 +72,8 @@ const fr = {
 
   contactUs: 'Contactez-nous',
 
+  aroundTheWorldHeading: 'Rues piétonnes à travers le monde',
+
   notFound: '404 : Introuvable',
   goHome: 'Page d\'accueil',
 
@@ -148,6 +150,8 @@ const en = {
   footerNoticeUnaffiliated: 'This site is not affiliated with ',
 
   contactUs: 'Contact us',
+
+  aroundTheWorldHeading: 'Pedestrian streets around the world',
 
   notFound: '404: Not Found',
   goHome: 'Go home',

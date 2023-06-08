@@ -30,6 +30,20 @@ const streets: Streets = [
           en: "",
         },
       },
+      {
+        src: "newark-2.jpg",
+        alt: {
+          fr: "",
+          en: "",
+        },
+      },
+      {
+        src: "newark-3.jpg",
+        alt: {
+          fr: "",
+          en: "",
+        },
+      },
     ],
     lang: {
       fr: {
@@ -67,7 +81,7 @@ const streets: Streets = [
       },
       en: {
         location: "Montreal, Quebec",
-        body: `Dans le Quartier des spectacles, entre la rue De Bleury et le boulevard Saint-Laurent et incluant les rues Balmoral et Clark
+        body: `An example here at home is Sainte-Catherine by Quartier des spectacles, between De Bleury and boulevard Saint-Laurent, including Balmoral and Clark streets. This long term pedestrian street hosts a number of 
         
         En permanence jusqu'au 30 avril 2024`,
       },
@@ -178,6 +192,13 @@ const streets: Streets = [
           en: "",
         },
       },
+      {
+        src: "pearl-5.jpg",
+        alt: {
+          fr: "",
+          en: "",
+        },
+      },
     ],
     lang: {
       fr: {
@@ -186,7 +207,80 @@ const streets: Streets = [
       },
       en: {
         location: "Boulder, Colorado",
-        body: `Transformed in 1977, the Pearl Street Mall in . Boulder has extreme weather even by Montreal's standard. Summers Boulder receives 12% more snow per year than Montreal. `,
+        body: `The Pearl Street Mall in Boulder, Colorado is a renowned commercial street that hosts variety of local businesses and restaurants. It was transformed in 1977 as a means to revitalize the historic district which was threatened by suburban-style shopping centers. 
+        
+        During the summer months, where temperatures regularly exceed 30&deg;C, the street is a stage for a number of street performers and musicians. Boulder has extreme weather even by Montreal's standards - it receives 12% more snow per year than Montreal. 
+
+        Named one of Americas's "Great Public Spaces" by the American Planning Association.
+        `,
+      },
+    },
+  },
+
+  {
+    name: "Sauchiehall, Argyle & Buchanan streets",
+    images: [
+      {
+        src: "sauchiehall-1.jpg",
+        alt: {
+          fr: "",
+          en: "",
+        },
+      },
+      {
+        src: "sauchiehall-2.jpg",
+        alt: {
+          fr: "",
+          en: "",
+        },
+      },
+    ],
+    lang: {
+      fr: {
+        location: "Glasgow (Écosse)",
+        body: ``,
+      },
+      en: {
+        location: "Glasgow, Scotland",
+        body: `show how changes in industry requires changes in the street, with added residential.
+          `,
+      },
+    },
+  },
+  {
+    name: "Sparks Street",
+    images: [
+      {
+        src: "sparks-1.jpg",
+        alt: {
+          fr: "",
+          en: "",
+        },
+      },
+      {
+        src: "sparks-2.jpg",
+        alt: {
+          fr: "",
+          en: "",
+        },
+      },
+      {
+        src: "sparks-3.jpg",
+        alt: {
+          fr: "",
+          en: "",
+        },
+      },
+    ],
+    lang: {
+      fr: {
+        location: "Ottawa (Ontario)",
+        body: ``,
+      },
+      en: {
+        location: "Ottawa, Ontario",
+        body: `  1967. 850 m
+          mainly institutional buildings. example of winter activities`,
       },
     },
   },
@@ -197,7 +291,7 @@ const streets: Streets = [
   <Header />
   <main>
     <section>
-      <h2>{t("Rues piétonnes à travers le monde")}</h2>
+      <h2>{t("aroundTheWorldHeading")}</h2>
       <!-- <h3>{t("year round pedestrian streets")}</h3> -->
       <div class="street-cards">
         {
@@ -253,18 +347,13 @@ const streets: Streets = [
   .street-cards {
     display: grid;
     grid-template-columns: 1fr;
-    /* grid-auto-rows: 600px; */
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     width: 100%;
   }
   @media (min-width: 780px) {
     .street-cards {
       grid-template-columns: 1fr 1fr;
     }
-  }
-
-  .street-card {
-    /* width: 45%; */
   }
 
   .street-card .images {
