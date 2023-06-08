@@ -73,7 +73,7 @@ const fr = {
   online: 'En ligne',
   petitionLinkText: 'Signer la pétition sur montreal.ca',
   onlinePetitionNotice: `Résidents de Verdun âgé de 15 ans ou plus. 
-  La plupart des signatures sont recueillies sur papier et ne sont pas comptabilisées sur le site de la ville.`,
+  La plupart des signatures sont recueillies sur papier et ne seront pas comptabilisées sur le site de la ville.`,
 
   petitionUrl: 'https://montreal.ca/petitions/detail/6428dc4ac490e6ee4229c32a',
   petitionSignUrl: 'https://montreal.ca/petitions/signer/6428dc4ac490e6ee4229c32a',
@@ -150,7 +150,7 @@ const en = {
   online: 'Online',
   petitionLinkText: 'Sign the petition on montreal.ca',
   onlinePetitionNotice: `Must be a resident of Verdun age 15 or older.
-  Most signatures are gathered by paper and are not accounted for on the city's website.`,
+  Most signatures are gathered by paper and will not accounted for on the city's website.`,
 
   petitionUrl: 'https://montreal.ca/en/petitions/details/6428dc4ac490e6ee4229c32a',
   petitionSignUrl: 'https://montreal.ca/en/petitions/sign/6428dc4ac490e6ee4229c32a',
