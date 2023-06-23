@@ -11,6 +11,7 @@ const fr = {
   otherLangs: {
     en: 'English'
   },
+  isoLangCode: 'fr-ca',
 
   headerDescription: 'Une initiative citoyenne pour piétonniser la rue Wellington toute l\'année',
 
@@ -98,6 +99,7 @@ const en = {
   otherLangs: {
     fr: 'Français'
   },
+  isoLangCode: 'en-ca',
 
   headerDescription: 'A citizens\' initiative to make Wellington a year-round pedestrian street',
 

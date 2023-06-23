@@ -2,15 +2,16 @@
 import { astroI18n, t, l } from "astro-i18n";
 
 const { langCode } = astroI18n;
-const { href, lang, location, dateStart, dateEnd } = Astro.props;
+const { lang, href, dateStart, dateEnd } = Astro.props;
+const { name, location } = lang[langCode];
 ---
 
 <li>
-  <a href={href} target="_blank">{lang[langCode].name}</a><br />
-  <span>{location}</span>
+  <a href={href} target="_blank">{name}</a><br />
+  <span>{location}</span><br />
   <span
     >{
-      Intl.DateTimeFormat(`${astroI18n.langCode}-CA`, {
+      Intl.DateTimeFormat(t("isoLangCode"), {
         year: "numeric",
         month: "long",
         day: "numeric",
