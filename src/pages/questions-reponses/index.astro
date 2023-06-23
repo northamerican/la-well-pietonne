@@ -3,8 +3,8 @@ import { astroI18n, t, l } from "astro-i18n";
 import Layout from "../../components/Layout.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
-import PetitionTextEn from "./PetitionTextEn.md";
-import PetitionTextFr from "./PetitionTextFr.md";
+import QATextEn from "./QATextEn.md";
+import QATextFr from "./QATextFr.md";
 
 astroI18n.init(Astro);
 
@@ -15,7 +15,7 @@ const { langCode } = astroI18n;
   <Header />
   <main>
     <section class="narrow">
-      {langCode === "en" ? <PetitionTextEn /> : <PetitionTextFr />}
+      {langCode === "en" ? <QATextEn /> : <QATextFr />}
     </section>
     <Footer />
   </main>

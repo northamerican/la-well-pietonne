@@ -119,6 +119,10 @@ const { title } = Astro.props as Props;
     text-decoration: underline;
   }
 
+  p {
+    line-height: 1.4rem;
+  }
+
   ul {
     margin: 0;
     padding-left: 0;
@@ -146,7 +150,7 @@ const { title } = Astro.props as Props;
   }
 
   section {
-    max-width: auto;
+    max-width: none;
     margin: 2rem 1rem;
   }
   @media (min-width: 980px) {
@@ -156,5 +160,26 @@ const { title } = Astro.props as Props;
       flex-direction: row;
       justify-content: space-between;
     }
+  }
+
+  @media (min-width: 720px) {
+    section.narrow {
+      max-width: 720px;
+    }
+  }
+
+  figure {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  figcaption {
+    margin-top: 0.5em;
+  }
+
+  figure img {
+    display: block;
+    width: 100%;
   }
 </style>

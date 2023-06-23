@@ -46,6 +46,7 @@ const fr = {
   },
 
   petitionTextHeading: 'Texte de la pétition',
+  petitionTextCta: 'Lire le texte complet de la pétition',
 
   email: 'Courriel',
   optional: 'facultatif',
@@ -67,7 +68,14 @@ const fr = {
 
   contactUs: 'Contactez-nous',
 
+  questionsAndAnswersHeading: 'Questions et réponses',
+  questionsAndAnswersBody: `En tant que résidents de Verdun, nous avons vu le succès et l'engouement de la piétonnisation estivale de Wellington et ses avantages pour la communauté.
+  Notre proposition d'étendre cette la piétonnisation a suscité de questions sur sa logique et sa faisabilité.`,
+  questionsAndAnswersCta: 'Lisez notre page Questions et réponses',
+
   aroundTheWorldHeading: 'Rues piétonnes à travers le monde',
+  aroundTheWorldBody: 'Vous cherchez de l\'inspiration?',
+  aroundTheWorldCta: 'Découvrez les rues piétonnes à travers le monde',
 
   notFound: '404 : Introuvable',
   goHome: 'Page d\'accueil',
@@ -125,6 +133,7 @@ const en = {
   },
 
   petitionTextHeading: 'Petition text',
+  petitionTextCta: 'Read the full petition text',
 
   email: 'E-mail',
   optional: 'optional',
@@ -146,7 +155,14 @@ const en = {
 
   contactUs: 'Contact us',
 
+  questionsAndAnswersHeading: 'Questions and answers',
+  questionsAndAnswersBody: `As Verdun residents, we've seen the success and acclaim of the summer pedestrianization of Wellington and its benefits to the community.
+  Our proposal to extend this pedestrianization has led to many questions on its rationale and feasibility.`,
+  questionsAndAnswersCta: 'Read our Questions and answers page',
+
   aroundTheWorldHeading: 'Pedestrian streets around the world',
+  aroundTheWorldBody: 'Looking for inspiration?',
+  aroundTheWorldCta: 'Check out pedestrian streets around the world',
 
   notFound: '404: Not Found',
   goHome: 'Go home',
@@ -171,7 +187,8 @@ export default defineAstroI18nConfig({
     en: {
       signer: 'sign',
       petition: 'petition',
-      'a-travers-le-monde': 'around-the-world'
+      'a-travers-le-monde': 'around-the-world',
+      'questions-reponses': 'q-a'
     }
   },
 })

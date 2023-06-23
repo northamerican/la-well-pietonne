@@ -1,3 +1,5 @@
+## Piétonniser la rue Wellington en permanence
+
 La piétonnisation estivale de Wellington a été acclamée par les résidents,
 les conseillers et les médias. Malgré la logistique d'installation et de démontage de l'événement chaque année, le
 commerce, le transit et la fonction générale ont été maintenus.
