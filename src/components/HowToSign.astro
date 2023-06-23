@@ -42,19 +42,21 @@ const locations = [
 ];
 
 const events = [
-  // {
-  //   lang: {
-  //     fr: {
-  //       name: "rue Wellington entre le 1ere av et rue Willibrord",
-  //     },
-  //     en: {
-  //       name: "Wellington between 1ere av and Willibrord",
-  //     },
-  //   },
-  //   href: "https://www.instagram.com/p/Cs13ZDGgznQ/",
-  //   dateStart: new Date("2023-06-03T13:00:00-04:00"),
-  //   dateEnd: new Date("2023-06-03T17:00:00-04:00"),
-  // },
+  {
+    lang: {
+      fr: {
+        name: "Excavation & Poésie à Verdun",
+        location: `Métro de l'Église`,
+      },
+      en: {
+        name: "Excavation & Poésie in Verdun",
+        location: `Metro de l'Église`,
+      },
+    },
+    href: "https://www.facebook.com/events/6120347358012834/",
+    dateStart: new Date("2023-07-13T18:00:00-04:00"),
+    dateEnd: new Date("2023-07-13T20:00:00-04:00"),
+  },
 ];
 ---
 
@@ -69,7 +71,7 @@ const events = [
 
 {events.length ? <h3>{t("onTheStreet")}</h3> : null}
 <ul>
-  {events.map((location) => <HowToSignEventItem {...location} />)}
+  {events.map((event) => <HowToSignEventItem {...event} />)}
 </ul>
 
 <h3>{t("online")}</h3>
