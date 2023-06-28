@@ -70,8 +70,8 @@ const fr = {
   contactUs: 'Contactez-nous',
 
   questionsAndAnswersHeading: 'Questions et réponses',
-  questionsAndAnswersBody: `En tant que résidents de Verdun, nous avons vu le succès et l'engouement de la piétonnisation estivale de Wellington et ses avantages pour la communauté.
-  Notre proposition d'étendre cette la piétonnisation a suscité de questions sur sa logique et sa faisabilité.`,
+  questionsAndAnswersBody: `En tant que résidents de Verdun, nous avons vu le succès et les éloges de la piétonnisation estivale de Wellington et ses avantages pour la communauté. 
+  Notre proposition d'étendre cette piétonnisation a suscité de nombreuses interrogations sur sa logique et sa faisabilité.`,
   questionsAndAnswersCta: 'Lisez notre page Questions et réponses',
 
   aroundTheWorldHeading: 'Rues piétonnes à travers le monde',

@@ -12,6 +12,8 @@ export default defineConfig({
   }),
   markdown: {
     // Applied to .md and .mdx files
-    remarkPlugins: [remarkToc],
+    remarkPlugins: [[remarkToc, {
+      heading: 'toc|table[ -]of[ -]contents?|Table des matières'
+    }]],
   },
 })
