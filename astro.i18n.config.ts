@@ -189,7 +189,7 @@ export default defineAstroI18nConfig({
     en: {
       signer: 'sign',
       petition: 'petition',
-      'a-travers-le-monde': 'around-the-world',
+      // 'a-travers-le-monde': 'around-the-world',
       'questions-reponses': 'q-a'
     }
   },
