@@ -59,7 +59,7 @@ Plusieurs études démontrent que [les rues piétonnes encouragent l'activité c
 
 L'augmentation du trafic piétonnier sur Wellington dans le cadre d’une potentielle piétonisation permanente a déjà été quantifiée. En 2021, la deuxième année de piétonnisation estivale de Wellington, [le trafic piétonnier a augmenté de 17%](https://www.lapresse.ca/actualites/grand-montreal/2022-04-04/dix-rues-de-montreal-reservees-aux-pietons-pour-les-trois-prochains-etes.php).
 
-La vie commerciale sur Wellington est déjà exceptionnelle. Selon la SDC, les commerces de cette rue ont [à cinq ans un taux de survie proche de 70%](https://www.promenadewellington.com/en/open-your-business-on-the-strip/), dépassant la moyenne canadienne. Si les revenus des entreprises doivent atteindre un seuil pour que la piétonnisation soit envisagée, Wellington est un choix approprié, déjà [répondant aux normes prescrites](https://collectivitesviables.org/articles/rues-pietonnes.aspx#prrequis-7) pour une rue piétonne.
+La vie commerciale sur Wellington est déjà exceptionnelle. Selon la SDC, les commerces de cette rue ont [à cinq ans un taux de survie proche de 70%](https://www.promenadewellington.com/fr/locaux-louer-commerciaux-verdun/), dépassant la moyenne canadienne. Si les revenus des entreprises doivent atteindre un seuil pour que la piétonnisation soit envisagée, Wellington est un choix approprié, déjà [répondant aux normes prescrites](https://collectivitesviables.org/articles/rues-pietonnes.aspx#prrequis-7) pour une rue piétonne.
 
 
 ## Et les bus?
@@ -73,9 +73,9 @@ Alors que le Boul Lasalle et la rue de Verdun conviennent mieux comme artères p
 En fin de compte, si ces alternatives ne répondent pas à nos besoins, les bus sur Wellington peuvent bien sûr toujours circuler à certaines heures, ou certains jours de la semaine, ou certaines périodes de l'année, ou sur certaines parties de la rue. Cela pourrait équilibrer les avantages d'une rue sans voiture avec la commodité d'un service d'autobus qui passe à faible vitesse.
 
 <figure>
-  <img src="/img/q-and-a/state-st-madison.jpg" alt="State street à Madison, Wisconsin, à l'automne. Des kiosques de produits de fruits et légumes sont installés dans la rue et un bus s'approche à l'arrière-plan." />
+  <img src="/img/q-and-a/state-st-madison.jpg" alt="State street à Madison (Wisconsin), à l'automne. Des kiosques de produits de fruits et légumes sont installés dans la rue et un bus s'approche à l'arrière-plan." />
   <figcaption>
-    State Street à Madison, Wisconsin. Une rue piétonne avec accès au service d'autobus.
+    State Street à Madison (Wisconsin). Une rue piétonne avec accès au service d'autobus.
   </figcaption>
 </figure>
 
@@ -121,7 +121,7 @@ C'est à nous et à nos élus d'agir concrètement pour réduire le nombre de vo
 
 Nous croyons que la perte du stationnement sur rue n'est pas une conséquence malheureuse de la piétonnisation, mais une étape cruciale pour réduire l'utilisation et la prévalence des automobiles dans notre ville. Cela dit, il y a une abondance de places de stationnement réservées accessibles et payantes sur les rues perpendiculaires, ainsi que sur plusieurs terrains publics et privés.
 
-Si ce sujet vous intéresse, nous vous recommandons de lire le rapport du _Conseil régional de l’environnement de Montréal_ livre blanc 2023 [_Le stationnement à Montréal : 23 propositions pour une mobilité efficace, équitable et écologique_](https://cdn.ca.yapla.com/company/CPYdNZRxWi163lmbLnVjgAqMF/asset/files/Outils/2023-03-02_CRE-Montreal_Livre-blanc-VF_numerique.pdf) qui présente comment utiliser de manière novatrice et efficace les espaces existants pour les véhicules.
+Si ce sujet vous intéresse, nous vous recommandons de lire le livre blanc 2023 du _Conseil régional de l’environnement de Montréal_ [_Le stationnement à Montréal : 23 propositions pour une mobilité efficace, équitable et écologique_](https://cdn.ca.yapla.com/company/CPYdNZRxWi163lmbLnVjgAqMF/asset/files/Outils/2023-03-02_CRE-Montreal_Livre-blanc-VF_numerique.pdf) qui présente comment utiliser de manière novatrice et efficace les espaces existants pour les véhicules.
 
 
 <figure>
@@ -134,7 +134,7 @@ Si ce sujet vous intéresse, nous vous recommandons de lire le rapport du _Conse
 
 ## Montréal n'est-il pas trop froid pour une rue piétonne?
 
-Il fait peut-être froid à Montréal, mais nous investissons quand même dans nos parcs, terrains de sport, bancs et autres aménagements extérieurs qui sont moins idéaux en hiver. Les froides journées d'hiver font tout simplement partie de la vie, et touchent aussi les propriétaires de voiture, qui doivent chaque hiver pelleter pour sortir leur voiture des congères et bancs de neige.
+Peut-être il fait froid à Montréal, mais nous investissons quand même dans nos parcs, terrains de sport, bancs et autres aménagements extérieurs qui sont moins idéaux en hiver. Les froides journées d'hiver font tout simplement partie de la vie, et touchent aussi les propriétaires de voiture, qui doivent chaque hiver pelleter pour sortir leur voiture des congères et bancs de neige.
 
 Un sondage mené par la ville de Montréal révèle que nos habitudes actuelles sont compatibles avec une rue piétonne - il y a [peu de changements dans les modes de déplacement vers Place Wellington en été ou en hiver](https://www.realisonsmtl.ca/3113/widgets/15839/documents/10936) (13% vs 20% en voiture pour chaque saison respectivement).
 
