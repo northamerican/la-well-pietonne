@@ -6,7 +6,8 @@ export interface Props {
 
 astroI18n.init(Astro);
 
-const { title } = Astro.props as Props;
+const props = Astro.props as Props;
+const { title } = props;
 ---
 
 <!DOCTYPE html>
@@ -30,7 +31,7 @@ const { title } = Astro.props as Props;
     <meta property="og:image:alt" content={t("siteName")} />
     <meta property="og:description" content={t("siteDescription")} />
 
-    <title>{title}</title>
+    <title>{title ? `${title} - ` : ""}{t("siteName")}</title>
   </head>
   <body>
     <slot />
