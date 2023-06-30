@@ -115,7 +115,7 @@ Nous pensons également que l'utilisation des véhicules motorisés comme moyen 
 
 En rendant les rues et des secteurs entiers de notre ville agréables et pratiques pour y vivre sans voiture, nous réduirons l'usage de la voiture et donc, le trafic. Selon les études sur la politique des transports, la mise en place de zones sans voiture [est efficace pour réduire l'utilisation de la voiture de 10 à 20 %](https://theconversation.com/12-best-ways-to-get-cars-out-of-cities-ranked-by-new-research-180642).
 
-C'est à nous et à nos élus d'agir concrètement pour réduire le nombre de voitures sur nos routes. Plus nous fournissons d'espace aux voitures, [plus nous induisons la demande de voitures](https://fr.wikipedia.org/wiki/Trafic_induit). Moins on laissera de place aux voitures, plus on induira une demande de transports collectifs et compacts sur une plus longue période. Avec la piétonnisation estivale temporaire, cette incitation à long terme n'existe pas, de sorte que la perturbation ne disparaît jamais.
+C'est à nous et à nos élus d'agir concrètement pour réduire le nombre de voitures sur nos routes. Plus nous fournissons d'espace aux voitures, [plus nous induisons la demande de voitures](https://fr.wikipedia.org/wiki/Trafic_induit). Moins on laissera de place aux voitures, plus on induira une demande de transports collectifs et alternatifs sur une plus longue période. Avec la piétonnisation estivale temporaire, cette incitation à long terme n'existe pas, de sorte que la perturbation ne disparaît jamais.
 
 ## Où les gens vont-ils se stationner?
 
