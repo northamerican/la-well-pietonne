@@ -6,6 +6,7 @@ export interface Props {
 
 astroI18n.init(Astro);
 
+const { pathname } = Astro.url;
 const props = Astro.props as Props;
 const title = (props.title ? `${props.title} - ` : "") + t("siteName");
 ---
@@ -20,7 +21,7 @@ const title = (props.title ? `${props.title} - ` : "") + t("siteName");
 
     <meta property="og:title" content={title} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={t("siteUrl")} />
+    <meta property="og:url" content={t("siteUrlBase") + pathname} />
     <meta
       property="og:image"
       content={`${t("siteUrlBase")}/img/la-well-pietonne-logo-og.png`}
