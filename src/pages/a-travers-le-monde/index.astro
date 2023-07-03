@@ -9,7 +9,12 @@ astroI18n.init(Astro);
 const { langCode } = astroI18n;
 
 type Streets = {
-  images: { src: string; alt: { [langCode: string]: string } }[];
+  images: {
+    src: string;
+    alt: {
+      [langCode: string]: string;
+    };
+  }[];
   lang: {
     [langCode: string]: {
       name: string;
@@ -53,9 +58,9 @@ const streets: Streets = [
       en: {
         name: "Newark Avenue",
         location: "Jersey City, New Jersey",
-        body: `First trialed in 2014, Jersey City closed a block of Newark Avenue to cars on afternoons and weekends. Though it got mixed reviews from business owners and residents of the block, pedestrians and bicyclists were happy and the city pedestrianized it in 2015.
+        body: `First trialed in 2014, Jersey City closed a block of Newark Avenue to cars on afternoons and weekends. Though it got mixed reviews from business owners and residents of the block, pedestrians and bicyclists were happy and the city pedestrianized the street in 2015.
         
-        In 2018, the plaza was expanded to 400 metres in length. Then in 2022, a USD$7 million renovation was completed. Along with new benches, bike racks, a stage for community events, vegetation and trees, the city raised the street with granite pavers for universal wheelchair and stroller accessibility. 
+        In 2018, the plaza was expanded to 400 metres in length. Then in 2022, a USD$7 million renovation was completed, adding new benches, bike racks, vegetation, trees, and a stage for community events. The city also raised the street with granite pavers for universal wheelchair and stroller accessibility. 
 
         “The creation of the Pedestrian Plaza was a risk our administration took when first elected as there was significant pushback, but I think over time it has become clear to everyone that the changes we made there have attracted more people, allowed more businesses to open, and created a destination spot for visitors and residents,” said Mayor Steven Fulop.
         `,
@@ -97,9 +102,9 @@ const streets: Streets = [
         location: "Copenhagen, Denmark",
         body: `At over 1km, Strøget is among the longest pedestrian streets in Europe. Part of Copenhagen's several kilometers of pedestrian streets, its transformation in 1962 marked the start of a cultural shift in the way of life for those in the city. Cars were taking over, fewer people were cycling and the city was congested and polluted. 
         
-        At its conception, the idea of a pedestrian street was not generally accepted. The slogan and rallying cry was that "Danes are not Italians", as Copenhagen lacked the social culture seen in such places in the Mediterranean. People feared the change would be a disaster for the businesses in the street. 
+        At its conception, the idea of a pedestrian street was not generally accepted. The slogan and rallying cry was that "Danes are not Italians", as Copenhagen lacked the outdoor social culture seen elsewhere in Europe. People feared the change would be a disaster for the businesses in the street. 
         
-        The town planner, Alfred Wassard, even faced death threats. Visionary political decision-making was needed, and The determination of key politicians was vital for this transformation to occur. 
+        The town planner, Alfred Wassard, even faced death threats. Visionary political decision-making was needed and the determination of key politicians was vital for this transformation to succeed.
         `,
       },
     },
@@ -137,7 +142,7 @@ const streets: Streets = [
       en: {
         name: "Church Street",
         location: "Burlington, Vermont",
-        body: `With a population density one sixth of Verdun's, Burlington's Church street is a shining example of small city pedestrian streets in cold climates. 
+        body: `With a population density one sixth of Verdun's, Burlington's Church street is a shining example of a small city pedestrian street in a cold climate. 
         
         Inspired by the changes seen in Copenhagen, Church street started with a one-day street fair sponsored by the Merchants Association in 1970. The following year, the street was pedestrianized for a week, with transit added on surrounding streets. The experiment was an obvious success. 
         
@@ -182,7 +187,7 @@ const streets: Streets = [
         
         The street is filled with public art, including numerous fountains and sculptures as well as a sandbox for children. During the summer months, the street is a stage for a number of street performers and musicians. 
         
-        Boulder has extreme weather even by Montreal's standards - it receives 12% more snow per year than Montreal.
+        Despite the city's extreme winters, with 12% more snow per year than Montreal, Boulder's Pearl Street Mall demonstrates how such spaces are adaptable and feasible no matter the climate. 
         `,
       },
     },
@@ -221,12 +226,11 @@ const streets: Streets = [
       en: {
         name: "Sauchiehall, Argyle & Buchanan streets",
         location: "Glasgow, Scotland",
-        body: `Pedestrizanized in the 1970s, this network of streets in downtown Glasgow covers an extensive area of the rainy, northern city. In 1999, the entire street was repaved with high quality granite stonework and decorative lighting.
+        body: `Pedestrizanized in the 1970s, this network of streets in downtown Glasgow covers an extensive area of the rainy, northern city. In 1999, the entire street [Buchanan?] was repaved with high quality granite stonework and decorative lighting.
 
-        Due to changed in the economy, In 2022, the street's 20 year old shopping mall, Buchanan Galleries, was [announced] to be demolished and replaced 
-        
-        This change is a demonstration of how shifting to mixed-use with residences is essential to keeping the vitality of any dynamic urban area. 
-          `,
+        Due to changing consumer [behaviour / preferences], In 2022, the street's 20 year old shopping mall, Buchanan Galleries, was [announced] to be demolished and replaced with mixed-use buildings, including residences. [+ details. apartments? what's replacing it?]
+
+        This change shows how cities can adapt their zoning and commercial activity to support the vitality of walkable mixed-use public spaces.`,
       },
     },
   },
@@ -263,11 +267,11 @@ const streets: Streets = [
       en: {
         name: "Sparks Street",
         location: "Ottawa, Ontario",
-        body: `Sparks street is a main street of Ottawa and in 1967 was the first in Canada to be converted into a pedestrian street. The 850m pedestrian street hosts a number of restaurants and shops, and several festivals throughout the year. 
+        body: `Sparks street is a main street of Ottawa and the first in Canada to be converted to a pedestrian street in 1967. 
         
-        It hosts a number of events, including a variety of food festivals and an ice carving competition as part of the Winterlude annual festival.
+        The 850m pedestrian street hosts a number of restaurants, shops, and events throughout the year, including an ice carving competition as part of the Winterlude annual festival.
 
-        It is home to several historic, institutional, and office buildings, though their large footprint has been critiqued for impacted life on the street. As in Montreal's downtown, construction of downtown residences is expected to improve the neighbourhood and its vitality.`,
+        It is also home to several historic, institutional, and office buildings, though their large footprint and presence have been critiqued for impacting life on the street, especially on weekends. As in Montreal's downtown, the addition of residential units is expected to improve the neighbourhood's vitality.`,
       },
     },
   },
@@ -304,11 +308,11 @@ const streets: Streets = [
       en: {
         name: "State Street",
         location: "Madison, Wisconsin",
-        body: `Spanning the same length as Wellington at 1.2 km. State street in Wisconsin's capital city Madison, is a pedestrian street converted from a four-lane road in 1974. The street hosts a variety of shops, bars, and restaurants and is popular for its small-town appeal, street musicians and performers, making it a popular tourist attraction. 
+        body: `Spanning the same length as Wellington at 1.2 km. State street in Wisconsin's capital city Madison, is a pedestrian street converted from a four-lane road in 1974. The street hosts a variety of shops, bars, and restaurants and is popular for its small-town appeal, street musicians and performances, making it a popular tourist attraction. 
         
-        On Halloween, State Street hosts Freakfest, a city-sponsored Halloween festival attended a costumed crowd of tends of thousands of people.
+        On Halloween, State Street hosts Freakfest, a city-sponsored Halloween festival attended by a costumed crowd of tens of thousands of people.
 
-        State street has buses but in [an attempt to trial the full pedetsrianizaing] is trialing their removal on a stretch of it this summer.`,
+        Part of State street's pedestrian zone is served by city buses, but in summer 2023 is trialing their removal to maximize space for on street dining and activites.`,
         // https://www.masstransitmag.com/management/news/53063956/wi-madison-inches-closer-to-testing-part-of-state-street-as-a-pedestrian-mall
       },
     },
@@ -348,15 +352,14 @@ const streets: Streets = [
       en: {
         name: "Pedestrian streets at home",
         location: "Montreal, Quebec",
-        body: `
-        Montreal is already home to several long term. recurring and permanent pedestrian zones. 
-        Rue Sainte-Catherine by Quartier des spectacles, between De Bleury and boulevard Saint-Laurent, is being trialed as a long term pedestrian street until April 2024.
+        body: `Montreal is already home to several long term, recurring and permanent pedestrian zones. 
+        Rue Sainte-Catherine in Quartier des spectacles, between De Bleury and boulevard Saint-Laurent, is being trialed as a long term pedestrian street throughout the winter until April 2024.
         
-        De la Gauchetiere in Chinatown has been pedestrianized for several decades, as have Rue Prince-Arthur. 
+        De la Gauchetière in Chinatown has been pedestrianized for several decades [since what decade?], along with Rue Prince-Arthur. 
 
-        For the past few years, Montreal has pedestrianized over 8 kilometers of streets in the summer months, and has announced its intent to pedestrianize part of Old Montreal over the coming years.
+        For the past few years, Montreal has pedestrianized over 8 kilometers of streets including Rue Wellington in the summer months, and has announced plans to pedestrianize part of Old Montreal over the coming years.
 
-        [..]
+        Montreal is dynamic city with a culture of street life, festivities, dining out. It has a popular transit system and growing cycling culture. It has committed to reducing the use and priority of passenger cars. Pedestrian zones 
         `,
       },
     },
@@ -372,9 +375,15 @@ const streets: Streets = [
     </section>
     <section>
       <h2>{t("aroundTheWorldHeading")}</h2>
-      <!-- <p>
-        {t("A selection of pedestrian ")}
-      </p> -->
+      <p>
+        {
+          t(
+            "A history and gallery of just some of the cities with year round pedestrian streets."
+          )
+        }
+      </p>
+    </section>
+    <section class="full-width-mobile">
       <div class="street-cards">
         {
           streets.map((street) => {
@@ -391,9 +400,16 @@ const streets: Streets = [
                     />
                   ))}
                 </div>
-                <h3 class="name">{name}</h3>
-                <p class="location">{location}</p>
-                <p class="body" set:html={body} />
+                <div class="image-buttons">
+                  {images.map(({ src }) => (
+                    <button class="image-button" data-src={src} />
+                  ))}
+                </div>
+                <div class="street-card-body">
+                  <h3 class="name">{name}</h3>
+                  <p class="location">{location}</p>
+                  <p class="body" set:html={body} />
+                </div>
               </div>
             );
           })
@@ -405,31 +421,57 @@ const streets: Streets = [
 </Layout>
 
 <script is:inline>
-const $allImages = document.querySelectorAll(".images img");
-$allImages.forEach(($img) => {
-  $img.addEventListener("click", () => {
-    const $nextImg =
-      $img.nextElementSibling || $img.parentElement.firstElementChild;
-    try {
-      $nextImg.scrollIntoViewIfNeeded();
-    } catch (e) {
-      $nextImg.scrollIntoView();
-    }
+const $streetCards = document.querySelectorAll(".street-cards");
+const scrollIntoView = ($el) => {
+  try {
+    $el.scrollIntoViewIfNeeded();
+  } catch (e) {
+    $el.scrollIntoView();
+  }
+};
+
+$streetCards.forEach(($streetCard) => {
+  const $cardImages = $streetCard.querySelectorAll(".images img");
+  const $imageButtons = $streetCard.querySelectorAll(".image-button");
+
+  $cardImages.forEach(($cardImage) => {
+    $cardImage.addEventListener("click", () => {
+      const $nextImg =
+        $cardImage.nextElementSibling ||
+        $cardImage.parentElement.firstElementChild;
+
+      scrollIntoView($nextImg);
+    });
+  });
+
+  $imageButtons.forEach(($imageButton, i) => {
+    $imageButton.addEventListener("click", () => {
+      const $targetImg = $cardImages[i];
+      // TODO mobile $targetImg should be next image ?
+
+      scrollIntoView($targetImg);
+    });
   });
 });
 </script>
 
 <style>
-  @media (min-width: 980px) {
-    section {
-      max-width: 1023px;
+  section.full-width-mobile {
+    margin: 0rem;
+  }
+  @media (min-width: 780px) {
+    section.full-width-mobile {
+      margin: 0rem auto;
+      /* max-width: 1024px; */
+      max-width: calc(1024px + 2rem);
+      padding: 1rem;
     }
   }
 
   .street-cards {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
     width: 100%;
   }
   @media (min-width: 780px) {
@@ -439,14 +481,13 @@ $allImages.forEach(($img) => {
   }
 
   .street-card .images {
+    display: flex;
+    flex-direction: row;
     width: 100%;
     aspect-ratio: 1;
     overflow-y: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
   }
 
   .street-card img {
@@ -457,8 +498,40 @@ $allImages.forEach(($img) => {
     scroll-snap-align: center;
   }
 
+  .street-card .image-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .street-card .image-button {
+    display: block;
+    appearance: none;
+    padding: 0;
+    border: 0;
+    background-color: var(--color-text);
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .street-card-body {
+    margin: 0 1rem;
+  }
+
+  @media (min-width: 780px) {
+    .street-card-body {
+      margin: 0;
+      margin-right: 1rem;
+    }
+  }
+
   .street-card .name {
-    margin-bottom: 0;
+    margin-block-start: 1rem;
+    margin-block-end: 0;
   }
 
   .street-card .location {
