@@ -63,8 +63,6 @@ const fr = {
   followUsOn: 'Suivez-nous sur',
   and: 'et',
 
-  inspirationAndReading: 'Inspiration et lecture',
-
   footerNoticeUnaffiliated: 'Ce site n\'est pas affiliée à ',
 
   contactUs: 'Contactez-nous',
@@ -75,7 +73,7 @@ const fr = {
   questionsAndAnswersCta: 'Lisez notre page Questions et réponses',
 
   aroundTheWorldHeading: 'Rues piétonnes à travers le monde',
-  aroundTheWorldBody: 'Vous cherchez de l\'inspiration?',
+  aroundTheWorldBody: '',
   aroundTheWorldCta: 'Découvrez les rues piétonnes à travers le monde',
 
   notFound: '404 : Introuvable',
@@ -151,8 +149,6 @@ const en = {
   followUsOn: 'Follow us on',
   and: 'and',
 
-  inspirationAndReading: 'Inspiration and reading',
-
   footerNoticeUnaffiliated: 'This site is not affiliated with ',
 
   contactUs: 'Contact us',
@@ -163,7 +159,7 @@ const en = {
   questionsAndAnswersCta: 'Read our Questions and answers page',
 
   aroundTheWorldHeading: 'Pedestrian streets around the world',
-  aroundTheWorldBody: 'Looking for inspiration?',
+  aroundTheWorldBody: 'A history and gallery of year round pedestrian streets in cities around the world.',
   aroundTheWorldCta: 'Check out pedestrian streets around the world',
 
   notFound: '404: Not Found',
@@ -184,7 +180,7 @@ export default defineAstroI18nConfig({
   defaultLangCode: 'fr',
   supportedLangCodes: ['en'],
   showDefaultLangCode: false,
-  translations: { en, fr },
+  translations,
   routeTranslations: {
     en: {
       signer: 'sign',

@@ -2,8 +2,9 @@
 import { t } from "astro-i18n";
 import HowToSignLocationItem from "./HowToSignLocationItem.astro";
 import HowToSignEventItem from "./HowToSignEventItem.astro";
+import { SigningLocation, SigningEvent } from "../../types";
 
-const locations = [
+const locations: SigningLocation[] = [
   {
     name: "Chez Robin marché local",
     href: "https://goo.gl/maps/2kjX6xBsVRTXp5vL6",
@@ -46,17 +47,15 @@ const locations = [
   },
 ];
 
-const events = [
+const events: SigningEvent[] = [
   {
-    lang: {
-      fr: {
-        name: "Excavation & Poésie à Verdun",
-        location: `Métro de l'Église`,
-      },
-      en: {
-        name: "Excavation & Poésie in Verdun",
-        location: `Metro de l'Église`,
-      },
+    name: {
+      fr: "Excavation & Poésie à Verdun",
+      en: "Excavation & Poésie in Verdun",
+    },
+    location: {
+      fr: `Métro de l'Église`,
+      en: `Metro de l'Église`,
     },
     href: "https://www.facebook.com/events/6120347358012834/",
     dateStart: new Date("2023-07-13T18:00:00-04:00"),
@@ -71,12 +70,12 @@ const events = [
 
 <h3>{t("atASupportingBusiness")}</h3>
 <ul class="locations">
-  {locations.map((location) => <HowToSignLocationItem {...location} />)}
+  {locations.map((location) => <HowToSignLocationItem {location} />)}
 </ul>
 
 {events.length ? <h3>{t("onTheStreet")}</h3> : null}
 <ul>
-  {events.map((event) => <HowToSignEventItem {...event} />)}
+  {events.map((event) => <HowToSignEventItem {event} />)}
 </ul>
 
 <h3>{t("online")}</h3>
