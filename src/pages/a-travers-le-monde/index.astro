@@ -3,44 +3,34 @@ import { astroI18n, t, l } from "astro-i18n";
 import Layout from "../../components/Layout.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
-import { LangObject } from "../../../types";
+import { Street } from "../../../types";
 
 astroI18n.init(Astro);
 
 const { langCode } = astroI18n;
 
-type Streets = {
-  images: {
-    src: string;
-    alt: LangObject;
-  }[];
-  name: LangObject;
-  location: LangObject;
-  body: LangObject;
-}[];
-
-const streets: Streets = [
+const streets: Street[] = [
   {
     images: [
       {
         src: "newark-1.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "A couple walking on Newark ave at night with string lights hanging above the street",
         },
       },
       {
         src: "newark-2.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "People walking and dining on Newark ave. A person walking a dog in the foreground. Jersey city visible in the background.",
         },
       },
       {
         src: "newark-3.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "A couple walking in shorts, a boy on a scooter, and a mother pushing a stroller on a tree-lined Newark ave.",
         },
       },
     ],
@@ -73,21 +63,21 @@ const streets: Streets = [
         src: "stroget-1.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "A busy, crowded day on the central square of Strøget. A bicycle is parked in the forground with buildings and a church tower in the background.",
         },
       },
       {
         src: "stroget-2.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "A busy, day on the central square of Strøget, with people walking in all directions.",
         },
       },
       {
         src: "stroget-3.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "The same location in a historic photo. Vintage cars and a bus head in different directions at the intersection. People are walking on the sidewalk, including a woman walking her bike.",
         },
       },
     ],
@@ -120,21 +110,21 @@ const streets: Streets = [
         src: "church-1.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "A fall day on Church street. Young people are socializing on the tree-lined brick street. A man is resting on a bench with his dog.",
         },
       },
       {
         src: "church-2.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "A beautiful aerial photo of Church street on a summer day. The street is hosting a community yoga event. A large group of women are sitting on yoga mats peforming a pose in unison, with the church tower in the background. ",
         },
       },
       {
         src: "church-3.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "A couple on Church street looking each other in the eyes, posing with their bicycles by their sides.",
         },
       },
     ],
@@ -167,21 +157,21 @@ const streets: Streets = [
         src: "pearl-1.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "A winter night on Pearl street. Bare trees decorated with Christmas lights line the middle of the street. A bulletin board and newspaper stand are in the foreground, with few people walking and socializing by the storefronts in the distance.",
         },
       },
       {
         src: "pearl-2.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "Children playing in Pearl street's sandbox. A boy is climbing a brass statue of a frog in the foreground, with a girl and mothers sitting on the side.",
         },
       },
       {
         src: "pearl-3.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "Pearl street being plowed by a small snowplow on a stormy winter day.",
         },
       },
     ],
@@ -215,21 +205,21 @@ const streets: Streets = [
         src: "sauchiehall-1.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "People walking with umbrellas on a brick-lined street bound by historic buildings and banners on a rainy day.",
         },
       },
       {
         src: "sauchiehall-2.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "People walking on the brick-lined street. An elderly couple walking together in the foreground. Friends are sitting and chatting on a bench in the middle of the street.",
         },
       },
       {
         src: "sauchiehall-3.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "People walking on a stormy winter day. The street is covered in a thin layer of snow. A couple people are carting luggage in the foreground.",
         },
       },
     ],
@@ -262,21 +252,21 @@ const streets: Streets = [
         src: "sparks-1.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "A woman walking on Sparks street. A variety of historic and modern buildings line the street. The ornate street lamps are decorated with bundles of pink flowers. Several other people are walking in the background, including a man holding a coffee.",
         },
       },
       {
         src: "sparks-2.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "A couple walking with their children on a winter day. To their side is a large ice sculpture of a fish rising from the water.",
         },
       },
       {
         src: "sparks-3.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "A black and white historic photo of Sparks Street. The street is lined with telephone poles and wires overhead. A man rides a bicycle in the foreground. A streetcar approches in the background with workers clearing the dirt road and tracks of debris.",
         },
       },
     ],
@@ -309,21 +299,21 @@ const streets: Streets = [
         src: "state-1.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "A tree-lined State street on a summer day. People are walking in different directions. In the background, a couple of delivery vehicles are parked to the side, with the state capitol building in the distance.",
         },
       },
       {
         src: "state-2.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "A quieter day on State street. People walk on the street in different directions. A car crosses an intersection near a food stand set up by the edge of the street.",
         },
       },
       {
         src: "state-3.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "A view of the capitol building and its steps from State street. A group of cyclists and a skateboarder use the middle of the street, with many other people walking, sitting, and socializing on the raised sidewalks. ",
         },
       },
     ],
@@ -357,21 +347,21 @@ const streets: Streets = [
         src: "ste-catherine-1.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "A crowded Sainte Catherine street open to pedestrians on a cold day. A number of food stalls, a pine tree and festive decorations are set up in the street. Car traffic is visible in the distance at the limits of the pedestrian zone.",
         },
       },
       {
         src: "ste-catherine-2.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "A winter night on the pedestrian zone of Saint Catherine street. The street is illuminated with intense blue lights. People walk in front of the entrance of Place des arts. A mound of plowed snow is pushed neatly to the side. ",
         },
       },
       {
         src: "quartier-chinois-1.jpg",
         alt: {
           fr: "",
-          en: "",
+          en: "The busy pedestrian zone of de la Gauchetiere street in Chinatown on a hazy winter day. The gates to the neighbourhood and buildings downtown are seen in the distance. Restaurants and shops line the street with people eating and window shopping.",
         },
       },
     ],
@@ -413,13 +403,7 @@ const streets: Streets = [
     </section>
     <section>
       <h2>{t("aroundTheWorldHeading")}</h2>
-      <p>
-        {
-          t(
-            "A history and gallery of year round pedestrian streets in cities around the world."
-          )
-        }
-      </p>
+      <p>{t("aroundTheWorldBody")}</p>
     </section>
     <section class="full-width-mobile">
       <div class="street-cards">
