@@ -3,6 +3,7 @@ import { astroI18n, t, l } from "astro-i18n";
 import Layout from "../../components/Layout.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
+import { LangObject } from "../../../types";
 
 astroI18n.init(Astro);
 
@@ -11,17 +12,11 @@ const { langCode } = astroI18n;
 type Streets = {
   images: {
     src: string;
-    alt: {
-      [langCode: string]: string;
-    };
+    alt: LangObject;
   }[];
-  lang: {
-    [langCode: string]: {
-      name: string;
-      location: string;
-      body: string;
-    };
-  };
+  name: LangObject;
+  location: LangObject;
+  body: LangObject;
 }[];
 
 const streets: Streets = [
@@ -49,25 +44,27 @@ const streets: Streets = [
         },
       },
     ],
-    lang: {
-      fr: {
-        name: "Avenue Newark",
-        location: "Jersey City (New Jersey)",
-        body: `Pour la première fois en 2014, la ville de Jersey a fermé un bloc de l'avenue Newark aux voitures les après-midi et les week-ends. Bien que cette mesure ait reçu un accueil mitigé de la part des commerçants et des habitants du quartier, les piétons et les cyclistes ont été satisfaits et la ville a rendu la rue piétonne en 2015.
-        
-        En 2018, la place a été étendue à 400 mètres de long. En 2022, une rénovation de 7 millions de dollars américains a été achevée, avec l'ajout de nouveaux bancs, de supports à vélos, de végétation, d'arbres et d'une scène pour les événements communautaires. La ville a également rehaussé la rue avec des pavés de granit pour permettre l'accès universel aux fauteuils roulants et aux poussettes. 
 
-        "La création de la place piétonne était un risque que notre administration a pris lorsqu'elle a été élue pour la première fois, car il y a eu beaucoup de réticences, mais je pense qu'avec le temps, il est devenu clair pour tout le monde que les changements que nous avons apportés ont attiré plus de gens, ont permis à plus d'entreprises d'ouvrir et ont créé un lieu de destination pour les visiteurs et les résidents", a déclaré le maire Steven Fulop.`,
-      },
-      en: {
-        name: "Newark Avenue",
-        location: "Jersey City, New Jersey",
-        body: `First trialed in 2014, Jersey City closed a block of Newark Avenue to cars on afternoons and weekends. Though it got mixed reviews from business owners and residents of the block, pedestrians and bicyclists were happy and the city pedestrianized the street in 2015.
+    name: {
+      fr: "Avenue Newark",
+      en: "Newark Avenue",
+    },
+    location: {
+      fr: "Jersey City (New Jersey)",
+      en: "Jersey City, New Jersey",
+    },
+    body: {
+      fr: `Pour la première fois en 2014, la ville de Jersey a fermé un bloc de l'avenue Newark aux voitures les après-midi et les week-ends. Bien que cette mesure ait reçu un accueil mitigé de la part des commerçants et des habitants du quartier, les piétons et les cyclistes ont été satisfaits et la ville a rendu la rue piétonne en 2015.
         
-        In 2018, the plaza was expanded to 400 metres in length. Then in 2022, a USD$7 million renovation was completed, adding new benches, bike racks, vegetation, trees, and a stage for community events. The city also raised the street with granite pavers for universal wheelchair and stroller accessibility. 
+      En 2018, la place a été étendue à 400 mètres de long. En 2022, une rénovation de 7 millions de dollars américains a été achevée, avec l'ajout de nouveaux bancs, de supports à vélos, de végétation, d'arbres et d'une scène pour les événements communautaires. La ville a également rehaussé la rue avec des pavés de granit pour permettre l'accès universel aux fauteuils roulants et aux poussettes. 
 
-        “The creation of the Pedestrian Plaza was a risk our administration took when first elected as there was significant pushback, but I think over time it has become clear to everyone that the changes we made there have attracted more people, allowed more businesses to open, and created a destination spot for visitors and residents,” said Mayor Steven Fulop.`,
-      },
+      "La création de la place piétonne était un risque que notre administration a pris lorsqu'elle a été élue pour la première fois, car il y a eu beaucoup de réticences, mais je pense qu'avec le temps, il est devenu clair pour tout le monde que les changements que nous avons apportés ont attiré plus de gens, ont permis à plus d'entreprises d'ouvrir et ont créé un lieu de destination pour les visiteurs et les résidents", a déclaré le maire Steven Fulop.`,
+
+      en: `First trialed in 2014, Jersey City closed a block of Newark Avenue to cars on afternoons and weekends. Though it got mixed reviews from business owners and residents of the block, pedestrians and bicyclists were happy and the city pedestrianized the street in 2015.
+        
+      In 2018, the plaza was expanded to 400 metres in length. Then in 2022, a USD$7 million renovation was completed, adding new benches, bike racks, vegetation, trees, and a stage for community events. The city also raised the street with granite pavers for universal wheelchair and stroller accessibility. 
+
+      “The creation of the Pedestrian Plaza was a risk our administration took when first elected as there was significant pushback, but I think over time it has become clear to everyone that the changes we made there have attracted more people, allowed more businesses to open, and created a destination spot for visitors and residents,” said Mayor Steven Fulop.`,
     },
   },
   {
@@ -94,25 +91,27 @@ const streets: Streets = [
         },
       },
     ],
-    lang: {
-      fr: {
-        name: "Strøget",
-        location: "Copenhague (Danemark)",
-        body: `Avec plus d'un kilomètre, Strøget est l'une des plus longues rues piétonnes d'Europe. Faisant partie des nombreux kilomètres de rues piétonnes de Copenhague, sa transformation en 1962 a marqué le début d'un changement culturel dans le mode de vie des habitants de la ville. Les voitures prenaient le dessus, les cyclistes étaient de moins en moins nombreux et la ville était encombrée et polluée. 
+
+    name: {
+      fr: "Strøget",
+      en: "Strøget",
+    },
+    location: {
+      fr: "Copenhague (Danemark)",
+      en: "Copenhagen, Denmark",
+    },
+    body: {
+      fr: `Avec plus d'un kilomètre, Strøget est l'une des plus longues rues piétonnes d'Europe. Faisant partie des nombreux kilomètres de rues piétonnes de Copenhague, sa transformation en 1962 a marqué le début d'un changement culturel dans le mode de vie des habitants de la ville. Les voitures prenaient le dessus, les cyclistes étaient de moins en moins nombreux et la ville était encombrée et polluée. 
         
-        Lors de sa conception, l'idée d'une rue piétonne n'était pas généralement acceptée. Le slogan et le cri de ralliement étaient que "les Danois ne sont pas des Italiens", car Copenhague n'avait pas la culture sociale de plein air que l'on trouve ailleurs en Europe. Les gens craignaient que ce changement ne soit un désastre pour les commerces de la rue. 
+      Lors de sa conception, l'idée d'une rue piétonne n'était pas généralement acceptée. Le slogan et le cri de ralliement étaient que "les Danois ne sont pas des Italiens", car Copenhague n'avait pas la culture sociale de plein air que l'on trouve ailleurs en Europe. Les gens craignaient que ce changement ne soit un désastre pour les commerces de la rue. 
+      
+      L'urbaniste Alfred Wassard a même été menacé de mort. Une prise de décision politique visionnaire était nécessaire et la détermination des principaux responsables politiques était vitale pour la réussite de cette transformation.`,
+
+      en: `At over 1km, Strøget is among the longest pedestrian streets in Europe. Part of Copenhagen's several kilometers of pedestrian streets, its transformation in 1962 marked the start of a cultural shift in the way of life for those in the city. Cars were taking over, fewer people were cycling and the city was congested and polluted. 
         
-        L'urbaniste Alfred Wassard a même été menacé de mort. Une prise de décision politique visionnaire était nécessaire et la détermination des principaux responsables politiques était vitale pour la réussite de cette transformation.`,
-      },
-      en: {
-        name: "Strøget",
-        location: "Copenhagen, Denmark",
-        body: `At over 1km, Strøget is among the longest pedestrian streets in Europe. Part of Copenhagen's several kilometers of pedestrian streets, its transformation in 1962 marked the start of a cultural shift in the way of life for those in the city. Cars were taking over, fewer people were cycling and the city was congested and polluted. 
-        
-        At its conception, the idea of a pedestrian street was not generally accepted. The slogan and rallying cry was that "Danes are not Italians", as Copenhagen lacked the outdoor social culture seen elsewhere in Europe. People feared the change would be a disaster for the businesses in the street. 
-        
-        The town planner, Alfred Wassard, even faced death threats. Visionary political decision-making was needed and the determination of key politicians was vital for this transformation to succeed.`,
-      },
+      At its conception, the idea of a pedestrian street was not generally accepted. The slogan and rallying cry was that "Danes are not Italians", as Copenhagen lacked the outdoor social culture seen elsewhere in Europe. People feared the change would be a disaster for the businesses in the street. 
+      
+      The town planner, Alfred Wassard, even faced death threats. Visionary political decision-making was needed and the determination of key politicians was vital for this transformation to succeed.`,
     },
   },
   {
@@ -139,25 +138,27 @@ const streets: Streets = [
         },
       },
     ],
-    lang: {
-      fr: {
-        name: "Church Street",
-        location: "Burlington (Vermont)",
-        body: `Avec une densité de population équivalente à un sixième de celle de Verdun, la rue Church de Burlington est un brillant exemple de rue piétonne de petite ville dans un climat froid. 
+
+    name: {
+      fr: "Church Street",
+      en: "Church Street",
+    },
+    location: {
+      fr: "Burlington (Vermont)",
+      en: "Burlington, Vermont",
+    },
+    body: {
+      fr: `Avec une densité de population équivalente à un sixième de celle de Verdun, la rue Church de Burlington est un brillant exemple de rue piétonne de petite ville dans un climat froid. 
         
-        Inspirée par les changements observés à Copenhague, la rue Church a commencé par une foire d'une journée parrainée par l'association des commerçants en 1970. L'année suivante, la rue a été piétonne pendant une semaine, avec l'ajout de transports en commun dans les rues avoisinantes. L'expérience a été un succès évident. 
+      Inspirée par les changements observés à Copenhague, la rue Church a commencé par une foire d'une journée parrainée par l'association des commerçants en 1970. L'année suivante, la rue a été piétonne pendant une semaine, avec l'ajout de transports en commun dans les rues avoisinantes. L'expérience a été un succès évident. 
+      
+      Après des années de dialogue et de planification, la rue est devenue une rue piétonne permanente. Aujourd'hui, des millions de visiteurs viennent pour socialiser, célébrer, passer le temps et faire des achats dans l'un des plus de cent magasins et restaurants de la rue.`,
+
+      en: `With a population density one sixth of Verdun's, Burlington's Church street is a shining example of a small city pedestrian street in a cold climate. 
         
-        Après des années de dialogue et de planification, la rue est devenue une rue piétonne permanente. Aujourd'hui, des millions de visiteurs viennent pour socialiser, célébrer, passer le temps et faire des achats dans l'un des plus de cent magasins et restaurants de la rue.`,
-      },
-      en: {
-        name: "Church Street",
-        location: "Burlington, Vermont",
-        body: `With a population density one sixth of Verdun's, Burlington's Church street is a shining example of a small city pedestrian street in a cold climate. 
-        
-        Inspired by the changes seen in Copenhagen, Church street started with a one-day street fair sponsored by the Merchants Association in 1970. The following year, the street was pedestrianized for a week, with transit added on surrounding streets. The experiment was an obvious success. 
-        
-        After years of dialogue and planning, the street was then made into a permanent pedestrian street. Today, millions of visitors come to socialize, celebrate, pass time, and shop at one of over a hundred shops and restaurants on the street.`,
-      },
+      Inspired by the changes seen in Copenhagen, Church street started with a one-day street fair sponsored by the Merchants Association in 1970. The following year, the street was pedestrianized for a week, with transit added on surrounding streets. The experiment was an obvious success. 
+      
+      After years of dialogue and planning, the street was then made into a permanent pedestrian street. Today, millions of visitors come to socialize, celebrate, pass time, and shop at one of over a hundred shops and restaurants on the street.`,
     },
   },
   {
@@ -184,25 +185,27 @@ const streets: Streets = [
         },
       },
     ],
-    lang: {
-      fr: {
-        name: "Pearl Street Mall",
-        location: "Boulder (Colorado)",
-        body: `Nommé l'un des "grands espaces publics" des États-Unis par l'American Planning Association, le Pearl Street Mall à Boulder, dans le Colorado, est une rue commerciale qui accueille une variété de commerces et de restaurants locaux. Il a été transformé en 1977 afin de revitaliser le quartier historique qui était menacé par des centres commerciaux de type suburbain. 
+
+    name: {
+      fr: "Pearl Street Mall",
+      en: "Pearl Street Mall",
+    },
+    location: {
+      fr: "Boulder (Colorado)",
+      en: "Boulder, Colorado",
+    },
+    body: {
+      fr: `Nommé l'un des "grands espaces publics" des États-Unis par l'American Planning Association, le Pearl Street Mall à Boulder, dans le Colorado, est une rue commerciale qui accueille une variété de commerces et de restaurants locaux. Il a été transformé en 1977 afin de revitaliser le quartier historique qui était menacé par des centres commerciaux de type suburbain. 
         
-        La rue est remplie d'art public, notamment de nombreuses fontaines et sculptures, ainsi que d'un bac à sable pour les enfants. Pendant les mois d'été, la rue est le théâtre d'un certain nombre d'artistes et de musiciens de rue. 
+      La rue est remplie d'art public, notamment de nombreuses fontaines et sculptures, ainsi que d'un bac à sable pour les enfants. Pendant les mois d'été, la rue est le théâtre d'un certain nombre d'artistes et de musiciens de rue. 
+      
+      Malgré les hivers rigoureux de la ville, qui compte 12 % de neige en plus par an que Montréal, le Pearl Street Mall de Boulder démontre que de tels espaces sont adaptables et réalisables quel que soit le climat.`,
+
+      en: `Named one of America's "Great Public Spaces" by the American Planning Association, the Pearl Street Mall in Boulder, Colorado is a commercial street that hosts a variety of local businesses and restaurants. It was transformed in 1977 as a means to revitalize the historic district which was threatened by suburban-style shopping centers. 
         
-        Malgré les hivers rigoureux de la ville, qui compte 12 % de neige en plus par an que Montréal, le Pearl Street Mall de Boulder démontre que de tels espaces sont adaptables et réalisables quel que soit le climat.`,
-      },
-      en: {
-        name: "Pearl Street Mall",
-        location: "Boulder, Colorado",
-        body: `Named one of America's "Great Public Spaces" by the American Planning Association, the Pearl Street Mall in Boulder, Colorado is a commercial street that hosts a variety of local businesses and restaurants. It was transformed in 1977 as a means to revitalize the historic district which was threatened by suburban-style shopping centers. 
-        
-        The street is filled with public art, including numerous fountains and sculptures as well as a sandbox for children. During the summer months, the street is a stage for a number of street performers and musicians. 
-        
-        Despite the city's extreme winters, with 12% more snow per year than Montreal, Boulder's Pearl Street Mall demonstrates how such spaces are adaptable and feasible no matter the climate.`,
-      },
+      The street is filled with public art, including numerous fountains and sculptures as well as a sandbox for children. During the summer months, the street is a stage for a number of street performers and musicians. 
+      
+      Despite the city's extreme winters, with 12% more snow per year than Montreal, Boulder's Pearl Street Mall demonstrates how such spaces are adaptable and feasible no matter the climate.`,
     },
   },
 
@@ -230,25 +233,27 @@ const streets: Streets = [
         },
       },
     ],
-    lang: {
-      fr: {
-        name: "Les rue Sauchiehall, Argyle & Buchanan",
-        location: "Glasgow (Écosse)",
-        body: `Rendu piétonnier dans les années 1970, ce réseau de rues du centre-ville de Glasgow couvre une vaste zone de la ville pluvieuse du nord. En 1999, la rue [Buchanan ?] a été entièrement repavée avec des pierres de granit de haute qualité et des éclairages décoratifs.
 
-        En raison de l'évolution du [comportement / des préférences] des consommateurs, il a été [annoncé] en 2022 que le centre commercial de la rue, Buchanan Galleries, vieux de 20 ans, serait démoli et remplacé par des bâtiments à usage mixte, y compris des résidences. [+ de détails. des appartements ? qu'est-ce qui le remplacera ?]
+    name: {
+      fr: "Les rues Sauchiehall, Argyle & Buchanan",
+      en: "Sauchiehall, Argyle & Buchanan streets",
+    },
+    location: {
+      fr: "Glasgow (Écosse)",
+      en: "Glasgow, Scotland",
+    },
+    body: {
+      fr: `Rendu piétonnier dans les années 1970, ce réseau de rues du centre-ville de Glasgow couvre une vaste zone de la ville pluvieuse du nord. En 1999, la rue [Buchanan ?] a été entièrement repavée avec des pierres de granit de haute qualité et des éclairages décoratifs.
 
-        Ce changement montre comment les villes peuvent adapter leur zonage et leur activité commerciale pour soutenir la vitalité d'espaces publics à usage mixte et praticables.`,
-      },
-      en: {
-        name: "Sauchiehall, Argyle & Buchanan streets",
-        location: "Glasgow, Scotland",
-        body: `Pedestrizanized in the 1970s, this network of streets in downtown Glasgow covers an extensive area of the rainy, northern city. In 1999, the entire street [Buchanan?] was repaved with high quality granite stonework and decorative lighting.
+      En raison de l'évolution du [comportement / des préférences] des consommateurs, il a été [annoncé] en 2022 que le centre commercial de la rue, Buchanan Galleries, vieux de 20 ans, serait démoli et remplacé par des bâtiments à usage mixte, y compris des résidences. [+ de détails. des appartements ? qu'est-ce qui le remplacera ?]
 
-        Due to changing consumer [behaviour / preferences], In 2022, the street's 20 year old shopping mall, Buchanan Galleries, was [announced] to be demolished and replaced with mixed-use buildings, including residences. [+ details. apartments? what's replacing it?]
+      Ce changement montre comment les villes peuvent adapter leur zonage et leur activité commerciale pour soutenir la vitalité d'espaces publics à usage mixte et praticables.`,
 
-        This change shows how cities can adapt their zoning and commercial activity to support the vitality of walkable mixed-use public spaces.`,
-      },
+      en: `Pedestrizanized in the 1970s, this network of streets in downtown Glasgow covers an extensive area of the rainy, northern city. In 1999, the entire street [Buchanan?] was repaved with high quality granite stonework and decorative lighting.
+
+      Due to changing consumer [behaviour / preferences], In 2022, the street's 20 year old shopping mall, Buchanan Galleries, was [announced] to be demolished and replaced with mixed-use buildings, including residences. [+ details. apartments? what's replacing it?]
+
+      This change shows how cities can adapt their zoning and commercial activity to support the vitality of walkable mixed-use public spaces.`,
     },
   },
   {
@@ -275,25 +280,27 @@ const streets: Streets = [
         },
       },
     ],
-    lang: {
-      fr: {
-        name: "Rue Sparks",
-        location: "Ottawa (Ontario)",
-        body: `La rue Sparks est une rue principale d'Ottawa et la première au Canada à avoir été convertie en rue piétonne en 1967. 
-        
-        Cette rue piétonne de 850 mètres accueille un certain nombre de restaurants, de boutiques et d'événements tout au long de l'année, notamment un concours de sculpture sur glace dans le cadre du festival annuel du Bal de Neige.
 
-        Elle abrite également plusieurs bâtiments historiques, institutionnels et de bureaux, bien que leur grande empreinte et leur présence aient été critiquées pour leur impact sur la vie de la rue, en particulier les week-ends. Comme dans le centre-ville de Montréal, l'ajout d'unités résidentielles devrait améliorer la vitalité du quartier.`,
-      },
-      en: {
-        name: "Sparks Street",
-        location: "Ottawa, Ontario",
-        body: `Sparks street is a main street of Ottawa and the first in Canada to be converted to a pedestrian street in 1967. 
+    name: {
+      fr: "Rue Sparks",
+      en: "Sparks Street",
+    },
+    location: {
+      fr: "Ottawa (Ontario)",
+      en: "Ottawa, Ontario",
+    },
+    body: {
+      fr: `La rue Sparks est une rue principale d'Ottawa et la première au Canada à avoir été convertie en rue piétonne en 1967. 
         
-        The 850m pedestrian street hosts a number of restaurants, shops, and events throughout the year, including an ice carving competition as part of the Winterlude annual festival.
+      Cette rue piétonne de 850 mètres accueille un certain nombre de restaurants, de boutiques et d'événements tout au long de l'année, notamment un concours de sculpture sur glace dans le cadre du festival annuel du Bal de Neige.
 
-        It is also home to several historic, institutional, and office buildings, though their large footprint and presence have been critiqued for impacting life on the street, especially on weekends. As in Montreal's downtown, the addition of residential units is expected to improve the neighbourhood's vitality.`,
-      },
+      Elle abrite également plusieurs bâtiments historiques, institutionnels et de bureaux, bien que leur grande empreinte et leur présence aient été critiquées pour leur impact sur la vie de la rue, en particulier les week-ends. Comme dans le centre-ville de Montréal, l'ajout d'unités résidentielles devrait améliorer la vitalité du quartier.`,
+
+      en: `Sparks street is a main street of Ottawa and the first in Canada to be converted to a pedestrian street in 1967. 
+        
+      The 850m pedestrian street hosts a number of restaurants, shops, and events throughout the year, including an ice carving competition as part of the Winterlude annual festival.
+
+      It is also home to several historic, institutional, and office buildings, though their large footprint and presence have been critiqued for impacting life on the street, especially on weekends. As in Montreal's downtown, the addition of residential units is expected to improve the neighbourhood's vitality.`,
     },
   },
   {
@@ -320,27 +327,29 @@ const streets: Streets = [
         },
       },
     ],
-    lang: {
-      fr: {
-        name: "State Street",
-        location: "Madison (Wisconsin)",
-        body: `D'une longueur égale à celle de Wellington, soit 1,2 km, la rue State à Madison, capitale du Wisconsin, est une rue piétonne. State street dans la capitale du Wisconsin, Madison, est une rue piétonne convertie en 1974 à partir d'une route à quatre voies. La rue accueille une variété de boutiques, de bars et de restaurants et est appréciée pour son attrait de petite ville, ses musiciens de rue et ses spectacles, ce qui en fait une attraction touristique populaire. 
-        
-        À Halloween, State Street accueille le Freakfest, un festival d'Halloween parrainé par la ville et auquel participent des dizaines de milliers de personnes costumées.
 
-        Une partie de la zone piétonne de State Street est desservie par les bus de la ville, mais au cours de l'été 2023, il est prévu de les supprimer afin de maximiser l'espace pour les restaurants et les activités dans la rue.`,
-      },
-      en: {
-        name: "State Street",
-        location: "Madison, Wisconsin",
-        body: `Spanning the same length as Wellington at 1.2 km. State street in Wisconsin's capital city Madison, is a pedestrian street converted from a four-lane road in 1974. The street hosts a variety of shops, bars, and restaurants and is popular for its small-town appeal, street musicians and performances, making it a popular tourist attraction. 
-        
-        On Halloween, State Street hosts Freakfest, a city-sponsored Halloween festival attended by a costumed crowd of tens of thousands of people.
-
-        Part of State street's pedestrian zone is served by city buses, but in summer 2023 is trialing their removal to maximize space for on street dining and activites.`,
-        // https://www.masstransitmag.com/management/news/53063956/wi-madison-inches-closer-to-testing-part-of-state-street-as-a-pedestrian-mall
-      },
+    name: {
+      fr: "State Street",
+      en: "State Street",
     },
+    location: {
+      fr: "Madison (Wisconsin)",
+      en: "Madison, Wisconsin",
+    },
+    body: {
+      fr: `D'une longueur égale à celle de Wellington, soit 1,2 km, la rue State à Madison, capitale du Wisconsin, est une rue piétonne. State street dans la capitale du Wisconsin, Madison, est une rue piétonne convertie en 1974 à partir d'une route à quatre voies. La rue accueille une variété de boutiques, de bars et de restaurants et est appréciée pour son attrait de petite ville, ses musiciens de rue et ses spectacles, ce qui en fait une attraction touristique populaire. 
+        
+      À Halloween, State Street accueille le Freakfest, un festival d'Halloween parrainé par la ville et auquel participent des dizaines de milliers de personnes costumées.
+
+      Une partie de la zone piétonne de State Street est desservie par les bus de la ville, mais au cours de l'été 2023, il est prévu de les supprimer afin de maximiser l'espace pour les restaurants et les activités dans la rue.`,
+
+      en: `Spanning the same length as Wellington at 1.2 km. State street in Wisconsin's capital city Madison, is a pedestrian street converted from a four-lane road in 1974. The street hosts a variety of shops, bars, and restaurants and is popular for its small-town appeal, street musicians and performances, making it a popular tourist attraction. 
+        
+      On Halloween, State Street hosts Freakfest, a city-sponsored Halloween festival attended by a costumed crowd of tens of thousands of people.
+
+      Part of State street's pedestrian zone is served by city buses, but in summer 2023 is trialing their removal to maximize space for on street dining and activites.`,
+    },
+    // https://www.masstransitmag.com/management/news/53063956/wi-madison-inches-closer-to-testing-part-of-state-street-as-a-pedestrian-mall
   },
   {
     images: [
@@ -366,30 +375,31 @@ const streets: Streets = [
         },
       },
     ],
-    lang: {
-      fr: {
-        name: "Les rues piétonnes chez nous",
-        location: "Montréal (Québec)",
-        body: `Montréal compte déjà plusieurs zones piétonnes récurrentes et permanentes à long terme. 
-        La rue Sainte-Catherine dans le Quartier des spectacles, entre De Bleury et le boulevard Saint-Laurent, fait l'objet d'un essai de piétonnisation à long terme tout au long de l'hiver jusqu'en avril 2024.
+
+    name: {
+      fr: "Les rues piétonnes chez nous",
+      en: "Pedestrian streets at home",
+    },
+    location: {
+      fr: "Montréal (Québec)",
+      en: "Montreal, Quebec",
+    },
+    body: {
+      fr: `Montréal compte déjà plusieurs zones piétonnes récurrentes et permanentes à long terme. La rue Sainte-Catherine dans le Quartier des spectacles, entre De Bleury et le boulevard Saint-Laurent, fait l'objet d'un essai de piétonnisation à long terme tout au long de l'hiver jusqu'en avril 2024.
+      
+      La rue de la Gauchetière dans le quartier chinois est piétonne depuis plusieurs décennies [depuis quelle décennie ?], tout comme la rue Prince-Arthur. 
+
+      Au cours des dernières années, Montréal a piétonnisé plus de 8 kilomètres de rues, y compris la rue Wellington pendant les mois d'été, et a annoncé son intention de piétonniser une partie du Vieux-Montréal au cours des prochaines années.
+
+      Montréal est une ville dynamique avec une culture de la vie de rue, des festivités et des restaurants. Elle dispose d'un système de transport en commun populaire et d'une culture cycliste en plein essor. Elle s'est engagée à réduire l'utilisation et la priorité des voitures particulières. Zones piétonnes`,
+
+      en: `Montreal is already home to several long term, recurring and permanent pedestrian zones. Rue Sainte-Catherine in Quartier des spectacles, between De Bleury and boulevard Saint-Laurent, is being trialed as a long term pedestrian street throughout the winter until April 2024.
         
-        La rue de la Gauchetière dans le quartier chinois est piétonne depuis plusieurs décennies [depuis quelle décennie ?], tout comme la rue Prince-Arthur. 
+      De la Gauchetière in Chinatown has been pedestrianized for several decades [since what decade?], along with Rue Prince-Arthur. 
 
-        Au cours des dernières années, Montréal a piétonnisé plus de 8 kilomètres de rues, y compris la rue Wellington pendant les mois d'été, et a annoncé son intention de piétonniser une partie du Vieux-Montréal au cours des prochaines années.
+      For the past few years, Montreal has pedestrianized over 8 kilometers of streets including Rue Wellington in the summer months, and has announced plans to pedestrianize part of Old Montreal over the coming years.
 
-        Montréal est une ville dynamique avec une culture de la vie de rue, des festivités et des restaurants. Elle dispose d'un système de transport en commun populaire et d'une culture cycliste en plein essor. Elle s'est engagée à réduire l'utilisation et la priorité des voitures particulières. Zones piétonnes`,
-      },
-      en: {
-        name: "Pedestrian streets at home",
-        location: "Montreal, Quebec",
-        body: `Montreal is already home to several long term, recurring and permanent pedestrian zones. Rue Sainte-Catherine in Quartier des spectacles, between De Bleury and boulevard Saint-Laurent, is being trialed as a long term pedestrian street throughout the winter until April 2024.
-        
-        De la Gauchetière in Chinatown has been pedestrianized for several decades [since what decade?], along with Rue Prince-Arthur. 
-
-        For the past few years, Montreal has pedestrianized over 8 kilometers of streets including Rue Wellington in the summer months, and has announced plans to pedestrianize part of Old Montreal over the coming years.
-
-        Montreal is dynamic city with a culture of street life, festivities, dining out. It has a popular transit system and growing cycling culture. It has committed to reducing the use and priority of passenger cars. Pedestrian zones `,
-      },
+      Montreal is dynamic city with a culture of street life, festivities, dining out. It has a popular transit system and growing cycling culture. It has committed to reducing the use and priority of passenger cars. Pedestrian zones `,
     },
   },
 ];
@@ -406,7 +416,7 @@ const streets: Streets = [
       <p>
         {
           t(
-            "A history and gallery of just some of the cities with year round pedestrian streets."
+            "A history and gallery of just some of year round pedestrian streets in cities around the world."
           )
         }
       </p>
@@ -415,8 +425,7 @@ const streets: Streets = [
       <div class="street-cards">
         {
           streets.map((street) => {
-            const { images } = street;
-            const { name, location, body } = street.lang[langCode];
+            const { images, name, location, body } = street;
 
             return (
               <div class="street-card">
@@ -434,9 +443,9 @@ const streets: Streets = [
                   ))}
                 </div>
                 <div class="street-card-body">
-                  <h3 class="name">{name}</h3>
-                  <p class="location">{location}</p>
-                  <p class="body" set:html={body} />
+                  <h3 class="name">{name[langCode]}</h3>
+                  <p class="location">{location[langCode]}</p>
+                  <p class="body" set:html={body[langCode]} />
                 </div>
               </div>
             );
