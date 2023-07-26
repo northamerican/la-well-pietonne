@@ -7,13 +7,23 @@ const { name, location } = lang[langCode];
 ---
 
 <li>
-  <a href={href} target="_blank">{name}</a><br />
+  {
+    href ? (
+      <a href={href} target="_blank">
+        {name}
+      </a>
+    ) : (
+      <strong>{name}</strong>
+    )
+  }
+  <br />
   <span>{location}</span><br />
   <span
     >{
       Intl.DateTimeFormat(t("isoLangCode"), {
         year: "numeric",
         month: "long",
+        weekday: "long",
         day: "numeric",
         hour: "numeric",
         timeZone: "America/Montreal",
