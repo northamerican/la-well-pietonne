@@ -12,13 +12,23 @@ const { name, location, href, dateStart, dateEnd } = event;
 ---
 
 <li>
-  <a href={href} target="_blank">{name[langCode]}</a><br />
-  <span>{location[langCode]}</span><br />
+  {
+    href ? (
+      <a href={href} target="_blank">
+        {name[langCode]}
+      </a>
+    ) : (
+      <strong>{name[langCode]}</strong>
+    )
+  }
+  <br />
+  <span>{location}</span><br />
   <span
     >{
       Intl.DateTimeFormat(t("isoLangCode"), {
         year: "numeric",
         month: "long",
+        weekday: "long",
         day: "numeric",
         hour: "numeric",
         timeZone: "America/Montreal",
