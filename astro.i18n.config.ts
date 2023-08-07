@@ -18,7 +18,7 @@ const fr = {
   howToSignHeading: 'Comment signer',
   howToSign: 'Les résidents de Verdun peuvent signer la pétition pour demander une consultation publique auprès de l\'arrondissement.',
   atASupportingBusiness: 'Chez un commerce participant',
-  onTheStreet: 'Dans la rue',
+  upcomingEvents: 'Évènements à venir',
 
   step: 'étape',
   completed: 'complétée',
@@ -105,7 +105,7 @@ const en = {
   howToSignHeading: 'How to sign the petition',
   howToSign: 'Residents of Verdun can sign the petition to order a public consultation with the borough.',
   atASupportingBusiness: 'At a supporting business',
-  onTheStreet: 'On the street',
+  upcomingEvents: 'Upcoming events',
 
   step: 'step',
   completed: 'completed',
