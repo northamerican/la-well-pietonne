@@ -55,13 +55,16 @@ const fr = {
   stayConnected: 'Restez connecté·e',
   byEmail: 'Par courriel',
   onSocialMedia: 'Sur les réseaux sociaux',
-  getInvolved: 'Je suis également intéressé·e par le bénévolat ou la collecte de signatures',
+  getInvolved: 'Je suis également intéressé·e par le bénévolat',
   subscribe: 'S\'abonner',
   subscribeSubtext: '',
   subscribed: 'Merci!',
   formError: 'Vous n\'étiez pas abonné·e en raison d\'une erreur.',
   followUsOn: 'Suivez-nous sur',
   and: 'et',
+
+  completeHeading: 'Merci!',
+  completeBody: 'La collecte des signatures est terminée. Restez à l\'écoute pendant que l\'arrondissement procède au décompte officiel des signatures en ligne et sur papier et annonce la date de la consultation publique.',
 
   inspirationAndReading: 'Inspiration et lecture',
 
@@ -142,13 +145,16 @@ const en = {
   stayConnected: 'Stay connected',
   byEmail: 'By e-mail',
   onSocialMedia: 'On social media',
-  getInvolved: 'I\'m also interested in volunteering or gathering signatures',
+  getInvolved: 'I\'m also interested in volunteering',
   subscribe: 'Subscribe',
   subscribeSubtext: '',
   subscribed: 'Thanks!',
   formError: 'You could not be subscribed due to an error.',
   followUsOn: 'Follow us on',
   and: 'and',
+
+  completeHeading: 'Thank you!',
+  completeBody: 'Signature collection is complete. Stay tuned while the borough conducts the official count of online and paper signatures, and announces the date of the public consultation.',
 
   inspirationAndReading: 'Inspiration and reading',
 
