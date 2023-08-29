@@ -37,10 +37,10 @@ const fr = {
     3: {
       date: '7 août',
       title: 'Fin de la période de signatures',
-      subtitle: '3031 signatures requises'
+      subtitle: '3322 signatures collectées'
     },
     4: {
-      date: 'Fin 2023',
+      date: 'Automne 2023',
       title: 'Consultation publique',
       subtitle: 'avec les résidents de Verdun'
     }
@@ -64,7 +64,7 @@ const fr = {
   and: 'et',
 
   completeHeading: 'Merci!',
-  completeBody: 'La collecte des signatures est terminée. Restez à l\'écoute pendant que l\'arrondissement procède au décompte officiel des signatures en ligne et sur papier et annonce la date de la consultation publique.',
+  completeBody: 'L\'arrondissement de Verdun confirme que nous avons recueilli le nombre de signatures requis! La date de la consultation publique sera annoncée prochainement.',
 
   inspirationAndReading: 'Inspiration et lecture',
 
@@ -127,10 +127,10 @@ const en = {
     3: {
       date: 'August 7',
       title: 'Signature period ends',
-      subtitle: '3031 signatures needed'
+      subtitle: '3322 signatures collected'
     },
     4: {
-      date: 'Late 2023',
+      date: 'Fall 2023',
       title: 'Public consultation',
       subtitle: 'with residents of Verdun'
     }
@@ -154,7 +154,7 @@ const en = {
   and: 'and',
 
   completeHeading: 'Thank you!',
-  completeBody: 'Signature collection is complete. Stay tuned while the borough conducts the official count of online and paper signatures, and announces the date of the public consultation.',
+  completeBody: 'The borough of Verdun has confirmed that we have collected the required number of signatures! The date of the public consultation will soon be announced.',
 
   inspirationAndReading: 'Inspiration and reading',
 
