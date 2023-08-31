@@ -55,27 +55,26 @@ _We want to hear from mobility-reduced people to understand needs and concerns, 
 
 ## Won't business suffer if Wellington is pedestrianized?
 
-Studies show that [pedestrian streets encourage business activity and are more economically productive](https://www.strongtowns.org/journal/2018/1/16/why-walkable-streets-are-more-economically-productive). Concerns about deliveries, parking and its impact on business are often mentioned when bike lanes or public squares are built in our city. On the whole, [these fears do not materialize](https://montrealgazette.com/news/local-news/jean-talon-market-merchants-coming-around-to-new-square-despite-loss-of-parking).
+A study analyzing Montreal's commercial streets reveals that [more parking correlates with an increase in storefront vacancy](https://locallogic.co/blog/does-more-parking-bring-more-business) and that in general, [people-oriented streets are more economically productive](https://www.strongtowns.org/journal/2018/1/16/why-walkable-streets-are-more-economically-productive), generate greater tax revenue, and provide a higher return on investment than car-oriented streets. Concerns about the impact on business are often raised when space for cars is removed in our city, though once such projects are completed, [these fears do not materialize](https://montrealgazette.com/news/local-news/jean-talon-market-merchants-coming-around-to-new-square-despite-loss-of-parking).
 
-The rise in foot traffic on Wellington during pedestrianization has already been quantified. In 2021, Wellington's second year of summer pedestrianization, [foot traffic increased by 17%](https://www.lapresse.ca/actualites/grand-montreal/2022-04-04/dix-rues-de-montreal-reservees-aux-pietons-pour-les-trois-prochains-etes.php).
-
+On Wellington, the rise in foot traffic during pedestrianization has already been quantified. In 2021, Wellington's second year of summer pedestrianization, [foot traffic increased by 17%](https://www.lapresse.ca/actualites/grand-montreal/2022-04-04/dix-rues-de-montreal-reservees-aux-pietons-pour-les-trois-prochains-etes.php).
 
 Business on Wellington is already exceptional. According to the SDC, businesses on this street have [a five-year a survival rate nearing 70%](https://www.promenadewellington.com/en/open-your-business-on-the-strip/), exceeding the Canadian average. If business revenue must meet a threshold for pedestrianization to be considered, Wellington is an appropriate choice, already [meeting the prescribed standards](https://collectivitesviables.org/articles/rues-pietonnes.aspx#prrequis-7) for a pedestrian street.
 
 ## What about buses?
 
-Wellington is normally served by bus routes 58 and 61 - summer pedestrianization requires deviating these routes to adjacent streets. For this, a number of solutions can be considered.
+Wellington is normally served by bus routes 58 and 61. During summer pedestrianization, these buses are rerouted to Blvd Lasalle. For a year-round pedestrian street, a number of mobility options can be considered:
 
-Mont-Royal's SDC [offers free taxi service](https://montreal.ca/articles/pietonnisation-de-lavenue-du-mont-royal-14483) for seniors or those with reduced mobility every day during pedestrianization of Mont-Royal Avenue. On Wellington, we can use shuttles, paratransit, and the vélo-taxis used in the summer can also have service expanded.
+For commuters who live north of Wellington, we should consider rerouting some bus service to Rue de Verdun. Cross streets like de l'Église and Galt may also benefit from changes to their services adapted to the pedestrian street.
 
-While Boul Lasalle and Rue de Verdun are better suited as arterial roads for commuting, cross streets like de l'Église and Galt will continue to be served by bus routes, and additional routes could be added on other perpendicular streets crossing Wellington.
+Within the pedestrian zone, small shuttles [like this one in Slovenia](https://www.visitmaribor.si/en/what-to-do/transports/6314-), can be an accessible transit option. Their small footprint allows them to coexist on a car-free street, providing a service that isn't disruptive to the urban environment.
 
-Ultimately, if these alternatives do not meet our needs, buses on Wellington can of course still run at certain hours, or days of the week, or times of the year, or on parts of the street. This could balance the benefits of a car-free street with the convenience of a bus service that passes at a slow speed.
+Seniors and people with reduced mobility are also provided a [free taxi service](https://www.facebook.com/arrondissementdeverdun/posts/pfbid03VMFDdLDd1a8iagViPmtcb8zwyyMEM5x1Zz5AjhADe2KtGXzLrTqcoUGyGabNTXrl) in the area covering Promenade Wellington as part of a pilot project during the pedestrianization period. Such service can benefit from greater promotion and expansion.
 
 <figure>
-  <img src="/img/q-and-a/state-st-madison.jpg" alt="State street in Madison, Wisconsin in the fall. Food and produce stands are set up on the street with a bus approaching in the background." />
+  <img src="/img/q-and-a/st-hubert-navette-autonome.jpg" alt="A small red shuttle bus on Montreal's Plaza St-Hubert" />
   <figcaption>
-    State Street in Madison, Wisconsin. A pedestrian street with access to bus service.
+    A low-speed partially self-driving shuttle has also been trialled at Plaza St-Hubert.
   </figcaption>
 </figure>
 
@@ -93,9 +92,9 @@ Other considerations for street design, low speed limits, scooter restrictions, 
 
 ## Won't this accelerate gentrification?
 
-The housing crisis is among the most pressing issues faced by residents of Montreal. Regulations must be strengthened and enforced to combat speculation, greed, and predatory real estate ownership practices.
+The housing crisis is among the most pressing issues faced by residents of Montreal. In addition to tackling [our self-imposed scarcity of nice places](https://www.strongtowns.org/journal/2021/11/3/our-self-imposed-scarcity-of-nice-places) that concentrate demand for rentals in sought after areas, regulations must be strengthened and enforced to combat speculation, greed, and predatory real estate practices. 
 
-Although we are committed to addressing these inequities in our city, the focus of this initiative is to address transportation inequity and its impact on public health and safety. We love our community, and it’s essential Verdun be kept affordable to low income and long term residents.
+Although we are committed to addressing these inequities in our city, the focus of this initiative is to address transportation inequity and its impact on public health and safety. We love our community, and it’s essential Verdun be kept affordable to low income, long term residents, and local businesseses.
 
 Addressing environmental gentrification requires regulatory changes, and should be dealt with urgently by higher levels of government and community organizations. We’d like to acknowledge the organizations doing work on the issue of tenants rights in Verdun:
 
@@ -107,19 +106,19 @@ Addressing environmental gentrification requires regulatory changes, and should 
 
 Noise from entertainment venues, or that from clients of bars and restaurants, are attributes of a vibrant and dynamic city.
 
-We believe this issue can be addressed by ensuring bars do not let their patrons loiter outside and that existing noise regulations are respected and enforced.
+We believe this issue can be addressed by discouraging bar patrons from loitering outside and that existing noise regulations are respected and enforced.
 
-We also believe using vehicular traffic as a means to deter itinerants is inappropriate and counterproductive to reducing noise.
+Motor vehicles are [the greatest source of harmful noise pollution](https://globalnews.ca/news/8642892/urban-noise-dangers-health/), which disproportionately affects lower income groups. Re-introducing vehicular traffic with the purpose of discouraging the presence of itinerants and people in general is inappropriate and counterproductive to reducing urban noise pollution.
 
 ## Won't it back up traffic on other streets?
 
 By making streets and whole areas of our city pleasant and practical to exist in without a car, we will reduce car usage and therefore traffic. According to the Case Studies on Transport Policy, implementing car-free zones [are effective in reducing car use by 10-20%](https://theconversation.com/12-best-ways-to-get-cars-out-of-cities-ranked-by-new-research-180642).
 
-It's up to us and our elected officials to take real action in reducing the number of cars on our roads. The more space we provide cars, [the more we induce demand for cars](https://en.wikipedia.org/wiki/Induced_demand). The less space we provide to passenger cars, the more we will induce demand for collective and compact forms of transportation over a longer period. With temporary summer pedestrianization, this long term incentive does not exist, so the disruption never goes away.
+It's up to us and our elected officials to take real action in reducing the number of cars on our roads. The more space we provide cars, [the more we induce demand for cars](https://en.wikipedia.org/wiki/Induced_demand). The less space we provide to passenger cars, the more we will induce demand for collective and compact forms of transportation over a longer period. With temporary summer pedestrianization, there is little incentive to change one's long-term transportation habits, so the disruption never goes away.
 
 ## Where will people park?
 
-We believe the loss of street parking is not an unfortunate consequence of pedestrianization but a crucial step to reducing the use and prevalence of automobiles in our city. That said, there are an abundance of reserved accessible, and paid parking spots on perpendicular streets, as well as several public and private lots.
+We believe the loss of street parking is not an unfortunate consequence of pedestrianization but a crucial step to reducing the use and prevalence of automobiles in our city. That said, there are an abundance of reserved accessible and paid parking spots on perpendicular streets, as well as several parking lots that are consistently below capacity. 
 
 If you're interested in this topic, we recommend reading the _Conseil régional de l'environnement de Montréal_'s 2023 white book [_Le stationnement à Montréal : 23 propositions pour une mobilité efficace, équitable et écologique_](https://cdn.ca.yapla.com/company/CPYdNZRxWi163lmbLnVjgAqMF/asset/files/Outils/2023-03-02_CRE-Montreal_Livre-blanc-VF_numerique.pdf) that outlines innovative ways we can make efficient use of existing space for vehicles.
 
@@ -153,8 +152,6 @@ Some of the most renowned permanent pedestrian streets in America and Europe are
   </figcaption>
 </figure>
 
-In our opinion, the only thing worse than walking in the cold on Wellington is walking in the cold on Wellington on its narrow slushy sidewalks with cars rolling by.
-
 ## How will snow be plowed?
 
 Most pedestrian streets do not physically prevent vehicles from entering, they just don't allow them. Snow can be plowed with existing street and sidewalk plowing equipment.
@@ -181,7 +178,8 @@ It will be important to monitor traffic flow, the impact to transport operators 
 
 --
 
-Last updated: 2023 June 28
+Published: 2023 June 28  
+Last Updated: 2023 August 30
 
 <style>
 
