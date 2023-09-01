@@ -95,7 +95,7 @@ D'autres considérations pour la conception des rues, les limites de vitesse ré
 
 ## Cela ne va-t-il pas accélérer l’embourgeoisement?
 
-La crise du logement fait partie des problèmes les plus urgents à Montréal. En plus de lutter contre [notre pénurie auto-imposée de lieux agréables](https://www.strongtowns.org/journal/2021/11/3/our-self-imposed-scarcity-of-nice-places) qui concentre la demande des logements dans les quartiers en demande, les réglementations doivent être renforcées et appliquées pour lutter contre la spéculation, la cupidité et les pratiques prédatrices en matière de propriété immobilière.
+La crise du logement fait partie des problèmes les plus urgents à Montréal. En plus de lutter contre [notre pénurie auto-imposée de lieux agréables](https://www.strongtowns.org/journal/2021/11/3/our-self-imposed-scarcity-of-nice-places) qui concentre la demande de logements au quartiers conviviaux à échelle humaine, les réglementations doivent être renforcées et appliquées pour lutter contre la spéculation, la cupidité et les pratiques prédatrices en matière de propriété immobilière.
 
 Bien que nous soyons déterminés à remédier à ces inégalités dans notre ville, l'objectif de cette initiative est de remédier aux inégalités en matière de transport et à leur impact sur la santé et la sécurité publiques. Nous aimons notre communauté et il est essentiel que Verdun reste abordable pour les résidents à faible revenu, les résidents de longue durée et les entreprises locales.
 
