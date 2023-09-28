@@ -5,7 +5,7 @@ import MailerLite from 'mailerlite-api-v2-node'
 const mailerLite = MailerLite(process.env.MAILER_LITE_API_KEY)
 
 const groupIds = {
-  general: '86202534615582258'
+  general: process.env.MAILER_LITE_GROUP_ID
 }
 
 export const handler: Handler = async ({ body }) => {
