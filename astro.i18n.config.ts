@@ -78,7 +78,7 @@ const fr = {
   questionsAndAnswersCta: 'Lisez notre page Questions et réponses',
 
   aroundTheWorldHeading: 'Rues piétonnes à travers le monde',
-  aroundTheWorldBody: 'Vous cherchez de l\'inspiration?',
+  aroundTheWorldBody: '',
   aroundTheWorldCta: 'Découvrez les rues piétonnes à travers le monde',
 
   notFound: '404 : Introuvable',
@@ -168,7 +168,7 @@ const en = {
   questionsAndAnswersCta: 'Read our Questions and answers page',
 
   aroundTheWorldHeading: 'Pedestrian streets around the world',
-  aroundTheWorldBody: 'Looking for inspiration?',
+  aroundTheWorldBody: '',
   aroundTheWorldCta: 'Check out pedestrian streets around the world',
 
   notFound: '404: Not Found',
@@ -188,7 +188,7 @@ export default defineAstroI18nConfig({
   defaultLangCode: 'fr',
   supportedLangCodes: ['en'],
   showDefaultLangCode: false,
-  translations: { en, fr },
+  translations,
   routeTranslations: {
     en: {
       signer: 'sign',

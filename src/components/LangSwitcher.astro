@@ -1,7 +1,12 @@
 ---
 import { t, l } from "astro-i18n";
+import { Langs } from "../../types";
 
-const { otherLangCodes } = Astro.props;
+interface Props {
+  otherLangCodes: Partial<Langs>[];
+}
+
+const { otherLangCodes } = Astro.props as Props;
 const { url } = Astro;
 ---
 

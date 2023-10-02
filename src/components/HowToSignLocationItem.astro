@@ -1,7 +1,12 @@
 ---
-import { astroI18n, t, l } from "astro-i18n";
+import { SigningLocation } from "../../types";
 
-const { href, name, address } = Astro.props;
+interface Props {
+  location: SigningLocation;
+}
+
+const { location } = Astro.props as Props;
+const { href, name, address } = location;
 ---
 
 <li>
