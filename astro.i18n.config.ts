@@ -18,7 +18,7 @@ const fr = {
   howToSignHeading: 'Comment signer',
   howToSign: 'Les résidents de Verdun peuvent signer la pétition pour demander une consultation publique auprès de l\'arrondissement.',
   atASupportingBusiness: 'Chez un commerce participant',
-  onTheStreet: 'Dans la rue',
+  upcomingEvents: 'Évènements à venir',
 
   step: 'étape',
   completed: 'complétée',
@@ -37,10 +37,10 @@ const fr = {
     3: {
       date: '7 août',
       title: 'Fin de la période de signatures',
-      subtitle: '3031 signatures requises'
+      subtitle: '3322 signatures collectées'
     },
     4: {
-      date: 'Fin 2023',
+      date: 'Automne 2023',
       title: 'Consultation publique',
       subtitle: 'avec les résidents de Verdun'
     }
@@ -55,13 +55,18 @@ const fr = {
   stayConnected: 'Restez connecté·e',
   byEmail: 'Par courriel',
   onSocialMedia: 'Sur les réseaux sociaux',
-  getInvolved: 'Je suis également intéressé·e par le bénévolat ou la collecte de signatures',
+  getInvolved: 'Je suis également intéressé·e par le bénévolat',
   subscribe: 'S\'abonner',
   subscribeSubtext: '',
   subscribed: 'Merci!',
   formError: 'Vous n\'étiez pas abonné·e en raison d\'une erreur.',
   followUsOn: 'Suivez-nous sur',
   and: 'et',
+
+  completeHeading: 'Merci!',
+  completeBody: 'L\'arrondissement de Verdun confirme que nous avons recueilli le nombre de signatures requis! La date de la consultation publique sera annoncée prochainement.',
+
+  inspirationAndReading: 'Inspiration et lecture',
 
   footerNoticeUnaffiliated: 'Ce site n\'est pas affiliée à ',
 
@@ -103,7 +108,7 @@ const en = {
   howToSignHeading: 'How to sign the petition',
   howToSign: 'Residents of Verdun can sign the petition to order a public consultation with the borough.',
   atASupportingBusiness: 'At a supporting business',
-  onTheStreet: 'On the street',
+  upcomingEvents: 'Upcoming events',
 
   step: 'step',
   completed: 'completed',
@@ -122,10 +127,10 @@ const en = {
     3: {
       date: 'August 7',
       title: 'Signature period ends',
-      subtitle: '3031 signatures needed'
+      subtitle: '3322 signatures collected'
     },
     4: {
-      date: 'Late 2023',
+      date: 'Fall 2023',
       title: 'Public consultation',
       subtitle: 'with residents of Verdun'
     }
@@ -140,13 +145,18 @@ const en = {
   stayConnected: 'Stay connected',
   byEmail: 'By e-mail',
   onSocialMedia: 'On social media',
-  getInvolved: 'I\'m also interested in volunteering or gathering signatures',
+  getInvolved: 'I\'m also interested in volunteering',
   subscribe: 'Subscribe',
   subscribeSubtext: '',
   subscribed: 'Thanks!',
   formError: 'You could not be subscribed due to an error.',
   followUsOn: 'Follow us on',
   and: 'and',
+
+  completeHeading: 'Thank you!',
+  completeBody: 'The borough of Verdun has confirmed that we have collected the required number of signatures! The date of the public consultation will soon be announced.',
+
+  inspirationAndReading: 'Inspiration and reading',
 
   footerNoticeUnaffiliated: 'This site is not affiliated with ',
 

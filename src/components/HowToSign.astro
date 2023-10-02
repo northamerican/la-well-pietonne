@@ -47,34 +47,14 @@ const locations: SigningLocation[] = [
   },
 ];
 
-const events = [
-  {
-    lang: {
-      fr: {
-        name: "Collecte de signatures",
-        location: `coin rue Wellington / de l'Église`,
-      },
-      en: {
-        name: "Signature collection",
-        location: `Corner of Wellington / de l'Église`,
-      },
-    },
-    dateStart: new Date("2023-08-05T13:00:00-04:00"),
-    dateEnd: new Date("2023-08-05T17:00:00-04:00"),
-  },
-];
+const events = [];
 ---
 
 <p>
   {t("howToSign")}
 </p>
 
-<h3>{t("atASupportingBusiness")}</h3>
-<ul class="locations">
-  {locations.map((location) => <HowToSignLocationItem {location} />)}
-</ul>
-
-{events.length ? <h3>{t("onTheStreet")}</h3> : null}
+{events.length ? <h3>{t("upcomingEvents")}</h3> : null}
 <ul>
   {events.map((event) => <HowToSignEventItem {event} />)}
 </ul>

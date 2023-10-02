@@ -55,33 +55,35 @@ _Nous voulons entendre les personnes à mobilité réduite pour comprendre les b
 
 ## Les commerces ne souffriront-ils pas si Wellington est piétonne?
 
-Plusieurs études démontrent que [les rues piétonnes encouragent l'activité commerciale et sont plus productives économiquement](https://www.strongtowns.org/journal/2018/1/16/why-walkable-streets-are-more-economically-productive). Les préoccupations concernant les livraisons, le stationnement et son impact sur les commerces sont souvent évoqués lors de la construction de pistes cyclables ou de places publiques dans notre ville. Dans l'ensemble, [ces peurs ne se concrétisent pas](https://montrealgazette.com/news/local-news/jean-talon-market-merchants-coming-around-to-new-square-despite-loss-of-parking).
+Une étude analysant les rues commerciales de Montréal révèle que plus d'espace de stationnement [est corrélé à une augmentation du nombre de magasins vacants](https://locallogic.co/blog/does-more-parking-bring-more-business) et qu’en général, [les rues piétonnes encouragent l'activité commerciale](https://www.strongtowns.org/journal/2018/1/16/why-walkable-streets-are-more-economically-productive) et sont plus productives économiquement, génèrent plus des revenus fiscaux et offrent un retour sur investissement plus élevé que les rues orientées vers l’automobile. 
 
-L'augmentation du trafic piétonnier sur Wellington dans le cadre d’une potentielle piétonisation permanente a déjà été quantifiée. En 2021, la deuxième année de piétonnisation estivale de Wellington, [le trafic piétonnier a augmenté de 17%](https://www.lapresse.ca/actualites/grand-montreal/2022-04-04/dix-rues-de-montreal-reservees-aux-pietons-pour-les-trois-prochains-etes.php).
+Les préoccupations concernant les livraisons, le stationnement et son impact sur les commerces sont souvent évoqués lorsque l'espace réservé aux voitures est supprimé même si une fois ces projets sont terminés, [ces peurs ne se concrétisent pas](https://montrealgazette.com/news/local-news/jean-talon-market-merchants-coming-around-to-new-square-despite-loss-of-parking).
+
+Sur Wellington, l'augmentation du trafic piétonnier sur Wellington dans le cadre d’une potentielle piétonisation permanente a déjà été quantifiée. En 2021, la deuxième année de piétonnisation estivale, [le trafic piétonnier a augmenté de 17%](https://www.lapresse.ca/actualites/grand-montreal/2022-04-04/dix-rues-de-montreal-reservees-aux-pietons-pour-les-trois-prochains-etes.php).
 
 La vie commerciale sur Wellington est déjà exceptionnelle. Selon la SDC, les commerces de cette rue ont [à cinq ans un taux de survie proche de 70%](https://www.promenadewellington.com/fr/locaux-louer-commerciaux-verdun/), dépassant la moyenne canadienne. Si les revenus des entreprises doivent atteindre un seuil pour que la piétonnisation soit envisagée, Wellington est un choix approprié, déjà [répondant aux normes prescrites](https://collectivitesviables.org/articles/rues-pietonnes.aspx#prrequis-7) pour une rue piétonne.
 
 
 ## Et les bus?
 
-Wellington est normalement desservie par les lignes d'autobus 58 et 61 - la piétonnisation estivale nécessite de dévier ces lignes vers des rues adjacentes. Pour cela, plusieurs solutions peuvent être envisagées.
+Wellington est normalement desservie par les lignes d'autobus 58 et 61. Lors de la piétonnisation estivale, ces autobus sont déviés vers le boulevard Lasalle. Pour une rue piétonne ouverte à l’année, plusieurs options de mobilité peuvent être envisagées :
 
-La SDC Mont-Royal [offre un service de taxi gratuit](https://montreal.ca/articles/pietonnisation-de-lavenue-du-mont-royal-14483) au quotidien pour les personnes âgées ou à mobilité réduite lors de la piétonnisation de l'avenue du Mont-Royal. Sur Wellington, nous pouvons utiliser ou élargir les services des navettes, le transport adapté et les vélo-taxis.
+Pour les utilisateurs de transports en commun qui habitent au nord de Wellington, nous pouvons dévier certains services d'autobus vers la rue de Verdun. Les rues transversales comme de l'Église et Galt pourraient également bénéficier d'évolutions de leurs services adaptées à la rue piétonne.
 
-Alors que le Boul Lasalle et la rue de Verdun conviennent mieux comme artères pour le navettage, les rues transversales comme de l'Église et Galt continueront d'être desservies par des lignes d'autobus, et des lignes supplémentaires pourraient être ajoutées sur d'autres rues perpendiculaires traversant Wellington.
+Dans la zone piétonne, de petites navettes [comme celle-ci en Slovénie](https://www.visitmaribor.si/en/what-to-do/transports/6314-) peuvent constituer une option de transport en commun accessible. Leur faible empreinte leur permet de coexister dans une rue sans voiture, offrant un service qui ne perturbe pas l'environnement urbain.
 
-En fin de compte, si ces alternatives ne répondent pas à nos besoins, les bus sur Wellington peuvent bien sûr toujours circuler à certaines heures, ou certains jours de la semaine, ou certaines périodes de l'année, ou sur certaines parties de la rue. Cela pourrait équilibrer les avantages d'une rue sans voiture avec la commodité d'un service d'autobus qui passe à faible vitesse.
+Les personnes âgées et les personnes à mobilité réduite bénéficient également d'un [service de taxi gratuit](https://www.facebook.com/arrondissementdeverdun/posts/pfbid03VMFDdLDd1a8iagViPmtcb8zwyyMEM5x1Zz5AjhADe2KtGXzLrTqcoUGyGabNTXrl) dans le cadre d'un projet pilote pendant la période de piétonisation dans le secteur couvrant la promenade Wellington. Un tel service pourrait bénéficier d’une expansion et plus grande promotion.
 
 <figure>
-  <img src="/img/q-and-a/state-st-madison.jpg" alt="State street à Madison (Wisconsin), à l'automne. Des kiosques de produits de fruits et légumes sont installés dans la rue et un bus s'approche à l'arrière-plan." />
+  <img src="/img/q-and-a/st-hubert-navette-autonome.jpg" alt="A small red shuttle bus on Montreal's Plaza St-Hubert" />
   <figcaption>
-    State Street à Madison (Wisconsin). Une rue piétonne avec accès au service d'autobus.
+    Une navette autonome à basse vitesse a également été testée à Plaza St-Hubert.
   </figcaption>
 </figure>
 
 ## Et les vélos?
 
-Nous soutenons la coexistence des cyclistes, des véhicules non motorisés et des aides à la mobilité sur une Wellington piétonne. Des limitations peuvent être définies le cas échéant, par exemple lors d'événements spéciaux.
+Nous soutenons la coexistence des cyclistes, des véhicules non motorisés et des triporteurs sur une Wellington piétonne. Des limitations peuvent être définies le cas échéant, par exemple lors d'événements spéciaux.
 
 Selon les directives de _CROW Design Manual for Bicycle Traffic,_ [les piétons et les cyclistes peuvent coexister étant donné les paramètres de la taille de la rue et du trafic piétonnier](https://collectivitesviables.org/articles/rues-pietonnes.aspx) (Moins de 200 piétons par heure par mètre de largeur de rue). Une discussion continue sur la conception et les besoins des résidents et des navetteurs peut déterminer la configuration appropriée.
 
@@ -93,9 +95,9 @@ D'autres considérations pour la conception des rues, les limites de vitesse ré
 
 ## Cela ne va-t-il pas accélérer l’embourgeoisement?
 
-La crise du logement est l'un des problèmes les plus urgents auxquels sont confrontés les résidents de Montréal. Les réglementations doivent être renforcées et appliquées pour lutter contre la spéculation, la cupidité et les pratiques prédatrices en matière de propriété immobilière.
+La crise du logement fait partie des problèmes les plus urgents à Montréal. En plus de lutter contre [notre pénurie auto-imposée de lieux agréables](https://www.strongtowns.org/journal/2021/11/3/our-self-imposed-scarcity-of-nice-places) qui concentre la demande de logements au quartiers conviviaux à échelle humaine, les réglementations doivent être renforcées et appliquées pour lutter contre la spéculation, la cupidité et les pratiques prédatrices en matière de propriété immobilière.
 
-Bien que nous soyons déterminés à remédier à ces inégalités dans notre ville, l'objectif de cette initiative est de remédier aux inégalités en matière de transport et à leur impact sur la santé et la sécurité publiques. Nous aimons notre communauté et il est essentiel que Verdun reste abordable pour les résidents à faible revenu et de longue durée.
+Bien que nous soyons déterminés à remédier à ces inégalités dans notre ville, l'objectif de cette initiative est de remédier aux inégalités en matière de transport et à leur impact sur la santé et la sécurité publiques. Nous aimons notre communauté et il est essentiel que Verdun reste abordable pour les résidents à faible revenu, les résidents de longue durée et les entreprises locales.
 
 La lutte contre l’éco-embourgeoisement nécessite des changements réglementaires et doit être traitée de toute urgence par des niveaux plus élevés de gouvernement et les organismes communautaires. Nous remercions les organismes qui travaillent sur la question des droits des locataires à Verdun :
 
@@ -107,9 +109,9 @@ La lutte contre l’éco-embourgeoisement nécessite des changements réglementa
 
 Les bruits d'animation, comme ceux des festivaliers et des clients de restaurant, font partie du contexte général d'une ville animée et dynamique.
 
-Nous pensons que ce problème peut être réglé en rappelant aux bars que leurs clients ne flânent pas à l'extérieur et que les réglementations existantes en matière de bruit sont respectées.
+Nous pensons que ce problème peut être réglé en rappelant que les clients des bars soient découragés de flâner à l'extérieur et que les réglementations existantes en matière de bruit sont respectées.
 
-Nous pensons également que l'utilisation des véhicules motorisés comme moyen de dissuader les itinérants est un moyen inapproprié et contre-productif de réduire le bruit. 
+Les véhicules motorisés sont [la plus grande source de pollution sonore nocive](https://globalnews.ca/news/8642892/urban-noise-dangers-health/), qui affecte de manière disproportionnée les groupes à faible revenu. Réintroduire la circulation automobile dans le but de décourager la présence des itinérants et des personnes en général est inapproprié et contre-productif pour réduire la pollution sonore urbaine.
 
 ## Cela ne ralentira-t-il pas la circulation sur d'autres rues?
 
@@ -119,7 +121,7 @@ C'est à nous et à nos élus d'agir concrètement pour réduire le nombre de vo
 
 ## Où les gens vont-ils se stationner?
 
-Nous croyons que la perte du stationnement sur rue n'est pas une conséquence malheureuse de la piétonnisation, mais une étape cruciale pour réduire l'utilisation et la prévalence des automobiles dans notre ville. Cela dit, il y a une abondance de places de stationnement réservées accessibles et payantes sur les rues perpendiculaires, ainsi que sur plusieurs terrains publics et privés.
+Nous croyons que la perte du stationnement sur rue n'est pas une conséquence malheureuse de la piétonnisation, mais une étape cruciale pour réduire l'utilisation et la prévalence des automobiles dans notre ville. Cela dit, il y a une abondance de places de stationnement réservées accessibles et payantes sur les rues perpendiculaires, ainsi que sur plusieurs terrains publics et privés qui sont constamment en dessous de leur capacité.
 
 Si ce sujet vous intéresse, nous vous recommandons de lire le livre blanc 2023 du _Conseil régional de l’environnement de Montréal_ [_Le stationnement à Montréal : 23 propositions pour une mobilité efficace, équitable et écologique_](https://cdn.ca.yapla.com/company/CPYdNZRxWi163lmbLnVjgAqMF/asset/files/Outils/2023-03-02_CRE-Montreal_Livre-blanc-VF_numerique.pdf) qui présente comment utiliser de manière novatrice et efficace les espaces existants pour les véhicules.
 
@@ -183,7 +185,8 @@ Il sera important de surveiller le flux de trafic, l'impact sur les opérateurs 
 
 --
 
-Dernière mise à jour : le 28 juin 2023
+Publié le 28 juin 2023  
+Dernière mise à jour le 30 août 2023
 
 <style>
 

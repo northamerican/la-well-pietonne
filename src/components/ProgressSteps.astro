@@ -1,7 +1,8 @@
 ---
 import { t } from "astro-i18n";
 
-const completedSteps = [1, 2];
+// Steps completed
+const completedSteps = [1, 2, 3];
 ---
 
 <div class="steps">
@@ -64,8 +65,8 @@ const completedSteps = [1, 2];
     --date-container-width: 135px;
     --mobile-step-gap: 0.5rem;
 
-    --petition-days-elapsed: 83;
-    --progress: calc(0.33 + (var(--petition-days-elapsed) / 90) * 0.33);
+    /* Total elapsed initiative progress 0-1 */
+    --progress: 0.8;
     --progress-pct: calc(100% * var(--progress));
   }
 
