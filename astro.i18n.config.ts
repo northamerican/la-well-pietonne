@@ -22,29 +22,7 @@ const fr = {
 
   step: 'étape',
   completed: 'complétée',
-  stepsTitle: 'Progrès de l\'initiative',
-  steps: {
-    1: {
-      date: '24 avril',
-      title: 'Pétition approuvé',
-      subtitle: 'par l\'arrondissement de Verdun'
-    },
-    2: {
-      date: '10 mai',
-      title: 'Début de la période de signatures',
-      subtitle: '90 jours'
-    },
-    3: {
-      date: '7 août',
-      title: 'Fin de la période de signatures',
-      subtitle: '3322 signatures collectées'
-    },
-    4: {
-      date: 'Automne 2023',
-      title: 'Consultation publique',
-      subtitle: 'avec les résidents de Verdun'
-    }
-  },
+  stepsHeading: 'Progrès de l\'initiative',
 
   petitionTextHeading: 'Texte de la pétition',
   petitionTextCta: 'Lire le texte complet de la pétition',
@@ -58,7 +36,7 @@ const fr = {
   getInvolved: 'Je suis également intéressé·e par le bénévolat',
   subscribe: 'S\'abonner',
   subscribeSubtext: '',
-  subscribed: 'Merci!',
+  subscribed: 'Merci! Vous êtes maintenant abonné',
   formError: 'Vous n\'étiez pas abonné·e en raison d\'une erreur.',
   followUsOn: 'Suivez-nous sur',
   and: 'et',
@@ -112,29 +90,7 @@ const en = {
 
   step: 'step',
   completed: 'completed',
-  stepsTitle: 'Initiative progress',
-  steps: {
-    1: {
-      date: 'April 24',
-      title: 'Petition approved',
-      subtitle: 'by the borough of Verdun'
-    },
-    2: {
-      date: 'May 10',
-      title: 'Signature period begins',
-      subtitle: '90 days'
-    },
-    3: {
-      date: 'August 7',
-      title: 'Signature period ends',
-      subtitle: '3322 signatures collected'
-    },
-    4: {
-      date: 'Fall 2023',
-      title: 'Public consultation',
-      subtitle: 'with residents of Verdun'
-    }
-  },
+  stepsHeading: 'Initiative progress',
 
   petitionTextHeading: 'Petition text',
   petitionTextCta: 'Read the full petition text',
@@ -148,7 +104,7 @@ const en = {
   getInvolved: 'I\'m also interested in volunteering',
   subscribe: 'Subscribe',
   subscribeSubtext: '',
-  subscribed: 'Thanks!',
+  subscribed: 'Thanks! You\'ve been subscribed.',
   formError: 'You could not be subscribed due to an error.',
   followUsOn: 'Follow us on',
   and: 'and',
