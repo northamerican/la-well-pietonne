@@ -286,7 +286,7 @@ const streets: Street[] = [
 
       Elle abrite également plusieurs bâtiments historiques, institutionnels et de bureaux, bien que leur grande empreinte et leur présence aient été critiquées pour leur impact sur la vie de la rue, en particulier les week-ends. Comme dans le centre-ville de Montréal, l'ajout d'unités résidentielles devrait améliorer la vitalité du quartier.`,
 
-      en: `Sparks Street is a main street of Ottawa and the first in Canada to be converted to a pedestrian street in 1967. 
+      en: `Sparks Street is a main street of Ottawa. In 1967, it was the first in Canada to be converted to a pedestrian street. 
         
       The 850m pedestrian street hosts a number of restaurants, shops, and events throughout the year, including an ice carving competition as part of the Winterlude annual festival.
 
@@ -379,7 +379,7 @@ const streets: Street[] = [
       
       La rue de la Gauchetière dans le quartier chinois est piétonne depuis plusieurs décennies [depuis quelle décennie ?], tout comme la rue Prince-Arthur. 
 
-      Au cours des dernières années, Montréal a piétonnisé plus de 8 kilomètres de rues, y compris la rue Wellington pendant les mois d'été, et a annoncé son intention de piétonniser une partie du Vieux-Montréal au cours des prochaines années.
+      Au cours des dernières années, Montréal a piétonnisé plus de 8 kilomètres de rues, y compris l'avenue Mont-Royal et rue Wellington pendant les mois d'été, et a annoncé son intention de piétonniser une partie du Vieux-Montréal au cours des prochaines années.
 
       Montréal est une ville dynamique avec une culture de la vie de rue, des festivités et des restaurants. Elle dispose d'un système de transport en commun populaire et d'une culture cycliste en plein essor. Elle s'est engagée à réduire l'utilisation et la priorité des voitures particulières. Zones piétonnes`,
 
@@ -387,7 +387,7 @@ const streets: Street[] = [
         
       De la Gauchetière in Chinatown has been pedestrianized for several decades [since what decade?], along with Rue Prince-Arthur. 
 
-      For the past few years, Montreal has pedestrianized over 8 kilometers of streets including Rue Wellington in the summer months, and has announced plans to pedestrianize part of Old Montreal over the coming years.
+      For the past few years, Montreal has pedestrianized over 8 kilometers of streets including Avenue Mont-Royal and Rue Wellington in the summer months, and has announced plans to pedestrianize part of Old Montreal over the coming years.
 
       Montreal is an active and festive city with street life and a culture of dining out. It has a popular transit system, growing cycling culture and its elected officials have made commitments to reducing the priority of passenger cars.`,
     },
@@ -422,9 +422,9 @@ const streets: Street[] = [
                     />
                   ))}
                 </div>
-                <div class="image-buttons">
+                <div class="image-dots">
                   {images.map(({ src }) => (
-                    <button class="image-button" data-src={src} />
+                    <button class="image-dot" data-src={src} />
                   ))}
                 </div>
                 <div class="street-card-body">
@@ -445,18 +445,16 @@ const streets: Street[] = [
 <script is:inline>
 const $streetCards = document.querySelectorAll(".street-cards");
 const scrollIntoView = ($el) => {
-  try {
-    $el.scrollIntoViewIfNeeded();
-  } catch (e) {
-    $el.scrollIntoView();
-  }
+  $el.scrollIntoView({ block: "nearest" });
 };
 
 $streetCards.forEach(($streetCard) => {
   const $cardImages = $streetCard.querySelectorAll(".images img");
-  const $imageButtons = $streetCard.querySelectorAll(".image-button");
+  const $imageButtons = $streetCard.querySelectorAll(".image-dot");
 
-  $cardImages.forEach(($cardImage) => {
+  $cardImages.forEach(($cardImage, i) => {
+    const $imageButton = $imageButtons[i];
+
     $cardImage.addEventListener("click", () => {
       const $nextImg =
         $cardImage.nextElementSibling ||
@@ -464,15 +462,23 @@ $streetCards.forEach(($streetCard) => {
 
       scrollIntoView($nextImg);
     });
-  });
 
-  $imageButtons.forEach(($imageButton, i) => {
     $imageButton.addEventListener("click", () => {
-      const $targetImg = $cardImages[i];
-      // TODO mobile $targetImg should be next image ?
+      // TODO mobile $cardImage should be next image ?
 
-      scrollIntoView($targetImg);
+      scrollIntoView($cardImage);
     });
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        $imageButton.classList.toggle("active", entry.isIntersecting);
+      },
+      {
+        root: $streetCard,
+        threshold: 0.5,
+      }
+    );
+    observer.observe($cardImage);
   });
 });
 </script>
@@ -510,17 +516,23 @@ $streetCards.forEach(($streetCard) => {
     overflow-y: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    scrollbar-width: none; /* ff */
+  }
+
+  .street-card .images::-webkit-scrollbar {
+    display: none; /* webkit */
   }
 
   .street-card img {
     width: 100%;
+    min-width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
     object-position: bottom;
     scroll-snap-align: center;
   }
 
-  .street-card .image-buttons {
+  .street-card .image-dots {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -528,16 +540,23 @@ $streetCards.forEach(($streetCard) => {
     margin-top: 10px;
   }
 
-  .street-card .image-button {
+  .street-card .image-dot {
     display: block;
     appearance: none;
     padding: 0;
     border: 0;
     background-color: var(--color-text);
+    opacity: 0.5;
     height: 10px;
     width: 10px;
     border-radius: 5px;
     cursor: pointer;
+    transition-property: opacity;
+    transition-duration: 100ms;
+  }
+
+  .street-card .image-dot.active {
+    opacity: 1;
   }
 
   .street-card-body {

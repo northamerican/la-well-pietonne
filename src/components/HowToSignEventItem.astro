@@ -22,7 +22,7 @@ const { name, location, href, dateStart, dateEnd } = event;
     )
   }
   <br />
-  <span>{location}</span><br />
+  <span>{location[langCode]}</span><br />
   <span
     >{
       Intl.DateTimeFormat(t("isoLangCode"), {

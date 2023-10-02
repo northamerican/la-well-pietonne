@@ -168,7 +168,7 @@ const en = {
   questionsAndAnswersCta: 'Read our Questions and answers page',
 
   aroundTheWorldHeading: 'Pedestrian streets around the world',
-  aroundTheWorldBody: 'A history and gallery of year round pedestrian streets in cities around the world.',
+  aroundTheWorldBody: '',
   aroundTheWorldCta: 'Check out pedestrian streets around the world',
 
   notFound: '404: Not Found',
