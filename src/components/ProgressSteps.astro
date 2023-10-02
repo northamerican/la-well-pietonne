@@ -1,54 +1,108 @@
 ---
-import { t } from "astro-i18n";
+import { astroI18n, t } from "astro-i18n";
+import { Step } from "../../types";
 
-// Steps completed
-const completedSteps = [1, 2, 3];
+const { langCode } = astroI18n;
+const steps: Step[] = [
+  {
+    date: {
+      fr: "24 avril",
+      en: "April 24",
+    },
+    title: {
+      fr: "Pétition approuvé",
+      en: "Petition approved",
+    },
+    subtitle: {
+      fr: "par l'arrondissement de Verdun",
+      en: "by the borough of Verdun",
+    },
+    completed: true,
+  },
+  {
+    date: {
+      fr: "10 mai",
+      en: "May 10",
+    },
+    title: {
+      fr: "Début de la période de signatures",
+      en: "Signature period begins",
+    },
+    subtitle: {
+      fr: "90 jours",
+      en: "90 days",
+    },
+    completed: true,
+  },
+  {
+    date: {
+      fr: "7 août",
+      en: "August 7",
+    },
+    title: {
+      fr: "Fin de la période de signatures",
+      en: "Signature period ends",
+    },
+    subtitle: {
+      fr: "3322 signatures collectées",
+      en: "3322 signatures collected",
+    },
+    completed: true,
+  },
+  {
+    date: {
+      fr: "Automne 2023",
+      en: "Fall 2023",
+    },
+    title: {
+      fr: "Consultation publique",
+      en: "Public consultation",
+    },
+    subtitle: {
+      fr: "avec les résidents de Verdun",
+      en: "with residents of Verdun",
+    },
+    completed: false,
+  },
+];
 ---
 
 <div class="steps">
   {
-    [1, 2, 3, 4].map((step) => {
-      const completed = completedSteps.includes(step);
-
-      return (
-        <div
-          class="steps__step"
-          aria-label={`${t("step")} ${step}, ${
-            completed ? t("completed") : ""
-          }`}
-        >
-          <div class="steps__step-date-container">
-            <div class="steps__step-date">{t(`steps.${step}.date`)}</div>
-          </div>
-          <div
-            class:list={[
-              "steps__step-circle",
-              { "steps__step-circle--complete": completed },
-            ]}
-          >
-            <svg
-              aria-hidden="true"
-              class="steps__step-circle_check"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              viewBox="0 0 17.837 17.837"
-              xml:space="preserve"
-            >
-              <g>
-                <path d="M16.145,2.571c-0.272-0.273-0.718-0.273-0.99,0L6.92,10.804l-4.241-4.27   c-0.272-0.274-0.715-0.274-0.989,0L0.204,8.019c-0.272,0.271-0.272,0.717,0,0.99l6.217,6.258c0.272,0.271,0.715,0.271,0.99,0   L17.63,5.047c0.276-0.273,0.276-0.72,0-0.994L16.145,2.571z" />
-              </g>
-            </svg>
-          </div>
-          <div class="steps__step-text-container">
-            <div class="steps__step-text">{t(`steps.${step}.title`)}</div>
-            <small class="steps__step-subtext">
-              {t(`steps.${step}.subtitle`)}
-            </small>
-          </div>
+    steps.map(({ date, title, subtitle, completed }, step) => (
+      <div
+        class="steps__step"
+        aria-label={`${t("step")} ${step}, ${completed ? t("completed") : ""}`}
+      >
+        <div class="steps__step-date-container">
+          <div class="steps__step-date">{date[langCode]}</div>
         </div>
-      );
-    })
+        <div
+          class:list={[
+            "steps__step-circle",
+            { "steps__step-circle--complete": completed },
+          ]}
+        >
+          <svg
+            aria-hidden="true"
+            class="steps__step-circle_check"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            viewBox="0 0 17.837 17.837"
+            xml:space="preserve"
+          >
+            <g>
+              <path d="M16.145,2.571c-0.272-0.273-0.718-0.273-0.99,0L6.92,10.804l-4.241-4.27   c-0.272-0.274-0.715-0.274-0.989,0L0.204,8.019c-0.272,0.271-0.272,0.717,0,0.99l6.217,6.258c0.272,0.271,0.715,0.271,0.99,0   L17.63,5.047c0.276-0.273,0.276-0.72,0-0.994L16.145,2.571z" />
+            </g>
+          </svg>
+        </div>
+        <div class="steps__step-text-container">
+          <div class="steps__step-text">{title[langCode]}</div>
+          <small class="steps__step-subtext">{subtitle[langCode]}</small>
+        </div>
+      </div>
+    ))
   }
 
   <div class="steps__progress-container">
@@ -58,16 +112,16 @@ const completedSteps = [1, 2, 3];
 
 <style>
   :root {
+    /* Total elapsed initiative progress 0-1 */
+    --progress: 0.8;
+    --progress-pct: calc(100% * var(--progress));
+
     --step-circle-size: 40px;
     --step-circle-color: var(--success-color);
     --step-bg-color: #d0d0d0;
 
     --date-container-width: 135px;
     --mobile-step-gap: 0.5rem;
-
-    /* Total elapsed initiative progress 0-1 */
-    --progress: 0.8;
-    --progress-pct: calc(100% * var(--progress));
   }
 
   .steps {

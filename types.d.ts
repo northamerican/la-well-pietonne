@@ -26,3 +26,10 @@ export type SigningEvent = {
   dateStart: Date,
   dateEnd: Date,
 }
+
+export type Step = {
+  date: LangObject,
+  title: LangObject,
+  subtitle: LangObject,
+  completed: boolean
+}
