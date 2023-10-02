@@ -2,7 +2,7 @@
   "name": "la-well-pietonne",
   "version": "1.0.0",
   "private": true,
-  "description": "Website for La Well Piétonne. A public consultation and petition to pedestrianize Wellington street permanently.",
+  "description": "Website for La Well Piétonne. A citizens' initiative to make Wellington a year-round pedestrian street.",
   "license": "gabagool",
   "scripts": {
     "dev": "yarn i18n:sync && astro dev",

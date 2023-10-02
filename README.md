@@ -2,7 +2,7 @@
 
 # La Well Piétonne
 
-Website for La Well Piétonne. A public consultation and petition to pedestrianize Wellington street permanently.
+Website for La Well Piétonne. A citizens' initiative to make Wellington a year-round pedestrian street.
 
 ## Dependencies
 
@@ -10,9 +10,9 @@ Based on the [Astro](https://astro.build/) Quickstart template for [Netlify](htt
 
 - Install [Astro language support extension](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode) for VS Code
 
-Included in the repository: 
-- [astro-i18n](https://github.com/alexandre-fernandez/astro-i18n) is used for internationalization.
-- [mailerlite-api-v2-node](https://www.npmjs.com/package/mailerlite-api-v2-node) is used for connecting to the MailerLite mailing list.
+Included in this repository: 
+- [astro-i18n](https://github.com/alexandre-fernandez/astro-i18n) for internationalization.
+- [mailerlite-api-v2-node](https://www.npmjs.com/package/mailerlite-api-v2-node) for connecting to the MailerLite mailing list.
 - [remark-toc](https://github.com/remarkjs/remark-toc) for generating the Markdown table of contents on the Q&A page. 
 
 ## Setup
@@ -71,9 +71,6 @@ Additional ENV vars may have to be set:
 - **Add a variable** with the key `NODE_VERSION` and set its value to `19.3.0`
 
 ---
-
-## Project Structure
-
 ## Commands
 
 All commands are run from the root of the project, from a terminal:
