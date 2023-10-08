@@ -94,7 +94,7 @@ Other considerations for street design, low speed limits, scooter restrictions, 
 
 The housing crisis is among the most pressing issues faced by residents of Montreal. In addition to tackling [our self-imposed scarcity of nice places](https://www.strongtowns.org/journal/2021/11/3/our-self-imposed-scarcity-of-nice-places) that concentrates demand for housing in walkable, human-scale neighbourhoods, regulations must be strengthened and enforced to combat speculation, greed, and predatory real estate practices. 
 
-Although we are committed to addressing these inequities in our city, the focus of this initiative is to address transportation inequity and its impact on public health and safety. We love our community, and it’s essential Verdun be kept affordable to low income, long term residents, and local businesseses.
+Although we are committed to addressing these inequities in our city, the focus of this initiative is to address transportation inequity and its impact on public health and safety. We love our community, and it’s essential Verdun be kept affordable to low income, long term residents, and local businesses.
 
 Addressing environmental gentrification requires regulatory changes, and should be dealt with urgently by higher levels of government and community organizations. We’d like to acknowledge the organizations doing work on the issue of tenants rights in Verdun:
 
