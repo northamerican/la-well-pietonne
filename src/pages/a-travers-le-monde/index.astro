@@ -441,13 +441,13 @@ Part of State Street's pedestrian zone has been served by city buses, with servi
       <p>{t("aroundTheWorldBody")}</p>
     </section>
     <section class="full-width-mobile">
-      <div class="street-cards">
+      <ul class="street-cards">
         {
           streets.map((street) => {
             const { images, name, description, location, body } = street;
 
             return (
-              <div class="street-card">
+              <li class="street-card">
                 <div class="images">
                   {images.map(({ src, alt }) => (
                     <img
@@ -457,7 +457,7 @@ Part of State Street's pedestrian zone has been served by city buses, with servi
                     />
                   ))}
                 </div>
-                <div class="image-dots">
+                <div class="image-dots" aria-hidden="true">
                   {images.map(({ src }) => (
                     <button class="image-dot" data-src={src} />
                   ))}
@@ -468,11 +468,11 @@ Part of State Street's pedestrian zone has been served by city buses, with servi
                   <h4 class="description">{description[langCode]}</h4>
                   <p class="body" set:html={body[langCode]} />
                 </div>
-              </div>
+              </li>
             );
           })
         }
-      </div>
+      </ul>
     </section>
   </main>
   <Footer />
@@ -534,6 +534,7 @@ Part of State Street's pedestrian zone has been served by city buses, with servi
     grid-template-columns: 1fr;
     grid-gap: 1rem;
     width: 100%;
+    list-style: none;
   }
   @media (min-width: 780px) {
     .street-cards {
