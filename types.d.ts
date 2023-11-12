@@ -9,6 +9,7 @@ export type Street = {
     alt: LangObject;
   }[];
   name: LangObject;
+  description: LangObject;
   location: LangObject;
   body: LangObject;
 };

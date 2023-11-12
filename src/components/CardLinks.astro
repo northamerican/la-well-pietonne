@@ -1,0 +1,23 @@
+---
+---
+
+<nav class="card-links">
+  <slot />
+</nav>
+
+<style>
+  .card-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    list-style: none;
+    max-width: 100%;
+  }
+
+  @media (min-width: 780px) {
+    .card-links {
+      flex-direction: row;
+    }
+  }
+</style>
