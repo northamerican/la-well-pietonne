@@ -1,16 +1,14 @@
 ---
-import { astroI18n, t, l } from "astro-i18n";
+import { t, l } from "astro-i18n";
 
 import Layout from "../components/Layout.astro";
 import ProgressSteps from "../components/ProgressSteps.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import StayConnected from "../components/StayConnected.astro";
+import CardLinks from "../components/CardLinks.astro";
+import CardLink from "../components/CardLink.astro";
 // import HowToSign from "../components/HowToSign.astro";
-
-astroI18n.init(Astro);
-
-const { langCode } = astroI18n;
 ---
 
 <Layout title={null}>
@@ -28,31 +26,26 @@ const { langCode } = astroI18n;
       <ProgressSteps />
     </section>
 
-    <section id="petition-text">
-      <h2>{t("petitionTextHeading")}</h2>
-      <p>
-        <a href={l("/petition", null, langCode)}> {t("petitionTextCta")}</a>
-      </p>
-    </section>
+    <section>
+      <CardLinks>
+        <CardLink
+          href={l("petition")}
+          icon="/img/icons/petition-text.svg#Layer_1"
+          title={t("petitionTextHeading")}
+        />
 
-    <section id="questions-and-answers">
-      <h2>{t("questionsAndAnswersHeading")}</h2>
-      <p>{t("questionsAndAnswersBody")}</p>
-      <p>
-        <a href={l("/questions-reponses", null, langCode)}>
-          {t("questionsAndAnswersCta")}</a
-        >
-      </p>
-    </section>
+        <CardLink
+          href={l("questions-reponses")}
+          icon="/img/icons/q-a.svg#Layer_1"
+          title={t("questionsAndAnswersHeading")}
+        />
 
-    <section id="around-the-world">
-      <h2>{t("aroundTheWorldHeading")}</h2>
-      <p>{t("aroundTheWorldBody")}</p>
-      <p>
-        <a href={l("/a-travers-le-monde", null, langCode)}
-          >{t("aroundTheWorldCta")}</a
-        >
-      </p>
+        <CardLink
+          href={l("a-travers-le-monde")}
+          icon="/img/icons/around-the-world.svg#Layer_1"
+          title={t("aroundTheWorldHeading")}
+        />
+      </CardLinks>
     </section>
 
     <section id="stay-connected">

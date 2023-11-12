@@ -1,0 +1,63 @@
+---
+const { title, href, icon } = Astro.props;
+---
+
+<a href={href} class="card-link">
+  <svg><use href={icon}></use></svg>
+  <h3>{title}</h3></a
+>
+
+<style>
+  .card-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    border: 3px solid var(--la-well-green);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    max-width: 500px;
+    overflow: hidden;
+    min-height: 100%;
+    gap: 1rem;
+  }
+
+  .card-link h3 {
+    max-width: 180px;
+    margin: 0;
+  }
+
+  .card-link svg {
+    max-width: 120px;
+    fill: var(--la-well-green);
+  }
+
+  @media (min-width: 780px) {
+    .card-link {
+      text-align: center;
+      max-width: 250px;
+      flex-direction: column;
+      max-width: none;
+    }
+    .card-link h3 {
+      max-width: auto;
+    }
+
+    .card-link svg {
+      max-width: none;
+    }
+  }
+
+  .card-link:hover {
+    border-color: var(--la-well-green-lighter);
+    text-decoration: none;
+  }
+
+  .card-link:hover h3 {
+    color: var(--la-well-green-lighter);
+  }
+
+  .card-link:hover svg {
+    fill: var(--la-well-green-lighter);
+  }
+</style>
