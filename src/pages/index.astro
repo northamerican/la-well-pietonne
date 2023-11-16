@@ -1,5 +1,5 @@
 ---
-import { t, l } from "astro-i18n";
+import { astroI18n, t, l } from "astro-i18n";
 
 import Layout from "../components/Layout.astro";
 import ProgressSteps from "../components/ProgressSteps.astro";
@@ -8,7 +8,8 @@ import Header from "../components/Header.astro";
 import StayConnected from "../components/StayConnected.astro";
 import CardLinks from "../components/CardLinks.astro";
 import CardLink from "../components/CardLink.astro";
-// import HowToSign from "../components/HowToSign.astro";
+
+astroI18n.init(Astro);
 ---
 
 <Layout title={null}>
