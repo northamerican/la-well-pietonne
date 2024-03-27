@@ -8,11 +8,11 @@ As Verdun residents, we've seen the success and acclaim of the summer pedestrian
 ## Why should Wellington be a pedestrian street?
 
 Pedestrianizing Wellington year-round would:
-- **Increase comfort and safety** for the high volume of vulnerable road users - [over 5 million pedestrians per year](https://commercesmtl.com/fr/local-commercial/promenade-wellington). This means being able to cross the street without hesitation, or being able to comfortably walk side by side as a couple, family or group of friends.
+- **Increase comfort and safety** for the high volume of vulnerable road users - [over 5 million pedestrians per year](https://asdcm.com/fr/sdc/promenade-wellington). This means being able to cross the street without hesitation, or being able to comfortably walk side by side as a couple, family or group of friends.
 
 - **Improve the quality of the urban environment** on Verdun's main commercial street by reducing noise pollution and adding vegetation, art, and communal spaces.
 
-- **Reduce car use and dependency** which is [essential to meeting our GHG emissions reductions targets](https://www.cbc.ca/news/opinion/opinion-electric-vehicles-car-dependence-1.6534893), as [43% of our emissions in Quebec are from transportation](https://www.quebec.ca/gouvernement/politiques-orientations/plan-economie-verte/actions-lutter-contre-changements-climatiques/reduire-ges-transport).
+- **Reduce car use and dependency** by inducing demand for alternatives. This is [essential to meeting our GHG emissions reductions targets](https://www.cbc.ca/news/opinion/opinion-electric-vehicles-car-dependence-1.6534893), as [43% of our emissions in Quebec are from transportation](https://www.quebec.ca/gouvernement/politiques-orientations/plan-economie-verte/actions-lutter-contre-changements-climatiques/reduire-ges-transport).
 
 - **Improve social equity** by re-appropriating the roadway occupied by private vehicles into an equitable public space suitable for socializing, shopping, or leisure.
 
@@ -22,7 +22,7 @@ This right to initiative petition refers to Article 24(d) of the _Montréal Char
 
 This increase is attributed entirely to the growth in non-commercial passenger vehicles, particularly SUVs and pickup trucks.
 
-Car-free streets and zones are one of the most effective ways to reduce car dependence and reverse this trend. This change will also have beneficial impacts on safety, community vitality, and commerce. We also expect this initiative will serve as inspiration for other neighbourhoods and cities.
+Car-free streets and zones are one of the most effective ways to reduce car dependence and reverse this trend. This change will also have beneficial impacts on safety, community vitality, and commerce. We also expect this initiative to serve as inspiration for other neighbourhoods and cities.
 
 ## Who is advocating for this?
 
@@ -34,16 +34,15 @@ We propose pedestrianizing the same area as in the summer - from Rue Regina to 6
 
 ## How will this impact accessibility?
 
-Wellington should be universally accessible. Seniors, wheelchair users, and parents with strollers can benefit from the pedestrianization of streets. The public consultation we're requesting will be an opportunity to prioritize vulnerable road users and re-imagine our infrastructure for inclusivity and accessibility.
+Our vision of Wellington emphasizes universal accessibility, improving the experience and access on the street for everyone. The public consultation we've been granted will be an opportunity to prioritize vulnerable road users and re-imagine our infrastructure for inclusivity and accessibility.
 
-Wellington currently has a number of accessibility obstacles. A pedestrian street would be an opportunity to resolve these issues by adding access ramps, and in the future, [raising the street](https://hudsoncountyview.com/n-j-group-names-jersey-citys-newark-ave-pedestrian-plaza-municipal-project-of-the-year/) to be level with storefront doors. For now in the summer, we have additional curb access ramps and reserved accessible parking on cross-streets.
+Currently, the street has a number of accessibility obstacles. A permanent transformation could include repaving and [raising the street](https://hudsoncountyview.com/n-j-group-names-jersey-citys-newark-ave-pedestrian-plaza-municipal-project-of-the-year/#:~:text=raised%20the%20existing%20roadway%20to%20meet%20the%20new%20trench%20drainage%20system%2C%20which%20also%20provides%20curb%2Dless%20ADA%20accessibility%20to%20the%20plaza.) as a flat surface from edge to edge. These types of transformations serve as an opportunity to ensure entrances to storefronts are level with the street. Elimating the boundary between the existing sidewalk and road would allow for greater flexibility when allocating street space for activities, commerce, and mobility. 
 
 <figure>
   <img src="/img/q-and-a/business-stairs.jpg" alt="Two steps leading to the front door of a grocery store on Wellington" />
 </figure>
 
-
-A consideration when discussing accessibility is the variety of health conditions that can impact mobility, many of which do not fit into our presumptions. For instance, there are cognitive, neurological, and motor function disorders that make driving impractical or impossible.
+A consideration when discussing accessibility is the variety of health conditions that can impact mobility, many of which do not fit into our presumptions. For instance, there are cognitive, neurological, visual, and motor function disorders that prevent individuals from driving. For these road users, the presence of motor vehicles on a street as busy as Wellington encumbers their access and safety.
 
 On accessibility for seniors, it's important to note that [we outlive our driving years by on average a decade](https://www.cnu.org/publicsquare/2020/03/05/aging-population-needs-walkable-bikeable-cities).
 
@@ -51,7 +50,7 @@ On accessibility for seniors, it's important to note that [we outlive our drivin
 
 Seniors over 65 represent 18% of the population of Quebec [but half of pedestrians killed in collisions each year.](https://www.lapresse.ca/actualites/2020-02-15/aines-tues-par-des-automobilistes-la-derniere-marche) Diversifying mobility options will prevent tragedies and promote greater transportation equity.
 
-_We want to hear from mobility-reduced people to understand needs and concerns, so we can advocate for a vision of the Well that is accessible and sustainable. If you or someone you know would like to be in touch about this, [email us](mailto:lawellpietonne@gmail.com)._
+_We want to hear from mobility-reduced people to understand needs and concerns, so we can advocate for a vision of the Well that is accessible and sustainable. If you or someone you know would like to be in touch about this, [email us](mailto:allo@lawellpietonne.com)._
 
 ## Won't business suffer if Wellington is pedestrianized?
 
@@ -61,6 +60,8 @@ On Wellington, the rise in foot traffic during pedestrianization has already bee
 
 Business on Wellington is already exceptional. According to the SDC, businesses on this street have [a five-year a survival rate nearing 70%](https://www.promenadewellington.com/en/open-your-business-on-the-strip/), exceeding the Canadian average. If business revenue must meet a threshold for pedestrianization to be considered, Wellington is an appropriate choice, already [meeting the prescribed standards](https://collectivitesviables.org/articles/rues-pietonnes.aspx#prrequis-7) for a pedestrian street.
 
+Our petition succeeded thanks to businesses on Wellington in the services, dining, and retail sectors who collected signatures from customers in support of our initiative.
+
 ## What about buses?
 
 Wellington is normally served by bus routes 58 and 61. During summer pedestrianization, these buses are rerouted to Blvd Lasalle. For a year-round pedestrian street, a number of mobility options can be considered:
@@ -68,6 +69,8 @@ Wellington is normally served by bus routes 58 and 61. During summer pedestriani
 For commuters who live north of Wellington, we should consider rerouting some bus service to Rue de Verdun. Cross streets like de l'Église and Galt may also benefit from changes to their services adapted to the pedestrian street.
 
 Within the pedestrian zone, small shuttles [like this one in Slovenia](https://www.visitmaribor.si/en/what-to-do/transports/6314-), can be an accessible transit option. Their small footprint allows them to coexist on a car-free street, providing a service that isn't disruptive to the urban environment.
+
+Door-to-door paratransit bus service (transport adapté) on Wellington can be maintained as an accessible transit option.
 
 Seniors and people with reduced mobility are also provided a [free taxi service](https://www.facebook.com/arrondissementdeverdun/posts/pfbid03VMFDdLDd1a8iagViPmtcb8zwyyMEM5x1Zz5AjhADe2KtGXzLrTqcoUGyGabNTXrl) in the area covering Promenade Wellington as part of a pilot project during the pedestrianization period. Such service can benefit from greater promotion and expansion.
 
@@ -132,11 +135,11 @@ If you're interested in this topic, we recommend reading the _Conseil régional 
 
 ## Isn't Montreal too cold for a pedestrian street?
 
-Montreal may be cold, but we still invest in our parks, sporting fields, benches, and other outdoor amenities that are less ideal in the winter. Cold winter days are simply a fact of life even for those who have the privilege of shovelling their car out of a snow bank.
+Montreal may be cold, but we still invest in our parks, sporting fields, benches, and other outdoor amenities that are less ideal in the winter. Cold winter days are simply a fact of life even for those who have the privilege of shovelling their car out of a snow bank. As with walking and cycling, owning and operating a car presents its set of challenges in the winter that are too often spared from scrutiny. 
 
 A survey conducted by the city of Montreal reveals that our existing habits are compatible with a pedestrian street - there is [little change in modes of commute to Place Wellington in the summer vs the winter](https://www.realisonsmtl.ca/3113/widgets/15839/documents/10936) (13% vs 20% by car for each season respectively).
 
-Some of the most renowned permanent pedestrian streets in America and Europe are in climates colder, snowier, rainier, and gloomier than ours.
+This is the case on permanent [pedestrian streets around the world](/en/around-the-world), many of which are in climates colder, snowier, rainier, and gloomier than ours.
 
 <figure>
   <img src="/img/q-and-a/church-st-burlington.jpg" alt="Person walking their dog down the middle of a snowy Church street. The street is lined with trees lit up with Christmas lights." />
@@ -179,7 +182,7 @@ It will be important to monitor traffic flow, the impact to transport operators 
 --
 
 Published: 2023 June 28  
-Last Updated: 2023 August 30
+Last Updated: 2024 March 27
 
 <style>
 

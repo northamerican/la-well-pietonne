@@ -8,11 +8,11 @@ En tant que résidents de Verdun, nous avons vu le succès et les éloges de la 
 
 Piétonniser la rue Wellington toute l'année permettrait de :
 
-- **Augmenter le confort et la sécurité** pour les usagers vulnérables de la rue - [plus de 5 millions de piétons par an](https://commercesmtl.com/fr/local-commercial/promenade-wellington). Cela signifie pouvoir traverser la rue sans hésitation, ou pouvoir marcher confortablement côte à côte en couple, famille, ou avec un groupe d'amis.
+- **Augmenter le confort et la sécurité** pour les usagers vulnérables de la rue - [plus de 5 millions de piétons par an](https://asdcm.com/fr/sdc/promenade-wellington). Cela signifie pouvoir traverser la rue sans hésitation, ou pouvoir marcher confortablement côte à côte en couple, famille, ou avec un groupe d'amis.
 
 - **Améliorer la qualité de l'environnement urbain** sur la rue commerciale principale de Verdun en réduisant les nuisances sonores et en ajoutant de la végétation, de l'art et des espaces communs.
 
-- **Réduire l'utilisation et la dépendance de la voiture**, lequel est [essentiel pour atteindre nos objectifs de réduction des émissions](https://www.cbc.ca/news/opinion/opinion-electric-vehicles-car-dependence-1.6534893) de gaz à effet de serre, étant donné que [43 % de nos émissions au Québec proviennent du transport](https://www.quebec.ca/gouvernement/politiques-orientations/plan-economie-verte/actions-lutter-contre-changements-climatiques/reduire-ges-transport).
+- **Réduire l'utilisation et la dépendance de la voiture**, en induisant la demande d’alternatives. Ce qui est [essentiel pour atteindre nos objectifs de réduction des émissions](https://www.cbc.ca/news/opinion/opinion-electric-vehicles-car-dependence-1.6534893) de gaz à effet de serre, étant donné que [43 % de nos émissions au Québec proviennent du transport](https://www.quebec.ca/gouvernement/politiques-orientations/plan-economie-verte/actions-lutter-contre-changements-climatiques/reduire-ges-transport).
 
 - **Améliorer l'équité sociale** en se réappropriant la chaussée occupée par les voitures en un espace public équitable adapté à la socialisation, au magasinage ou aux loisirs.
 
@@ -34,15 +34,15 @@ Nous proposons de piétonniser le même secteur qu'en été - de la rue Régina 
 
 ## Quel sera l'impact sur l'accessibilité?
 
-Wellington devrait être universellement accessible. Les personnes âgées, les personnes handicapées et les parents avec poussettes peuvent bénéficier de la piétonnisation des rues. La consultation publique que nous demandons sera l'occasion de prioriser les usagers de la route vulnérables et de réimaginer notre infrastructure pour l'inclusivité et l’accessibilité.
+Notre vision de Wellington souligne l'accessibilité universelle, en améliorant l'expérience et l'accès de la rue pour tous. La consultation publique qui nous a été accordée sera l'occasion de donner la priorité aux usagers de la route vulnérables et de réimaginer nos infrastructures pour l'inclusivité et l'accessibilité.
 
-Wellington a actuellement plusieures d'obstacles d'accessibilité. Une rue piétonne serait l'occasion de résoudre ces problèmes en ajoutant des rampes d'accès, et à l'avenir, de [soulever la rue](https://hudsoncountyview.com/n-j-group-names-jersey-citys-newark-ave-pedestrian-plaza-municipal-project-of-the-year/) au niveau des portes du magasin. Pour l'instant en été, nous avons des rampes d'accès supplémentaires en bordure de rue et des places de stationnement accessibles dans les rues transversales.
+Actuellement, la rue présente plusieurs obstacles d'accessibilité. Une transformation permanente pourrait inclure le repavage et [le surélévation de la rue](https://hudsoncountyview.com/n-j-group-names-jersey-citys-newark-ave-pedestrian-plaza-municipal-project-of-the-year/#:~:text=raised%20the%20existing%20roadway%20to%20meet%20the%20new%20trench%20drainage%20system%2C%20which%20also%20provides%20curb%2Dless%20ADA%20accessibility%20to%20the%20plaza.) pour en faire une surface plane d’un bord à l’autre. Ces types de transformations sont l'occasion de garantir que les entrées des commerces sont au niveau de la rue. L'élimination de la limite entre le trottoir et la chaussée existante permettrait une plus grande flexibilité dans l'attribution de l'espace de rue aux activités, au commerce et à la mobilité.
 
 <figure>
   <img src="/img/q-and-a/business-stairs.jpg" alt="Deux marches menant à la porte d'entrée d'une épicerie sur Wellington" />
 </figure>
 
-Lorsque l'on parle d'accessibilité, il faut tenir compte de la variété des problèmes de santé qui peuvent avoir un impact sur la mobilité, dont beaucoup ne correspondent pas à nos présomptions. Par exemple, il existe des troubles des fonctions cognitives, neurologiques et motrices qui rendent la conduite impraticable ou impossible.
+Par exemple, il existe des troubles des fonctions cognitives, neurologiques, visuelles et motrices qui empêchent les individus de conduire. Pour ces usagers de la route, la présence de véhicules motorisés dans une rue aussi achalandée que Wellington entrave leur accès et leur sécurité.
 
 En ce qui concerne l'accessibilité pour les aînés, il est important de noter qu'une part grandissante d'aînés [renoncent, par choix ou obligation, à conduire après l'âge de 65 ans](https://www.cnu.org/publicsquare/2020/03/05/aging-population-needs-walkable-bikeable-cities).
 
@@ -50,7 +50,7 @@ En ce qui concerne l'accessibilité pour les aînés, il est important de noter 
 
 Les aînés de plus de 65 ans représentent 18 % de la population du Québec [mais la moitié des piétons tués dans des collisions chaque année.](https://www.lapresse.ca/actualites/2020-02-15/aines-tues-par-des-automobilistes-la-derniere-marche) La diversification des options de mobilité permettra d'éviter des tragédies et de promouvoir une plus grande équité en matière de transport.
 
-_Nous voulons entendre les personnes à mobilité réduite pour comprendre les besoins et les préoccupations, afin que nous puissions défendre une vision du Well accessible et durable. Si vous ou quelqu'un que vous connaissez souhaitez être contacté à ce sujet, [envoyez-nous un courriel](mailto:lawellpietonne@gmail.com)._
+_Nous voulons entendre les personnes à mobilité réduite pour comprendre les besoins et les préoccupations, afin que nous puissions défendre une vision du Well accessible et durable. Si vous ou quelqu'un que vous connaissez souhaitez être contacté à ce sujet, [envoyez-nous un courriel](mailto:allo@lawellpietonne.com)._
 
 
 ## Les commerces ne souffriront-ils pas si Wellington est piétonne?
@@ -63,6 +63,7 @@ Sur Wellington, l'augmentation du trafic piétonnier sur Wellington dans le cadr
 
 La vie commerciale sur Wellington est déjà exceptionnelle. Selon la SDC, les commerces de cette rue ont [à cinq ans un taux de survie proche de 70%](https://www.promenadewellington.com/fr/locaux-louer-commerciaux-verdun/), dépassant la moyenne canadienne. Si les revenus des entreprises doivent atteindre un seuil pour que la piétonnisation soit envisagée, Wellington est un choix approprié, déjà [répondant aux normes prescrites](https://collectivitesviables.org/articles/rues-pietonnes.aspx#prrequis-7) pour une rue piétonne.
 
+Notre pétition a réussi grâce aux commerces de Wellington dans les secteurs des services, de la restauration et de la vente au détail qui ont collecté des signatures de clients pour soutenir notre initiative.
 
 ## Et les bus?
 
@@ -71,6 +72,8 @@ Wellington est normalement desservie par les lignes d'autobus 58 et 61. Lors de 
 Pour les utilisateurs de transports en commun qui habitent au nord de Wellington, nous pouvons dévier certains services d'autobus vers la rue de Verdun. Les rues transversales comme de l'Église et Galt pourraient également bénéficier d'évolutions de leurs services adaptées à la rue piétonne.
 
 Dans la zone piétonne, de petites navettes [comme celle-ci en Slovénie](https://www.visitmaribor.si/en/what-to-do/transports/6314-) peuvent constituer une option de transport en commun accessible. Leur faible empreinte leur permet de coexister dans une rue sans voiture, offrant un service qui ne perturbe pas l'environnement urbain.
+
+Le service de transport adapté porte-à-porte sur Wellington peut être maintenu comme option de transport en commun accessible.
 
 Les personnes âgées et les personnes à mobilité réduite bénéficient également d'un [service de taxi gratuit](https://www.facebook.com/arrondissementdeverdun/posts/pfbid03VMFDdLDd1a8iagViPmtcb8zwyyMEM5x1Zz5AjhADe2KtGXzLrTqcoUGyGabNTXrl) dans le cadre d'un projet pilote pendant la période de piétonisation dans le secteur couvrant la promenade Wellington. Un tel service pourrait bénéficier d’une expansion et plus grande promotion.
 
@@ -136,11 +139,11 @@ Si ce sujet vous intéresse, nous vous recommandons de lire le livre blanc 2023 
 
 ## Montréal n'est-il pas trop froid pour une rue piétonne?
 
-Peut-être il fait froid à Montréal, mais nous investissons quand même dans nos parcs, terrains de sport, bancs et autres aménagements extérieurs qui sont moins idéaux en hiver. Les froides journées d'hiver font tout simplement partie de la vie, et touchent aussi les propriétaires de voiture, qui doivent chaque hiver pelleter pour sortir leur voiture des congères et bancs de neige.
+Peut-être il fait froid à Montréal, mais nous investissons quand même dans nos parcs, terrains de sport, bancs et autres équipements extérieurs qui sont moins idéaux en hiver. Les froides journées d’hiver sont tout simplement une réalité, même pour ceux qui ont le privilège de pelleter leur voiture hors des congères et bancs de neige. Comme pour la marche et le vélo, posséder et conduire une voiture présente en hiver son lot de défis qui sont trop souvent épargnés.
 
 Un sondage mené par la ville de Montréal révèle que nos habitudes actuelles sont compatibles avec une rue piétonne - il y a [peu de changements dans les modes de déplacement vers Place Wellington en été ou en hiver](https://www.realisonsmtl.ca/3113/widgets/15839/documents/10936) (13% vs 20% en voiture pour chaque saison respectivement).
 
-Il existe de nombreux exemples de rues piétonnes permanentes parmi les plus renommées en Amérique et en Europe, et qui sont déployées dans des climats plus froids, plus enneigés, plus pluvieux et plus sombres que le nôtre.
+Il existe de nombreux exemples de [rues piétonnes à travers le monde](/a-travers-le-monde) qui sont déployées dans des climats plus froids, plus enneigés, plus pluvieux et plus sombres que le nôtre.
 
 <figure>
   <img src="/img/q-and-a/church-st-burlington.jpg" alt="Une personne promenant son chien au milieu de Church street enneigée. La rue est bordée d'arbres illuminés par des guirlandes de Noël." />
@@ -186,7 +189,7 @@ Il sera important de surveiller le flux de trafic, l'impact sur les opérateurs 
 --
 
 Publié le 28 juin 2023  
-Dernière mise à jour le 30 août 2023
+Dernière mise à jour le 27 mars 2024
 
 <style>
 
