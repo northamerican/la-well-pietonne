@@ -1,144 +1,158 @@
-import { defineAstroI18nConfig } from 'astro-i18n'
+import { defineAstroI18nConfig } from "astro-i18n";
 
-const siteUrl = 'https://lawellpietonne.com'
+const siteUrl = "https://lawellpietonne.com";
 
 const fr = {
   siteUrlBase: siteUrl,
   siteUrl,
-  siteName: 'La Well piétonne',
-  siteDescription: 'Consultation publique et pétition pour la piétonnisation permanente de la rue Wellington',
+  siteName: "La Well piétonne",
+  siteDescription:
+    "Consultation publique et pétition pour la piétonnisation permanente de la rue Wellington",
 
   otherLangs: {
-    en: 'English'
+    en: "English",
   },
-  isoLangCode: 'fr-ca',
+  isoLangCode: "fr-ca",
 
-  headerDescription: 'Une initiative citoyenne pour piétonniser la rue Wellington toute l\'année',
+  headerDescription:
+    "Une initiative citoyenne pour piétonniser la rue Wellington toute l'année",
 
-  howToSignHeading: 'Comment signer',
-  howToSign: 'Les résidents de Verdun peuvent signer la pétition pour demander une consultation publique auprès de l\'arrondissement.',
-  atASupportingBusiness: 'Chez un commerce participant',
-  upcomingEvents: 'Évènements à venir',
+  howToSignHeading: "Comment signer",
+  howToSign:
+    "Les résidents de Verdun peuvent signer la pétition pour demander une consultation publique auprès de l'arrondissement.",
+  atASupportingBusiness: "Chez un commerce participant",
+  upcomingEvents: "Évènements à venir",
 
-  step: 'étape',
-  completed: 'complétée',
-  stepsHeading: 'Progrès de l\'initiative',
+  step: "étape",
+  completed: "complétée",
+  stepsHeading: "Progrès de l'initiative",
 
-  petitionTextHeading: 'Texte de la pétition',
+  petitionTextHeading: "Texte de la pétition",
 
-  email: 'Courriel',
-  optional: 'facultatif',
+  email: "Courriel",
+  optional: "facultatif",
 
-  stayConnected: 'Restez connecté·e',
-  byEmail: 'Par courriel',
-  onSocialMedia: 'Sur les réseaux sociaux',
-  getInvolved: 'Je suis également intéressé·e par le bénévolat',
-  subscribe: 'S\'abonner',
-  subscribeSubtext: '',
-  subscribed: 'Merci! Vous êtes maintenant abonné',
-  formError: 'Vous n\'étiez pas abonné·e en raison d\'une erreur.',
-  followUsOn: 'Suivez-nous sur',
-  and: 'et',
+  stayConnected: "Restez connecté·e",
+  byEmail: "Par courriel",
+  onSocialMedia: "Sur les réseaux sociaux",
+  getInvolved: "Je suis également intéressé·e par le bénévolat",
+  subscribe: "S'abonner",
+  subscribeSubtext: "",
+  subscribed: "Merci! Vous êtes maintenant abonné",
+  formError: "Vous n'étiez pas abonné·e en raison d'une erreur.",
+  followUsOn: "Suivez-nous sur",
+  and: "et",
 
-  completeHeading: 'Merci!',
-  completeBody: 'L\'arrondissement de Verdun confirme que nous avons recueilli le nombre de signatures requis! La date de la consultation publique sera annoncée prochainement.',
+  completeHeading: "Ça bouge à la mairie!",
+  completeBody: `L'arrondissement de Verdun a maintenant budgété et mandaté l'Office de consultation publique de Montréal (OCPM) pour tenir la consultation publique sur la piétonnisation à l'année de la rue Wellington.
+La date sera bientôt fixée.
 
-  inspirationAndReading: 'Inspiration et lecture',
+Profitez du beau temps et suivez-nous ici pour les mises à jour.`,
 
-  footerNoticeUnaffiliated: 'Ce site n\'est pas affiliée à ',
+  inspirationAndReading: "Inspiration et lecture",
 
-  contactUs: 'Contactez-nous',
+  footerNoticeUnaffiliated: "Ce site n'est pas affiliée à ",
 
-  questionsAndAnswersHeading: 'Questions et réponses',
+  contactUs: "Contactez-nous",
 
-  aroundTheWorldHeading: 'Rues piétonnes à travers le monde',
+  questionsAndAnswersHeading: "Questions et réponses",
 
-  notFound: '404 : Introuvable',
-  goHome: 'Page d\'accueil',
+  aroundTheWorldHeading: "Rues piétonnes à travers le monde",
 
-  online: 'En ligne',
-  petitionLinkText: 'Signer la pétition sur montreal.ca',
-  onlinePetitionNotice: 'Résidents de Verdun âgé de 15 ans ou plus.',
+  notFound: "404 : Introuvable",
+  goHome: "Page d'accueil",
 
-  petitionUrl: 'https://montreal.ca/petitions/detail/6428dc4ac490e6ee4229c32a',
-  petitionSignUrl: 'https://montreal.ca/petitions/signer/6428dc4ac490e6ee4229c32a',
-}
+  online: "En ligne",
+  petitionLinkText: "Signer la pétition sur montreal.ca",
+  onlinePetitionNotice: "Résidents de Verdun âgé de 15 ans ou plus.",
+
+  petitionUrl: "https://montreal.ca/petitions/detail/6428dc4ac490e6ee4229c32a",
+  petitionSignUrl:
+    "https://montreal.ca/petitions/signer/6428dc4ac490e6ee4229c32a",
+};
 
 const en = {
   siteUrlBase: siteUrl,
   siteUrl: `${siteUrl}/en`,
-  siteName: 'La Well Piétonne',
-  siteDescription: 'A public consultation and petition to pedestrianize Wellington street permanently',
+  siteName: "La Well Piétonne",
+  siteDescription:
+    "A public consultation and petition to pedestrianize Wellington street permanently",
 
   otherLangs: {
-    fr: 'Français'
+    fr: "Français",
   },
-  isoLangCode: 'en-ca',
+  isoLangCode: "en-ca",
 
-  headerDescription: 'A citizens\' initiative to make Wellington a year-round pedestrian street',
+  headerDescription:
+    "A citizens' initiative to make Wellington a year-round pedestrian street",
 
-  howToSignHeading: 'How to sign the petition',
-  howToSign: 'Residents of Verdun can sign the petition to order a public consultation with the borough.',
-  atASupportingBusiness: 'At a supporting business',
-  upcomingEvents: 'Upcoming events',
+  howToSignHeading: "How to sign the petition",
+  howToSign:
+    "Residents of Verdun can sign the petition to order a public consultation with the borough.",
+  atASupportingBusiness: "At a supporting business",
+  upcomingEvents: "Upcoming events",
 
-  step: 'step',
-  completed: 'completed',
-  stepsHeading: 'Initiative progress',
+  step: "step",
+  completed: "completed",
+  stepsHeading: "Initiative progress",
 
-  petitionTextHeading: 'Petition text',
+  petitionTextHeading: "Petition text",
 
-  email: 'E-mail',
-  optional: 'optional',
+  email: "E-mail",
+  optional: "optional",
 
-  stayConnected: 'Stay connected',
-  byEmail: 'By e-mail',
-  onSocialMedia: 'On social media',
-  getInvolved: 'I\'m also interested in volunteering',
-  subscribe: 'Subscribe',
-  subscribeSubtext: '',
-  subscribed: 'Thanks! You\'ve been subscribed.',
-  formError: 'You could not be subscribed due to an error.',
-  followUsOn: 'Follow us on',
-  and: 'and',
+  stayConnected: "Stay connected",
+  byEmail: "By e-mail",
+  onSocialMedia: "On social media",
+  getInvolved: "I'm also interested in volunteering",
+  subscribe: "Subscribe",
+  subscribeSubtext: "",
+  subscribed: "Thanks! You've been subscribed.",
+  formError: "You could not be subscribed due to an error.",
+  followUsOn: "Follow us on",
+  and: "and",
 
-  completeHeading: 'Thank you!',
-  completeBody: 'The borough of Verdun has confirmed that we have collected the required number of signatures! The date of the public consultation will soon be announced.',
+  completeHeading: "Things are moving at borough hall!",
+  completeBody: `The borough of Verdun has now budgeted and assigned l'Office de consultation publique de Montréal (OCPM) to host the public consultation on the year-round pedestrianization of rue Wellington. The date will soon be set.
 
-  inspirationAndReading: 'Inspiration and reading',
+Enjoy the lovely weather and follow us here for updates.`,
 
-  footerNoticeUnaffiliated: 'This site is not affiliated with ',
+  inspirationAndReading: "Inspiration and reading",
 
-  contactUs: 'Contact us',
+  footerNoticeUnaffiliated: "This site is not affiliated with ",
 
-  questionsAndAnswersHeading: 'Questions and answers',
+  contactUs: "Contact us",
 
-  aroundTheWorldHeading: 'Pedestrian streets around the world',
+  questionsAndAnswersHeading: "Questions and answers",
 
-  notFound: '404: Not Found',
-  goHome: 'Go home',
+  aroundTheWorldHeading: "Pedestrian streets around the world",
 
-  online: 'Online',
-  petitionLinkText: 'Sign the petition on montreal.ca',
-  onlinePetitionNotice: 'Must be a resident of Verdun age 15 or older.',
+  notFound: "404: Not Found",
+  goHome: "Go home",
 
-  petitionUrl: 'https://montreal.ca/en/petitions/details/6428dc4ac490e6ee4229c32a',
-  petitionSignUrl: 'https://montreal.ca/en/petitions/sign/6428dc4ac490e6ee4229c32a',
-}
+  online: "Online",
+  petitionLinkText: "Sign the petition on montreal.ca",
+  onlinePetitionNotice: "Must be a resident of Verdun age 15 or older.",
 
-export const translations = { en, fr }
+  petitionUrl:
+    "https://montreal.ca/en/petitions/details/6428dc4ac490e6ee4229c32a",
+  petitionSignUrl:
+    "https://montreal.ca/en/petitions/sign/6428dc4ac490e6ee4229c32a",
+};
+
+export const translations = { en, fr };
 
 export default defineAstroI18nConfig({
-  defaultLangCode: 'fr',
-  supportedLangCodes: ['en'],
+  defaultLangCode: "fr",
+  supportedLangCodes: ["en"],
   showDefaultLangCode: false,
   translations,
   routeTranslations: {
     en: {
-      signer: 'sign',
-      petition: 'petition',
-      'a-travers-le-monde': 'around-the-world',
-      'questions-reponses': 'q-a'
-    }
+      signer: "sign",
+      petition: "petition",
+      "a-travers-le-monde": "around-the-world",
+      "questions-reponses": "q-a",
+    },
   },
-})
+});

@@ -4,21 +4,21 @@ import { Step } from "../../types";
 
 const { langCode } = astroI18n;
 const steps: Step[] = [
-  {
-    date: {
-      fr: "24 avril",
-      en: "April 24",
-    },
-    title: {
-      fr: "Pétition approuvé",
-      en: "Petition approved",
-    },
-    subtitle: {
-      fr: "par l'arrondissement de Verdun",
-      en: "by the borough of Verdun",
-    },
-    completed: true,
-  },
+  // {
+  //   date: {
+  //     fr: "24 avril",
+  //     en: "April 24",
+  //   },
+  //   title: {
+  //     fr: "Pétition approuvé",
+  //     en: "Petition approved",
+  //   },
+  //   subtitle: {
+  //     fr: "par l'arrondissement de Verdun",
+  //     en: "by the borough of Verdun",
+  //   },
+  //   completed: true,
+  // },
   {
     date: {
       fr: "10 mai",
@@ -51,8 +51,8 @@ const steps: Step[] = [
   },
   {
     date: {
-      fr: "Début 2024",
-      en: "Early 2024",
+      fr: "Automne 2024",
+      en: "Fall 2024",
     },
     title: {
       fr: "Consultation publique",
@@ -61,6 +61,21 @@ const steps: Step[] = [
     subtitle: {
       fr: "avec les résidents de Verdun",
       en: "with residents of Verdun",
+    },
+    completed: false,
+  },
+  {
+    date: {
+      fr: "Fin 2024",
+      en: "Late 2024",
+    },
+    title: {
+      fr: "Résultats de la consultation publiés",
+      en: "Public consultation results published",
+    },
+    subtitle: {
+      fr: "",
+      en: "",
     },
     completed: false,
   },
@@ -113,7 +128,7 @@ const steps: Step[] = [
 <style>
   :root {
     /* Total elapsed initiative progress 0-1 */
-    --progress: 0.8;
+    --progress: 0.6;
     --progress-pct: calc(100% * var(--progress));
 
     --step-circle-size: 40px;
