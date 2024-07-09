@@ -1,9 +1,18 @@
 [build]
-  command = "astro build"
-  functions = "netlify/functions"
-  publish = "dist"
+command = "astro build"
+functions = "netlify/functions"
+publish = "dist"
+
+[dev]
+command = "astro dev"
+targetPort = 3000
 
 [functions]
-  node_bundler = "esbuild"
-  external_node_modules = ["esbuild", "http-status-codes", "mailerlite-api-v2-node"]
-  included_files = ["astro.i18n.config.ts"]
+node_bundler = "esbuild"
+external_node_modules = [
+  "mongodb",
+  "esbuild",
+  "http-status-codes",
+  "mailerlite-api-v2-node",
+]
+included_files = ["astro.i18n.config.ts", "/public/js/*"]

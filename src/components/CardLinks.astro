@@ -7,17 +7,18 @@
 
 <style>
   .card-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
     list-style: none;
     max-width: 100%;
-  }
 
-  @media (min-width: 780px) {
-    .card-links {
-      flex-direction: row;
+    @media (min-width: 580px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 980px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
 </style>

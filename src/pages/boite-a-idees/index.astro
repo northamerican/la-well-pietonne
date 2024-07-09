@@ -1,0 +1,418 @@
+---
+import { astroI18n, t, l } from "astro-i18n";
+import Layout from "../../components/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import sortBy from "lodash.sortby";
+import { v4 as uuidv4 } from "uuid";
+import { Idea } from "../../../types";
+import getIpOrSubnet from "../../../public/js/getIpOrSubnet";
+
+astroI18n.init(Astro);
+const { langCode } = astroI18n;
+const baseUrl = Astro.url.origin;
+const clientIp = getIpOrSubnet(Astro.clientAddress);
+
+let ideas: Idea[];
+// Also setting cookie on pages/en/share-an-idea
+// since cookies can only be set on the entrypoint .astro
+try {
+  if (!Astro.cookies.has("session")) {
+    Astro.cookies.set("session", uuidv4());
+  }
+} catch (error) {
+  console.error(error);
+}
+try {
+  const session = Astro.cookies.get("session").value;
+  const ideasFetch = await fetch(
+    `${baseUrl}/.netlify/functions/ideas?clientIp=${clientIp}`,
+    { headers: { session } }
+  );
+  const ideasFetchRes = await ideasFetch.json();
+
+  ideas = sortBy(ideasFetchRes, [
+    (idea) => (idea.pending ? 0 : 1),
+    (idea) => (idea.image ? 0 : 1),
+    (idea) => -idea.votesCount,
+  ]);
+} catch (error) {
+  console.error(error);
+}
+---
+
+<Layout title={t("shareAnIdeaHeading")}>
+  <Header />
+  <main>
+    <section class="go-home">
+      <a href={l("/")}>👈 {t("goHome")}</a>
+    </section>
+    <section class="full-width-mobile with-margin" id="shareYourIdea">
+      <h2 class="has-subheading">{t("shareAnIdeaHeading")}</h2>
+      <h3>{t("shareAnIdeaSubheading")}</h3>
+      <div class="ideas-cards">
+        <form id="ideaForm" class="idea-form">
+          <input type="text" placeholder={t("ideaName")} name="name" required />
+          <textarea
+            placeholder={t("ideaDetails")}
+            name="description"
+            rows="3"
+            required></textarea>
+          <input
+            type="text"
+            placeholder={t("authorName")}
+            name="authorName"
+            required
+          />
+          <input
+            type="email"
+            placeholder={`${t("email")} (${t("optional")})`}
+            name="email"
+          />
+          <label
+            ><input type="checkbox" name="subscribe" /><small
+              >{t("stayConnectedByEmail")}</small
+            ></label
+          >
+          <input type="submit" class="button" value={t("submit")} />
+          <small
+            ><span class="success hidden" role="alert"
+              >{t("ideaFormSuccess")}</span
+            >
+            <span class="error hidden" role="alert">{t("ideaFormError")}</span
+            >&nbsp;
+          </small>
+        </form>
+      </div>
+    </section>
+    <section class="full-width-mobile ideas-gallery">
+      <h2>{t("ideasGallery")}</h2>
+      <ul class="ideas-cards">
+        {
+          ideas?.map((idea) => {
+            const {
+              _id,
+              image,
+              name,
+              description,
+              votesCount,
+              hasVoted,
+              authorName,
+              pending,
+            } = idea;
+
+            return (
+              <li class="ideas-card">
+                <img src={`/img/ideas/${image || "ideas-bg.png"}`} alt={null} />
+                <div class="ideas-card-body">
+                  <h3 class="name">{name[langCode]}</h3>
+                  <p class="description">{description?.[langCode]}</p>
+                  {authorName ? (
+                    <small>
+                      <em>
+                        {t("ideaBy")} {authorName}
+                      </em>
+                    </small>
+                  ) : null}
+                </div>
+                <div class="ideas-card-bottom">
+                  <button
+                    class="vote hidden"
+                    data-id={_id}
+                    data-votes-count={votesCount}
+                    data-has-voted={hasVoted ? 1 : 0}
+                  >
+                    <svg
+                      width="30px"
+                      height="29px"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xml:space="preserve"
+                      style="fill-rule:evenodd;clip-rule:evenodd;"
+                    >
+                      <g transform="matrix(1,0,0,1,-32.204,-0.972246)">
+                        <g transform="matrix(0.342356,0,0,0.330491,-55.7691,-202.506)">
+                          <path
+                            d="M300.778,629.891C305.373,621.349 312.256,617.063 319.149,615.971C326.092,614.872 333.045,617.015 337.674,621.317C346.898,629.891 346.898,647.037 337.674,664.183C331.217,677.043 314.614,689.902 300.778,698.475C286.942,689.902 270.339,677.043 263.882,664.183C254.658,647.037 254.658,629.891 263.882,621.317C273.106,612.744 291.554,612.744 300.778,629.891Z"
+                            style="fill:var(--la-well-green);"
+                          />
+                          <path
+                            class="vote-fill-inner"
+                            d="M295.462,632.959C288.553,620.116 274.855,619.588 267.946,626.01C264.542,629.173 263.049,634 263.049,639.535C263.049,646.111 265.155,653.6 269.24,661.194L269.28,661.274C274.828,672.323 288.557,683.189 300.779,691.088C312.999,683.189 326.728,672.323 332.316,661.194L332.358,661.114C336.401,653.6 338.507,646.111 338.507,639.535C338.507,634 337.013,629.173 333.61,626.009C326.701,619.588 313.002,620.116 306.093,632.959L300.778,641.359L295.462,632.959Z"
+                            style="fill:var(--color-bg);"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                    <strong class="votes-count">{votesCount}</strong>
+                  </button>
+                  <small class="idea-message">
+                    {pending ? (
+                      <span>{t("yourIdeaIsBeingSubmitted")}</span>
+                    ) : (
+                      <span class="i-like-this-idea">{t("iLikeThisIdea")}</span>
+                    )}
+                  </small>
+                </div>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </section>
+    <section class="full-width-mobile">
+      <p><a href="#shareYourIdea">{t("shareYourIdea")}</a></p>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<script>
+  import { cookieStore } from "cookie-store";
+  const voteButtons = document.querySelectorAll("button.vote");
+  const ideaForm = document.getElementById("ideaForm") as HTMLFormElement;
+
+  const sessionCookie = await cookieStore.get("session");
+  const session = sessionCookie.value;
+
+  voteButtons.forEach((button) => {
+    // Show vote buttons if cookies are enabled
+    if (session) {
+      button.classList.remove("hidden");
+    }
+    button.addEventListener("click", async (e) => {
+      const target = e.target as HTMLButtonElement;
+      const { id, votesCount, hasVoted: hasVotedAttr } = target.dataset;
+
+      fetch(`/.netlify/functions/ideas-vote?id=${id}`, {
+        headers: { session },
+      });
+
+      const newVotesCount = +votesCount + 1;
+
+      target.querySelector(".votes-count").innerHTML = newVotesCount.toString();
+      target.dataset.votesCount = newVotesCount.toString();
+      target.dataset.hasVoted = "1";
+    });
+  });
+
+  ideaForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const submitBtn: HTMLInputElement = ideaForm.querySelector(
+      'input[type="submit"]'
+    );
+    const errorMsg = ideaForm.querySelector(".error");
+    const successMsg = ideaForm.querySelector(".success");
+
+    submitBtn.disabled = true;
+    errorMsg.classList.add("hidden");
+    successMsg.classList.add("hidden");
+
+    try {
+      const formData = new FormData(ideaForm);
+      const formProps = Object.fromEntries(formData);
+      const { email, subscribe } = formProps;
+      const shouldSubscribe = email && subscribe;
+
+      await Promise.all([
+        fetch(`/.netlify/functions/ideas-form`, {
+          method: "post",
+          body: JSON.stringify(formProps),
+          headers: { session },
+        }),
+        shouldSubscribe
+          ? fetch("/.netlify/functions/simple-subscribe", {
+              method: "POST",
+              body: JSON.stringify({
+                email,
+                fields: {
+                  get_involved: "on",
+                  lang: document.documentElement.lang,
+                },
+              }),
+            })
+          : Promise.resolve(),
+      ]);
+
+      successMsg.classList.remove("hidden");
+    } catch {
+      submitBtn.disabled = false;
+      errorMsg.classList.remove("hidden");
+    }
+  });
+</script>
+
+<style>
+  section.full-width-mobile {
+    margin: 0;
+
+    &.with-margin {
+      margin: 0 1rem;
+    }
+
+    @media (min-width: 780px) {
+      margin: 0 auto;
+      max-width: calc(1024px + 2rem);
+      padding: 0 1rem;
+
+      &.with-margin {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .idea-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+
+    :is(input[type="submit"]) {
+      align-self: flex-start;
+    }
+
+    @media (min-width: 780px) {
+      margin: 0;
+    }
+  }
+
+  .ideas-gallery h2 {
+    margin-inline-start: 1rem;
+
+    @media (min-width: 780px) {
+      margin-inline-start: 0;
+    }
+  }
+
+  .ideas-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    width: 100%;
+    list-style: none;
+
+    @media (min-width: 780px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 980px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  .ideas-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ideas-card img {
+    width: 100%;
+    min-width: 100%;
+    aspect-ratio: 1 / 0.75;
+    object-fit: cover;
+    object-position: bottom;
+    scroll-snap-align: center;
+  }
+
+  .ideas-card-body {
+    margin: 0 1rem;
+    flex-grow: 1;
+
+    @media (min-width: 780px) {
+      margin: 0;
+      margin-right: 1rem;
+    }
+  }
+
+  .ideas-card .description {
+    white-space: pre-line;
+    margin-block: 0.25em;
+  }
+
+  .ideas-card .name {
+    margin-block-start: 1rem;
+    margin-block-end: 0;
+  }
+
+  .ideas-card-bottom {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-block: 1em;
+    margin-inline: 1rem;
+
+    @media (min-width: 780px) {
+      margin-inline: 0;
+    }
+
+    .idea-message {
+      color: var(--la-well-green);
+    }
+  }
+
+  .i-like-this-idea {
+    display: none;
+  }
+
+  .ideas-card button.vote {
+    align-self: flex-start;
+    position: relative;
+    appearance: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    fill: var(--la-well-green);
+    padding-inline: 0;
+
+    /* Prevent firing event on child elements */
+    & * {
+      pointer-events: none;
+    }
+
+    :is(svg) {
+      display: block;
+    }
+
+    &:hover {
+      fill: var(--la-well-green-lighter);
+    }
+
+    &[data-has-voted="1"] {
+      pointer-events: none;
+      color: var(--color-bg);
+
+      .votes-count {
+        color: var(--color-bg);
+      }
+
+      .vote-fill-inner {
+        opacity: 0;
+      }
+    }
+
+    /* I like this idea message on hover and liked  */
+    &[data-has-voted="0"]:hover + .idea-message .i-like-this-idea,
+    &[data-has-voted="1"] + .idea-message .i-like-this-idea {
+      display: inline;
+    }
+
+    & .votes-count {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      font-family: var(--main-family);
+      font-size: 14px;
+      color: var(--la-well-green);
+    }
+
+    .vote-fill-inner {
+      opacity: 1;
+      transition: opacity 250ms;
+    }
+  }
+</style>

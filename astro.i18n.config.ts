@@ -59,6 +59,23 @@ Profitez du beau temps et suivez-nous ici pour les mises à jour.`,
 
   aroundTheWorldHeading: "Rues piétonnes à travers le monde",
 
+  shareAnIdeaHeading: "Boite à idées",
+  shareAnIdeaSubheading:
+    "À quoi devrait ressembler notre rue piétonne ouverte toute l'année ?",
+  ideasGallery: "Galerie d'idées",
+  shareYourIdea: "Partagez votre idée ici",
+
+  ideaName: "Votre idée",
+  ideaDetails: "Dites-nous en plus...",
+  authorName: "Votre nom",
+  submit: "Soumettre",
+  stayConnectedByEmail: "Restez connecté·e par courriel",
+  yourIdeaIsBeingSubmitted: "Votre idée est en cours de publication...",
+  iLikeThisIdea: "J'aime cette idée !",
+  ideaBy: "Idée de",
+  ideaFormSuccess: "Merci ! Votre idée a été soumise.",
+  ideaFormError: "Désolé, une erreur s'est produite.",
+
   notFound: "404 : Introuvable",
   goHome: "Page d'accueil",
 
@@ -127,6 +144,23 @@ Enjoy the lovely weather and follow us here for updates.`,
 
   aroundTheWorldHeading: "Pedestrian streets around the world",
 
+  shareAnIdeaHeading: "Share an idea",
+  shareAnIdeaSubheading:
+    "What should our year-round pedestrian street look like?",
+  ideasGallery: "Ideas gallery",
+  shareYourIdea: "Share an idea here",
+
+  ideaName: "Your idea",
+  ideaDetails: "Tell us more...",
+  authorName: "Your name",
+  submit: "Submit",
+  stayConnectedByEmail: "Stay connected by e-mail",
+  yourIdeaIsBeingSubmitted: "Your idea is being published...",
+  iLikeThisIdea: "I like this idea!",
+  ideaBy: "Idea by",
+  ideaFormSuccess: "Thanks! Your idea has been submitted.",
+  ideaFormError: "Sorry, an error occurred.",
+
   notFound: "404: Not Found",
   goHome: "Go home",
 
@@ -152,6 +186,7 @@ export default defineAstroI18nConfig({
       signer: "sign",
       petition: "petition",
       "a-travers-le-monde": "around-the-world",
+      "boite-a-idees": "share-an-idea",
       "questions-reponses": "q-a",
     },
   },

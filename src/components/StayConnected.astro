@@ -30,49 +30,44 @@ const lang = astroI18n.langCode;
   <small class="error hidden">{t("formError")}</small>
 </form>
 
-<script define:vars={{ lang }}>
-const $form = document.querySelector("form");
-const $email = document.querySelector('input[name="email"]');
-const $getInvolved = document.querySelector('input[name="get_involved"]');
-const $subscribe = document.querySelector(".subscribe");
-const $subscribed = document.querySelector(".subscribed");
-const $error = document.querySelector(".error");
+<script is:inline define:vars={{ lang }}>
+  const $form = document.querySelector("form");
+  const $email = document.querySelector('input[name="email"]');
+  const $getInvolved = document.querySelector('input[name="get_involved"]');
+  const $subscribe = document.querySelector(".subscribe");
+  const $subscribed = document.querySelector(".subscribed");
+  const $error = document.querySelector(".error");
 
-$form.addEventListener("submit", async (e) => {
-  e.preventDefault();
+  $form.addEventListener("submit", async (e) => {
+    e.preventDefault();
 
-  try {
-    const formData = new FormData($form);
-    const formProps = Object.fromEntries(formData);
+    try {
+      const formData = new FormData($form);
+      const formProps = Object.fromEntries(formData);
 
-    const { email, get_involved } = formProps;
+      const { email, get_involved } = formProps;
 
-    $email.disabled = true;
-    $getInvolved.disabled = true;
-    $subscribe.disabled = true;
+      $email.disabled = true;
+      $getInvolved.disabled = true;
+      $subscribe.disabled = true;
 
-    const fetchResponse = await fetch(
-      "/.netlify/functions/simple-subscribe",
-      {
+      await fetch("/.netlify/functions/simple-subscribe", {
         method: "POST",
         body: JSON.stringify({
           email,
           fields: { get_involved, lang },
         }),
-      }
-    );
+      });
 
-    await fetchResponse.json();
-
-    $subscribe.classList.add("hidden");
-    $subscribed.classList.remove("hidden");
-  } catch {
-    $email.disabled = false;
-    $getInvolved.disabled = false;
-    $subscribe.disabled = false;
-    $error.classList.remove("hidden");
-  }
-});
+      $subscribe.classList.add("hidden");
+      $subscribed.classList.remove("hidden");
+    } catch {
+      $email.disabled = false;
+      $getInvolved.disabled = false;
+      $subscribe.disabled = false;
+      $error.classList.remove("hidden");
+    }
+  });
 </script>
 
 <style>
@@ -80,9 +75,6 @@ $form.addEventListener("submit", async (e) => {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
-  .hidden {
-    display: none !important;
   }
 
   label {

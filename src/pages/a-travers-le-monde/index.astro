@@ -440,13 +440,13 @@ Part of State Street's pedestrian zone has been served by city buses, with servi
       <h2>{t("aroundTheWorldHeading")}</h2>
     </section>
     <section class="full-width-mobile">
-      <ul class="street-cards">
+      <ul class="slider-cards">
         {
           streets.map((street) => {
             const { images, name, description, location, body } = street;
 
             return (
-              <li class="street-card">
+              <li class="slider-card">
                 <div class="images">
                   {images.map(({ src, alt }) => (
                     <img
@@ -460,7 +460,7 @@ Part of State Street's pedestrian zone has been served by city buses, with servi
                     <button class="image-dot" data-src={src} />
                   ))}
                 </div>
-                <div class="street-card-body">
+                <div class="slider-card-body">
                   <h3 class="name">{name[langCode]}</h3>
                   <h4 class="location">{location[langCode]}</h4>
                   <h4 class="description">{description[langCode]}</h4>
@@ -476,44 +476,7 @@ Part of State Street's pedestrian zone has been served by city buses, with servi
   <Footer />
 </Layout>
 
-<script is:inline>
-  const $streetCards = document.querySelectorAll(".street-cards");
-  const scrollIntoView = ($el) => {
-    $el.scrollIntoView({ block: "nearest" });
-  };
-
-  $streetCards.forEach(($streetCard) => {
-    const $cardImages = $streetCard.querySelectorAll(".images img");
-    const $imageButtons = $streetCard.querySelectorAll(".image-dot");
-
-    $cardImages.forEach(($cardImage, i) => {
-      const $imageButton = $imageButtons[i];
-
-      $cardImage.addEventListener("click", () => {
-        const $nextImg =
-          $cardImage.nextElementSibling ||
-          $cardImage.parentElement.firstElementChild;
-
-        scrollIntoView($nextImg);
-      });
-
-      $imageButton.addEventListener("click", () => {
-        scrollIntoView($cardImage);
-      });
-
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          $imageButton.classList.toggle("active", entry.isIntersecting);
-        },
-        {
-          root: $streetCard,
-          threshold: 0.5,
-        }
-      );
-      observer.observe($cardImage);
-    });
-  });
-</script>
+<script is:inline src="/js/slider-cards.js" defer></script>
 
 <style>
   section.full-width-mobile {
@@ -527,7 +490,7 @@ Part of State Street's pedestrian zone has been served by city buses, with servi
     }
   }
 
-  .street-cards {
+  .slider-cards {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
@@ -535,12 +498,12 @@ Part of State Street's pedestrian zone has been served by city buses, with servi
     list-style: none;
   }
   @media (min-width: 780px) {
-    .street-cards {
+    .slider-cards {
       grid-template-columns: 1fr 1fr;
     }
   }
 
-  .street-card .images {
+  .slider-card .images {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -551,11 +514,11 @@ Part of State Street's pedestrian zone has been served by city buses, with servi
     scrollbar-width: none; /* ff */
   }
 
-  .street-card .images::-webkit-scrollbar {
+  .slider-card .images::-webkit-scrollbar {
     display: none; /* webkit */
   }
 
-  .street-card img {
+  .slider-card img {
     width: 100%;
     min-width: 100%;
     aspect-ratio: 1;
@@ -564,7 +527,7 @@ Part of State Street's pedestrian zone has been served by city buses, with servi
     scroll-snap-align: center;
   }
 
-  .street-card .image-dots {
+  .slider-card .image-dots {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -572,7 +535,7 @@ Part of State Street's pedestrian zone has been served by city buses, with servi
     margin-top: 10px;
   }
 
-  .street-card .image-dot {
+  .slider-card .image-dot {
     display: block;
     position: relative;
     appearance: none;
@@ -588,41 +551,41 @@ Part of State Street's pedestrian zone has been served by city buses, with servi
     transition-duration: 100ms;
   }
 
-  .street-card .image-dot::after {
+  .slider-card .image-dot::after {
     position: absolute;
     content: "";
     inset: -5px;
   }
 
-  .street-card .image-dot.active {
+  .slider-card .image-dot.active {
     opacity: 1;
   }
 
-  .street-card-body {
+  .slider-card-body {
     margin: 0 1rem;
   }
 
   @media (min-width: 780px) {
-    .street-card-body {
+    .slider-card-body {
       margin: 0;
       margin-right: 1rem;
     }
   }
 
-  .street-card .description {
+  .slider-card .description {
     margin-block: 0;
   }
 
-  .street-card .name {
+  .slider-card .name {
     margin-block-start: 1rem;
     margin-block-end: 0;
   }
 
-  .street-card .location {
+  .slider-card .location {
     margin-top: 0;
   }
 
-  .street-card .body {
+  .slider-card .body {
     white-space: pre-line;
   }
 </style>

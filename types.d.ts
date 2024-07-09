@@ -1,7 +1,9 @@
-export type Langs = 'en' | 'fr'
+import { ObjectId } from "mongodb";
+
+export type Langs = "en" | "fr";
 export type LangObject = {
   [langCode in Langs]: string;
-}
+};
 
 export type Street = {
   images: {
@@ -14,23 +16,34 @@ export type Street = {
   body: LangObject;
 };
 
+export type Idea = {
+  _id: ObjectId;
+  image: string;
+  name: LangObject;
+  description: LangObject;
+  votesCount: number;
+  hasVoted: boolean;
+  authorName?: string;
+  pending?: true;
+};
+
 export type SigningLocation = {
   name: string;
   href: string;
   address: string;
-}
+};
 
 export type SigningEvent = {
-  name: LangObject,
-  location: LangObject,
-  href: string,
-  dateStart: Date,
-  dateEnd: Date,
-}
+  name: LangObject;
+  location: LangObject;
+  href: string;
+  dateStart: Date;
+  dateEnd: Date;
+};
 
 export type Step = {
-  date: LangObject,
-  title: LangObject,
-  subtitle: LangObject,
-  completed: boolean
-}
+  date: LangObject;
+  title: LangObject;
+  subtitle: LangObject;
+  completed: boolean;
+};

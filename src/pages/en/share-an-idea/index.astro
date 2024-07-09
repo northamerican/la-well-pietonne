@@ -1,0 +1,15 @@
+---
+import Page from "../../boite-a-idees/index.astro";
+import { v4 as uuidv4 } from "uuid";
+
+try {
+  if (!Astro.cookies.has("session")) {
+    Astro.cookies.set("session", uuidv4());
+  }
+} catch (error) {
+  console.error(error);
+}
+const { props } = Astro;
+---
+
+<Page {...props} />

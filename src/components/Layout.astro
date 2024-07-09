@@ -1,5 +1,5 @@
 ---
-import { astroI18n, t, l } from "astro-i18n";
+import { astroI18n, t } from "astro-i18n";
 interface Props {
   title: string;
 }
@@ -14,6 +14,7 @@ const title = (props.title ? `${props.title} - ` : "") + t("siteName");
 <!DOCTYPE html>
 <html lang={astroI18n.langCode}>
   <head>
+    <!-- 𓅦 Piet says: A nous les rues! -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={t("siteDescription")} />
@@ -89,13 +90,22 @@ const title = (props.title ? `${props.title} - ` : "") + t("siteName");
     font-weight: 550;
   }
 
-  input {
+  .has-subheading {
+    margin-block-end: 0;
+    & + :is(h2, h3, h4) {
+      margin-block-start: 0.5em;
+    }
+  }
+
+  input,
+  textarea {
     font-family: var(--main-family);
     color: var(--color-text);
   }
 
   input[type="text"],
-  input[type="email"] {
+  input[type="email"],
+  textarea {
     font-size: 1rem;
     padding: 0.25rem;
     appearance: none;
@@ -141,6 +151,7 @@ const title = (props.title ? `${props.title} - ` : "") + t("siteName");
     text-decoration: none;
     border-radius: 10rem;
     border: none;
+    cursor: pointer;
   }
 
   .button[disabled] {
@@ -149,6 +160,10 @@ const title = (props.title ? `${props.title} - ` : "") + t("siteName");
   }
   .button:not([disabled]):hover {
     background-color: var(--la-well-green-lighter);
+  }
+
+  .hidden {
+    display: none !important;
   }
 
   section {
