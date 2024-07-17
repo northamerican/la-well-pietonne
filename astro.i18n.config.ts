@@ -35,7 +35,8 @@ const fr = {
   stayConnected: "Restez connecté·e",
   byEmail: "Par courriel",
   onSocialMedia: "Sur les réseaux sociaux",
-  getInvolved: "Je suis également intéressé·e par le bénévolat",
+  getInvolved:
+    "Je suis intéressé·e à participer aux événements et à la consultation publique",
   subscribe: "S'abonner",
   subscribeSubtext: "",
   subscribed: "Merci! Vous êtes maintenant abonné",
@@ -104,7 +105,8 @@ const en = {
   stayConnected: "Stay connected",
   byEmail: "By e-mail",
   onSocialMedia: "On social media",
-  getInvolved: "I'm also interested in volunteering",
+  getInvolved:
+    "I'm also interested in attending events and public consultation",
   subscribe: "Subscribe",
   subscribeSubtext: "",
   subscribed: "Thanks! You've been subscribed.",
