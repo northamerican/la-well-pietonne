@@ -35,7 +35,8 @@ const fr = {
   stayConnected: "Restez connecté·e",
   byEmail: "Par courriel",
   onSocialMedia: "Sur les réseaux sociaux",
-  getInvolved: "Je suis également intéressé·e par le bénévolat",
+  getInvolved:
+    "Je suis intéressé·e à participer aux événements et à la consultation publique",
   subscribe: "S'abonner",
   subscribeSubtext: "",
   subscribed: "Merci! Vous êtes maintenant abonné",
@@ -121,7 +122,8 @@ const en = {
   stayConnected: "Stay connected",
   byEmail: "By e-mail",
   onSocialMedia: "On social media",
-  getInvolved: "I'm also interested in volunteering",
+  getInvolved:
+    "I'm also interested in attending events and public consultation",
   subscribe: "Subscribe",
   subscribeSubtext: "",
   subscribed: "Thanks! You've been subscribed.",
@@ -130,7 +132,7 @@ const en = {
   and: "and",
 
   completeHeading: "Things are moving at borough hall!",
-  completeBody: `The borough of Verdun has now budgeted and assigned l'Office de consultation publique de Montréal (OCPM) to host the public consultation on the year-round pedestrianization of rue Wellington. The date will soon be set.
+  completeBody: `The borough of Verdun has now budgeted and assigned l'Office de consultation publique de Montréal (OCPM) to host the public consultation on the year-round pedestrianization of Wellington street. The date will soon be set.
 
 Enjoy the lovely weather and follow us here for updates.`,
 

@@ -27,15 +27,10 @@ export type Idea = {
   pending?: true;
 };
 
-export type SigningLocation = {
-  name: string;
-  href: string;
-  address: string;
-};
-
-export type SigningEvent = {
+export type EventInfo = {
   name: LangObject;
   location: LangObject;
+  description: LangObject;
   href: string;
   dateStart: Date;
   dateEnd: Date;
