@@ -8,6 +8,7 @@ import Header from "../components/Header.astro";
 import StayConnected from "../components/StayConnected.astro";
 import CardLinks from "../components/CardLinks.astro";
 import CardLink from "../components/CardLink.astro";
+import Events from "../components/Events.astro";
 
 astroI18n.init(Astro);
 ---
@@ -18,6 +19,10 @@ astroI18n.init(Astro);
     <section>
       <h2>{t("completeHeading")}</h2>
       <p style="white-space: pre-line;">{t("completeBody")}</p>
+    </section>
+
+    <section>
+      <Events />
     </section>
 
     <section id="progress-steps">

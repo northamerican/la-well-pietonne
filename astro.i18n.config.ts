@@ -115,7 +115,7 @@ const en = {
   and: "and",
 
   completeHeading: "Things are moving at borough hall!",
-  completeBody: `The borough of Verdun has now budgeted and assigned l'Office de consultation publique de Montréal (OCPM) to host the public consultation on the year-round pedestrianization of rue Wellington. The date will soon be set.
+  completeBody: `The borough of Verdun has now budgeted and assigned l'Office de consultation publique de Montréal (OCPM) to host the public consultation on the year-round pedestrianization of Wellington street. The date will soon be set.
 
 Enjoy the lovely weather and follow us here for updates.`,
 
