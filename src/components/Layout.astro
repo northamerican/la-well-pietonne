@@ -13,8 +13,10 @@ const title = (props.title ? `${props.title} - ` : "") + t("siteName");
 
 <!DOCTYPE html>
 <html lang={astroI18n.langCode}>
+  <!-- 𓅦 Piet says: A nous les rues! -->
   <head>
-    <!-- 𓅦 Piet says: A nous les rues! -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={t("siteDescription")} />
