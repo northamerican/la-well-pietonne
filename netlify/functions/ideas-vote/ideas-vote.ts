@@ -1,6 +1,7 @@
 import { Handler } from "@netlify/functions";
 import { MongoClient, ObjectId } from "mongodb";
 import { StatusCodes } from "http-status-codes";
+import { validate as uuidValidate } from "uuid";
 import getIpOrSubnet from "../../../public/js/getIpOrSubnet";
 
 export const handler: Handler = async ({ headers, queryStringParameters }) => {
@@ -8,6 +9,8 @@ export const handler: Handler = async ({ headers, queryStringParameters }) => {
   const client = new MongoClient(mongoUri, {
     maxIdleTimeMS: 10000,
   });
+  const { session } = headers;
+  const validSession = uuidValidate(session);
 
   try {
     const db = client.db("la-well-pietonne");
@@ -25,13 +28,18 @@ export const handler: Handler = async ({ headers, queryStringParameters }) => {
     const { session } = headers;
     const { id } = queryStringParameters;
     const clientIp = getIpOrSubnet(headers["x-nf-client-connection-ip"]);
-
     const idea = await ideasCollection.findOne({ _id: new ObjectId(id) });
+    const hasVoted = idea.votesByIp.includes(clientIp);
 
-    if (!idea) {
-      // Invalid idea
+    if (!idea || !validSession) {
       return {
         statusCode: StatusCodes.INTERNAL_SERVER_ERROR,
+      };
+    }
+
+    if (hasVoted) {
+      return {
+        statusCode: StatusCodes.FORBIDDEN,
       };
     }
 
