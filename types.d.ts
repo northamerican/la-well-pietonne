@@ -31,7 +31,7 @@ export type EventInfo = {
   name: LangObject;
   location: LangObject;
   description: LangObject;
-  href: string;
+  href?: string;
   dateStart: Date;
   dateEnd: Date;
 };
