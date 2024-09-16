@@ -24,39 +24,49 @@ const events: EventInfo[] = [
     dateEnd: new Date("2024-09-11T17:00:00-04:00"),
   },
 ];
+
+const upcomingEvents = events.filter((event) => {
+  // Expire event after about a day
+  const dateExpire = new Date(event.dateEnd);
+  dateExpire.setDate(dateExpire.getDate() + 1);
+
+  return dateExpire > new Date();
+});
 ---
 
-{events.length ? <h2>{t("upcomingEvents")}</h2> : null}
+{upcomingEvents.length ? <h2>{t("upcomingEvents")}</h2> : null}
 <ul>
   {
-    events.map(({ name, location, description, href, dateStart, dateEnd }) => (
-      <li>
-        <h3>
-          {href ? (
-            <a href={href} target="_blank">
-              {name[langCode]}
-            </a>
-          ) : (
-            name[langCode]
-          )}
-        </h3>
-        <span>
-          {Intl.DateTimeFormat(t("isoLangCode"), {
-            year: "numeric",
-            month: "long",
-            weekday: "long",
-            day: "numeric",
-            hour: "numeric",
-            timeZone: "America/Montreal",
-          }).formatRange(dateStart, dateEnd)}
-        </span>
-        <br />
-        <em>{location[langCode]}</em>
-        <br />
-        <span>{description[langCode]}</span>
-        <br />
-      </li>
-    ))
+    upcomingEvents.map(
+      ({ name, location, description, href, dateStart, dateEnd }) => (
+        <li>
+          <h3>
+            {href ? (
+              <a href={href} target="_blank">
+                {name[langCode]}
+              </a>
+            ) : (
+              name[langCode]
+            )}
+          </h3>
+          <span>
+            {Intl.DateTimeFormat(t("isoLangCode"), {
+              year: "numeric",
+              month: "long",
+              weekday: "long",
+              day: "numeric",
+              hour: "numeric",
+              timeZone: "America/Montreal",
+            }).formatRange(dateStart, dateEnd)}
+          </span>
+          <br />
+          <em>{location[langCode]}</em>
+          <br />
+          <span>{description[langCode]}</span>
+          <br />
+        </li>
+      )
+    )
   }
 </ul>
 
