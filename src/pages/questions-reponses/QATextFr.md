@@ -36,7 +36,7 @@ Nous proposons de piétonniser le même secteur qu'en été - de la rue Régina 
 
 Notre vision de Wellington souligne l'accessibilité universelle, en améliorant l'expérience et l'accès de la rue pour tous. La consultation publique qui nous a été accordée sera l'occasion de donner la priorité aux usagers de la route vulnérables et de réimaginer nos infrastructures pour l'inclusivité et l'accessibilité.
 
-Actuellement, la rue présente plusieurs obstacles d'accessibilité. Une transformation permanente pourrait inclure le repavage et [le surélévation de la rue](https://hudsoncountyview.com/n-j-group-names-jersey-citys-newark-ave-pedestrian-plaza-municipal-project-of-the-year/#:~:text=raised%20the%20existing%20roadway%20to%20meet%20the%20new%20trench%20drainage%20system%2C%20which%20also%20provides%20curb%2Dless%20ADA%20accessibility%20to%20the%20plaza.) pour en faire une surface plane d’un bord à l’autre. Ces types de transformations sont l'occasion de garantir que les entrées des commerces sont au niveau de la rue. L'élimination de la limite entre le trottoir et la chaussée existante permettrait une plus grande flexibilité dans l'attribution de l'espace de rue aux activités, au commerce et à la mobilité.
+Actuellement, la rue présente plusieurs obstacles d'accessibilité. Une transformation permanente pourrait inclure le repavage et [le surélévation de la rue](https://hudsoncountyview.com/n-j-group-names-jersey-citys-newark-ave-pedestrian-plaza-municipal-project-of-the-year/#:~:text=raised%20the%20existing%20roadway%20to%20meet%20the%20new%20trench%20drainage%20system%2C%20which%20also%20provides%20curb%2Dless%20ADA%20accessibility%20to%20the%20plaza.) pour en faire une surface plane d’un bord à l’autre en assurant que les entrées des commerces sont au niveau de la rue. L'élimination de la limite entre le trottoir et la chaussée existante permettrait une plus grande flexibilité dans l'attribution de l'espace de rue aux activités, au commerce et à la mobilité.
 
 <figure>
   <img src="/img/q-and-a/business-stairs.jpg" alt="Deux marches menant à la porte d'entrée d'une épicerie sur Wellington" />
@@ -67,11 +67,9 @@ Notre pétition a réussi grâce aux commerces de Wellington dans les secteurs d
 
 ## Et les bus?
 
-Wellington est normalement desservie par les lignes d'autobus 58 et 61. Lors de la piétonnisation estivale, ces autobus sont déviés vers le boulevard Lasalle. Pour une rue piétonne ouverte à l’année, plusieurs options de mobilité peuvent être envisagées :
+Wellington est normalement desservie par la ligne d'autobus 61. Lors de la piétonnisation estivale, cette ligne est déviée vers le boulevard Lasalle. Pour une rue piétonne ouverte à l’année, plusieurs options de mobilité peuvent être envisagées :
 
-Pour les utilisateurs de transports en commun qui habitent au nord de Wellington, nous pouvons dévier certains services d'autobus vers la rue de Verdun. Les rues transversales comme de l'Église et Galt pourraient également bénéficier d'évolutions de leurs services adaptées à la rue piétonne.
-
-Dans la zone piétonne, de petites navettes [comme celle-ci en Slovénie](https://www.visitmaribor.si/en/what-to-do/transports/6314-) peuvent constituer une option de transport en commun accessible. Leur faible empreinte leur permet de coexister dans une rue sans voiture, offrant un service qui ne perturbe pas l'environnement urbain.
+Dans la zone piétonne, de petites navettes [comme celle-ci en Europe](https://www.visitmaribor.si/en/what-to-do/transports/6314-) peuvent constituer une option de transport en commun accessible. Leur faible empreinte leur permet de coexister dans une rue sans voiture, avec un service moins perturbateur pour l’environnement urbain qu’un bus ordinaire.
 
 Le service de transport adapté porte-à-porte sur Wellington peut être maintenu comme option de transport en commun accessible.
 
@@ -189,7 +187,7 @@ Il sera important de surveiller le flux de trafic, l'impact sur les opérateurs 
 --
 
 Publié le 28 juin 2023  
-Dernière mise à jour le 27 mars 2024
+Dernière mise à jour le 16 septembre 2024
 
 <style>
 

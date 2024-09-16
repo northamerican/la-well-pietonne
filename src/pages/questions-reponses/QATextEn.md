@@ -36,7 +36,7 @@ We propose pedestrianizing the same area as in the summer - from Rue Regina to 6
 
 Our vision of Wellington emphasizes universal accessibility, improving the experience and access on the street for everyone. The public consultation we've been granted will be an opportunity to prioritize vulnerable road users and re-imagine our infrastructure for inclusivity and accessibility.
 
-Currently, the street has a number of accessibility obstacles. A permanent transformation could include repaving and [raising the street](https://hudsoncountyview.com/n-j-group-names-jersey-citys-newark-ave-pedestrian-plaza-municipal-project-of-the-year/#:~:text=raised%20the%20existing%20roadway%20to%20meet%20the%20new%20trench%20drainage%20system%2C%20which%20also%20provides%20curb%2Dless%20ADA%20accessibility%20to%20the%20plaza.) as a flat surface from edge to edge. These types of transformations serve as an opportunity to ensure entrances to storefronts are level with the street. Elimating the boundary between the existing sidewalk and road would allow for greater flexibility when allocating street space for activities, commerce, and mobility. 
+Currently, the street has a number of accessibility obstacles. A permanent transformation could include repaving and [raising the street](https://hudsoncountyview.com/n-j-group-names-jersey-citys-newark-ave-pedestrian-plaza-municipal-project-of-the-year/#:~:text=raised%20the%20existing%20roadway%20to%20meet%20the%20new%20trench%20drainage%20system%2C%20which%20also%20provides%20curb%2Dless%20ADA%20accessibility%20to%20the%20plaza.) as a flat surface from edge to edge, ensuring entrances to storefronts are level with the street. Elimating the boundary between the existing sidewalk and road would allow for greater flexibility when allocating street space for activities, commerce, and mobility. 
 
 <figure>
   <img src="/img/q-and-a/business-stairs.jpg" alt="Two steps leading to the front door of a grocery store on Wellington" />
@@ -64,11 +64,9 @@ Our petition succeeded thanks to businesses on Wellington in the services, dinin
 
 ## What about buses?
 
-Wellington is normally served by bus routes 58 and 61. During summer pedestrianization, these buses are rerouted to Blvd Lasalle. For a year-round pedestrian street, a number of mobility options can be considered:
+Wellington is served by bus route 61. During summer pedestrianization, this bus line is rerouted to Blvd Lasalle. For a year-round pedestrian street, a number of mobility options for transit users can be considered:
 
-For commuters who live north of Wellington, we should consider rerouting some bus service to Rue de Verdun. Cross streets like de l'Église and Galt may also benefit from changes to their services adapted to the pedestrian street.
-
-Within the pedestrian zone, small shuttles [like this one in Slovenia](https://www.visitmaribor.si/en/what-to-do/transports/6314-), can be an accessible transit option. Their small footprint allows them to coexist on a car-free street, providing a service that isn't disruptive to the urban environment.
+Within the pedestrian zone, small shuttles [like this one in Europe](https://www.visitmaribor.si/en/what-to-do/transports/6314-), can be an accessible transit option. Their small footprint allows them to coexist on a car-free street, with service that is less disruptive to the urban environment than an average city bus.
 
 Door-to-door paratransit bus service (transport adapté) on Wellington can be maintained as an accessible transit option.
 
@@ -111,7 +109,7 @@ Noise from entertainment venues, or that from clients of bars and restaurants, a
 
 We believe this issue can be addressed by discouraging bar patrons from loitering outside and that existing noise regulations are respected and enforced.
 
-Motor vehicles are [the greatest source of harmful noise pollution](https://globalnews.ca/news/8642892/urban-noise-dangers-health/), which disproportionately affects lower income groups. Re-introducing vehicular traffic with the purpose of discouraging the presence of itinerants and people in general is inappropriate and counterproductive to reducing urban noise pollution.
+Motor vehicles are [the greatest source of harmful noise pollution](https://globalnews.ca/news/8642892/urban-noise-dangers-health/), which disproportionately affects lower income groups. Re-introducing vehicular traffic with the purpose of discouraging the presence of people, particularly unhoused people, is inappropriate and counterproductive to reducing urban noise pollution.
 
 ## Won't it back up traffic on other streets?
 
@@ -182,7 +180,7 @@ It will be important to monitor traffic flow, the impact to transport operators 
 --
 
 Published: 2023 June 28  
-Last Updated: 2024 March 27
+Last Updated: 2024 September 16
 
 <style>
 
