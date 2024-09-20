@@ -139,7 +139,7 @@ Si ce sujet vous intéresse, nous vous recommandons de lire le livre blanc 2023 
 
 Peut-être il fait froid à Montréal, mais nous investissons quand même dans nos parcs, terrains de sport, bancs et autres équipements extérieurs qui sont moins idéaux en hiver. Les froides journées d’hiver sont tout simplement une réalité, même pour ceux qui ont le privilège de pelleter leur voiture hors des congères et bancs de neige. Comme pour la marche et le vélo, posséder et conduire une voiture présente en hiver son lot de défis qui sont trop souvent épargnés.
 
-Un sondage mené par la ville de Montréal révèle que nos habitudes actuelles sont compatibles avec une rue piétonne - il y a [peu de changements dans les modes de déplacement vers Place Wellington en été ou en hiver](https://www.realisonsmtl.ca/3113/widgets/15839/documents/10936) (13% vs 20% en voiture pour chaque saison respectivement).
+Un sondage mené par la ville de Montréal révèle que nos habitudes actuelles sont compatibles avec une rue piétonne - il y a [peu de changements dans les modes de déplacement vers Place Wellington en été ou en hiver](/pdf/PIRPP-Rapports_sondage_2017_Place_Wellington.pdf) (13% vs 20% en voiture pour chaque saison respectivement).
 
 Il existe de nombreux exemples de [rues piétonnes à travers le monde](/a-travers-le-monde) qui sont déployées dans des climats plus froids, plus enneigés, plus pluvieux et plus sombres que le nôtre.
 

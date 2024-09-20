@@ -135,7 +135,7 @@ If you're interested in this topic, we recommend reading the _Conseil régional 
 
 Montreal may be cold, but we still invest in our parks, sporting fields, benches, and other outdoor amenities that are less ideal in the winter. Cold winter days are simply a fact of life even for those who have the privilege of shovelling their car out of a snow bank. As with walking and cycling, owning and operating a car presents its set of challenges in the winter that are too often spared from scrutiny. 
 
-A survey conducted by the city of Montreal reveals that our existing habits are compatible with a pedestrian street - there is [little change in modes of commute to Place Wellington in the summer vs the winter](https://www.realisonsmtl.ca/3113/widgets/15839/documents/10936) (13% vs 20% by car for each season respectively).
+A survey conducted by the city of Montreal reveals that our existing habits are compatible with a pedestrian street - there is [little change in modes of commute to Place Wellington in the summer vs the winter](/pdf/PIRPP-Rapports_sondage_2017_Place_Wellington.pdf) (13% vs 20% by car for each season respectively).
 
 This is the case on permanent [pedestrian streets around the world](/en/around-the-world), many of which are in climates colder, snowier, rainier, and gloomier than ours.
 
