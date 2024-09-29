@@ -33,7 +33,7 @@ const isHome = Astro.url.pathname.replace("/en", "") === "/";
     />
   </a>
 
-  {isHome ? <h2 class="header-description">{t("headerDescription")}</h2> : null}
+  {isHome ? <h3 class="header-description">{t("headerDescription")}</h3> : null}
 </header>
 
 <style>
