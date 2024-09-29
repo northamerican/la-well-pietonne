@@ -14,8 +14,8 @@ const { langCode } = astroI18n;
 <Layout title={t("petitionTextHeading")}>
   <Header />
   <main>
-    <section class="go-home">
-      <a href={l("/")}>👈 {t("goHome")}</a>
+    <section class="narrow go-home">
+      <a href={l("/")}>{t("goHome")}</a>
     </section>
     <section class="narrow">
       {langCode === "en" ? <PetitionTextEn /> : <PetitionTextFr />}

@@ -17,8 +17,13 @@ astroI18n.init(Astro);
   <Header />
   <main>
     <section>
-      <h2>{t("completeHeading")}</h2>
-      <p style="white-space: pre-line;">{t("completeBody")}</p>
+      <h2>{t("homeHeading")}</h2>
+      <p>
+        <span style="white-space: pre-line;">{t("homeBody")}</span>
+        <a href={t("consultationLink")} target="_blank">
+          {t("consultationLinkText")}.
+        </a>
+      </p>
     </section>
 
     <section>
@@ -61,10 +66,10 @@ astroI18n.init(Astro);
     </section>
   </main>
   <Footer />
-</Layout>
 
-<style>
-  section > h2 {
-    margin-top: 0;
-  }
-</style>
+  <style>
+    section > h2 {
+      margin-top: 0;
+    }
+  </style>
+</Layout>

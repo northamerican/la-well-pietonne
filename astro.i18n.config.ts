@@ -14,8 +14,8 @@ const fr = {
   },
   isoLangCode: "fr-ca",
 
-  headerDescription:
-    "Une initiative citoyenne pour piétonniser la rue Wellington toute l'année",
+  headerDescription: `Une initiative citoyenne pour piétonniser 
+    la rue Wellington toute l'année`,
 
   howToSignHeading: "Comment signer",
   howToSign:
@@ -25,6 +25,8 @@ const fr = {
 
   step: "étape",
   completed: "complétée",
+  "in-progress": "en cours",
+  coming: "à venir",
   stepsHeading: "Progrès de l'initiative",
 
   petitionTextHeading: "Texte de la pétition",
@@ -44,13 +46,10 @@ const fr = {
   followUsOn: "Suivez-nous sur",
   and: "et",
 
-  completeHeading: "Ça bouge à la mairie!",
-  completeBody: `L'arrondissement de Verdun a maintenant budgété et mandaté l'Office de consultation publique de Montréal (OCPM) pour tenir la consultation publique sur la piétonnisation à l'année de la rue Wellington.
-La date sera bientôt fixée.
-
-Profitez du beau temps et suivez-nous ici pour les mises à jour.`,
-
-  inspirationAndReading: "Inspiration et lecture",
+  homeHeading: "Consultation publique",
+  homeBody: `L'Office de consultation publique de Montréal (OCPM) organise la consultation publique sur la piétonnisation à l'année de la rue Wellington. La date et les détails seront annoncés dans les prochains jours.`,
+  consultationLink: "https://ocpm.qc.ca/pietonisationwellington",
+  consultationLinkText: "Piétonisation permanente de la rue Wellington - OCPM",
 
   footerNoticeUnaffiliated: "Ce site n'est pas affiliée à ",
 
@@ -78,7 +77,7 @@ Profitez du beau temps et suivez-nous ici pour les mises à jour.`,
   ideaFormError: "Désolé, une erreur s'est produite.",
 
   notFound: "404 : Introuvable",
-  goHome: "Page d'accueil",
+  goHome: "Page d'accueil 👈",
 
   online: "En ligne",
   petitionLinkText: "Signer la pétition sur montreal.ca",
@@ -101,8 +100,8 @@ const en = {
   },
   isoLangCode: "en-ca",
 
-  headerDescription:
-    "A citizens' initiative to make Wellington a year-round pedestrian street",
+  headerDescription: `A citizens' initiative to make Wellington 
+    a year-round pedestrian street`,
 
   howToSignHeading: "How to sign the petition",
   howToSign:
@@ -112,6 +111,8 @@ const en = {
 
   step: "step",
   completed: "completed",
+  "in-progress": "in progress",
+  coming: "coming soon",
   stepsHeading: "Initiative progress",
 
   petitionTextHeading: "Petition text",
@@ -131,12 +132,10 @@ const en = {
   followUsOn: "Follow us on",
   and: "and",
 
-  completeHeading: "Things are moving at borough hall!",
-  completeBody: `The borough of Verdun has now budgeted and assigned l'Office de consultation publique de Montréal (OCPM) to host the public consultation on the year-round pedestrianization of Wellington street. The date will soon be set.
-
-Enjoy the lovely weather and follow us here for updates.`,
-
-  inspirationAndReading: "Inspiration and reading",
+  homeHeading: "Public consultation",
+  homeBody: `The Office de consultation publique de Montréal (OCPM) is hosting the public consultation on the year-round pedestrianization of Wellington street. Date and details to be announced in the coming days.`,
+  consultationLink: "https://ocpm.qc.ca/pietonisationwellington",
+  consultationLinkText: "Piétonisation permanente de la rue Wellington - OCPM",
 
   footerNoticeUnaffiliated: "This site is not affiliated with ",
 
@@ -164,7 +163,7 @@ Enjoy the lovely weather and follow us here for updates.`,
   ideaFormError: "Sorry, an error occurred.",
 
   notFound: "404: Not Found",
-  goHome: "Go home",
+  goHome: "Go home 👈",
 
   online: "Online",
   petitionLinkText: "Sign the petition on montreal.ca",
