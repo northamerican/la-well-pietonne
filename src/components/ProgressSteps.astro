@@ -4,21 +4,6 @@ import { Step } from "../../types";
 
 const { langCode } = astroI18n;
 const steps: Step[] = [
-  // {
-  //   date: {
-  //     fr: "24 avril",
-  //     en: "April 24",
-  //   },
-  //   title: {
-  //     fr: "Pétition approuvé",
-  //     en: "Petition approved",
-  //   },
-  //   subtitle: {
-  //     fr: "par l'arrondissement de Verdun",
-  //     en: "by the borough of Verdun",
-  //   },
-  //   completed: true,
-  // },
   {
     date: {
       fr: "Mai 2023",
@@ -32,7 +17,7 @@ const steps: Step[] = [
       fr: "90 jours",
       en: "90 days",
     },
-    completed: true,
+    status: "completed",
   },
   {
     date: {
@@ -47,12 +32,12 @@ const steps: Step[] = [
       fr: "3322 signatures collectées",
       en: "3322 signatures collected",
     },
-    completed: true,
+    status: "completed",
   },
   {
     date: {
-      fr: "Automne 2024",
-      en: "Fall 2024",
+      fr: "Octobre 2024",
+      en: "October 2024",
     },
     title: {
       fr: "Consultation publique",
@@ -62,41 +47,38 @@ const steps: Step[] = [
       fr: "avec les résidents de Verdun",
       en: "with residents of Verdun",
     },
-    completed: false,
+    status: "in-progress",
   },
   {
     date: {
-      fr: "Fin 2024",
-      en: "Late 2024",
+      fr: "Début 2025",
+      en: "Early 2024",
     },
     title: {
-      fr: "Résultats de la consultation publiés",
-      en: "Public consultation results published",
+      fr: "Rapport de la consultation publiés",
+      en: "Public consultation report published",
     },
     subtitle: {
       fr: "",
       en: "",
     },
-    completed: false,
+    status: "coming",
   },
 ];
 ---
 
 <div class="steps">
   {
-    steps.map(({ date, title, subtitle, completed }, step) => (
+    steps.map(({ date, title, subtitle, status }, step) => (
       <div
         class="steps__step"
-        aria-label={`${t("step")} ${step}, ${completed ? t("completed") : ""}`}
+        aria-label={`${t("step")} ${step}, ${t(status)}`}
       >
         <div class="steps__step-date-container">
           <div class="steps__step-date">{date[langCode]}</div>
         </div>
         <div
-          class:list={[
-            "steps__step-circle",
-            { "steps__step-circle--complete": completed },
-          ]}
+          class:list={["steps__step-circle", `steps__step-circle--${status}`]}
         >
           <svg
             aria-hidden="true"
@@ -128,7 +110,7 @@ const steps: Step[] = [
 <style>
   :root {
     /* Total elapsed initiative progress 0-1 */
-    --progress: 0.6;
+    --progress: 0.7;
     --progress-pct: calc(100% * var(--progress));
 
     --step-circle-size: 40px;
@@ -208,6 +190,7 @@ const steps: Step[] = [
   }
 
   .steps__step-circle_check {
+    display: none;
     margin-top: 1px;
     width: 24px;
   }
@@ -216,9 +199,17 @@ const steps: Step[] = [
     fill: var(--color-bg);
   }
 
-  .steps__step-circle--complete {
+  .steps__step-circle--in-progress {
+    border-color: var(--step-circle-color);
+  }
+
+  .steps__step-circle--completed {
     border-color: var(--step-circle-color);
     background: var(--step-circle-color);
+  }
+
+  .steps__step-circle--completed .steps__step-circle_check {
+    display: block;
   }
 
   .steps__step-text-container {

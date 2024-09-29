@@ -433,10 +433,10 @@ Part of State Street's pedestrian zone has been served by city buses, with servi
 <Layout title={t("aroundTheWorldHeading")}>
   <Header />
   <main>
-    <section class="go-home">
-      <a href={l("/")}>👈 {t("goHome")}</a>
+    <section class="full-width-mobile with-margin go-home">
+      <a href={l("/")}>{t("goHome")}</a>
     </section>
-    <section>
+    <section class="full-width-mobile with-margin">
       <h2>{t("aroundTheWorldHeading")}</h2>
     </section>
     <section class="full-width-mobile">
@@ -479,17 +479,6 @@ Part of State Street's pedestrian zone has been served by city buses, with servi
 <script is:inline src="/js/slider-cards.js" defer></script>
 
 <style>
-  section.full-width-mobile {
-    margin: 0rem;
-  }
-  @media (min-width: 780px) {
-    section.full-width-mobile {
-      margin: 0rem auto;
-      max-width: calc(1024px + 2rem);
-      padding: 1rem;
-    }
-  }
-
   .slider-cards {
     display: grid;
     grid-template-columns: 1fr;

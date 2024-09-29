@@ -40,5 +40,5 @@ export type Step = {
   date: LangObject;
   title: LangObject;
   subtitle: LangObject;
-  completed: boolean;
+  status: "completed" | "in-progress" | "coming";
 };

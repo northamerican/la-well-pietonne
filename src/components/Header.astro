@@ -1,13 +1,13 @@
 ---
 import { astroI18n, t, l } from "astro-i18n";
 import LangSwitcher from "./LangSwitcher.astro";
-import Logo from "./Logo.astro";
 
 const { defaultLangCode, supportedLangCodes, langCode } = astroI18n;
 const langCodes = [defaultLangCode, ...supportedLangCodes];
 const otherLangCodes = langCodes.filter(
   (otherLangCode) => otherLangCode !== langCode
 );
+const isHome = Astro.url.pathname.replace("/en", "") === "/";
 ---
 
 <header>
@@ -15,59 +15,84 @@ const otherLangCodes = langCodes.filter(
     <LangSwitcher {otherLangCodes} />
   </div>
 
-  <div id="logo">
-    <a href={l("/", {}, langCode)}>
-      <Logo />
-    </a>
-  </div>
+  <img
+    class="biesinger-la-well"
+    src="/img/biesinger-la-well.png"
+    alt="La Well Piétonne"
+    width="5850"
+    height="4026"
+  />
+  <a href={l("/", {}, langCode)} class:list={isHome ? ["disabled"] : []}>
+    <img
+      class="la-well-pietonne-logo"
+      src="/img/la-well-pietonne-logo-alt.svg"
+      alt="La Well Piétonne"
+      aria-hidden="true"
+      width="1097"
+      height="114"
+    />
+  </a>
 
-  <div id="header-description">
-    <h2>{t("headerDescription")}</h2>
-  </div>
+  {isHome ? <h2 class="header-description">{t("headerDescription")}</h2> : null}
 </header>
 
 <style>
-  :root {
-    --header-padding: 4rem;
-    --header-text-drop-shadow: drop-shadow(0px 5px 5px #00000050);
-  }
   header {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: white;
-    padding-bottom: var(--header-padding);
-    margin-bottom: 2rem;
+    position: relative;
+    margin-block-end: 1em;
 
-    background-image: url("/img/header-static.jpg");
-    background-size: cover;
-    background-position: center;
+    @media (min-width: 720px /* --narrow-width */) {
+      max-width: var(--narrow-width);
+      margin: 0 auto;
+      margin-block-end: 2em;
+    }
   }
 
   #lang-switcher {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding: 0.25rem 0.5rem var(--header-padding);
+    position: absolute;
+    padding: 0.5em 3.75%;
+    z-index: 1;
   }
 
-  #logo {
-    margin-bottom: 2rem;
-    filter: var(--header-text-drop-shadow);
+  .biesinger-la-well {
+    mix-blend-mode: multiply;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 5850 / 4026;
   }
 
-  #logo a {
+  .la-well-pietonne-logo {
+    padding: 0 4%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1097 / 114;
+  }
+
+  a {
     display: block;
+
+    &.disabled {
+      pointer-events: none;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
-  #logo a:hover {
-    opacity: 0.8;
-  }
+  .header-description {
+    margin-block: 0.5em 0;
+    padding: 0 4%;
 
-  #header-description {
-    max-width: 30rem;
-    margin: 0 1.5rem;
-    filter: var(--header-text-drop-shadow);
+    @media (min-width: 460px) {
+      white-space: pre-line;
+    }
   }
 </style>
