@@ -38,7 +38,7 @@ const fr = {
   byEmail: "Par courriel",
   onSocialMedia: "Sur les réseaux sociaux",
   getInvolved:
-    "Je suis intéressé·e à participer aux événements et à la consultation publique",
+    "Je suis intéressé·e à participer aux événements et à la consultation publique.",
   subscribe: "S'abonner",
   subscribeSubtext: "",
   subscribed: "Merci! Vous êtes maintenant abonné",
@@ -51,7 +51,7 @@ const fr = {
   consultationLink: "https://ocpm.qc.ca/pietonisationwellington",
   consultationLinkText: "Piétonisation permanente de la rue Wellington - OCPM",
 
-  footerNoticeUnaffiliated: "Ce site n'est pas affiliée à ",
+  footerNoticeUnaffiliated: "Ce site n'est pas affilié à ",
 
   contactUs: "Contactez-nous",
 
