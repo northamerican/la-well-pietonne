@@ -46,11 +46,6 @@ const fr = {
   followUsOn: "Suivez-nous sur",
   and: "et",
 
-  homeHeading: "Consultation publique",
-  homeBody: `L'Office de consultation publique de Montréal (OCPM) organise la consultation publique sur la piétonnisation à l'année de la rue Wellington. La date et les détails seront annoncés dans les prochains jours.`,
-  consultationLink: "https://ocpm.qc.ca/pietonisationwellington",
-  consultationLinkText: "Piétonisation permanente de la rue Wellington - OCPM",
-
   footerNoticeUnaffiliated: "Ce site n'est pas affilié à ",
 
   contactUs: "Contactez-nous",
@@ -131,11 +126,6 @@ const en = {
   formError: "You could not be subscribed due to an error.",
   followUsOn: "Follow us on",
   and: "and",
-
-  homeHeading: "Public consultation",
-  homeBody: `The Office de consultation publique de Montréal (OCPM) is hosting the public consultation on the year-round pedestrianization of Wellington street. Date and details to be announced in the coming days.`,
-  consultationLink: "https://ocpm.qc.ca/pietonisationwellington",
-  consultationLinkText: "Piétonisation permanente de la rue Wellington - OCPM",
 
   footerNoticeUnaffiliated: "This site is not affiliated with ",
 
