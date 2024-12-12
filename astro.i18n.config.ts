@@ -46,7 +46,7 @@ const fr = {
   followUsOn: "Suivez-nous sur",
   and: "et",
 
-  homeHeading: "Consultation publique : dates annoncées",
+  homeHeading: "Consultation publique&nbsp;: dates annoncées",
   homeBody: `Cet hiver, l'OCPM et l'arrondissement de Verdun organiseront des événements dans le cadre de la démarche de consultation.`,
   consultationLinkText: "Calendrier et informations",
 
