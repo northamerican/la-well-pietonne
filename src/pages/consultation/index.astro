@@ -1,0 +1,41 @@
+---
+import { astroI18n, t, l } from "astro-i18n";
+import Layout from "../../components/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import ConsultationEn from "./ConsultationEn.md";
+import ConsultationFr from "./ConsultationFr.md";
+
+astroI18n.init(Astro);
+
+const { langCode } = astroI18n;
+---
+
+<Layout title={t("consultationHeading")}>
+  <Header />
+  <main>
+    <section class="narrow go-home">
+      <a href={l("/")}>{t("goHome")}</a>
+    </section>
+    <section id="consultation" class="narrow">
+      {langCode === "en" ? <ConsultationEn /> : <ConsultationFr />}
+    </section>
+    <Footer />
+  </main>
+</Layout>
+
+<style>
+  #consultation {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-block: 0;
+    }
+    p {
+      margin-block: 0.5em 1.5em;
+    }
+  }
+</style>

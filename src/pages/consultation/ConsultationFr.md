@@ -3,7 +3,8 @@
 Cet hiver, l'OCPM et l'arrondissement de Verdun organiseront des événements dans le cadre de la démarche de consultation.
 
 **[Mairie d'arrondissement de Verdun](https://maps.app.goo.gl/zbKSuApg6Sc211Fv6)** <small>♿️ Accessible</small>  
-4555, Rue de Verdun, Montréal <small>🚇 Métro Verdun</small>  
+4555, Rue de Verdun, Montréal  
+<small>🚇 Métro Verdun</small>  
 
 <h3 style="margin-block-end: 0.5em;">Événements</h3>
 
@@ -43,4 +44,5 @@ Présentation des opinions.
 Votre opinion écrite sur la piétonnisation permanente de la rue Wellington peut être déposé pendant cette période, avec la possibilité de le présenter oralement devant les commissaires.
 
 Voir l'horaire complet et les détails sur la site de l'OCPM:  
-<a href="https://ocpm.qc.ca/fr/wellington" target="_blank">Piétonnisation permanente de la rue Wellington</a>
+<strong><a href="https://ocpm.qc.ca/fr/wellington" target="_blank">Piétonnisation permanente de la rue Wellington</a>
+</strong>

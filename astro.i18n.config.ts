@@ -46,13 +46,15 @@ const fr = {
   followUsOn: "Suivez-nous sur",
   and: "et",
 
-  footerNoticeUnaffiliated: "Ce site n'est pas affilié à ",
+  homeHeading: "Consultation publique : dates annoncées",
+  homeBody: `Cet hiver, l'OCPM et l'arrondissement de Verdun organiseront des événements dans le cadre de la démarche de consultation.`,
+  consultationLinkText: "Horaires et informations",
 
   contactUs: "Contactez-nous",
 
   questionsAndAnswersHeading: "Questions et réponses",
-
   aroundTheWorldHeading: "Rues piétonnes à travers le monde",
+  consultationHeading: "Consultation publique",
 
   shareAnIdeaHeading: "Boite à idées",
   shareAnIdeaSubheading:
@@ -127,13 +129,15 @@ const en = {
   followUsOn: "Follow us on",
   and: "and",
 
-  footerNoticeUnaffiliated: "This site is not affiliated with ",
+  homeHeading: "Public consultation dates announced",
+  homeBody: `This winter, the OCPM and borough of Verdun will be hosting events as part of the consultation process.`,
+  consultationLinkText: "Schedule and information",
 
   contactUs: "Contact us",
 
   questionsAndAnswersHeading: "Questions and answers",
-
   aroundTheWorldHeading: "Pedestrian streets around the world",
+  consultationHeading: "Public consultation",
 
   shareAnIdeaHeading: "Share an idea",
   shareAnIdeaSubheading:
@@ -174,7 +178,7 @@ export default defineAstroI18nConfig({
   translations,
   routeTranslations: {
     en: {
-      signer: "sign",
+      consultation: "consultation",
       petition: "petition",
       "a-travers-le-monde": "around-the-world",
       "boite-a-idees": "share-an-idea",

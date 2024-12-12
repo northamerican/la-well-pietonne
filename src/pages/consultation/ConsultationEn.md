@@ -3,7 +3,8 @@
 This winter, the OCPM and borough of Verdun will be hosting events as part of the consultation process.
 
 **[Verdun borough hall](https://maps.app.goo.gl/zbKSuApg6Sc211Fv6)** <small>♿️ Accessible</small>  
-4555 Rue de Verdun, Montreal <small>🚇 Métro Verdun</small>  
+4555 Rue de Verdun, Montreal  
+<small>🚇 Métro Verdun</small>  
 
 <h3 style="margin-block-end: 0.5em;">Events</h3>  
 
@@ -43,4 +44,4 @@ Presentation of public opinions.
 Your written opinion on the permanent pedestrianization can be submitted during this time, with the option to present your opinion to the commissioners.
 
 See the full schedule and details on OCPM's site:  
-<a href="https://ocpm.qc.ca/fr/wellington" target="_blank">Piétonnisation permanente de la rue Wellington</a>
+<strong><a href="https://ocpm.qc.ca/fr/wellington" target="_blank">Piétonnisation permanente de la rue Wellington</a></strong>

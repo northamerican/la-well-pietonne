@@ -9,7 +9,6 @@ import StayConnected from "../components/StayConnected.astro";
 import CardLinks from "../components/CardLinks.astro";
 import CardLink from "../components/CardLink.astro";
 // import Events from "../components/Events.astro";
-import Welcome from "../components/Welcome.astro";
 
 astroI18n.init(Astro);
 ---
@@ -18,7 +17,17 @@ astroI18n.init(Astro);
   <Header />
   <main>
     <section>
-      <Welcome />
+      <h2>{t("homeHeading")}</h2>
+      <p>
+        <span style="white-space: pre-line;">{t("homeBody")}</span>
+      </p>
+      <p>
+        <strong>
+          <a href={l("consultation")}>
+            {t("consultationLinkText")}
+          </a>
+        </strong>
+      </p>
     </section>
 
     <section id="progress-steps">
