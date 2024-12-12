@@ -46,18 +46,15 @@ const fr = {
   followUsOn: "Suivez-nous sur",
   and: "et",
 
-  homeHeading: "Consultation publique",
-  homeBody: `L'Office de consultation publique de Montréal (OCPM) organise la consultation publique sur la piétonnisation à l'année de la rue Wellington. La date et les détails seront annoncés dans les prochains jours.`,
-  consultationLink: "https://ocpm.qc.ca/pietonisationwellington",
-  consultationLinkText: "Piétonisation permanente de la rue Wellington - OCPM",
-
-  footerNoticeUnaffiliated: "Ce site n'est pas affilié à ",
+  homeHeading: "Consultation publique : dates annoncées",
+  homeBody: `Cet hiver, l'OCPM et l'arrondissement de Verdun organiseront des événements dans le cadre de la démarche de consultation.`,
+  consultationLinkText: "Horaires et informations",
 
   contactUs: "Contactez-nous",
 
   questionsAndAnswersHeading: "Questions et réponses",
-
   aroundTheWorldHeading: "Rues piétonnes à travers le monde",
+  consultationHeading: "Consultation publique",
 
   shareAnIdeaHeading: "Boite à idées",
   shareAnIdeaSubheading:
@@ -132,18 +129,15 @@ const en = {
   followUsOn: "Follow us on",
   and: "and",
 
-  homeHeading: "Public consultation",
-  homeBody: `The Office de consultation publique de Montréal (OCPM) is hosting the public consultation on the year-round pedestrianization of Wellington street. Date and details to be announced in the coming days.`,
-  consultationLink: "https://ocpm.qc.ca/pietonisationwellington",
-  consultationLinkText: "Piétonisation permanente de la rue Wellington - OCPM",
-
-  footerNoticeUnaffiliated: "This site is not affiliated with ",
+  homeHeading: "Public consultation dates announced",
+  homeBody: `This winter, the OCPM and borough of Verdun will be hosting events as part of the consultation process.`,
+  consultationLinkText: "Schedule and information",
 
   contactUs: "Contact us",
 
   questionsAndAnswersHeading: "Questions and answers",
-
   aroundTheWorldHeading: "Pedestrian streets around the world",
+  consultationHeading: "Public consultation",
 
   shareAnIdeaHeading: "Share an idea",
   shareAnIdeaSubheading:
@@ -184,7 +178,7 @@ export default defineAstroI18nConfig({
   translations,
   routeTranslations: {
     en: {
-      signer: "sign",
+      consultation: "consultation",
       petition: "petition",
       "a-travers-le-monde": "around-the-world",
       "boite-a-idees": "share-an-idea",

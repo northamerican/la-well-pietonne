@@ -8,7 +8,7 @@ import Header from "../components/Header.astro";
 import StayConnected from "../components/StayConnected.astro";
 import CardLinks from "../components/CardLinks.astro";
 import CardLink from "../components/CardLink.astro";
-import Events from "../components/Events.astro";
+// import Events from "../components/Events.astro";
 
 astroI18n.init(Astro);
 ---
@@ -20,14 +20,14 @@ astroI18n.init(Astro);
       <h2>{t("homeHeading")}</h2>
       <p>
         <span style="white-space: pre-line;">{t("homeBody")}</span>
-        <a href={t("consultationLink")} target="_blank">
-          {t("consultationLinkText")}.
-        </a>
       </p>
-    </section>
-
-    <section>
-      <Events />
+      <p>
+        <strong>
+          <a href={l("consultation")}>
+            {t("consultationLinkText")}
+          </a>
+        </strong>
+      </p>
     </section>
 
     <section id="progress-steps">
