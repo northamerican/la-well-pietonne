@@ -26,7 +26,7 @@ Poser vos questions et en apprendre plus sur le projet.
 #### 28 janvier 2025, de 19h - 21h30
 
 Échanger vos idées et réflexions sur la proposition de piétonnisation à l'année de la rue Wellington.  
-Inscription obligatoire, lien disponible sous peu.
+<strong><a href="https://www.eventbrite.ca/e/atelier-collaboratif-pietonnisation-permanente-de-la-rue-wellington-tickets-1119897636979?aff=oddtdtcreator" target="_blank">Inscrivez-vous à l'événement ici</a></strong>
 
 ### <a href="https://ocpm.qc.ca/fr/wellington#:~:text=S%C3%A9ance%20d'audition%20des%20opinions" target="_blank" rel="noopeners">Séance d'audition des opinions</a>
 
