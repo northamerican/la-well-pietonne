@@ -4,10 +4,9 @@ import Layout from "../../components/Layout.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import { Street } from "../../../types";
+import SliderCard from "./SliderCard.astro";
 
 astroI18n.init(Astro);
-
-const { langCode } = astroI18n;
 
 const streets: Street[] = [
   {
@@ -441,42 +440,51 @@ Part of State Street's pedestrian zone has been served by city buses, with servi
     </section>
     <section class="full-width-mobile">
       <ul class="slider-cards">
-        {
-          streets.map((street) => {
-            const { images, name, description, location, body } = street;
-
-            return (
-              <li class="slider-card">
-                <div class="images">
-                  {images.map(({ src, alt }) => (
-                    <img
-                      src={`/img/around-the-world/${src}`}
-                      alt={alt[langCode]}
-                    />
-                  ))}
-                </div>
-                <div class="image-dots" aria-hidden="true">
-                  {images.map(({ src }) => (
-                    <button class="image-dot" data-src={src} />
-                  ))}
-                </div>
-                <div class="slider-card-body">
-                  <h3 class="name">{name[langCode]}</h3>
-                  <h4 class="location">{location[langCode]}</h4>
-                  <h4 class="description">{description[langCode]}</h4>
-                  <p class="body" set:html={body[langCode]} />
-                </div>
-              </li>
-            );
-          })
-        }
+        {streets.map((street) => <SliderCard {...street} />)}
       </ul>
     </section>
   </main>
   <Footer />
 </Layout>
 
-<script is:inline src="/js/slider-cards.js" defer></script>
+<script is:inline defer>
+  const $sliderCards = document.querySelectorAll(".slider-cards");
+  const scrollIntoView = ($el) => {
+    $el.scrollIntoView({ block: "nearest" });
+  };
+
+  $sliderCards.forEach(($sliderCard) => {
+    const $cardImages = $sliderCard.querySelectorAll(".images img");
+    const $imageButtons = $sliderCard.querySelectorAll(".image-dot");
+
+    $cardImages.forEach(($cardImage, i) => {
+      const $imageButton = $imageButtons[i];
+
+      $cardImage.addEventListener("click", () => {
+        const $nextImg =
+          $cardImage.nextElementSibling ||
+          $cardImage.parentElement.firstElementChild;
+
+        scrollIntoView($nextImg);
+      });
+
+      $imageButton.addEventListener("click", () => {
+        scrollIntoView($cardImage);
+      });
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          $imageButton.classList.toggle("active", entry.isIntersecting);
+        },
+        {
+          root: $sliderCard,
+          threshold: 0.5,
+        }
+      );
+      observer.observe($cardImage);
+    });
+  });
+</script>
 
 <style>
   .slider-cards {
@@ -485,96 +493,9 @@ Part of State Street's pedestrian zone has been served by city buses, with servi
     grid-gap: 1rem;
     width: 100%;
     list-style: none;
-  }
-  @media (min-width: 780px) {
-    .slider-cards {
+
+    @media (min-width: 780px) {
       grid-template-columns: 1fr 1fr;
     }
-  }
-
-  .slider-card .images {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    aspect-ratio: 1;
-    overflow-y: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    scrollbar-width: none; /* ff */
-  }
-
-  .slider-card .images::-webkit-scrollbar {
-    display: none; /* webkit */
-  }
-
-  .slider-card img {
-    width: 100%;
-    min-width: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-    object-position: bottom;
-    scroll-snap-align: center;
-  }
-
-  .slider-card .image-dots {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  .slider-card .image-dot {
-    display: block;
-    position: relative;
-    appearance: none;
-    padding: 0;
-    border: 0;
-    background-color: var(--color-text);
-    opacity: 0.5;
-    height: 10px;
-    width: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition-property: opacity;
-    transition-duration: 100ms;
-  }
-
-  .slider-card .image-dot::after {
-    position: absolute;
-    content: "";
-    inset: -5px;
-  }
-
-  .slider-card .image-dot.active {
-    opacity: 1;
-  }
-
-  .slider-card-body {
-    margin: 0 1rem;
-  }
-
-  @media (min-width: 780px) {
-    .slider-card-body {
-      margin: 0;
-      margin-right: 1rem;
-    }
-  }
-
-  .slider-card .description {
-    margin-block: 0;
-  }
-
-  .slider-card .name {
-    margin-block-start: 1rem;
-    margin-block-end: 0;
-  }
-
-  .slider-card .location {
-    margin-top: 0;
-  }
-
-  .slider-card .body {
-    white-space: pre-line;
   }
 </style>
