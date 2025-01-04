@@ -119,10 +119,6 @@ const title = (props.title ? `${props.title} - ` : "") + t("siteName");
     border-radius: 3px;
   }
 
-  input[type="checkbox"] {
-    margin-left: 0;
-  }
-
   code {
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
       DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
@@ -161,8 +157,8 @@ const title = (props.title ? `${props.title} - ` : "") + t("siteName");
   }
 
   .button[disabled] {
-    background-color: transparent;
-    color: var(--color-text);
+    background-color: color-mix(in srgb, var(--la-well-green) 50%, transparent);
+    color: var(--color-bg);
   }
   .button:not([disabled]):hover {
     background-color: var(--la-well-green-lighter);
