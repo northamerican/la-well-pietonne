@@ -1,9 +1,7 @@
 import { ObjectId } from "mongodb";
 
 export type Langs = "en" | "fr";
-export type LangObject = {
-  [langCode in Langs]: string;
-};
+export type LangObject = Record<Langs, string>;
 
 export type Street = {
   images: {
