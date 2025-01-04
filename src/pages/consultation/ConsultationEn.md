@@ -40,9 +40,11 @@ Presentation of public opinions.
 
 ### <a href="https://ocpm.qc.ca/fr/wellington#:~:text=P%C3%A9riode%20pour%20exprimer%20son%20opinion" target="_blank" rel="noopeners">Opinion submission period</a>
 
-#### January 23 - February 6, 2025
+#### January 23 - February 12, 2025
 
 Your written opinion on the permanent pedestrianization can be submitted during this time, with the option to present your opinion to the commissioners.
+
+Need help writing a letter? [Use our form here to generate your letter of support!](/en/write-a-letter)
 
 See the full schedule and details on OCPM's site:  
 <strong><a href="https://ocpm.qc.ca/fr/wellington" target="_blank">Piétonnisation permanente de la rue Wellington</a></strong>

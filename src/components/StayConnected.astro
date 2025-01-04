@@ -16,7 +16,7 @@ const lang = astroI18n.langCode;
 </p>
 
 <h3>{t("byEmail")}</h3>
-<form>
+<form id="stay-connected-form">
   <input type="email" name="email" placeholder={t("email")} required />
   <label
     ><input type="checkbox" name="get_involved" /><small
@@ -31,7 +31,7 @@ const lang = astroI18n.langCode;
 </form>
 
 <script is:inline define:vars={{ lang }}>
-  const $form = document.querySelector("form");
+  const $form = document.getElementById("stay-connected-form");
   const $email = document.querySelector('input[name="email"]');
   const $getInvolved = document.querySelector('input[name="get_involved"]');
   const $subscribe = document.querySelector(".subscribe");
@@ -84,6 +84,11 @@ const lang = astroI18n.langCode;
   input[name="email"] {
     width: 260px;
   }
+
+  input[type="checkbox"] {
+    margin-left: 0;
+  }
+
   button {
     margin: 0.75rem 0;
   }

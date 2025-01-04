@@ -39,9 +39,11 @@ Présentation des opinions.
 
 ### <a href="https://ocpm.qc.ca/fr/wellington#:~:text=P%C3%A9riode%20pour%20exprimer%20son%20opinion" target="_blank" rel="noopeners">Période pour exprimer son opinion</a>
 
-#### 23 janvier - 6 février 2025
+#### 23 janvier - 12 février 2025
 
 Votre opinion écrite sur la piétonnisation permanente de la rue Wellington peut être déposé pendant cette période, avec la possibilité de le présenter oralement devant les commissaires.
+
+Besoin d'aide pour écrire votre lettre ? [Utilisez notre formulaire ici pour générer votre lettre de soutien !](ecrire-une-lettre)
 
 Voir l'horaire complet et les détails sur la site de l'OCPM:  
 <strong><a href="https://ocpm.qc.ca/fr/wellington" target="_blank">Piétonnisation permanente de la rue Wellington</a>

@@ -1,0 +1,502 @@
+---
+import { astroI18n, t } from "astro-i18n";
+import { Idea } from "../../types";
+import sortBy from "lodash.sortby";
+import IdeasCard from "./IdeasCard.astro";
+
+const { langCode } = astroI18n;
+const baseUrl = Astro.url.origin;
+
+let ideas: Idea[];
+try {
+  const ideasFetch = await fetch(`${baseUrl}/.netlify/functions/ideas`);
+  const ideasFetchRes = await ideasFetch.json();
+
+  ideas = sortBy(ideasFetchRes, [
+    (idea) => (idea.pending ? 0 : 1),
+    (idea) => (idea.image ? 0 : 1),
+    (idea) => -idea.votesCount,
+  ]);
+} catch (error) {
+  console.error(error);
+}
+const firstTenIdeas = ideas.slice(0, 10);
+const remainingIdeas = ideas.slice(10);
+---
+
+<h3>{t("writeALetterHeading")}</h3>
+<h4 style="text-wrap: balance;">{t("writeALetterSubheading")}</h4>
+<form id="write-a-letter-form">
+  <div>
+    <label>
+      <span>{t("myNameIs")}</span>
+      <input type="text" name="name" required />
+    </label>
+    <label>
+      <span>{t("myAgeIs")}</span>
+      <input type="text" name="age" placeholder={t("optional")} />
+    </label>
+  </div>
+
+  <div class="cascading-display">
+    <label>
+      <input type="checkbox" name="iLiveInVerdun" />
+      <span>{t("iLiveInVerdun")}</span>
+    </label>
+    <div>
+      <div class="cascading-display">
+        <label>
+          <input type="checkbox" name="iveLivedInVerdunLongTime" />
+          <span>{t("iveLivedInVerdunLongTime")}</span>
+        </label>
+        <label>
+          <span>{t("howLong")}</span>
+          <input type="text" name="howLong" placeholder={t("yearsExample")} />
+        </label>
+      </div>
+      <label>
+        <input type="checkbox" name="iLiveNearPromenadeWellington" />
+        <span>{t("iLiveNearPromenadeWellington")}</span>
+      </label>
+    </div>
+    <label>
+      <input type="checkbox" name="iLiveOnPromenadeWellington" />
+      <span>{t("iLiveOnPromenadeWellington")}</span>
+    </label>
+  </div>
+
+  <div class="cascading-display">
+    <label>
+      <input type="checkbox" name="iFrequentPromenadeWellington" />
+      <span>{t("iFrequentPromenadeWellington")}</span>
+    </label>
+    <div>
+      <label>
+        <span>{t("howOften")}</span>
+        <input type="text" name="howOften" placeholder={t("howOftenExample")} />
+      </label>
+      <label>
+        <input type="checkbox" name="iHaveVisitedWithMyChildren" />
+        <span>{t("iHaveVisitedWithMyChildren")}</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cascading-display">
+    <label>
+      <input type="checkbox" name="iWorkNearPromenadeWellington" />
+      <span>{t("iWorkNearPromenadeWellington")}</span>
+    </label>
+    <label>
+      <input type="checkbox" name="iWorkOnPromenadeWellington" />
+      <span>{t("iWorkOnPromenadeWellington")}</span>
+    </label>
+    <div>
+      <label>
+        <span>{t("nameOfWorkplace")}</span>
+        <input type="text" name="nameOfWorkplace" placeholder={t("optional")} />
+      </label>
+      <label>
+        <span>{t("roleAtWorkplace")}</span>
+        <input
+          type="text"
+          name="roleAtWorkplace"
+          placeholder={`${t("workplaceExampleRoles")} (${t("optional")})`}
+        />
+      </label>
+    </div>
+  </div>
+
+  <div class="cascading-display">
+    <label>
+      <input type="checkbox" name="involvedInOrganization" />
+      <span>
+        {t("involvedInOrganization")}<br />
+        <small>({t("involvedInExamples")})</small>
+      </span>
+    </label>
+    <div>
+      <label>
+        <span>{t("typeOfOrganization")}</span>
+        <input type="text" name="typeOfOrganization" />
+      </label>
+      <label>
+        <span>{t("nameOfOrganization")}</span>
+        <input
+          type="text"
+          name="nameOfOrganization"
+          placeholder={t("optional")}
+        />
+      </label>
+      <label>
+        <span>{t("roleAtOrganization")}</span>
+        <input
+          type="text"
+          name="roleAtOrganization"
+          placeholder={`${t("organizationExampleRoles")} (${t("optional")})`}
+        />
+      </label>
+    </div>
+  </div>
+
+  <div class="cascading-display">
+    <label>
+      <input type="checkbox" name="iHaveAccessibilityNeeds" />
+      <span>{t("iHaveAccessibilityNeeds")}</span>
+    </label>
+    <div>
+      <label>
+        <span>{t("describeThem")}</span>
+        <input
+          type="text"
+          name="accessibilityNeeds"
+          placeholder={t("accessibilityNeedsExample")}
+        />
+      </label>
+    </div>
+  </div>
+
+  <div>
+    <span>
+      {t("supportReason")}
+    </span>
+    <label>
+      <input
+        type="radio"
+        required
+        name="supportReason"
+        value={t("neighbourhoodMorePleasant")}
+      />
+      <span>{t("neighbourhoodMorePleasant")}</span>
+    </label>
+    <label>
+      <input
+        type="radio"
+        required
+        name="supportReason"
+        value={t("increaseComfortAndSafety")}
+      />
+      <span>{t("increaseComfortAndSafety")}</span>
+    </label>
+    <label>
+      <input
+        type="radio"
+        required
+        name="supportReason"
+        value={t("promoteCommercialHub")}
+      />
+      <span>{t("promoteCommercialHub")}</span>
+    </label>
+    <label>
+      <input
+        type="radio"
+        required
+        name="supportReason"
+        value={t("communitySpace")}
+      />
+      <span>{t("communitySpace")}</span>
+    </label>
+    <label>
+      <input
+        type="radio"
+        required
+        name="supportReason"
+        value={t("ecologicalTransition")}
+      />
+      <span>{t("ecologicalTransition")}</span>
+    </label>
+    <label>
+      <input
+        type="radio"
+        required
+        name="supportReason"
+        value={t("carFreeStreets")}
+      />
+      <span>{t("carFreeStreets")}</span>
+    </label>
+  </div>
+
+  <div>
+    <span>
+      {t("ideasSupport")}<br />
+      <small>({t("ideasSupportLimitNotice")})</small>
+    </span>
+    <ul class="ideas-cards limit-3-checked">
+      {
+        firstTenIdeas.map((idea) => (
+          <details class="ideas-card-container">
+            <summary>
+              <label>
+                <input type="checkbox" name={`idea.${idea.name[langCode]}`} />
+                <span>{idea.name[langCode]}</span>
+              </label>
+              <span class="info">{t("info")}</span>
+            </summary>
+            <IdeasCard langCode={langCode} {...idea} />
+          </details>
+        ))
+      }
+      {
+        remainingIdeas.length > 0 && (
+          <details>
+            <summary>
+              <small>{t("showMore")}</small>
+            </summary>
+            {remainingIdeas.map((idea) => (
+              <details class="ideas-card-container">
+                <summary>
+                  <label>
+                    <input
+                      type="checkbox"
+                      name={`idea.${idea.name[langCode]}`}
+                    />
+                    <span>{idea.name[langCode]}</span>
+                  </label>
+                  <span class="info">{t("info")}</span>
+                </summary>
+                <IdeasCard langCode={langCode} {...idea} />
+              </details>
+            ))}
+          </details>
+        )
+      }
+    </ul>
+  </div>
+
+  <div>
+    <span>{t("otherComments")}</span>
+    <textarea
+      name="otherComments"
+      placeholder={t("otherCommentsExample")}
+      rows="5"></textarea>
+  </div>
+
+  <div>
+    <button class="button generate" type="submit">{t("generateLetter")}</button>
+    <button class="button generating hidden" type="submit" disabled
+      >{t("generatingLetter")}</button
+    >
+    <small class="error hidden">{t("formError")}</small>
+  </div>
+</form>
+
+<div class="generated-letter hidden">
+  <h3>{t("yourLetter")}</h3>
+  <textarea class="generated-letter-content" rows="20"></textarea>
+  <button class="button copy-letter"><small>{t("copyLetter")}</small></button>
+  <br />
+  <small style="white-space: pre-line;">{t("letterNotice")}</small>
+</div>
+
+<!-- `I'd like a letter written. It is for a
+    consultation in favor of a pedestrianized street. The letter is addressed to
+    a public consultation office. Your response should contain only the body of
+    letter without any other text. ` -->
+
+<script is:inline define:vars={{ langCode }} defer>
+  const $form = document.getElementById("write-a-letter-form");
+  const $limit3Checked = document.querySelectorAll(".limit-3-checked");
+  const $generate = document.querySelector(".generate");
+  const $generating = document.querySelector(".generating");
+  const $generatedLetterContainer = document.querySelector(".generated-letter");
+  const $generatedLetterContent = document.querySelector(
+    ".generated-letter-content"
+  );
+  const $copyLetter = document.querySelector(".copy-letter");
+  const $error = document.querySelector(".error");
+
+  const limitChecked = (limit) => (event) => {
+    const checkboxes = event.currentTarget.querySelectorAll(
+      'input[type="checkbox"]'
+    );
+    const checkedCount = Array.from(checkboxes).filter(
+      (checkbox) => checkbox.checked
+    ).length;
+
+    checkboxes.forEach((checkbox) => {
+      checkbox.disabled = checkedCount >= limit && !checkbox.checked;
+    });
+  };
+
+  $limit3Checked.forEach((element) => {
+    element.addEventListener("change", limitChecked(3));
+  });
+
+  $form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    try {
+      const formData = new FormData($form);
+      const formProps = Object.fromEntries(formData);
+
+      $generate.classList.add("hidden");
+      $generating.classList.remove("hidden");
+
+      const response = await fetch(`/.netlify/functions/write-a-letter`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ...formProps, langCode }),
+      });
+      const responseJson = await response.json();
+
+      $generate.classList.remove("hidden");
+      $generating.classList.add("hidden");
+      $generatedLetterContainer.classList.remove("hidden");
+      $generatedLetterContent.value = responseJson.message;
+    } catch {
+      $error.classList.remove("hidden");
+    }
+  });
+
+  $copyLetter.addEventListener("click", () => {
+    $generatedLetterContent.select();
+    navigator.clipboard.writeText($generatedLetterContent.value);
+  });
+</script>
+
+<style>
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15em;
+    }
+  }
+
+  label {
+    display: inline;
+    margin-block-end: 0.15em;
+    align-items: baseline;
+
+    &:has(input[type="text"]) {
+      display: flex;
+      align-items: center;
+      cursor: initial;
+      gap: 0.5em;
+    }
+
+    &:has(input:disabled) {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+
+  input[type="text"],
+  textarea {
+    flex: 1;
+    margin-inline-end: 30%;
+  }
+
+  input[name="age"] {
+    width: 8ch;
+    flex-grow: 0;
+  }
+
+  summary {
+    cursor: pointer;
+    margin-block-end: 0.25em;
+  }
+
+  .cascading-display > * {
+    display: none;
+
+    &:first-child {
+      display: inline;
+    }
+
+    &:is(label):has(input:checked),
+    &:is(:not(label)):has(:last-child input:checked) {
+      + label {
+        display: inline;
+      }
+      + label:has(input[type="text"]),
+      + :not(label) {
+        display: flex;
+      }
+    }
+  }
+
+  .ideas-card-container {
+    width: 100%;
+    margin-block-end: 0.15em;
+
+    .ideas-card {
+      flex-direction: column;
+      gap: 0.5em;
+      margin: 1em;
+      margin-block-start: 0.5em;
+
+      img {
+        min-width: auto;
+        max-width: 50%;
+      }
+
+      .ideas-card-body {
+        margin: 0;
+      }
+
+      .name {
+        margin-block-start: 0;
+      }
+
+      .idea-author,
+      .ideas-card-bottom {
+        display: none;
+      }
+
+      @media (min-width: 580px) {
+        flex-direction: row;
+
+        img {
+          width: inherit;
+          min-width: inherit;
+          height: 150px;
+        }
+      }
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+
+      .info {
+        margin-inline-start: 0.25em;
+        color: var(--la-well-green);
+
+        &:before {
+          font-size: small;
+          display: inline-block;
+          width: 1em;
+          content: "▶";
+        }
+      }
+
+      [open] > & .info:before {
+        content: "▼";
+      }
+    }
+  }
+
+  .generate,
+  .generating {
+    align-self: flex-start;
+  }
+
+  .generating {
+    cursor: wait;
+  }
+
+  .generated-letter {
+    margin-block-start: 1em;
+
+    .generated-letter-content {
+      width: 100%;
+    }
+  }
+</style>
