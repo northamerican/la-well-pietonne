@@ -35,7 +35,7 @@ const supportReasons = [
 ---
 
 <h2 class="has-subheading">{t("writeALetterHeading")}</h2>
-<h4 style="text-wrap: balance;">{t("writeALetterSubheading")}</h4>
+<p style="text-wrap: balance;">{t("writeALetterSubheading")}</p>
 <form id="write-a-letter-form">
   <div>
     <label>
@@ -231,13 +231,13 @@ const supportReasons = [
       rows="5"></textarea>
   </div>
 
-  <div>
+  <footer>
     <button class="button generate" type="submit">{t("generateLetter")}</button>
     <button class="button generating hidden" type="submit" disabled
       >{t("generatingLetter")}</button
     >
-    <small class="error hidden">{t("formError")}</small>
-  </div>
+    <small class="error hidden">{t("generalError")}</small>
+  </footer>
 </form>
 
 <div class="generated-letter hidden">
@@ -289,6 +289,7 @@ const supportReasons = [
       const formData = new FormData($form);
       const formProps = Object.fromEntries(formData);
 
+      $error.classList.add("hidden");
       $generate.classList.add("hidden");
       $generating.classList.remove("hidden");
 
@@ -299,14 +300,22 @@ const supportReasons = [
         },
         body: JSON.stringify({ ...formProps, langCode }),
       });
+
+      if (!response.ok) {
+        $error.classList.remove("hidden");
+        throw new Error(response.statusText);
+      }
+
       const responseJson = await response.json();
 
-      $generate.classList.remove("hidden");
-      $generating.classList.add("hidden");
       $generatedLetterContainer.classList.remove("hidden");
       $generatedLetterContent.value = responseJson.message;
-    } catch {
+    } catch (error) {
+      console.error(error);
       $error.classList.remove("hidden");
+    } finally {
+      $generate.classList.remove("hidden");
+      $generating.classList.add("hidden");
     }
   });
 

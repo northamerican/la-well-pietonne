@@ -42,7 +42,7 @@ const fr = {
   subscribe: "S'abonner",
   subscribeSubtext: "",
   subscribed: "Merci! Vous êtes maintenant abonné",
-  formError: "Vous n'étiez pas abonné·e en raison d'une erreur.",
+  subscribeError: "Vous n'étiez pas abonné·e en raison d'une erreur.",
   followUsOn: "Suivez-nous sur",
   and: "et",
 
@@ -73,7 +73,7 @@ const fr = {
   iLikeThisIdea: "J'aime cette idée !",
   ideaBy: "Idée de",
   ideaFormSuccess: "Merci ! Votre idée a été soumise.",
-  ideaFormError: "Désolé, une erreur s'est produite.",
+  generalError: "Désolé, une erreur s'est produite.",
 
   notFound: "404 : Introuvable",
   goHome: "Page d'accueil 👈",
@@ -181,7 +181,7 @@ const en = {
   subscribe: "Subscribe",
   subscribeSubtext: "",
   subscribed: "Thanks! You've been subscribed.",
-  formError: "You could not be subscribed due to an error.",
+  subscribeError: "You could not be subscribed due to an error.",
   followUsOn: "Follow us on",
   and: "and",
 
@@ -212,7 +212,7 @@ const en = {
   iLikeThisIdea: "I like this idea!",
   ideaBy: "Idea by",
   ideaFormSuccess: "Thanks! Your idea has been submitted.",
-  ideaFormError: "Sorry, an error occurred.",
+  generalError: "Sorry, an error occurred.",
 
   notFound: "404: Not Found",
   goHome: "Go home 👈",

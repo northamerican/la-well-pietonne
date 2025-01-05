@@ -1,20 +1,37 @@
 import { Handler } from "@netlify/functions";
 import { StatusCodes } from "http-status-codes";
 import { MongoClient } from "mongodb";
+import getIpOrSubnet from "../../../public/js/getIpOrSubnet";
 
-export const handler: Handler = async ({ body }) => {
+export const handler: Handler = async ({ body, headers }) => {
   const mongoUri = `mongodb+srv://public:${process.env.MONGO_PASSWORD}@${process.env.MONGO_DB_URL}/?retryWrites=true&w=majority&appName=la-well-pietonne`;
   const client = new MongoClient(mongoUri, {
     maxIdleTimeMS: 10000,
   });
   const db = client.db("la-well-pietonne");
+  const clientIp = getIpOrSubnet(headers["x-nf-client-connection-ip"]);
   const writeALetterLogCollection = db.collection<{
+    clientIp: string;
     timestamp: Date;
     form: Record<string, string>;
     userPrompt: string;
     message?: string;
     error?: string;
   }>("write-a-letter-log");
+
+  const rateLimitWindowMS = 6 * 60 * 60 * 1000; // 6 hours
+  const maxRequestsPerWindow = 5;
+
+  const recentRequestsCount = await writeALetterLogCollection.countDocuments({
+    clientIp,
+    timestamp: { $gte: new Date(Date.now() - rateLimitWindowMS) },
+  });
+
+  if (recentRequestsCount >= maxRequestsPerWindow) {
+    return {
+      statusCode: StatusCodes.TOO_MANY_REQUESTS,
+    };
+  }
 
   const openAiApiKey = process.env.OPEN_AI_API_KEY;
   const form = JSON.parse(body);
@@ -166,6 +183,7 @@ export const handler: Handler = async ({ body }) => {
     const message = responseJson.choices[0].message.content;
 
     await writeALetterLogCollection.insertOne({
+      clientIp,
       timestamp: new Date(),
       form,
       userPrompt,
@@ -178,6 +196,7 @@ export const handler: Handler = async ({ body }) => {
     };
   } catch (error) {
     await writeALetterLogCollection.insertOne({
+      clientIp,
       timestamp: new Date(),
       form,
       userPrompt,
@@ -189,5 +208,7 @@ export const handler: Handler = async ({ body }) => {
       statusCode: StatusCodes.INTERNAL_SERVER_ERROR,
       body: error.toString(),
     };
+  } finally {
+    client.close();
   }
 };
