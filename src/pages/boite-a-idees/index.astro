@@ -47,41 +47,17 @@ try {
       <a href={l("/")}>{t("goHome")}</a>
     </section>
     <section class="full-width-mobile with-margin" id="shareYourIdea">
-      <h2 class="has-subheading">{t("shareAnIdeaHeading")}</h2>
-      <h3>{t("shareAnIdeaSubheading")}</h3>
-      <div class="ideas-cards">
-        <form id="ideaForm" class="idea-form">
-          <input type="text" placeholder={t("ideaName")} name="name" required />
-          <textarea
-            placeholder={t("ideaDetails")}
-            name="description"
-            rows="3"
-            required></textarea>
-          <input
-            type="text"
-            placeholder={t("authorName")}
-            name="authorName"
-            required
-          />
-          <input
-            type="email"
-            placeholder={`${t("email")} (${t("optional")})`}
-            name="email"
-          />
-          <label>
-            <input type="checkbox" name="subscribe" />
-            <small>{t("stayConnectedByEmail")}</small>
-          </label>
-          <input type="submit" class="button" value={t("submit")} />
-          <small>
-            <span class="success hidden" role="alert">
-              {t("ideaFormSuccess")}
-            </span>
-            <span class="error hidden" role="alert">{t("ideaFormError")}</span
-            >&nbsp;
-          </small>
-        </form>
-      </div>
+      <h2 class="has-subheading">
+        {t("shareAnIdeaHeading")}
+      </h2>
+      <p style="text-wrap: balance;">
+        {t("shareAnIdeaEnded")}
+      </p>
+      <strong>
+        <a href={l("consultation")}>
+          {t("consultationLinkText")}
+        </a>
+      </strong>
     </section>
     <section class="full-width-mobile ideas-gallery">
       <h2>{t("ideasGallery")}</h2>
@@ -126,8 +102,6 @@ try {
 <script>
   import { cookieStore } from "cookie-store";
   const voteButtons = document.querySelectorAll("button.vote");
-  const ideaForm = document.getElementById("ideaForm") as HTMLFormElement;
-
   const sessionCookie = await cookieStore.get("session");
   const session = sessionCookie.value;
 
@@ -150,51 +124,6 @@ try {
       target.dataset.votesCount = newVotesCount.toString();
       target.dataset.hasVoted = "1";
     });
-  });
-
-  ideaForm.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const submitBtn: HTMLInputElement = ideaForm.querySelector(
-      'input[type="submit"]'
-    );
-    const errorMsg = ideaForm.querySelector(".error");
-    const successMsg = ideaForm.querySelector(".success");
-
-    submitBtn.disabled = true;
-    errorMsg.classList.add("hidden");
-    successMsg.classList.add("hidden");
-
-    try {
-      const formData = new FormData(ideaForm);
-      const formProps = Object.fromEntries(formData);
-      const { email, subscribe } = formProps;
-      const shouldSubscribe = email && subscribe;
-
-      await Promise.all([
-        fetch(`/.netlify/functions/ideas-form`, {
-          method: "POST",
-          body: JSON.stringify(formProps),
-          headers: { session },
-        }),
-        shouldSubscribe
-          ? fetch("/.netlify/functions/simple-subscribe", {
-              method: "POST",
-              body: JSON.stringify({
-                email,
-                fields: {
-                  get_involved: "on",
-                  lang: document.documentElement.lang,
-                },
-              }),
-            })
-          : Promise.resolve(),
-      ]);
-
-      successMsg.classList.remove("hidden");
-    } catch {
-      submitBtn.disabled = false;
-      errorMsg.classList.remove("hidden");
-    }
   });
 </script>
 
