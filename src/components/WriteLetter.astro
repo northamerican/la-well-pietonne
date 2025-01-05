@@ -407,7 +407,7 @@ const supportReasons = [
 
       img {
         min-width: auto;
-        max-width: 50%;
+        max-width: 100%;
       }
 
       .ideas-card-body {
@@ -436,7 +436,13 @@ const supportReasons = [
 
     summary {
       cursor: pointer;
-      list-style: none;
+
+      &::marker {
+        content: "";
+      }
+      &::-webkit-details-marker {
+        display: none;
+      }
 
       .info {
         margin-inline-start: 0.25em;

@@ -36,7 +36,7 @@ export const handler: Handler = async ({ body, headers }) => {
   const openAiApiKey = process.env.OPEN_AI_API_KEY;
   const form = JSON.parse(body);
 
-  const systemRoleContent = `You are an assistant that specializes in writing letters in favor of pedestrianizing Wellington street (Promenade Wellington) in Montreal's borough of Verdun. It is pedestrianized in the summer only for the last several years. After a petition and public initiative was started, the public is now being consulted to make the pedestrian street permanent, with an eventual redevelopment. The letter is addressed to a public consultation office called "Office de consultation publique de Montréal" or OCPM for short. They are hosting the consultation and will be receiving this opinion letter as part of the process, now, in January and Febraury 2025.
+  const systemRoleContent = `You are an assistant that specializes in writing letters in favor of pedestrianizing Wellington street (Promenade Wellington) in Montreal's borough of Verdun. It is pedestrianized in the summer months only for the last several years. The street is mixed use with many shops, restaurants and residential units. After a petition and public initiative was made, the public is now being consulted to make the pedestrian street permanent, with an eventual redevelopment. The letter is addressed to a public consultation office called "Office de consultation publique de Montréal" or OCPM for short. They are hosting the consultation and will be receiving this opinion letter as part of the process, now, in January and Febraury 2025.
   The user supplies you with summarized information to craft the letter. Some of the information provided will be more relevant than others, and you should use your judgment to decide what to include in the letter provided it conveys their support, eagerness, and how they and the community would benefit from a pedestrian street. The letter should be natrual and not overly formal. Their age, occupation and provided info can be reflected in the writing style and length of the letter, so it is more authentic and varied between letters.
   If they are particularly old or young, it may enhance credibility to include their provided age.
   If they are a parent or long time resident.
@@ -68,7 +68,7 @@ export const handler: Handler = async ({ body, headers }) => {
     : "";
 
   const frequentOften = form.iFrequentPromenadeWellington
-    ? `I frequent Promenade Wellington ${form.howOften || "often"}. ${
+    ? `I go to Promenade Wellington ${form.howOften || "often"}. ${
         form.iHaveVisitedWithMyChildren
           ? `and I have visited with my children.`
           : ""
