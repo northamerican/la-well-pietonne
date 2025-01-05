@@ -8,15 +8,15 @@ En tant que résidents de Verdun, nous avons vu le succès et les éloges de la 
 
 Piétonniser la rue Wellington toute l'année permettrait de :
 
-- **Augmenter le confort et la sécurité** pour les usagers vulnérables de la rue - [plus de 5 millions de piétons par an](https://asdcm.com/fr/sdc/promenade-wellington). Cela signifie pouvoir traverser la rue sans hésitation, ou pouvoir marcher confortablement côte à côte en couple, famille, ou avec un groupe d'amis.
+**Augmenter le confort et la sécurité** pour les usagers vulnérables de la rue - [plus de 5 millions de piétons par an](https://asdcm.com/fr/sdc/promenade-wellington). Cela signifie pouvoir traverser la rue sans hésitation, ou pouvoir marcher confortablement côte à côte en couple, famille, ou avec un groupe d'amis.
 
-- **Améliorer la qualité de l'environnement urbain** sur la rue commerciale principale de Verdun en réduisant les nuisances sonores et en ajoutant de la végétation, de l'art et des espaces communs.
+**Améliorer la qualité de l'environnement urbain** sur la rue commerciale principale de Verdun en réduisant les nuisances sonores et en ajoutant de la végétation, de l'art et des espaces communs.
 
-- **Réduire l'utilisation et la dépendance de la voiture**, en induisant la demande d’alternatives. Ce qui est [essentiel pour atteindre nos objectifs de réduction des émissions](https://www.cbc.ca/news/opinion/opinion-electric-vehicles-car-dependence-1.6534893) de gaz à effet de serre, étant donné que [43 % de nos émissions au Québec proviennent du transport](https://www.quebec.ca/gouvernement/politiques-orientations/plan-economie-verte/actions-lutter-contre-changements-climatiques/reduire-ges-transport).
+**Réduire l'utilisation et la dépendance de la voiture**, en induisant la demande d’alternatives. Ce qui est [essentiel pour atteindre nos objectifs de réduction des émissions](https://www.cbc.ca/news/opinion/opinion-electric-vehicles-car-dependence-1.6534893) de gaz à effet de serre, étant donné que [43 % de nos émissions au Québec proviennent du transport](https://www.quebec.ca/gouvernement/politiques-orientations/plan-economie-verte/actions-lutter-contre-changements-climatiques/reduire-ges-transport).
 
-- **Améliorer l'équité sociale** en se réappropriant la chaussée occupée par les voitures en un espace public équitable adapté à la socialisation, au magasinage ou aux loisirs.
+**Améliorer l'équité sociale** en se réappropriant la chaussée occupée par les voitures en un espace public équitable adapté à la socialisation, au magasinage ou aux loisirs.
 
-- **Promouvoir le commerce local** étant donné que [les rues piétonnes sont plus productives économiquement](https://www.strongtowns.org/journal/2018/1/16/why-walkable-streets-are-more-economically-productive) et encouragent l'activité commerciale.
+**Promouvoir le commerce local** étant donné que [les rues piétonnes sont plus productives économiquement](https://www.strongtowns.org/journal/2018/1/16/why-walkable-streets-are-more-economically-productive) et encouragent l'activité commerciale.
 
 Cette pétition de droit d'initiative fait référence à l'article 24 d, de la _Charte montréalaise des droits et responsabilités_ publié en 2006. Dans cet article, la Ville s'engage à « favoriser les modes de transport collectif et actif \[..] pour limiter l’usage de la voiture en milieu urbain ». Malgré cet engagement, [le nombre de véhicules de tourisme en circulation sur les routes de Montréal a augmenté de 16 %](https://ville.montreal.qc.ca/portal/page?_pageid=6897,67889677&_dad=portal&_schema=PORTAL) de 677 659 en 2006 à 788 987 en 2020.
 

@@ -140,6 +140,11 @@ const title = (props.title ? `${props.title} - ` : "") + t("siteName");
   ul {
     margin: 0;
     padding-left: 0;
+    list-style-position: inside;
+
+    @media (min-width: 780px) {
+      list-style-position: outside;
+    }
   }
 
   .button {
@@ -170,7 +175,7 @@ const title = (props.title ? `${props.title} - ` : "") + t("siteName");
 
   section {
     max-width: none;
-    margin: 2rem;
+    margin: 2rem 1rem;
 
     &.go-home {
       margin-top: 0rem;

@@ -8,15 +8,15 @@ As Verdun residents, we've seen the success and acclaim of the summer pedestrian
 ## Why should Wellington be a pedestrian street?
 
 Pedestrianizing Wellington year-round would:
-- **Increase comfort and safety** for the high volume of vulnerable road users - [over 5 million pedestrians per year](https://asdcm.com/fr/sdc/promenade-wellington). This means being able to cross the street without hesitation, or being able to comfortably walk side by side as a couple, family or group of friends.
+**Increase comfort and safety** for the high volume of vulnerable road users - [over 5 million pedestrians per year](https://asdcm.com/fr/sdc/promenade-wellington). This means being able to cross the street without hesitation, or being able to comfortably walk side by side as a couple, family or group of friends.
 
-- **Improve the quality of the urban environment** on Verdun's main commercial street by reducing noise pollution and adding vegetation, art, and communal spaces.
+**Improve the quality of the urban environment** on Verdun's main commercial street by reducing noise pollution and adding vegetation, art, and communal spaces.
 
-- **Reduce car use and dependency** by inducing demand for alternatives. This is [essential to meeting our GHG emissions reductions targets](https://www.cbc.ca/news/opinion/opinion-electric-vehicles-car-dependence-1.6534893), as [43% of our emissions in Quebec are from transportation](https://www.quebec.ca/gouvernement/politiques-orientations/plan-economie-verte/actions-lutter-contre-changements-climatiques/reduire-ges-transport).
+**Reduce car use and dependency** by inducing demand for alternatives. This is [essential to meeting our GHG emissions reductions targets](https://www.cbc.ca/news/opinion/opinion-electric-vehicles-car-dependence-1.6534893), as [43% of our emissions in Quebec are from transportation](https://www.quebec.ca/gouvernement/politiques-orientations/plan-economie-verte/actions-lutter-contre-changements-climatiques/reduire-ges-transport).
 
-- **Improve social equity** by re-appropriating the roadway occupied by private vehicles into an equitable public space suitable for socializing, shopping, or leisure.
+**Improve social equity** by re-appropriating the roadway occupied by private vehicles into an equitable public space suitable for socializing, shopping, or leisure.
 
-- **Promote local commerce** as [pedestrian streets are more economically productive](https://www.strongtowns.org/journal/2018/1/16/why-walkable-streets-are-more-economically-productive) and encourage business activity.
+**Promote local commerce** as [pedestrian streets are more economically productive](https://www.strongtowns.org/journal/2018/1/16/why-walkable-streets-are-more-economically-productive) and encourage business activity.
 
 This right to initiative petition refers to Article 24(d) of the _Montréal Charter of Rights and Responsibilities_ published in 2006. In that article, the city pledges to “promote active mobility by limiting the use of automobiles in an urban milieu.” Despite this pledge, [the number of passenger vehicles in circulation on Montreal's roads has since increased by 16%](https://ville.montreal.qc.ca/portal/page?_pageid=6897,67889677&_dad=portal&_schema=PORTAL) from 677,659 in 2006 to 788,987 in 2020.
 
