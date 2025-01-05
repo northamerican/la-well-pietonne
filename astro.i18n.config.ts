@@ -127,7 +127,7 @@ const fr = {
     "Certaines idées que j'aimerais voir sur une rue Wellington piétonne toute l'année sont...",
   ideasSupportLimitNotice: "Choisissez jusqu'à 3",
   info: "Infos...",
-  showMore: "Voir plus",
+  showMore: "Voir plus d'idées",
   otherComments: "D'autres commentaires que vous aimeriez inclure?",
   otherCommentsExample:
     "ex: J'ai visité les rues piétonnes à l'étranger, j'ai une histoire personnelle à partager, etc.",
@@ -264,7 +264,7 @@ const en = {
     "Some ideas I'd mot like to see on a year-round pedestrian Wellington street are...",
   ideasSupportLimitNotice: "Pick up to 3",
   info: "Info...",
-  showMore: "Show more",
+  showMore: "Show more ideas",
   otherComments: "Any other comments you'd like to include?",
   otherCommentsExample:
     "ex: I have visited pedestrian streets abroad, I have a personal story to share, etc.",

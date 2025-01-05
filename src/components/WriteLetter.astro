@@ -20,11 +20,21 @@ try {
 } catch (error) {
   console.error(error);
 }
-const firstTenIdeas = ideas.slice(0, 10);
+const shuffle = () => 0.5 - Math.random();
+const firstTenIdeas = ideas.slice(0, 10).sort(shuffle);
 const remainingIdeas = ideas.slice(10);
+
+const supportReasons = [
+  t("neighbourhoodMorePleasant"),
+  t("increaseComfortAndSafety"),
+  t("promoteCommercialHub"),
+  t("communitySpace"),
+  t("ecologicalTransition"),
+  t("carFreeStreets"),
+].sort(shuffle);
 ---
 
-<h3>{t("writeALetterHeading")}</h3>
+<h2 class="has-subheading">{t("writeALetterHeading")}</h2>
 <h4 style="text-wrap: balance;">{t("writeALetterSubheading")}</h4>
 <form id="write-a-letter-form">
   <div>
@@ -94,7 +104,7 @@ const remainingIdeas = ideas.slice(10);
     <div>
       <label>
         <span>{t("nameOfWorkplace")}</span>
-        <input type="text" name="nameOfWorkplace" placeholder={t("optional")} />
+        <input type="text" name="nameOfWorkplace" />
       </label>
       <label>
         <span>{t("roleAtWorkplace")}</span>
@@ -117,16 +127,12 @@ const remainingIdeas = ideas.slice(10);
     </label>
     <div>
       <label>
-        <span>{t("typeOfOrganization")}</span>
-        <input type="text" name="typeOfOrganization" />
+        <span>{t("nameOfOrganization")}</span>
+        <input type="text" name="nameOfOrganization" />
       </label>
       <label>
-        <span>{t("nameOfOrganization")}</span>
-        <input
-          type="text"
-          name="nameOfOrganization"
-          placeholder={t("optional")}
-        />
+        <span>{t("typeOfOrganization")}</span>
+        <input type="text" name="typeOfOrganization" />
       </label>
       <label>
         <span>{t("roleAtOrganization")}</span>
@@ -160,60 +166,14 @@ const remainingIdeas = ideas.slice(10);
     <span>
       {t("supportReason")}
     </span>
-    <label>
-      <input
-        type="radio"
-        required
-        name="supportReason"
-        value={t("neighbourhoodMorePleasant")}
-      />
-      <span>{t("neighbourhoodMorePleasant")}</span>
-    </label>
-    <label>
-      <input
-        type="radio"
-        required
-        name="supportReason"
-        value={t("increaseComfortAndSafety")}
-      />
-      <span>{t("increaseComfortAndSafety")}</span>
-    </label>
-    <label>
-      <input
-        type="radio"
-        required
-        name="supportReason"
-        value={t("promoteCommercialHub")}
-      />
-      <span>{t("promoteCommercialHub")}</span>
-    </label>
-    <label>
-      <input
-        type="radio"
-        required
-        name="supportReason"
-        value={t("communitySpace")}
-      />
-      <span>{t("communitySpace")}</span>
-    </label>
-    <label>
-      <input
-        type="radio"
-        required
-        name="supportReason"
-        value={t("ecologicalTransition")}
-      />
-      <span>{t("ecologicalTransition")}</span>
-    </label>
-    <label>
-      <input
-        type="radio"
-        required
-        name="supportReason"
-        value={t("carFreeStreets")}
-      />
-      <span>{t("carFreeStreets")}</span>
-    </label>
+    {
+      supportReasons.map((reason) => (
+        <label>
+          <input type="radio" required name="supportReason" value={reason} />
+          <span>{reason}</span>
+        </label>
+      ))
+    }
   </div>
 
   <div>
@@ -283,15 +243,15 @@ const remainingIdeas = ideas.slice(10);
 <div class="generated-letter hidden">
   <h3>{t("yourLetter")}</h3>
   <textarea class="generated-letter-content" rows="20"></textarea>
-  <button class="button copy-letter"><small>{t("copyLetter")}</small></button>
-  <br />
-  <small style="white-space: pre-line;">{t("letterNotice")}</small>
+  <div class="generated-letter-footer">
+    <small style="white-space: pre-line;">{t("letterNotice")}</small>
+    <button class="button copy-letter"><small>{t("copyLetter")}</small></button>
+  </div>
+  <div class="generated-letter-send-info">
+    <h3>[Sending your letter]</h3>
+    [Info on how to email the OCPM]
+  </div>
 </div>
-
-<!-- `I'd like a letter written. It is for a
-    consultation in favor of a pedestrianized street. The letter is addressed to
-    a public consultation office. Your response should contain only the body of
-    letter without any other text. ` -->
 
 <script is:inline define:vars={{ langCode }} defer>
   const $form = document.getElementById("write-a-letter-form");
@@ -390,7 +350,11 @@ const remainingIdeas = ideas.slice(10);
   input[type="text"],
   textarea {
     flex: 1;
-    margin-inline-end: 30%;
+    margin-inline-end: none;
+
+    @media (min-width: 720px) {
+      margin-inline-end: 30%;
+    }
   }
 
   input[name="age"] {
@@ -468,17 +432,6 @@ const remainingIdeas = ideas.slice(10);
       .info {
         margin-inline-start: 0.25em;
         color: var(--la-well-green);
-
-        &:before {
-          font-size: small;
-          display: inline-block;
-          width: 1em;
-          content: "▶";
-        }
-      }
-
-      [open] > & .info:before {
-        content: "▼";
       }
     }
   }
@@ -497,6 +450,14 @@ const remainingIdeas = ideas.slice(10);
 
     .generated-letter-content {
       width: 100%;
+      margin-block-end: 0.5em;
+    }
+
+    .generated-letter-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.5em;
     }
   }
 </style>

@@ -9,6 +9,7 @@ export const handler: Handler = async ({ body }) => {
   });
   const db = client.db("la-well-pietonne");
   const writeALetterLogCollection = db.collection<{
+    timestamp: Date;
     form: Record<string, string>;
     userPrompt: string;
     message?: string;
@@ -65,7 +66,7 @@ export const handler: Handler = async ({ body }) => {
       form.iWorkNearPromenadeWellington && `I work near Promenade Wellington.`,
       form.iWorkOnPromenadeWellington && `I work on Promenade Wellington.`,
       form.nameOfWorkplace &&
-        `I work ${roleAtWorkplace} at ${form.nameOfWorkplace} on Promenade Wellington }.`,
+        `I work ${roleAtWorkplace} at ${form.nameOfWorkplace} on Promenade Wellington.`,
     ]
       .filter(Boolean)
       .at(-1) ?? "";
@@ -73,11 +74,20 @@ export const handler: Handler = async ({ body }) => {
   const roleAtOrganization = form.roleAtOrganization
     ? `am a ${form.roleAtOrganization}`
     : "am involved";
+  const nameOfOrganization = form.nameOfOrganization
+    ? form.nameOfOrganization
+    : "an organization";
   const typeOfOrganization = form.typeOfOrganization
     ? `, which is a ${form.typeOfOrganization}`
     : "";
-  const orgInvolved = form.involvedInOrganization
-    ? `I ${roleAtOrganization} at ${form.nameOfOrganization} ${typeOfOrganization}.`
+  const hasOrganizationInfo =
+    [
+      form.roleAtOrganization,
+      form.nameOfOrganization,
+      form.typeOfOrganization,
+    ].filter(Boolean).length > 1;
+  const orgInvolved = hasOrganizationInfo
+    ? `I ${roleAtOrganization} at ${nameOfOrganization} ${typeOfOrganization}.`
     : "";
 
   const accessibilityNeeds = form.accessibilityNeeds
@@ -156,6 +166,7 @@ export const handler: Handler = async ({ body }) => {
     const message = responseJson.choices[0].message.content;
 
     await writeALetterLogCollection.insertOne({
+      timestamp: new Date(),
       form,
       userPrompt,
       message,
@@ -167,6 +178,7 @@ export const handler: Handler = async ({ body }) => {
     };
   } catch (error) {
     await writeALetterLogCollection.insertOne({
+      timestamp: new Date(),
       form,
       userPrompt,
       error: error.toString(),
