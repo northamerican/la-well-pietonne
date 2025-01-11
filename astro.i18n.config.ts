@@ -126,7 +126,7 @@ const fr = {
   ecologicalTransition: "Soutenir notre transition écologique",
   carFreeStreets: "Soutenir le concept de rues sans voitures",
   ideasSupport:
-    "Certaines idées que j'aimerais voir sur une rue Wellington piétonne toute l'année sont...",
+    "Les idées que j'aimerais voir sur une rue Wellington piétonne toute l'année sont...",
   ideasSupportLimitNotice: "Choisissez jusqu'à 3",
   info: "Infos...",
   showMore: "Voir plus d'idées",
@@ -265,7 +265,7 @@ const en = {
   ecologicalTransition: "Support our ecological transition",
   carFreeStreets: "Support the concept of car-free streets",
   ideasSupport:
-    "Some ideas I'd mot like to see on a year-round pedestrian Wellington street are...",
+    "Some ideas I'd most like to see on a year-round pedestrian Wellington street are...",
   ideasSupportLimitNotice: "Pick up to 3",
   info: "Info...",
   showMore: "Show more ideas",

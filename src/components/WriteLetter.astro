@@ -338,24 +338,6 @@ const supportReasons = [
     }
   }
 
-  label {
-    display: inline;
-    margin-block-end: 0.15em;
-    align-items: baseline;
-
-    &:has(input[type="text"]) {
-      display: flex;
-      align-items: center;
-      cursor: initial;
-      gap: 0.5em;
-    }
-
-    &:has(input:disabled) {
-      opacity: 0.5;
-      pointer-events: none;
-    }
-  }
-
   input[type="text"],
   textarea {
     flex: 1;
@@ -376,20 +358,47 @@ const supportReasons = [
     margin-block-end: 0.25em;
   }
 
+  label {
+    display: inline;
+    margin-block-end: 0.15em;
+    align-items: baseline;
+
+    &:has(input[type="text"]) {
+      display: flex;
+      align-items: center;
+      cursor: initial;
+      gap: 0.5em;
+    }
+
+    &:has(input:disabled) {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+
   .cascading-display > * {
     display: none;
 
+    /* For specificity */
+    &:is(label):has(input[type="text"]) {
+      display: none;
+    }
+
+    /* Show first in group */
     &:first-child {
       display: inline;
     }
 
+    /* If its a label that has a checked input */
+    /* Or a container who last child has a checked input */
     &:is(label):has(input:checked),
     &:is(:not(label)):has(:last-child input:checked) {
+      /* Make the element that follows visible */
       + label {
         display: inline;
       }
-      + label:has(input[type="text"]),
-      + :not(label) {
+      + :not(label),
+      + label:has(input[type="text"]) {
         display: flex;
       }
     }
