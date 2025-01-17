@@ -390,7 +390,7 @@ const supportReasons = [
     }
 
     /* If its a label that has a checked input */
-    /* Or a container who last child has a checked input */
+    /* Or a container whose last child has a checked input */
     &:is(label):has(input:checked),
     &:is(:not(label)):has(:last-child input:checked) {
       /* Make the element that follows visible */
