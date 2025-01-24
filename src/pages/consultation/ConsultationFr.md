@@ -9,8 +9,9 @@ Jusqu'au 12 février, l'OCPM organise des événements dans le cadre de la déma
 C’est le moment d’exprimer votre soutien à cette initiative.
 Cette étape est cruciale pour une recommandation favorable et une prise en considération par les élus.
 
-<strong><a href="https://ocpm.qc.ca/fr/wellington/inscription" target="_blank">Exprimez votre opinion ici.</a></strong>  
-Besoin d'aide pour écrire une lettre de soutien ? <a href="mailto:allo@lawellpietonne.com">Contactez-nous !</a>
+<a class="button" href="https://ocpm.qc.ca/fr/wellington/inscription" target="_blank">Exprimez votre opinion ici.</a>
+
+Besoin d'aide pour écrire une lettre de soutien ? <a href="mailto:allo@lawellpietonne.com?subject=Lettre%20de%20soutien">Contactez-nous !</a>
 <!-- Besoin d'aide pour écrire votre lettre ? [Utilisez notre formulaire ici pour générer votre lettre de soutien !](ecrire-une-lettre) -->
 
 <h3 style="margin-block-end: 0.5em;">Événements</h3>

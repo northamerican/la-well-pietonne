@@ -9,9 +9,9 @@ Until February 12, the OCPM will be hosting events as part of the consultation p
 Now is the time to express your support for this initiative.
 This step is crucial for a favourable recommendation and will influence the future of our neighbourhood.
 
-<strong><a href="https://ocpm.qc.ca/fr/wellington/inscription" target="_blank">Submit your opinion here</a></strong>
-<small>Page in French - Submissions in English are accepted.</small>  
-Need help writing a letter of support? <a href="mailto:allo@lawellpietonne.com">Contact us!</a>
+<a class="button" href="https://ocpm.qc.ca/fr/wellington/inscription" target="_blank">Submit your opinion here</a>  
+<small>Pages in French - Submissions in English are accepted.</small>  
+Need help writing a letter of support? <a href="mailto:allo@lawellpietonne.com?subject=Letter of support">Contact us!</a>
 <!-- Need help writing a letter? [Use our form here to generate your letter of support!](/en/write-a-letter) -->
 
 <h3 style="margin-block-end: 0.5em;">Events</h3>  
