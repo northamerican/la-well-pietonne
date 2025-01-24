@@ -37,6 +37,7 @@ export type EventInfo = {
 export type Step = {
   date: LangObject;
   title: LangObject;
+  href?: string;
   subtitle: LangObject;
   status: "completed" | "in-progress" | "coming";
 };

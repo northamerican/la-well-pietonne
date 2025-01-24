@@ -46,7 +46,7 @@ const fr = {
   followUsOn: "Suivez-nous sur",
   and: "et",
 
-  homeHeading: "Consultation publique&nbsp;: dates annoncées",
+  homeHeading: "Public consultation in progress",
   homeBody: `À partir du 22 janvier 2025, l'OCPM et l'arrondissement de Verdun organiseront des événements dans le cadre de la démarche de consultation.`,
   consultationLinkText: "Calendrier et informations",
 
@@ -185,8 +185,8 @@ const en = {
   followUsOn: "Follow us on",
   and: "and",
 
-  homeHeading: "Public consultation dates announced",
-  homeBody: `Starting January 22, 2025, the OCPM and borough of Verdun will be hosting events as part of the consultation process.`,
+  homeHeading: "Consultation publique en cours",
+  homeBody: `From January 22, 2025, the OCPM and borough of Verdun will be hosting events as part of the consultation process.`,
   consultationLinkText: "Schedule and information",
 
   contactUs: "Contact us",
@@ -228,7 +228,7 @@ const en = {
 
   writeALetterHeading: "Write a letter",
   writeALetterSubheading:
-    "Get help writing a letter of support as part of the opinion submission period. (January 23 - February 12, 2025)",
+    "Get help writing a letter of support for a year-round pedestrian Wellington street as part of the opinion submission period. (January 23 - February 12, 2025)",
   myNameIs: "My name is",
   myAgeIs: "My age is",
   iLiveInVerdun: "I live in Verdun",
