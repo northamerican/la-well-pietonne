@@ -40,7 +40,7 @@ const supportReasons = [
   <div>
     <label>
       <span>{t("myNameIs")}</span>
-      <input type="text" name="name" required />
+      <input type="text" name="name" placeholder={t("fullName")} />
     </label>
     <label>
       <span>{t("myAgeIs")}</span>
@@ -248,8 +248,14 @@ const supportReasons = [
     <button class="button copy-letter"><small>{t("copyLetter")}</small></button>
   </div>
   <div class="generated-letter-send-info">
-    <h3>[Sending your letter]</h3>
-    [Info on how to email the OCPM]
+    <h3>{t("howToSubmitYourLetter")}</h3>
+    {t("howToSubmitYourLetterText")}
+    <a href="https://ocpm.qc.ca/fr/depot" target="_blank"
+      >{t("transmettreUneLettre")}</a
+    >
+    {t("howToSubmitYourLetterInstructions")}
+    <br />
+    <small>{t("englishSubmissionsNotice")}</small>
   </div>
 </div>
 
@@ -322,6 +328,7 @@ const supportReasons = [
   $copyLetter.addEventListener("click", () => {
     $generatedLetterContent.select();
     navigator.clipboard.writeText($generatedLetterContent.value);
+    $copyLetter.classList.add("copied");
   });
 </script>
 
@@ -482,6 +489,11 @@ const supportReasons = [
       justify-content: space-between;
       align-items: flex-start;
       gap: 0.5em;
+    }
+
+    .copy-letter.copied::after {
+      content: "✓";
+      margin-inline-start: 0.25em;
     }
   }
 </style>

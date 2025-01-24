@@ -46,7 +46,7 @@ const fr = {
   followUsOn: "Suivez-nous sur",
   and: "et",
 
-  homeHeading: "Public consultation in progress",
+  homeHeading: "Consultation publique en cours",
   homeBody: `À partir du 22 janvier 2025, l'OCPM et l'arrondissement de Verdun organiseront des événements dans le cadre de la démarche de consultation.`,
   consultationLinkText: "Calendrier et informations",
 
@@ -89,6 +89,7 @@ const fr = {
   writeALetterHeading: "Écrire une lettre de soutien",
   writeALetterSubheading: `Utilisez notre outil pour rédiger une lettre de soutien pendant la période de soumission d'opinions. (23 janvier - 12 février 2025)`,
   myNameIs: "Je m'appelle",
+  fullName: "Votre nom complet",
   myAgeIs: "Mon age est",
   iLiveInVerdun: "J'habite à Verdun",
   iveLivedInVerdunLongTime: "J'habite à Verdun depuis longtemps",
@@ -139,6 +140,13 @@ const fr = {
   letterNotice: `Cette page est destinée à vous aider à rédiger une lettre de soutien. 
     Veuillez la relire attentivement et apporter les modifications nécessaires.`,
   copyLetter: "Sélectionner la lettre et copier",
+  howToSubmitYourLetter: "Comment soumettre votre lettre",
+  howToSubmitYourLetterText:
+    "Pour soumettre votre lettre, visitez la page de l'OCPM",
+  transmettreUneLettre: `page «Transmettre une mémoire»`,
+  englishSubmissionsNotice: "",
+  howToSubmitYourLetterInstructions:
+    "et uploader votre lettre sous forme de fichier.",
 };
 
 const en = {
@@ -185,7 +193,7 @@ const en = {
   followUsOn: "Follow us on",
   and: "and",
 
-  homeHeading: "Consultation publique en cours",
+  homeHeading: "Public consultation in progress",
   homeBody: `From January 22, 2025, the OCPM and borough of Verdun will be hosting events as part of the consultation process.`,
   consultationLinkText: "Schedule and information",
 
@@ -230,6 +238,7 @@ const en = {
   writeALetterSubheading:
     "Get help writing a letter of support for a year-round pedestrian Wellington street as part of the opinion submission period. (January 23 - February 12, 2025)",
   myNameIs: "My name is",
+  fullName: "Full name",
   myAgeIs: "My age is",
   iLiveInVerdun: "I live in Verdun",
   iveLivedInVerdunLongTime: "I've lived in Verdun for a long time",
@@ -278,6 +287,11 @@ const en = {
   letterNotice: `This page is meant to assist you in writing a letter of support. 
     Please re-read it carefully and make necessary changes.`,
   copyLetter: "Select letter and copy",
+  howToSubmitYourLetter: "How to submit your letter",
+  howToSubmitYourLetterText: "To submit your letter, visit the OCPM's",
+  transmettreUneLettre: `"Transmettre une mémoire" page`,
+  englishSubmissionsNotice: "Submissions in English are accepted.",
+  howToSubmitYourLetterInstructions: "and upload your letter as a file.",
 };
 
 export const translations = { en, fr };
