@@ -1,0 +1,22 @@
+---
+import { astroI18n, t, l } from "astro-i18n";
+import Layout from "../../components/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import WriteLetter from "../../components/WriteLetter.astro";
+
+astroI18n.init(Astro);
+---
+
+<Layout title={t("writeALetterHeading")}>
+  <Header />
+  <main>
+    <section class="narrow go-home">
+      <a href={l("/")}>{t("goHome")}</a>
+    </section>
+    <section class="narrow">
+      <WriteLetter />
+    </section>
+    <Footer />
+  </main>
+</Layout>

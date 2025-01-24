@@ -4,7 +4,7 @@ import { Handler } from "@netlify/functions";
 import { validate as uuidValidate } from "uuid";
 import getIpOrSubnet from "../../../public/js/getIpOrSubnet";
 
-export const handler: Handler = async ({ headers, queryStringParameters }) => {
+export const handler: Handler = async ({ headers }) => {
   const mongoUri = `mongodb+srv://public:${process.env.MONGO_PASSWORD}@${process.env.MONGO_DB_URL}/?retryWrites=true&w=majority&appName=la-well-pietonne`;
   const client = new MongoClient(mongoUri, {
     maxIdleTimeMS: 10000,
@@ -14,7 +14,7 @@ export const handler: Handler = async ({ headers, queryStringParameters }) => {
     const db = client.db("la-well-pietonne");
     const ideasCollection = db.collection("ideas");
     const { session } = headers;
-    const clientIp = getIpOrSubnet(queryStringParameters.clientIp);
+    const clientIp = getIpOrSubnet(headers["x-nf-client-connection-ip"]);
     const validSession = uuidValidate(session);
 
     const maxVotes = 99;

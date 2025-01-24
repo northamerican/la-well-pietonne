@@ -1,10 +1,18 @@
 ## Consultation publique
 
-Cet hiver, l'OCPM et l'arrondissement de Verdun organiseront des événements dans le cadre de la démarche de consultation.
+Jusqu'au 12 février, l'OCPM organise des événements dans le cadre de la démarche de consultation sur la piétonnisation permanente de la rue Wellington à Verdun.
 
-**[Mairie d'arrondissement de Verdun](https://maps.app.goo.gl/zbKSuApg6Sc211Fv6)** <small>♿️ Accessible</small>  
-4555, Rue de Verdun, Montréal  
-<small>🚇 Métro Verdun</small>  
+### Période pour exprimer son opinion
+
+#### 23 janvier - 12 février 2025
+
+C’est le moment d’exprimer votre soutien à cette initiative.
+Cette étape est cruciale pour une recommandation favorable et une prise en considération par les élus.
+
+<a class="button" href="https://ocpm.qc.ca/fr/wellington/inscription" target="_blank">Exprimez votre opinion ici.</a>
+
+Besoin d'aide pour écrire une lettre de soutien ? <a href="mailto:allo@lawellpietonne.com?subject=Lettre%20de%20soutien">Contactez-nous !</a>
+<!-- Besoin d'aide pour écrire votre lettre ? [Utilisez notre formulaire ici pour générer votre lettre de soutien !](ecrire-une-lettre) -->
 
 <h3 style="margin-block-end: 0.5em;">Événements</h3>
 
@@ -37,11 +45,11 @@ Poser vos questions et en apprendre plus sur le projet.
 Présentation des opinions.  
 <small>👁️‍🗨️ Webdiffusée</small>
 
-### <a href="https://ocpm.qc.ca/fr/wellington#:~:text=P%C3%A9riode%20pour%20exprimer%20son%20opinion" target="_blank" rel="noopeners">Période pour exprimer son opinion</a>
+<h3 style="margin-block-end: 0.5em;">Lieu</h3>
 
-#### 23 janvier - 6 février 2025
-
-Votre opinion écrite sur la piétonnisation permanente de la rue Wellington peut être déposé pendant cette période, avec la possibilité de le présenter oralement devant les commissaires.
+**[Mairie d'arrondissement de Verdun](https://maps.app.goo.gl/zbKSuApg6Sc211Fv6)** <small>♿️ Accessible</small>  
+4555, Rue de Verdun, Montréal  
+<small>🚇 Métro Verdun</small>
 
 Voir l'horaire complet et les détails sur la site de l'OCPM:  
 <strong><a href="https://ocpm.qc.ca/fr/wellington" target="_blank">Piétonnisation permanente de la rue Wellington</a>

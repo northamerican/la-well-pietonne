@@ -6,6 +6,7 @@ import Footer from "../../components/Footer.astro";
 import ConsultationEn from "./ConsultationEn.md";
 import ConsultationFr from "./ConsultationFr.md";
 import StayConnected from "../../components/StayConnected.astro";
+import CardLinks from "../../components/CardLinks.astro";
 
 astroI18n.init(Astro);
 
@@ -20,6 +21,9 @@ const { langCode } = astroI18n;
     </section>
     <section id="consultation" class="narrow">
       {langCode === "en" ? <ConsultationEn /> : <ConsultationFr />}
+    </section>
+    <section>
+      <CardLinks />
     </section>
     <section id="stay-connected" class="narrow">
       <h2>{t("stayConnected")}</h2>

@@ -1,8 +1,31 @@
 ---
+import { astroI18n, t, l } from "astro-i18n";
+import CardLink from "./CardLink.astro";
+
+astroI18n.init(Astro);
 ---
 
 <nav class="card-links">
-  <slot />
+  <CardLink
+    href={l("questions-reponses")}
+    icon="/img/icons/q-a.svg#Layer_1"
+    title={t("questionsAndAnswersHeading")}
+  />
+  <CardLink
+    href={l("boite-a-idees")}
+    icon="/img/icons/ideas.svg#Layer_1"
+    title={t("shareAnIdeaHeading")}
+  />
+  <CardLink
+    href={l("a-travers-le-monde")}
+    icon="/img/icons/around-the-world.svg#Layer_1"
+    title={t("aroundTheWorldHeading")}
+  />
+  <CardLink
+    href={l("petition")}
+    icon="/img/icons/petition-text.svg#Layer_1"
+    title={t("petitionTextHeading")}
+  />
 </nav>
 
 <style>

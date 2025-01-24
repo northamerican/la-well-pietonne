@@ -7,7 +7,6 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import StayConnected from "../components/StayConnected.astro";
 import CardLinks from "../components/CardLinks.astro";
-import CardLink from "../components/CardLink.astro";
 // import Events from "../components/Events.astro";
 
 astroI18n.init(Astro);
@@ -36,40 +35,20 @@ astroI18n.init(Astro);
     </section>
 
     <section>
-      <CardLinks>
-        <CardLink
-          href={l("questions-reponses")}
-          icon="/img/icons/q-a.svg#Layer_1"
-          title={t("questionsAndAnswersHeading")}
-        />
-        <CardLink
-          href={l("boite-a-idees")}
-          icon="/img/icons/ideas.svg#Layer_1"
-          title={t("shareAnIdeaHeading")}
-        />
-        <CardLink
-          href={l("a-travers-le-monde")}
-          icon="/img/icons/around-the-world.svg#Layer_1"
-          title={t("aroundTheWorldHeading")}
-        />
-        <CardLink
-          href={l("petition")}
-          icon="/img/icons/petition-text.svg#Layer_1"
-          title={t("petitionTextHeading")}
-        />
-      </CardLinks>
+      <CardLinks />
     </section>
 
     <section id="stay-connected">
       <h2>{t("stayConnected")}</h2>
       <StayConnected />
     </section>
-  </main>
-  <Footer />
 
-  <style>
-    section > h2 {
-      margin-top: 0;
-    }
-  </style>
+    <Footer />
+
+    <style>
+      section > h2 {
+        margin-top: 0;
+      }
+    </style>
+  </main>
 </Layout>

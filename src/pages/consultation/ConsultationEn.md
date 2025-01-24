@@ -1,10 +1,18 @@
 ## Public consultation
 
-This winter, the OCPM and borough of Verdun will be hosting events as part of the consultation process.
+Until February 12, the OCPM will be hosting events as part of the consultation process on the permanent pedestrianization of Wellington street in Verdun.
 
-**[Verdun borough hall](https://maps.app.goo.gl/zbKSuApg6Sc211Fv6)** <small>♿️ Accessible</small>  
-4555 Rue de Verdun, Montreal  
-<small>🚇 Métro Verdun</small>  
+### Opinion submission period
+
+#### January 23 - February 12, 2025
+
+Now is the time to express your support for this initiative.
+This step is crucial for a favourable recommendation and will influence the future of our neighbourhood.
+
+<a class="button" href="https://ocpm.qc.ca/fr/wellington/inscription" target="_blank">Submit your opinion here</a>  
+<small>Pages in French - Submissions in English are accepted.</small>  
+Need help writing a letter of support? <a href="mailto:allo@lawellpietonne.com?subject=Letter of support">Contact us!</a>
+<!-- Need help writing a letter? [Use our form here to generate your letter of support!](/en/write-a-letter) -->
 
 <h3 style="margin-block-end: 0.5em;">Events</h3>  
 
@@ -38,11 +46,11 @@ Exchange ideas and thoughts on the year-round pedestrianization of rue Wellingto
 Presentation of public opinions.  
 <small>👁️‍🗨️ Web broadcast</small>
 
-### <a href="https://ocpm.qc.ca/fr/wellington#:~:text=P%C3%A9riode%20pour%20exprimer%20son%20opinion" target="_blank" rel="noopeners">Opinion submission period</a>
+<h3 style="margin-block-end: 0.5em;">Location</h3>
 
-#### January 23 - February 6, 2025
-
-Your written opinion on the permanent pedestrianization can be submitted during this time, with the option to present your opinion to the commissioners.
+**[Verdun borough hall](https://maps.app.goo.gl/zbKSuApg6Sc211Fv6)** <small>♿️ Accessible</small>  
+4555 Rue de Verdun, Montreal  
+<small>🚇 Métro Verdun</small>  
 
 See the full schedule and details on OCPM's site:  
 <strong><a href="https://ocpm.qc.ca/fr/wellington" target="_blank">Piétonnisation permanente de la rue Wellington</a></strong>
