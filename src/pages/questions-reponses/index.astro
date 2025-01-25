@@ -14,9 +14,6 @@ const { langCode } = astroI18n;
 <Layout title={t("questionsAndAnswersHeading")}>
   <Header />
   <main>
-    <section class="narrow go-home">
-      <a href={l("/")}>{t("goHome")}</a>
-    </section>
     <section class="narrow">
       {langCode === "en" ? <QATextEn /> : <QATextFr />}
     </section>

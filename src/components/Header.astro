@@ -11,17 +11,29 @@ const isHome = Astro.url.pathname.replace("/en", "") === "/";
 ---
 
 <header>
-  <div id="lang-switcher">
+  <div id="header-links">
+    <div>
+      {
+        isHome ? null : (
+          <a class="go-home" href={l("/")}>
+            {t("home")}
+          </a>
+        )
+      }
+    </div>
     <LangSwitcher {otherLangCodes} />
   </div>
 
-  <img
-    class="biesinger-la-well"
-    src="/img/biesinger-la-well.png"
-    alt="La Well Piétonne"
-    width="5850"
-    height="4026"
-  />
+  <a href={l("/", {}, langCode)} class:list={isHome ? ["disabled"] : []}>
+    <img
+      class="biesinger-la-well"
+      src="/img/biesinger-la-well.png"
+      alt="La Well Piétonne"
+      width="5850"
+      height="4026"
+    />
+  </a>
+
   <a href={l("/", {}, langCode)} class:list={isHome ? ["disabled"] : []}>
     <img
       class="la-well-pietonne-logo"
@@ -52,13 +64,15 @@ const isHome = Astro.url.pathname.replace("/en", "") === "/";
     }
   }
 
-  #lang-switcher {
+  #header-links {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: flex-end;
     position: absolute;
     padding: 0.5em 3.75%;
     z-index: 1;
+    font-weight: bold;
   }
 
   .biesinger-la-well {
@@ -73,6 +87,10 @@ const isHome = Astro.url.pathname.replace("/en", "") === "/";
     max-width: 100%;
     height: auto;
     aspect-ratio: 1097 / 114;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   a {
@@ -80,10 +98,6 @@ const isHome = Astro.url.pathname.replace("/en", "") === "/";
 
     &.disabled {
       pointer-events: none;
-    }
-
-    &:hover {
-      opacity: 0.8;
     }
   }
 

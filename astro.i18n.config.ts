@@ -76,7 +76,7 @@ const fr = {
   generalError: "Désolé, une erreur s'est produite.",
 
   notFound: "404 : Introuvable",
-  goHome: "Page d'accueil 👈",
+  home: "Accueil",
 
   online: "En ligne",
   petitionLinkText: "Signer la pétition sur montreal.ca",
@@ -223,7 +223,7 @@ const en = {
   generalError: "Sorry, an error occurred.",
 
   notFound: "404: Not Found",
-  goHome: "Go home 👈",
+  home: "Home",
 
   online: "Online",
   petitionLinkText: "Sign the petition on montreal.ca",

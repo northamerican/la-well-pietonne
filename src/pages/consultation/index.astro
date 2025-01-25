@@ -16,9 +16,6 @@ const { langCode } = astroI18n;
 <Layout title={t("consultationHeading")}>
   <Header />
   <main>
-    <section class="narrow go-home">
-      <a href={l("/")}>{t("goHome")}</a>
-    </section>
     <section id="consultation" class="narrow">
       {langCode === "en" ? <ConsultationEn /> : <ConsultationFr />}
     </section>
