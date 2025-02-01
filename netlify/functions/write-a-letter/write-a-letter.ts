@@ -2,6 +2,7 @@ import { Handler } from "@netlify/functions";
 import { StatusCodes } from "http-status-codes";
 import { MongoClient } from "mongodb";
 import getIpOrSubnet from "../../../public/js/getIpOrSubnet";
+import OpenAI from "openai";
 
 export const handler: Handler = async ({ body, headers }) => {
   const mongoUri = `mongodb+srv://public:${process.env.MONGO_PASSWORD}@${process.env.MONGO_DB_URL}/?retryWrites=true&w=majority&appName=la-well-pietonne`;
@@ -34,22 +35,26 @@ export const handler: Handler = async ({ body, headers }) => {
   }
 
   const openAiApiKey = process.env.OPEN_AI_API_KEY;
+  // const deepSeekApiKey = process.env.DEEP_SEEK_API_KEY;
   const form = JSON.parse(body);
 
-  const systemRoleContent = `You are an assistant that specializes in writing letters in favor of pedestrianizing Wellington street (Promenade Wellington) in Montreal's borough of Verdun. It is pedestrianized in the summer months only for the last several years. The street is mixed use with many shops, restaurants and residential units. After a petition and public initiative was made, the public is now being consulted to make the pedestrian street permanent, with an eventual redevelopment. The letter is addressed to a public consultation office called "Office de consultation publique de Montréal" or OCPM for short. They are hosting the consultation and will be receiving this opinion letter as part of the process, now, in January and Febraury 2025.
-  The user supplies you with summarized information to craft the letter. Some of the information provided will be more relevant than others, and you should use your judgment to decide what to include in the letter provided it conveys their support, eagerness, and how they and the community would benefit from a pedestrian street. The letter should be natrual and not overly formal. Their age, occupation and provided info can be reflected in the writing style and length of the letter, so it is more authentic and varied between letters.
+  const systemRoleContent = `You are an assistant that specializes in writing letters in favour of pedestrianizing Wellington street (Promenade Wellington) in Montreal's borough of Verdun. It is currently pedestrianized only in the summer months for the last several years. The street is mixed use with many shops, restaurants and residential units. After a public initiative and petition was made, the public is now being consulted to make the pedestrian street permanent, with an eventual redevelopment. 
+  The letter is addressed to a public consultation office called "Office de consultation publique de Montréal" or OCPM for short. They are hosting the consultation and will be receiving this opinion letter as part of the process, now, in January and Febraury 2025.
+  The user supplies you with summarized information to craft the letter. Some of the information provided will be more relevant than others, and you should use your judgment to decide what to include in the letter provided it conveys their support, eagerness, and how they and the community would benefit from a pedestrian street. The letter should be written in natural, casual language. Their age, occupation and info provided info should be reflected in the writing style and length of the letter, so it is more authentic and varied.
   If they are particularly old or young, it may enhance credibility to include their provided age.
-  If they are a parent or long time resident.
-  If they work at or live near or on the street.
-  If they work or are involved in an organization like social sciences, public health, environment, urban planning, or similar that may give them expertise or authority on the subject.
-  If they have accessibility needs that would give them priority or credibility for supporting a pedestrian street.
-  If they provided other comments or experiences that would help craft a persuasive letter in support of a pedestrian street.
+  If they are a parent it gives them credibility as their children can also enjoy the street.
+  If that are a long time resident, it give them credibility as they have seen the street evolve and have a sense of history.
+  If they work at or live near or on the street, they are directly impacted and have a stake in the outcome.
+  If they work or are involved in an organization like social sciences, public health, environment, urban planning, or similar that may give them expertise or authority on the subject, include that.
+  If they have accessibility needs, it would give them priority or credibility for supporting a pedestrian street.
+  If they provided other comments or experiences are relevant to a letter in support of the pedestrian street, include that.
   Ideas provided by the user should not be copied verbatim, but can be paraphrased or summarized in the letter.
-  The letter will be sent as an email, so it should not formatted with a header or address.
+  Don't include a placeholder for the user's address in the header if they don't live in Verdun.
+  Don't enclose the response in characters like --- or \`\`\`.
   Do not include any references to the pandemic or social distancing.
   The letter may be output in English or French from Quebec, based on their provided preference.`;
 
-  const promptBegin = `Here is a summary for use in my letter: `;
+  const promptBegin = `Here is a summary for use in my letter in favor of pedestrianizing wellington street: `;
 
   const name = `My name is ${form.name}.`;
   const age = form.age ? `I am ${form.age} years old.` : "";
@@ -122,9 +127,17 @@ export const handler: Handler = async ({ body, headers }) => {
     .filter((field) => field.startsWith("idea."))
     .map((idea) => idea.replace("idea.", ""));
   const ideas = ideasList.length
-    ? `My favorite ideas for the pedestrian street include ${ideasList.join(
+    ? `My favourite ideas for the pedestrian street include ${ideasList.join(
         "; "
       )}.`
+    : "";
+
+  const feeling = form.feeling
+    ? `Here's how pedestrianizing Wellington street makes me feel: ${form.feeling}`
+    : "";
+
+  const concerns = form.concerns
+    ? `Some remaining concerns I may have are: ${form.concerns}.`
     : "";
 
   const comments = form.otherComments
@@ -147,40 +160,37 @@ export const handler: Handler = async ({ body, headers }) => {
     accessibility,
     supportReason,
     ideas,
+    feeling,
+    concerns,
     comments,
     language,
   ]
     .filter(Boolean)
-    .join(" ");
+    .join("\n");
 
   try {
-    const response = await fetch("https://api.openai.com/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${openAiApiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        model: "gpt-4o",
-        messages: [
-          {
-            role: "developer",
-            content: systemRoleContent,
-          },
-          {
-            role: "user",
-            content: userPrompt,
-          },
-        ],
-      }),
+    const openai = new OpenAI({
+      baseURL: "https://api.openai.com/v1",
+      apiKey: openAiApiKey,
+      // baseURL: "https://api.deepseek.com",
+      // apiKey: deepSeekApiKey,
     });
 
-    if (!response.ok) {
-      throw new Error(`Error: ${response.statusText}`);
-    }
+    const completion = await openai.chat.completions.create({
+      messages: [
+        { role: "developer", content: systemRoleContent },
+        // { role: "system", content: systemRoleContent },
+        {
+          role: "user",
+          content: userPrompt,
+        },
+      ],
+      model: "gpt-4o",
+      // model: "deepseek-reasoner",
+      temperature: 1,
+    });
 
-    const responseJson = await response.json();
-    const message = responseJson.choices[0].message.content;
+    const message = completion.choices[0].message.content;
 
     await writeALetterLogCollection.insertOne({
       clientIp,

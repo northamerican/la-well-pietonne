@@ -224,6 +224,17 @@ const supportReasons = [
   </div>
 
   <div>
+    <span>{t("howDoYouFeel")}</span>
+    <textarea name="feeling" placeholder={t("howDoYouFeelExample")} rows="2"
+    ></textarea>
+  </div>
+
+  <div>
+    <span>{t("concerns")}</span>
+    <textarea name="concerns" rows="2"></textarea>
+  </div>
+
+  <div>
     <span>{t("otherComments")}</span>
     <textarea
       name="otherComments"
@@ -245,7 +256,8 @@ const supportReasons = [
   <textarea class="generated-letter-content" rows="20"></textarea>
   <div class="generated-letter-footer">
     <small style="white-space: pre-line;">{t("letterNotice")}</small>
-    <button class="button copy-letter"><small>{t("copyLetter")}</small></button>
+    <button class="button copy-letter">{t("copyLetter")}</button>
+    <!-- <a class="button download-letter"><small>{t("downloadLetter")}</small></a> -->
   </div>
   <div class="generated-letter-send-info">
     <h3>{t("howToSubmitYourLetter")}</h3>
@@ -269,6 +281,7 @@ const supportReasons = [
     ".generated-letter-content"
   );
   const $copyLetter = document.querySelector(".copy-letter");
+  // const $downloadLetter = document.querySelector(".download-letter");
   const $error = document.querySelector(".error");
 
   const limitChecked = (limit) => (event) => {
@@ -313,9 +326,16 @@ const supportReasons = [
       }
 
       const responseJson = await response.json();
+      const { message } = responseJson;
 
       $generatedLetterContainer.classList.remove("hidden");
-      $generatedLetterContent.value = responseJson.message;
+      $generatedLetterContent.value = message;
+
+      // const blob = new Blob([message], { type: "text/plain" });
+      // const url = URL.createObjectURL(blob);
+
+      // $downloadLetter.href = url;
+      // $downloadLetter.download = "generated-letter.txt";
     } catch (error) {
       console.error(error);
       $error.classList.remove("hidden");

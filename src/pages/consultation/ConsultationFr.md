@@ -11,8 +11,8 @@ Cette étape est cruciale pour une recommandation favorable et une prise en cons
 
 <a class="button" href="https://ocpm.qc.ca/fr/wellington/inscription" target="_blank">Exprimez votre opinion ici.</a>
 
-Besoin d'aide pour écrire une lettre de soutien ? <a href="mailto:allo@lawellpietonne.com?subject=Lettre%20de%20soutien">Contactez-nous !</a>
-<!-- Besoin d'aide pour écrire votre lettre ? [Utilisez notre formulaire ici pour générer votre lettre de soutien !](ecrire-une-lettre) -->
+Besoin d'aide pour écrire une lettre de soutien ?   
+[Utilisez notre formulaire ici pour générer votre lettre de soutien !](ecrire-une-lettre) ou [Contactez-nous !](mailto:allo@lawellpietonne.com?subject=Lettre%20de%20soutien)
 
 <h3 style="margin-block-end: 0.5em;">Événements</h3>
 

@@ -10,9 +10,10 @@ Now is the time to express your support for this initiative.
 This step is crucial for a favourable recommendation and will influence the future of our neighbourhood.
 
 <a class="button" href="https://ocpm.qc.ca/fr/wellington/inscription" target="_blank">Submit your opinion here</a>  
-<small>Pages in French - Submissions in English are accepted.</small>  
-Need help writing a letter of support? <a href="mailto:allo@lawellpietonne.com?subject=Letter of support">Contact us!</a>
-<!-- Need help writing a letter? [Use our form here to generate your letter of support!](/en/write-a-letter) -->
+<small>Submissions in English are accepted.</small>  
+Need help writing a letter of support?   
+[Use our form here to generate your letter of support!](/en/write-a-letter) or 
+[Contact us!](mailto:allo@lawellpietonne.com?subject=Letter%20of%20support)
 
 <h3 style="margin-block-end: 0.5em;">Events</h3>  
 

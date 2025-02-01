@@ -134,12 +134,18 @@ const fr = {
   otherComments: "D'autres commentaires que vous aimeriez inclure?",
   otherCommentsExample:
     "ex: J'ai visité les rues piétonnes à l'étranger, j'ai une histoire personnelle à partager, etc.",
+  howDoYouFeel:
+    "Comment ressentez-vous la piétonnisation de la rue Wellington toute l'année ?",
+  howDoYouFeelExample:
+    "ex: Mes enfants pourront aller à l'école en toute sécurité.",
+  concerns: "Avez-vous des préoccupations à exprimer ?",
   yourLetter: "Votre lettre de soutien à l'OCPM",
   generateLetter: "Générer une lettre avec ChatGPT",
   generatingLetter: "Génération de la lettre...",
   letterNotice: `Cette page est destinée à vous aider à rédiger une lettre de soutien. 
     Veuillez la relire attentivement et apporter les modifications nécessaires.`,
   copyLetter: "Sélectionner la lettre et copier",
+  downloadLetter: "Télécharger la lettre",
   howToSubmitYourLetter: "Comment soumettre votre lettre",
   howToSubmitYourLetterText:
     "Pour soumettre votre lettre, visitez la page de l'OCPM",
@@ -281,12 +287,17 @@ const en = {
   otherComments: "Any other comments you'd like to include?",
   otherCommentsExample:
     "ex: I have visited pedestrian streets abroad, I have a personal story to share, etc.",
+  howDoYouFeel:
+    "How do you feel about the idea of pedestrianizing Wellington street year-round?",
+  howDoYouFeelExample: "ex: My children will be able to walk to school safely.",
+  concerns: "Any concerns you'd like to address?",
   yourLetter: "Your letter of support to the OCPM",
   generateLetter: "Generate letter with ChatGPT",
   generatingLetter: "Generating letter...",
   letterNotice: `This page is meant to assist you in writing a letter of support. 
     Please re-read it carefully and make necessary changes.`,
   copyLetter: "Select letter and copy",
+  downloadLetter: "Download letter",
   howToSubmitYourLetter: "How to submit your letter",
   howToSubmitYourLetterText: "To submit your letter, visit the OCPM's",
   transmettreUneLettre: `"Transmettre une mémoire" page`,

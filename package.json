@@ -34,6 +34,7 @@
     "lodash.sortby": "^4.7.0",
     "mailerlite-api-v2-node": "^1.2.0",
     "mongodb": "^6.8.0",
+    "openai": "5.0.0-alpha.0",
     "remark-toc": "^8.0.1",
     "typescript": "^4.9.5",
     "uuid": "^10.0.0"
