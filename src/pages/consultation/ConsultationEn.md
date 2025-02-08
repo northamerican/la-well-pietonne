@@ -10,10 +10,15 @@ Now is the time to express your support for this initiative.
 This step is crucial for a favourable recommendation and will influence the future of our neighbourhood.
 
 <a class="button" href="https://ocpm.qc.ca/fr/wellington/inscription" target="_blank">Submit your opinion here</a>  
-<small>Submissions in English are accepted.</small>  
+<small>Submissions in English are accepted.</small>    
+
 Need help writing a letter of support?   
 [Use our form here to generate your letter of support](/en/write-a-letter) or 
 [Contact us!](mailto:allo@lawellpietonne.com?subject=Letter%20of%20support)
+
+### Questionnaire
+
+<a href="https://www.surveymonkey.com/r/6PBBZWX" target="_blank">Fill in the OCPM questionnaire</a> to show your support for a year-round pedestrian Wellington street. 
 
 <h3 style="margin-block-end: 0.5em;">Events</h3>  
 
@@ -45,7 +50,9 @@ Exchange ideas and thoughts on the year-round pedestrianization of rue Wellingto
 
 #### February 11, 2025, from 7 to 10 p.m.
 
-#### February 12, 2025, from 1 p.m. to 5 p.m.
+#### February 12, 2025, from 1 to 5 p.m.
+
+#### February 12, 2025, from 7 to 10 p.m.
 
 Presentation of public opinions.  
 <small>👁️‍🗨️ Web broadcast</small>

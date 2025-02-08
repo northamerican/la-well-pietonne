@@ -14,6 +14,10 @@ Cette étape est cruciale pour une recommandation favorable et une prise en cons
 Besoin d'aide pour écrire une lettre de soutien ?   
 [Utilisez notre outil pour rédiger votre lettre de soutien](ecrire-une-lettre) ou [Contactez-nous !](mailto:allo@lawellpietonne.com?subject=Lettre%20de%20soutien)
 
+### Questionnaire
+
+<a href="https://www.surveymonkey.com/r/6PBBZWX" target="_blank">Remplissez le questionnaire OCPM</a> pour montrer votre soutien à la piétonnisation permanente de la rue Wellington.
+
 <h3 style="margin-block-end: 0.5em;">Événements</h3>
 
 <div class="opacity-50">
@@ -42,9 +46,11 @@ Poser vos questions et en apprendre plus sur le projet.
 
 ### <a href="https://ocpm.qc.ca/fr/wellington#:~:text=S%C3%A9ance%20d'audition%20des%20opinions" target="_blank" rel="noopeners">Séance d'audition des opinions</a>
 
-#### 11 février 2025, de 19 - 22h
+#### 11 février 2025, de 19h - 22h
 
 #### 12 février 2025, de 13h - 17h
+
+#### 12 février 2025, de 19h - 22h
 
 Présentation des opinions.  
 <small>👁️‍🗨️ Webdiffusée</small>
