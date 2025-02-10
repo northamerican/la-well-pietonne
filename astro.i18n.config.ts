@@ -73,7 +73,7 @@ const fr = {
   iLikeThisIdea: "J'aime cette idée !",
   ideaBy: "Idée de",
   ideaFormSuccess: "Merci ! Votre idée a été soumise.",
-  generalError: "Désolé, une erreur s'est produite.",
+  generalError: "Désolé, une erreur s'est produite. Essayez à nouveau.",
 
   notFound: "404 : Introuvable",
   home: "Accueil",
@@ -226,7 +226,7 @@ const en = {
   iLikeThisIdea: "I like this idea!",
   ideaBy: "Idea by",
   ideaFormSuccess: "Thanks! Your idea has been submitted.",
-  generalError: "Sorry, an error occurred.",
+  generalError: "Sorry, an error occurred. Try that again. ",
 
   notFound: "404: Not Found",
   home: "Home",
