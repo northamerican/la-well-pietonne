@@ -46,9 +46,9 @@ const fr = {
   followUsOn: "Suivez-nous sur",
   and: "et",
 
-  homeHeading: "Consultation publique en cours",
-  homeBody: `À partir du 22 janvier 2025, l'OCPM et l'arrondissement de Verdun organiseront des événements dans le cadre de la démarche de consultation.`,
-  consultationLinkText: "Calendrier et informations",
+  homeHeading: "MERCI ! Fin de la consultation publique",
+  homeBody: `Merci à tous pour votre participation. L'OCPM publiera bientôt son rapport et sa recommandation à la Ville de Montréal, prévus pour mai 2025. Restez à l'écoute !`,
+  consultationLinkText: "Piétonnisation permanente de la rue Wellington - OCPM",
 
   contactUs: "Contactez-nous",
 
@@ -60,7 +60,7 @@ const fr = {
   shareAnIdeaSubheading:
     "À quoi devrait ressembler notre rue piétonne ouverte toute l'année ?",
   shareAnIdeaEnded:
-    "La soumission de nouvelles idées est terminée. Partagez vos réflexions lors de la consultation publique officielle, qui débutera le 22 janvier 2025.",
+    "Une galerie d'idées pour notre rue piétonne ouverte à l'année, soumises par le public avant la consultation publique.",
   ideasGallery: "Galerie d'idées",
   shareYourIdea: "Partagez votre idée ici",
 
@@ -199,9 +199,9 @@ const en = {
   followUsOn: "Follow us on",
   and: "and",
 
-  homeHeading: "Public consultation in progress",
-  homeBody: `From January 22, 2025, the OCPM and borough of Verdun will be hosting events as part of the consultation process.`,
-  consultationLinkText: "Schedule and information",
+  homeHeading: "THANKS! End of public consultation",
+  homeBody: `Thank you all for participating. The OCPM will soon be publishing its report and recommendation to the city of Montreal, expected in May 2025. Stay tuned for updates.`,
+  consultationLinkText: "Piétonnisation permanente de la rue Wellington - OCPM",
 
   contactUs: "Contact us",
 
@@ -213,7 +213,7 @@ const en = {
   shareAnIdeaSubheading:
     "What should our year-round pedestrian street look like?",
   shareAnIdeaEnded:
-    "The submission of new ideas has ended. Share your thoughts at the official public consultation, starting January 22, 2025.",
+    "A gallery of ideas for our year-round pedestrian street. Submitted by the public ahead of the official public consultation.",
   ideasGallery: "Ideas gallery",
   shareYourIdea: "Share an idea here",
 
