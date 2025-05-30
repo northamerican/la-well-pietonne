@@ -1,5 +1,5 @@
 ---
-import { astroI18n, l, t } from "astro-i18n";
+import { astroI18n, t } from "astro-i18n";
 import { Step } from "../../types";
 
 const { langCode } = astroI18n;
@@ -54,8 +54,8 @@ const steps: Step[] = [
   },
   {
     date: {
-      fr: "Early June 2025",
-      en: "Début juin 2025",
+      fr: "May 2025",
+      en: "Mai 2025",
     },
     title: {
       fr: "Rapport de la consultation publié",
@@ -66,7 +66,7 @@ const steps: Step[] = [
       fr: "",
       en: "",
     },
-    status: "coming",
+    status: "completed",
   },
 ];
 ---
@@ -116,7 +116,7 @@ const steps: Step[] = [
 <style>
   :root {
     /* Total elapsed initiative progress 0-1 */
-    --progress: 0.9;
+    --progress: 1;
     --progress-pct: calc(100% * var(--progress));
 
     --step-circle-size: 40px;

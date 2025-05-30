@@ -46,9 +46,10 @@ const fr = {
   followUsOn: "Suivez-nous sur",
   and: "et",
 
-  homeHeading: "MERCI ! Fin de la consultation publique",
-  homeBody: `Merci à tous pour votre participation. L'OCPM publiera bientôt son rapport et sa recommandation à la Ville de Montréal, prévus pour mai 2025. Restez à l'écoute !`,
+  homeHeading: "Rapport OCPM publié",
+  homeBody: `Merci à tous pour votre participation. L'OCPM a publié son rapport et ses recommandations.`,
   consultationLinkText: "Piétonnisation permanente de la rue Wellington - OCPM",
+  pressReleaseLinkText: "Notre communiqué de presse sur le rapport",
 
   contactUs: "Contactez-nous",
 
@@ -199,9 +200,10 @@ const en = {
   followUsOn: "Follow us on",
   and: "and",
 
-  homeHeading: "THANKS! End of public consultation",
-  homeBody: `Thank you all for participating. The OCPM will soon be publishing its report and recommendation to the city of Montreal, expected in May 2025. Stay tuned for updates.`,
+  homeHeading: "OCPM report published",
+  homeBody: `Thank you all for your participation. The OCPM has published its report and recommendations.`,
   consultationLinkText: "Piétonnisation permanente de la rue Wellington - OCPM",
+  pressReleaseLinkText: "Our press release on the report",
 
   contactUs: "Contact us",
 

@@ -1,17 +1,7 @@
 ---
-import Page from "../../boite-a-idees/index.astro";
-import { v4 as uuidv4 } from "uuid";
-// Also setting cookie here manually
-// since cookies can only be set on the entrypoint .astro
-// Do not allow overwriting
-try {
-  if (!Astro.cookies.has("session")) {
-    Astro.cookies.set("session", uuidv4());
-  }
-} catch (error) {
-  console.error(error);
-}
-const { props } = Astro;
+import Page from "../../boite-a-idees/index.astro"
+
+const { props } = Astro
 ---
 
 <Page {...props} />

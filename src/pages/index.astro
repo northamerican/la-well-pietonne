@@ -1,5 +1,5 @@
 ---
-import { astroI18n, t, l } from "astro-i18n";
+import { astroI18n, t } from "astro-i18n";
 
 import Layout from "../components/Layout.astro";
 import ProgressSteps from "../components/ProgressSteps.astro";
@@ -24,6 +24,10 @@ astroI18n.init(Astro);
         <strong>
           <a href="https://ocpm.qc.ca/fr/wellington">
             {t("consultationLinkText")}
+          </a>
+          <br />
+          <a href="/pdf/LA-WELL-PIETONNE-PR-RAPPORT-OCPM.pdf">
+            {t("pressReleaseLinkText")}
           </a>
         </strong>
       </p>
